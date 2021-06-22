@@ -20,7 +20,9 @@ namespace Aula1
             //Exercicio7For();
             //Exercicio7While();
             //Exercicio7DoWhile();
-
+            //Exercicio8For();
+            //Exercicio8While();
+            //Exercicio8DoWhile();
         }
 
         static void Exercicio1()
@@ -258,6 +260,67 @@ namespace Aula1
             } while (cDoWhile <= 100);
 
             Console.WriteLine($"O resultado é: {resultado}");
+        }
+
+        static void Exercicio8For()
+        {
+            for (int i = 0; i <= 30; i++)
+            {
+                string[] valores = i.ToString().Split("");
+                decimal resultado = 0;
+
+                foreach (string item in valores)
+                {
+                    decimal v = decimal.Parse(item);
+                    resultado += v;
+                }
+
+                if (resultado % 3 == 0) Console.WriteLine(i);
+            }
+        }
+
+        static void Exercicio8While()
+        {
+
+            int cWhile = 1;
+
+            while (cWhile <= 30)
+            {
+                string[] valores = cWhile.ToString().Split("");
+                decimal resultado = 0;
+
+                foreach (string item in valores)
+                {
+                    decimal v = decimal.Parse(item);
+                    resultado += v;
+                }
+
+                if (resultado % 3 == 0) Console.WriteLine(cWhile);
+                cWhile++;
+            }
+
+        }
+
+        static void Exercicio8DoWhile()
+        {
+
+            int cDoWhile = 0;
+
+            do
+            {
+                string[] valores = cDoWhile.ToString().Split("");
+                decimal resultado = 0;
+
+                foreach (string item in valores)
+                {
+                    decimal v = decimal.Parse(item);
+                    resultado += v;
+                }
+
+                if (resultado % 3 == 0) Console.WriteLine(cDoWhile);
+                cDoWhile++;
+            } while (cDoWhile <= 100);
+
         }
     }
 }
