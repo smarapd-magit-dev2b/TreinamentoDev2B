@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\USR\\Git\\Dev2b\\TreinamentoDev2B\\Dev-API\\API\\API.csproj": {}
+    "D:\\USR\\Git\\Dev2b\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj": {}
   },
   "projects": {
-    "D:\\USR\\Git\\Dev2b\\TreinamentoDev2B\\Dev-API\\API\\API.csproj": {
+    "D:\\USR\\Git\\Dev2b\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\USR\\Git\\Dev2b\\TreinamentoDev2B\\Dev-API\\API\\API.csproj",
-        "projectName": "API",
-        "projectPath": "D:\\USR\\Git\\Dev2b\\TreinamentoDev2B\\Dev-API\\API\\API.csproj",
+        "projectUniqueName": "D:\\USR\\Git\\Dev2b\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj",
+        "projectName": "Aula1",
+        "projectPath": "D:\\USR\\Git\\Dev2b\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj",
         "packagesPath": "C:\\Users\\evsilva\\.nuget\\packages\\",
-        "outputPath": "D:\\USR\\Git\\Dev2b\\TreinamentoDev2B\\Dev-API\\API\\obj\\",
+        "outputPath": "D:\\USR\\Git\\Dev2b\\TreinamentoDev2B\\Dev2B\\Aula1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages"
@@ -43,12 +43,6 @@
       },
       "frameworks": {
         "net50": {
-          "dependencies": {
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[5.6.3, )"
-            }
-          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       },
