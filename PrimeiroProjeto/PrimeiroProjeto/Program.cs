@@ -7,9 +7,13 @@ namespace PrimeiroProjeto
         static void Main(string[] args)
         {
             //Ex1();
-            Ex2();
+            //Ex2();
             //Ex3();
-            //Ex4();
+            //Ex4if();
+            //Ex4switch();
+            //Ex5for();
+            //Ex5while();
+            //Ex5do();
         }
 
         static void Ex1()
@@ -39,13 +43,12 @@ namespace PrimeiroProjeto
             int numero;
             
             Console.WriteLine("Digite 10 números\n");
-            for(int i = 0; i < 10; i++)
+            for(int i = 1; i <= 10; i++)
             {
-                Console.Write((++i) + "º número: ");
-                i--;
+                Console.Write((i) + "º número: ");
                 numero = int.Parse(Console.ReadLine());
 
-                if(i == 0)
+                if(i == 1)
                 {
                     maiorNumero = numero;
                     menorNumero = numero;
@@ -86,7 +89,47 @@ namespace PrimeiroProjeto
                 Console.WriteLine(valor1 + " e " + valor2 + " não são múltiplos");
             }
         }
-        static void Ex4()
+
+        static void Ex4if()
+        {
+            decimal numero1, numero2;
+            char operacao;
+
+            Console.WriteLine("Digite dois números e a operação que deseja realizar com eles\n\n"+
+                "Operações: Soma(+), Subtração(-), Multiplicação(x), Divisão(/)\n");
+
+            Console.Write("Primeiro número: ");
+            numero1 = decimal.Parse(Console.ReadLine());
+
+            Console.Write("Segundo número: ");
+            numero2 = decimal.Parse(Console.ReadLine());
+
+            Console.Write("Operação: ");
+            operacao = char.Parse(Console.ReadLine());
+
+            if (operacao == '+')
+	        {
+                Console.WriteLine(numero1 + " + " + numero2 + " = " + (numero1 + numero2));
+	        }
+            else if (operacao == '-')
+	        {
+                Console.WriteLine(numero1 + " - " + numero2 + " = " + (numero1 - numero2));
+	        }
+            else if (operacao == 'x')
+	        {
+                Console.WriteLine(numero1 + " x " + numero2 + " = " + (numero1 * numero2));
+	        }
+            else if (operacao == '/')
+	        {
+                Console.WriteLine(numero1 + " / " + numero2 + " = " + (numero1 / numero2));
+	        }
+            else
+	        {
+                Console.WriteLine(operacao + " é uma operação inválida");
+	        }
+        }
+
+        static void Ex4switch()
         {
             decimal numero1, numero2;
             char operacao;
@@ -121,6 +164,40 @@ namespace PrimeiroProjeto
                     Console.WriteLine(operacao + " é uma operação inválida");
                     break;
             }
+        }
+
+        static void Ex5for()
+        {
+            int soma = 0;
+            for (int i = 1; i <= 100; i++)
+			{
+                soma += i;
+			}
+            Console.WriteLine("Soma de 1 a 100: " + soma);
+        }
+
+        static void Ex5while()
+        {
+            int soma = 0, i = 1;
+
+            while (i <= 100)
+	        {
+                soma += i;
+                i++;
+	        }
+            Console.WriteLine("Soma de 1 a 100: " + soma);
+        }
+
+        static void Ex5do()
+        {
+            int soma = 0, i = 1;
+
+            do
+	        {
+                soma += i;
+                i++;
+	        } while(i <= 100);
+            Console.WriteLine("Soma de 1 a 100: " + soma);
         }
     }
 }

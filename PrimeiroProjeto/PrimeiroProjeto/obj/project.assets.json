@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LGOLIVEIRA\\source\\repos\\PrimeiroProjeto\\PrimeiroProjeto\\PrimeiroProjeto.csproj",
+      "projectUniqueName": "C:\\Users\\LGOLIVEIRA\\Desktop\\TreinamentoDev2B\\PrimeiroProjeto\\PrimeiroProjeto\\PrimeiroProjeto.csproj",
       "projectName": "PrimeiroProjeto",
-      "projectPath": "C:\\Users\\LGOLIVEIRA\\source\\repos\\PrimeiroProjeto\\PrimeiroProjeto\\PrimeiroProjeto.csproj",
+      "projectPath": "C:\\Users\\LGOLIVEIRA\\Desktop\\TreinamentoDev2B\\PrimeiroProjeto\\PrimeiroProjeto\\PrimeiroProjeto.csproj",
       "packagesPath": "C:\\Users\\LGOLIVEIRA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LGOLIVEIRA\\source\\repos\\PrimeiroProjeto\\PrimeiroProjeto\\obj\\",
+      "outputPath": "C:\\Users\\LGOLIVEIRA\\Desktop\\TreinamentoDev2B\\PrimeiroProjeto\\PrimeiroProjeto\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\LGOLIVEIRA\\AppData\\Roaming\\NuGet\\NuGet.Config",
