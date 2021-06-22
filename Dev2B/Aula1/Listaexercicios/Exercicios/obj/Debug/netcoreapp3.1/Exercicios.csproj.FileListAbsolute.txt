@@ -1,0 +1,13 @@
+C:\Users\FACCARDOSO\source\repos\Exercicios\Exercicios\obj\Debug\netcoreapp3.1\Exercicios.csproj.AssemblyReference.cache
+C:\Users\FACCARDOSO\source\repos\Exercicios\Exercicios\obj\Debug\netcoreapp3.1\Exercicios.AssemblyInfoInputs.cache
+C:\Users\FACCARDOSO\source\repos\Exercicios\Exercicios\obj\Debug\netcoreapp3.1\Exercicios.AssemblyInfo.cs
+C:\Users\FACCARDOSO\source\repos\Exercicios\Exercicios\obj\Debug\netcoreapp3.1\Exercicios.csproj.CoreCompileInputs.cache
+C:\Users\FACCARDOSO\source\repos\Exercicios\Exercicios\bin\Debug\netcoreapp3.1\Exercicios.exe
+C:\Users\FACCARDOSO\source\repos\Exercicios\Exercicios\bin\Debug\netcoreapp3.1\Exercicios.deps.json
+C:\Users\FACCARDOSO\source\repos\Exercicios\Exercicios\bin\Debug\netcoreapp3.1\Exercicios.runtimeconfig.json
+C:\Users\FACCARDOSO\source\repos\Exercicios\Exercicios\bin\Debug\netcoreapp3.1\Exercicios.runtimeconfig.dev.json
+C:\Users\FACCARDOSO\source\repos\Exercicios\Exercicios\bin\Debug\netcoreapp3.1\Exercicios.dll
+C:\Users\FACCARDOSO\source\repos\Exercicios\Exercicios\bin\Debug\netcoreapp3.1\Exercicios.pdb
+C:\Users\FACCARDOSO\source\repos\Exercicios\Exercicios\obj\Debug\netcoreapp3.1\Exercicios.dll
+C:\Users\FACCARDOSO\source\repos\Exercicios\Exercicios\obj\Debug\netcoreapp3.1\Exercicios.pdb
+C:\Users\FACCARDOSO\source\repos\Exercicios\Exercicios\obj\Debug\netcoreapp3.1\Exercicios.genruntimeconfig.cache
