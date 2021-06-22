@@ -23,6 +23,9 @@ namespace Aula1
             //Exercicio8For();
             //Exercicio8While();
             //Exercicio8DoWhile();
+            //Exercicio9For();
+            //Exercicio9While();
+            //Exercicio9DoWhile();
         }
 
         static void Exercicio1()
@@ -320,6 +323,59 @@ namespace Aula1
                 if (resultado % 3 == 0) Console.WriteLine(cDoWhile);
                 cDoWhile++;
             } while (cDoWhile <= 100);
+
+        }
+
+        static void Exercicio9For()
+        {
+            Console.WriteLine("Informe o numero: ");
+            int n = int.Parse(Console.ReadLine());
+            if (n > 100 || n < 0)
+            {
+                Console.WriteLine("Apenas numeros entre 0 e 100");
+                return;
+            }
+            for (int i = 0; i <= 10; i++)
+            {
+                Console.WriteLine($"{n} x {i} = {n * i}");
+            }
+        }
+
+        static void Exercicio9While()
+        {
+            Console.WriteLine("Informe o numero: ");
+            int n = int.Parse(Console.ReadLine());
+            if (n > 100 || n < 0)
+            {
+                Console.WriteLine("Apenas numeros entre 0 e 100");
+                return;
+            }
+            int cWhile = 0;
+
+            while (cWhile <= 10)
+            {
+                Console.WriteLine($"{n} x {cWhile} = {n * cWhile}");
+                cWhile++;
+            }
+
+        }
+
+        static void Exercicio9DoWhile()
+        {
+            Console.WriteLine("Informe o numero: ");
+            int n = int.Parse(Console.ReadLine());
+            if (n > 100 || n < 0)
+            {
+                Console.WriteLine("Apenas numeros entre 0 e 100");
+                return;
+            }
+            int cDoWhile = 0;
+
+            do
+            {
+                Console.WriteLine($"{n} x {cDoWhile} = {n * cDoWhile}");
+                cDoWhile++;
+            } while (cDoWhile <= 10);
 
         }
     }
