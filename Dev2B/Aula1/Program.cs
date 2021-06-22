@@ -17,6 +17,9 @@ namespace Aula1
             //Exercicio6For();
             //Exercicio6While();
             //Exercicio6DoWhile();
+            //Exercicio7For();
+            //Exercicio7While();
+            //Exercicio7DoWhile();
 
         }
 
@@ -216,6 +219,45 @@ namespace Aula1
                 if (cDoWhile % 3 == 0) Console.WriteLine(cDoWhile);
                 cDoWhile++;
             } while (cDoWhile <= 100);
+        }
+
+        static void Exercicio7For()
+        {
+            decimal resultado = 0;
+            for (int i = 1; i <= 100; i++)
+            {
+                if (i % 3 != 0) resultado += i;
+            }
+
+            Console.WriteLine($"O resultado é: {resultado}");
+        }
+
+        static void Exercicio7While()
+        {
+            decimal resultado = 0;
+            int cWhile = 1;
+
+            while (cWhile <= 100)
+            {
+                if (cWhile % 3 != 0) resultado += cWhile;
+                cWhile++;
+            }
+            Console.WriteLine($"O resultado é: {resultado}");
+
+        }
+
+        static void Exercicio7DoWhile()
+        {
+            decimal resultado = 0;
+            int cDoWhile = 0;
+
+            do
+            {
+                if (cDoWhile % 3 != 0) resultado += cDoWhile;
+                cDoWhile++;
+            } while (cDoWhile <= 100);
+
+            Console.WriteLine($"O resultado é: {resultado}");
         }
     }
 }
