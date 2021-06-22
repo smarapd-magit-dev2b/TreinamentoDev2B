@@ -7,7 +7,8 @@ namespace Aula1
         static void Main(string[] args)
         {
             //Exercicio1();
-            Exercicio2();
+            //Exercicio2();
+            Exercicio3();
         }
 
         static void Exercicio1()
@@ -56,6 +57,20 @@ namespace Aula1
 
             Console.WriteLine($"Menor valor: {menorValor}");
             Console.WriteLine($"Maior valor: {maiorValor}");
+        }
+
+        static void Exercicio3()
+        {
+            Console.WriteLine("Informe o valor 1");
+            decimal valor1 = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Informe o valor 2");
+            decimal valor2 = decimal.Parse(Console.ReadLine());
+
+
+            if (valor1 % valor2 == 0)
+                Console.WriteLine($"Os valores {valor1} e {valor2} são multiplos");
+            else
+                Console.WriteLine($"Os valores {valor1} e {valor2} não são multiplos");
         }
     }
 }
