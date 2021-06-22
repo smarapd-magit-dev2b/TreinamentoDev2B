@@ -1,0 +1,13 @@
+C:\Users\LGOLIVEIRA\source\repos\PrimeiroProjeto\PrimeiroProjeto\bin\Debug\netcoreapp3.1\PrimeiroProjeto.exe
+C:\Users\LGOLIVEIRA\source\repos\PrimeiroProjeto\PrimeiroProjeto\bin\Debug\netcoreapp3.1\PrimeiroProjeto.deps.json
+C:\Users\LGOLIVEIRA\source\repos\PrimeiroProjeto\PrimeiroProjeto\bin\Debug\netcoreapp3.1\PrimeiroProjeto.runtimeconfig.json
+C:\Users\LGOLIVEIRA\source\repos\PrimeiroProjeto\PrimeiroProjeto\bin\Debug\netcoreapp3.1\PrimeiroProjeto.runtimeconfig.dev.json
+C:\Users\LGOLIVEIRA\source\repos\PrimeiroProjeto\PrimeiroProjeto\bin\Debug\netcoreapp3.1\PrimeiroProjeto.dll
+C:\Users\LGOLIVEIRA\source\repos\PrimeiroProjeto\PrimeiroProjeto\bin\Debug\netcoreapp3.1\PrimeiroProjeto.pdb
+C:\Users\LGOLIVEIRA\source\repos\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\netcoreapp3.1\PrimeiroProjeto.csproj.AssemblyReference.cache
+C:\Users\LGOLIVEIRA\source\repos\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\netcoreapp3.1\PrimeiroProjeto.AssemblyInfoInputs.cache
+C:\Users\LGOLIVEIRA\source\repos\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\netcoreapp3.1\PrimeiroProjeto.AssemblyInfo.cs
+C:\Users\LGOLIVEIRA\source\repos\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\netcoreapp3.1\PrimeiroProjeto.csproj.CoreCompileInputs.cache
+C:\Users\LGOLIVEIRA\source\repos\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\netcoreapp3.1\PrimeiroProjeto.dll
+C:\Users\LGOLIVEIRA\source\repos\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\netcoreapp3.1\PrimeiroProjeto.pdb
+C:\Users\LGOLIVEIRA\source\repos\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\netcoreapp3.1\PrimeiroProjeto.genruntimeconfig.cache
