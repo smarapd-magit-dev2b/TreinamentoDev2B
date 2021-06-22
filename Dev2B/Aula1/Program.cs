@@ -11,6 +11,10 @@ namespace Aula1
             //Exercicio3();
             //Exercicio4IF();
             //Exercicio4Switch();
+            //Exercicio5For();
+            //Exercicio5While();
+            //Exercicio5DoWhile();
+            
         }
 
         static void Exercicio1()
@@ -138,5 +142,46 @@ namespace Aula1
             Console.WriteLine($"O resultado a operação de {operacao} é igual a {resultado}");
         }
 
+        static void Exercicio5For()
+        {
+            decimal somaFor = 0;
+
+
+
+            for (int i = 1; i <= 100; i++)
+            {
+                somaFor += i;
+            }
+
+
+            Console.WriteLine($"A soma é: {somaFor}");
+        }
+
+        static void Exercicio5While()
+        {
+            decimal somaWhile = 0;
+            int cWhile = 1;
+
+            while (cWhile <= 100)
+            {
+                somaWhile += cWhile;
+                cWhile++;
+            }
+
+            Console.WriteLine($"A soma é: {somaWhile}");
+        }
+
+        static void Exercicio5DoWhile()
+        {
+            decimal somaDoWhile = 0;
+            int cDoWhile = 0;
+
+            do
+            {
+                somaDoWhile += cDoWhile;
+                cDoWhile++;
+            } while (cDoWhile <= 100);
+            Console.WriteLine($"A soma é: {somaDoWhile}");
+        }
     }
 }
