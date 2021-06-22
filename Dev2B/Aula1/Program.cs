@@ -14,7 +14,10 @@ namespace Aula1
             //Exercicio5For();
             //Exercicio5While();
             //Exercicio5DoWhile();
-            
+            //Exercicio6For();
+            //Exercicio6While();
+            //Exercicio6DoWhile();
+
         }
 
         static void Exercicio1()
@@ -182,6 +185,37 @@ namespace Aula1
                 cDoWhile++;
             } while (cDoWhile <= 100);
             Console.WriteLine($"A soma é: {somaDoWhile}");
+        }
+
+        static void Exercicio6For()
+        {
+            for (int i = 1; i <= 100; i++)
+            {
+                if (i % 3 == 0) Console.WriteLine(i);
+            }
+        }
+
+        static void Exercicio6While()
+        {
+            int cWhile = 1;
+
+            while (cWhile <= 100)
+            {
+                if (cWhile % 3 == 0) Console.WriteLine(cWhile);
+                cWhile++;
+            }
+
+        }
+
+        static void Exercicio6DoWhile()
+        {
+            int cDoWhile = 0;
+
+            do
+            {
+                if (cDoWhile % 3 == 0) Console.WriteLine(cDoWhile);
+                cDoWhile++;
+            } while (cDoWhile <= 100);
         }
     }
 }
