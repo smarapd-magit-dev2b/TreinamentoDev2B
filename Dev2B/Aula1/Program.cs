@@ -8,7 +8,9 @@ namespace Aula1
         {
             //Exercicio1();
             //Exercicio2();
-            Exercicio3();
+            //Exercicio3();
+            //Exercicio4IF();
+            //Exercicio4Switch();
         }
 
         static void Exercicio1()
@@ -72,5 +74,69 @@ namespace Aula1
             else
                 Console.WriteLine($"Os valores {valor1} e {valor2} não são multiplos");
         }
+
+        static void Exercicio4IF()
+        {
+            Console.WriteLine("Informe o valor 1");
+            decimal valor1 = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Informe o valor 2");
+            decimal valor2 = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Informe a operação (/ , * , - , +)");
+            string operacao = Console.ReadLine();
+            decimal resultado = 0;
+
+            if (operacao == "+")
+            {
+                resultado = valor1 + valor2;
+            }
+            else if (operacao == "-")
+            {
+                resultado = valor1 - valor2;
+            }
+            else if (operacao == "*")
+            {
+                resultado = valor1 * valor2;
+            }
+            else if (operacao == "/")
+            {
+                resultado = valor1 / valor2;
+            }
+
+            Console.WriteLine($"O resultado a operação de {operacao} é igual a {resultado}");
+        }
+
+        static void Exercicio4Switch()
+        {
+            Console.WriteLine("Informe o valor 1");
+            decimal valor1 = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Informe o valor 2");
+            decimal valor2 = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Informe a operação (/ , * , - , +)");
+            string operacao = Console.ReadLine();
+            decimal resultado = 0;
+
+            switch (operacao)
+            {
+                case "+":
+                    resultado = valor1 + valor2;
+                    break;
+                case "-":
+                    resultado = valor1 - valor2;
+                    break;
+                case "*":
+                    resultado = valor1 * valor2;
+                    break;
+                case "/":
+                    resultado = valor1 / valor2;
+                    break;
+                default:
+                    Console.WriteLine("Operação invalida");
+                    return;
+            }
+
+
+            Console.WriteLine($"O resultado a operação de {operacao} é igual a {resultado}");
+        }
+
     }
 }
