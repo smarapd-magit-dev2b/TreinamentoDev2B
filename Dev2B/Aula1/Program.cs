@@ -6,7 +6,8 @@ namespace Aula1
     {
         static void Main(string[] args)
         {
-            Exercicio1();
+            //Exercicio1();
+            Exercicio2();
         }
 
         static void Exercicio1()
@@ -29,6 +30,32 @@ namespace Aula1
                 Console.WriteLine("Reprovado!");
             }
 
+        }
+
+        static void Exercicio2()
+        {
+            decimal menorValor = 0;
+            decimal maiorValor = 0;
+            decimal valor;
+
+            for (int i = 0; i < 10; i++)
+            {
+                Console.Write($"Informe o {i} valor: ");
+                valor = decimal.Parse(Console.ReadLine());
+
+                if (i == 0)
+                {
+                    maiorValor = valor;
+                    menorValor = valor;
+                }
+
+                if (valor > maiorValor) maiorValor = valor;
+                if (valor < menorValor) menorValor = valor;
+            }
+
+
+            Console.WriteLine($"Menor valor: {menorValor}");
+            Console.WriteLine($"Maior valor: {maiorValor}");
         }
     }
 }
