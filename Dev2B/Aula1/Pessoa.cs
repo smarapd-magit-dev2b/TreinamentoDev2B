@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PrimeiroProjeto
+namespace Aula1
 {
     class Pessoa
     {

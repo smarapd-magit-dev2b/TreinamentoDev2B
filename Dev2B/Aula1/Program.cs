@@ -20,7 +20,10 @@ namespace Aula1
             //Ex7for();
             //Ex7while();
             //Ex7do();
-            Ex8for();
+            //Ex8for();
+            //Ex8while();
+            //Ex8do();
+            Ex9();
             //Ex10();
         }
 
@@ -279,12 +282,66 @@ namespace Aula1
 
         static void Ex8for()
         {
-            for (int i = 3; i < 100; i++)
+            for (int i = 3; i < 30; i++)
             {
                 if ((i % 3) == 0 || (i % 4) == 0)
                 {
                     Console.WriteLine(i);
                 }
+            }
+        }
+
+        static void Ex8while()
+        {
+            int i = 3;
+            while (i < 30)
+            {
+                if ((i % 3) == 0 || (i % 4) == 0)
+                {
+                    Console.WriteLine(i);
+                }
+                i++;
+            }
+        }
+
+        static void Ex8do()
+        {
+            int i = 3;
+            do
+            {
+                if ((i % 3) == 0 || (i % 4) == 0)
+                {
+                    Console.WriteLine(i);
+                }
+                i++;
+            } while (i < 30);
+        }
+
+        static void Ex9()
+        {
+            int numero;
+            bool run = true;
+            do
+            {
+                Console.Write("Digite um número de 1 a 100: ");
+                numero = int.Parse(Console.ReadLine());
+                if (numero >= 0 && numero <= 100)
+                {
+                    tabuada(numero);
+                    run = false;
+                }
+                else
+                {
+                    Console.WriteLine(numero + " é um número inválido");
+                }
+            } while (run);
+        }
+
+        static void tabuada(int numero)
+        {
+            for (int i = 0; i <= 10 ; i++)
+            {
+                Console.WriteLine(numero + " x " + i + " = " + (numero * i));
             }
         }
 
