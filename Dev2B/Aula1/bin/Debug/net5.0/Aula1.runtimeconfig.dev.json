@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\jardel\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\jardel\\.nuget\\packages"
+    ]
+  }
+}
