@@ -26,6 +26,8 @@ namespace Aula1
             //Exercicio9For();
             //Exercicio9While();
             //Exercicio9DoWhile();
+            //Exercicio10();
+            Exercicio10_2();
         }
 
         static void Exercicio1()
@@ -278,7 +280,7 @@ namespace Aula1
                     resultado += v;
                 }
 
-                if (resultado % 3 == 0) Console.WriteLine(i);
+                if (resultado % 3 == 0 || resultado % 4 == 0) Console.WriteLine(i);
             }
         }
 
@@ -298,7 +300,7 @@ namespace Aula1
                     resultado += v;
                 }
 
-                if (resultado % 3 == 0) Console.WriteLine(cWhile);
+                if (resultado % 3 == 0 || resultado % 4 == 0) Console.WriteLine(cWhile);
                 cWhile++;
             }
 
@@ -320,7 +322,7 @@ namespace Aula1
                     resultado += v;
                 }
 
-                if (resultado % 3 == 0) Console.WriteLine(cDoWhile);
+                if (resultado % 3 == 0 || resultado % 4 == 0) Console.WriteLine(cDoWhile);
                 cDoWhile++;
             } while (cDoWhile <= 100);
 
@@ -378,5 +380,134 @@ namespace Aula1
             } while (cDoWhile <= 10);
 
         }
+
+        static void Exercicio10()
+        {
+            // Feito com array
+            Pessoa[] pessoas = new Pessoa[5];
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"Dados da pessoa {i + 1}");
+                Console.WriteLine("Informe a idade");
+                int idade = int.Parse(Console.ReadLine());
+                Console.WriteLine("Informe o peso");
+                Decimal peso = decimal.Parse(Console.ReadLine());
+                Console.WriteLine("Informe a altura");
+                Decimal altura = decimal.Parse(Console.ReadLine());
+                pessoas[i] = new Pessoa(idade, peso, altura);
+            }
+
+            int pessoasMaiorDe50 = 0;
+            decimal mediaDasAlturas = 0m;
+            int pessoasEntre10e20 = 0;
+            int pessoasMenoresDe40Quiloskg = 0;
+
+            foreach (Pessoa p in pessoas)
+            {
+                if (p.idade > 50) pessoasMaiorDe50++;
+
+                if (p.idade > 10 && p.idade < 20)
+                {
+                    pessoasEntre10e20++;
+                    mediaDasAlturas += p.altura;
+                }
+
+                if (p.peso < 40) pessoasMenoresDe40Quiloskg++;
+            }
+
+            Console.WriteLine($"A quantidade de pessoas com idade superior a 50 anos: {pessoasMaiorDe50}");
+            Console.WriteLine($"A média das alturas das pessoas com idade entre 10 a 20 anos: {mediaDasAlturas / pessoasEntre10e20}");
+            Console.WriteLine($"A porcentagem de pessoas com peso inferior a 40 kg: {(pessoasMenoresDe40Quiloskg * 100) / 5}%");
+        }
+
+        static void Exercicio10_2()
+        {
+            // Feito sem array
+            Pessoa Pessoa1 = new Pessoa();
+            Pessoa Pessoa2 = new Pessoa();
+            Pessoa Pessoa3 = new Pessoa();
+            Pessoa Pessoa4 = new Pessoa();
+            Pessoa Pessoa5 = new Pessoa();
+            Pessoa PessoaVariavel = null;
+         
+            int pessoasMaiorDe50 = 0;
+            decimal mediaDasAlturas = 0m;
+            int pessoasEntre10e20 = 0;
+            int pessoasMenoresDe40Quiloskg = 0;
+
+            for (int i = 0; i < 5; i++)
+            {
+                if (i == 0)
+                {
+                    PessoaVariavel = Pessoa1;
+                }
+                else if (i == 1)
+                {
+                    PessoaVariavel = Pessoa2;
+                }
+                else if (i == 2)
+                {
+                    PessoaVariavel = Pessoa3;
+                }
+                else if (i == 3)
+                {
+                    PessoaVariavel = Pessoa4;
+                }
+                else if (i == 4)
+                {
+                    PessoaVariavel = Pessoa5;
+                }
+
+                Console.WriteLine($"Dados da pessoa {i + 1}");
+                Console.WriteLine("Informe a idade");
+                PessoaVariavel.idade = int.Parse(Console.ReadLine());
+                Console.WriteLine("Informe o peso");
+                PessoaVariavel.peso = decimal.Parse(Console.ReadLine());
+                Console.WriteLine("Informe a altura");
+                PessoaVariavel.altura = decimal.Parse(Console.ReadLine());
+
+            }
+
+            
+
+            for (int i = 0; i < 5; i++)
+            {
+                if (i == 0)
+                {
+                    PessoaVariavel = Pessoa1;
+                }
+                else if (i == 1)
+                {
+                    PessoaVariavel = Pessoa2;
+                }
+                else if (i == 2)
+                {
+                    PessoaVariavel = Pessoa3;
+                }
+                else if (i == 3)
+                {
+                    PessoaVariavel = Pessoa4;
+                }
+                else if (i == 4)
+                {
+                    PessoaVariavel = Pessoa5;
+                }
+
+                if (PessoaVariavel.idade > 50) pessoasMaiorDe50++;
+
+                if (PessoaVariavel.idade > 10 && PessoaVariavel.idade < 20)
+                {
+                    pessoasEntre10e20++;
+                    mediaDasAlturas += PessoaVariavel.altura;
+                }
+
+                if (PessoaVariavel.peso < 40) pessoasMenoresDe40Quiloskg++;
+            }
+
+            Console.WriteLine($"A quantidade de pessoas com idade superior a 50 anos: {pessoasMaiorDe50}");
+            Console.WriteLine($"A média das alturas das pessoas com idade entre 10 a 20 anos: {mediaDasAlturas / pessoasEntre10e20}");
+            Console.WriteLine($"A porcentagem de pessoas com peso inferior a 40 kg: {(pessoasMenoresDe40Quiloskg * 100) / 5}%");
+        }
+
     }
 }
