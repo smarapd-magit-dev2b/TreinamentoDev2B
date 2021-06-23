@@ -281,6 +281,7 @@ namespace Aula1
                 Console.WriteLine("Porcentagem de pessoas com peso inferior a 40: " + ((pessoasPesoInferior * 100) / 5));
 
                 Console.ReadLine();
+                Console.Clear();
             }
         }
     }
