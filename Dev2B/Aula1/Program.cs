@@ -7,7 +7,8 @@ namespace Aula1
         static void Main(string[] args)
         {
             //exercicio1();
-            exercicio2();
+            //exercicio2();
+            exercicio3();
             Console.ReadKey();
         }
 
@@ -68,6 +69,34 @@ namespace Aula1
             Console.WriteLine("");
             Console.WriteLine("Maior número: " + maior);
             Console.WriteLine("Menor número: " + menor);
+        }
+
+        static void exercicio3()
+        {
+            decimal num1, num2;
+
+            Console.Write("Digite o primeiro número: ");
+            num1 = int.Parse(Console.ReadLine());
+
+
+            Console.Write("Digite o segundo número: ");
+            num2 = int.Parse(Console.ReadLine());
+
+            if (num1 % num2 == 0 && num2 % num1 == 0)
+            {
+                Console.WriteLine("Números multiplos!");
+            }
+            else
+            {
+                if (num1 % num2 != 0)
+                {
+                    Console.WriteLine("Números não são multiplos!");
+                }
+                else
+                {
+                    Console.WriteLine("entrada inválida!");
+                }
+            }
         }
     }
 }
