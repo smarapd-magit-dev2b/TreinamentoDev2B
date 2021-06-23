@@ -7,11 +7,11 @@ namespace Projeto_1
     {
         static void Main(string[] args)
         {
-            //nota();
+            nota();
             maioremenor();
-            //multiplos();
-            //calculadora();
-            //somatotal();
+            multiplos();
+            calculadora();
+            somatotal();
         }
 
         static void nota()
