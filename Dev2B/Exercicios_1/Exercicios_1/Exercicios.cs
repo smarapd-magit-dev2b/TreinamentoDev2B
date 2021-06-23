@@ -3,15 +3,16 @@
 
 namespace Projeto_1
 {
-    class Program
+    class Exercicios
     {
         static void Main(string[] args)
         {
-            nota();
-            maioremenor();
-            multiplos();
-            calculadora();
-            somatotal();
+            //ex1_nota();
+            //ex2_maioremenor();
+            //ex3_multiplos();
+            //ex4_calculadora();
+            //ex5_somatotal();
+            //ex10_analise();
         }
 
         static void nota()
@@ -39,7 +40,7 @@ namespace Projeto_1
         static void maioremenor()
         {
             int maior = 0, menor = 0;
-            int controle = 0;
+            
 
             Console.WriteLine("Digite os numeros: ");
             for (int i = 0; i < 10; i++)
@@ -55,7 +56,6 @@ namespace Projeto_1
                 if (valor > maior)
                 {
                     maior = valor;
-
                 }
                 else
                 {
@@ -64,8 +64,7 @@ namespace Projeto_1
                         if (valor < menor)
                         {
                             menor = valor;
-                        }
-                        
+                        }                        
                     }
                 }
             }
@@ -194,6 +193,85 @@ namespace Projeto_1
                 i++;
             }
             Console.WriteLine("Soma total de todos os numeros de 1 a 100: " + soma);
+        }
+
+        static void analise()
+        {
+            int resposta = 0;
+            int idade = 0;
+            int peso = 0;
+            int contIdade = 0;
+            
+            int contPeso = 0;
+            decimal contAnalise = 0m;
+            decimal mediaAltura = 0m;
+            decimal alturaTotal = 0m;
+            decimal altura = 0m;
+            do
+            {
+                Console.WriteLine("Menu de opções!\n-----------------\n 1) Inserir dados pessoais.\n 2) Analisar maiores de 50 anos.\n 3) Analisar altura das pessoas entre 10 e 20 anos.\n 4) Analisar pessoas com peso inferior a 40KG.\n 0) Sair.\n-----------------\nEscolha: ");
+                int escolha = Convert.ToInt32(Console.ReadLine());
+                resposta = escolha;
+
+                switch (escolha)
+                {
+                    case 1:
+                        {
+                            for (int i = 0; i < 5; i++)
+                            {
+                                Console.WriteLine("Informe os dados da pessoa " + i + ":");
+                                Console.WriteLine("\nIdade: ");
+                                idade = Convert.ToInt32(Console.ReadLine());
+
+                                if (idade > 50)
+                                {
+                                    contIdade++;
+                                }
+                                if (idade >= 10 && idade <= 20)
+                                {
+                                    contAnalise++;
+                                }
+                               
+                                Console.WriteLine("\naltura: ");
+                                altura = Convert.ToDecimal(Console.ReadLine());
+                                if (contAnalise > 0)
+                                {
+                                    alturaTotal += altura;
+                                }
+                                Console.WriteLine("\nPeso: ");
+                                peso = Convert.ToInt32(Console.ReadLine());
+                                if (peso < 40)
+                                {
+                                    contPeso++;
+                                }
+                                Console.Clear();
+                            }
+                            break;
+                        }
+                    case 2:
+                        {
+                            Console.WriteLine("\nO total de pessoas acima de 50 anos são: " + contIdade);
+                            break;
+                        }
+                    case 3:
+                        {
+                            mediaAltura = alturaTotal / contAnalise;
+                            Console.WriteLine("\nA média de altura entre 10 e 20 é de: " + mediaAltura);
+                            break;
+                        }
+                    case 4:
+                        {
+                            Console.WriteLine("\nO numero de pessoas abaixo de 40KG é: " + contPeso);
+                            break;
+                        }
+                    default:
+                        {
+                            Console.WriteLine("Saindo....");
+                            break;
+                        }
+                }
+
+            } while (resposta != 0);
         }
     }
 }
