@@ -18,7 +18,9 @@ namespace Aula1
             //Exer05_1();
             //Exer05_2();
             //Exer05_3();
-            //Exer06();
+            //Exer06_1();
+            //Exer06_2();
+            //Exer06_3();
             //Exer07();
             //Exer08();
             //Exer09();
