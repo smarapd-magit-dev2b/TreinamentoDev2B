@@ -9,7 +9,8 @@ namespace Aula1
             //exercicio1();
             //exercicio2();
             //exercicio3();
-            exercicio4();
+            //exercicio4();
+            exercicio5();
             Console.ReadKey();
         }
 
@@ -183,6 +184,33 @@ namespace Aula1
                     Console.WriteLine("Operador in válido!");
                     break;
             }
+        }
+
+        static void exercicio5()
+        {
+            int soma = 0, k = 1, j = 1;
+
+            // utilizando FOR 
+            //for (int i = 1; i < 101; i++)
+            //{
+            //    soma = soma + i;
+            //}
+
+            // utilizando WHILE
+            //while (k < 101)
+            //{
+            //    soma = soma + k;
+            //    k++;
+            //}
+
+            // utilizando DO WHILE
+            do
+            {
+                soma = soma + j;
+                j++;
+            } while (j < 101);
+
+            Console.WriteLine("O valor da soma de 1 a 100 é: " + soma);
         }
     }
 }
