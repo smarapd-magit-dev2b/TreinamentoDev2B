@@ -7,7 +7,11 @@ namespace Exercicios
 		static void Main(string[] args)
 		{
 			//Ex1();
-			Ex2();
+			//Ex2();
+			//Ex3();
+			//Ex4();
+			//Ex5();
+			//Ex10();
 		}
 
 		static void Ex1() {
@@ -59,7 +63,125 @@ namespace Exercicios
 
 		}
 
+		static void Ex3() {
 
+			Console.WriteLine("Informe o primeiro valor: ");
+			int v1 = int.Parse(Console.ReadLine());
+
+			Console.WriteLine("Informe o segundo valor: ");
+			int v2 = int.Parse(Console.ReadLine());
+
+			if (v1 % v2 == 0)
+            {
+				Console.Write("Os números são multiplos");
+            }
+            else
+            {
+				Console.WriteLine("\nOs números não são multiplos");
+            }
+		}
+
+		static void Ex4()
+        {
+			Console.WriteLine("Informe o primeiro valor: ");
+			int v1 = int.Parse(Console.ReadLine());
+
+			Console.WriteLine("Informe o segundo valor: ");
+			int v2 = int.Parse(Console.ReadLine());
+
+			Console.WriteLine("Informe qual a operação matemática(+, -, /, *): ");
+			string operacao = Console.ReadLine();
+			Console.Clear();
+
+            if (operacao == "+")
+            {
+				Console.WriteLine($"O resultado de {v1} + {v2} é: " + (v1 + v2));
+            }
+            else if (operacao == "-")
+            {
+				Console.WriteLine($"O resultado de {v1} - {v2} é: " + (v1 - v2));
+            }
+            else if (operacao == "/")
+            {
+                if (v2 <=0)
+                {
+					Console.WriteLine($"Não é possivel realizar a divisão com denominador zero.");
+                }
+                else
+                {
+					Console.WriteLine($"O resultado de {v1} / {v2} é: " + (v1 / v2));
+				}
+				
+            }
+            else if (operacao == "*")
+            {
+				Console.WriteLine($"O resultado de {v1} * {v2} é: " + (v1 * v2));
+			}
+            else
+            {
+				Console.WriteLine("Operação Inválida.");
+			}
+
+    //        switch (operacao)
+    //        {
+				//case "+":
+				//	Console.WriteLine($"O resultado de {v1} + {v2} é: " + (v1+v2));
+				//	break;
+				//case "-":
+				//	Console.WriteLine($"O resultado de {v1} - {v2} é: " + (v1-v2));
+				//	break;
+				//case "/":
+				//	Console.WriteLine($"O resultado de {v1} / {v2} é: " + (v1/v2));
+				//	break;
+				//case "*":
+				//	Console.WriteLine($"O resultado de {v1} * {v2} é: " + (v1*v2));
+				//	break;
+				//default:
+				//	Console.WriteLine("Operação Inválida.");
+    //                break;
+    //        }
+        }
+
+		static void Ex5()
+        {
+
+        }
+
+		static void Ex10()
+        {
+			int contadoridade = 0, contadorpeso = 0, contadoridade2 = 0;
+			decimal media_altura = 0;
+
+			for (int i = 1; i < 6; i++)
+            {
+				Console.WriteLine("Digite a idade da pessoa " + i);
+				int idade = int.Parse(Console.ReadLine());
+				Console.WriteLine("Digite a altura da pessoa " + i);
+				decimal altura = Convert.ToDecimal(Console.ReadLine());
+				Console.WriteLine("Digite o peso da pessoa " + i);
+				decimal peso = Convert.ToDecimal(Console.ReadLine());
+
+				if (idade > 50)
+				{
+					contadoridade++;
+				} else if (idade >=10  && idade <= 20 ) {
+					contadoridade2++;
+                    media_altura += altura;
+					media_altura = (media_altura / contadoridade2);
+
+				}
+
+                if (peso < 40)
+                {
+					contadorpeso++;
+                }
+			}
+			Console.WriteLine("Idade Superior a 50: " + contadoridade);
+
+			Console.WriteLine("Media das alturas: " + media_altura);
+
+			Console.WriteLine("Porcentagem peso: " + (100*contadorpeso/5));
+		}
 
 	}
 }
