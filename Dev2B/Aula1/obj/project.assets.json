@@ -1,45 +1,38 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v5.0": {},
-    ".NETFramework,Version=v5.0/win7-x86": {}
+    "net5.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v5.0": []
+    "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\evsilva\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages": {}
+    "C:\\Users\\AMJARIA\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\USR\\Git\\Dev2b\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj",
+      "projectUniqueName": "C:\\Users\\AMJARIA\\Desktop\\treinamento\\exercícios\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj",
       "projectName": "Aula1",
-      "projectPath": "D:\\USR\\Git\\Dev2b\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj",
-      "packagesPath": "C:\\Users\\evsilva\\.nuget\\packages\\",
-      "outputPath": "D:\\USR\\Git\\Dev2b\\TreinamentoDev2B\\Dev2B\\Aula1\\obj\\",
+      "projectPath": "C:\\Users\\AMJARIA\\Desktop\\treinamento\\exercícios\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj",
+      "packagesPath": "C:\\Users\\AMJARIA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\AMJARIA\\Desktop\\treinamento\\exercícios\\TreinamentoDev2B\\Dev2B\\Aula1\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\evsilva\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
+        "C:\\Users\\AMJARIA\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://srvv24:9090/nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net50": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "projectReferences": {}
         }
       },
@@ -50,13 +43,24 @@
       }
     },
     "frameworks": {
-      "net50": {
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
-      }
-    },
-    "runtimes": {
-      "win7-x86": {
-        "#import": []
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
