@@ -1,0 +1,7 @@
+C:\Users\MVCUNHA\source\repos\ex10\ex10\bin\Debug\ex10.exe.config
+C:\Users\MVCUNHA\source\repos\ex10\ex10\bin\Debug\ex10.exe
+C:\Users\MVCUNHA\source\repos\ex10\ex10\bin\Debug\ex10.pdb
+C:\Users\MVCUNHA\source\repos\ex10\ex10\obj\Debug\ex10.csproj.AssemblyReference.cache
+C:\Users\MVCUNHA\source\repos\ex10\ex10\obj\Debug\ex10.csproj.CoreCompileInputs.cache
+C:\Users\MVCUNHA\source\repos\ex10\ex10\obj\Debug\ex10.exe
+C:\Users\MVCUNHA\source\repos\ex10\ex10\obj\Debug\ex10.pdb
