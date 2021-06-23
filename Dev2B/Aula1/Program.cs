@@ -455,7 +455,14 @@ namespace Aula1
             }
 
             Console.WriteLine("A quantidade de pessoas com idade superior a 50 anos é " + idade_sup_50);
-            Console.WriteLine("A média das alturas das pessoas com idade entre 10 a 20 anos é " + soma_altura/pessoas_10_20);
+            if (pessoas_10_20 != 0)
+            {
+                Console.WriteLine("A média das alturas das pessoas com idade entre 10 a 20 anos é " + soma_altura / pessoas_10_20);
+            }
+            else
+            {
+                Console.WriteLine("Não foi cadastrada nenhuma pessoa com idade entre 10 e 20 anos");
+            }           
             Console.WriteLine("A porcentagem de pessoas com peso inferior a 40 kg entre todas as pessoas analisadas é " + Convert.ToDecimal(peso_inferior/5.00m*100.00m));
 
         }
