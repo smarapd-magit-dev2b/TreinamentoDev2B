@@ -6,7 +6,8 @@ namespace Aula1
     {
         static void Main(string[] args)
         {
-            exercicio1();
+            //exercicio1();
+            exercicio2();
             Console.ReadKey();
         }
 
@@ -25,10 +26,48 @@ namespace Aula1
             {
                 Console.WriteLine("Exame!");
             }
-            else
+            else if (media < 4)
             {
                 Console.WriteLine("Reprovado!");
             }
+            else
+            {
+                Console.WriteLine("Inválido!");
+            }
+        }
+
+        static void exercicio2()
+        {
+            int maior, menor, aux;
+            menor = 0;
+            maior = 0;
+
+            for (int i = 0; i < 10; i++)
+            {
+                Console.Write("Digite o " + (i + 1) + " valor: ");
+                aux = Convert.ToInt32(Console.ReadLine());
+
+                if (i == 0)
+                {
+                    menor = aux;
+                    maior = aux;
+                }
+                else
+                {
+                    if (aux > maior)
+                    {
+                        maior = aux;
+                    }
+                    else if (aux < menor)
+                    {
+                        menor = aux;
+                    }
+                }
+            }
+
+            Console.WriteLine("");
+            Console.WriteLine("Maior número: " + maior);
+            Console.WriteLine("Menor número: " + menor);
         }
     }
 }
