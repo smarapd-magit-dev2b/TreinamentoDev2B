@@ -144,8 +144,25 @@ namespace Exercicios
 
 		static void Ex5()
         {
-
-        }
+			int soma = 0, numero = 1;
+            //         for (int i = 1 ; i < 101; i++)
+            //         {
+            //	soma += i;
+            //         }
+            //Console.WriteLine("A soma dos números de 1 até 100 é: " + soma);
+            //         while (numero <= 100)
+            //         {
+            //	soma += numero;
+            //	numero++;
+            //}
+            //Console.WriteLine("A soma dos números de 1 até 100 é: " + soma);
+            do
+            {
+				soma += numero;
+				numero++;
+			} while (numero <= 100);
+			Console.WriteLine("A soma dos números de 1 até 100 é: " + soma);
+		}
 
 		static void Ex10()
         {
@@ -177,9 +194,7 @@ namespace Exercicios
                 }
 			}
 			Console.WriteLine("Idade Superior a 50: " + contadoridade);
-
 			Console.WriteLine("Media das alturas: " + media_altura);
-
 			Console.WriteLine("Porcentagem peso: " + (100*contadorpeso/5));
 		}
 
