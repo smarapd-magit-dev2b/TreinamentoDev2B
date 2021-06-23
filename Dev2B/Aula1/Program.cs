@@ -8,7 +8,8 @@ namespace Aula1
         {
             //exercicio1();
             //exercicio2();
-            exercicio3();
+            //exercicio3();
+            exercicio4();
             Console.ReadKey();
         }
 
@@ -82,7 +83,7 @@ namespace Aula1
             Console.Write("Digite o segundo número: ");
             num2 = int.Parse(Console.ReadLine());
 
-            if (num1 % num2 == 0 && num2 % num1 == 0)
+            if (num1 % num2 == 0)
             {
                 Console.WriteLine("Números multiplos!");
             }
@@ -96,6 +97,91 @@ namespace Aula1
                 {
                     Console.WriteLine("entrada inválida!");
                 }
+            }
+        }
+
+        static void exercicio4()
+        {
+            decimal num1, num2;
+            string operacao;
+
+            Console.Write("Digite o primeiro número: ");
+            num1 = int.Parse(Console.ReadLine());
+
+
+            Console.Write("Digite o segundo número: ");
+            num2 = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite a operação desejada (+, -, *, /): ");
+            operacao = Console.ReadLine();
+
+            Console.WriteLine("\n\n USANDO SWITCH \n\n");
+
+            if (operacao == "+")
+            {
+                Console.WriteLine(num1 + " + " + num2 + " = " + (num1 + num2));
+            }
+            else
+            {
+                if (operacao == "-")
+                {
+                    Console.WriteLine(num1 + " - " + num2 + " = " + (num1 - num2));
+                }
+                else
+                {
+                    if (operacao == "*")
+                    {
+                        Console.WriteLine(num1 + " * " + num2 + " = " + (num1 * num2));
+                    }
+                    else
+                    {
+                        if (operacao == "/")
+                        {
+                            if (num1 == 0 || num2 == 0)
+                            {
+                                Console.WriteLine("Não existe divisão por 0!");
+                            }
+                            else
+                            {
+                                Console.WriteLine(num1 + " / " + num2 + " = " + (num1 / num2));
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Operação inválida!");
+                        }
+                    }
+                }
+            }
+
+            Console.WriteLine("\n\n USANDO SWITCH \n\n");
+
+            switch (operacao)
+            {
+                case "+":
+                    Console.WriteLine(num1 + " + " + num2 + " = " + (num1 + num2));
+                    break;
+
+                case "-":
+                    Console.WriteLine(num1 + " - " + num2 + " = " + (num1 - num2));
+                    break;
+                case "*":
+                    Console.WriteLine(num1 + " * " + num2 + " = " + (num1 * num2));
+                    break;
+
+                case "/":
+                    if (num1 == 0 || num2 == 0)
+                    {
+                        Console.WriteLine("Não existe divisão por 0!");
+                    }
+                    else
+                    {
+                        Console.WriteLine(num1 + " / " + num2 + " = " + (num1 / num2));
+                    }
+                    break;
+                default:
+                    Console.WriteLine("Operador in válido!");
+                    break;
             }
         }
     }
