@@ -1,0 +1,6 @@
+C:\Users\MVCUNHA\Desktop\ex1\ex1\bin\Debug\ex1.exe.config
+C:\Users\MVCUNHA\Desktop\ex1\ex1\bin\Debug\ex1.exe
+C:\Users\MVCUNHA\Desktop\ex1\ex1\bin\Debug\ex1.pdb
+C:\Users\MVCUNHA\Desktop\ex1\ex1\obj\Debug\ex1.csproj.CoreCompileInputs.cache
+C:\Users\MVCUNHA\Desktop\ex1\ex1\obj\Debug\ex1.exe
+C:\Users\MVCUNHA\Desktop\ex1\ex1\obj\Debug\ex1.pdb
