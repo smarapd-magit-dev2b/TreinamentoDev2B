@@ -1,0 +1,13 @@
+D:\dev2b\TreinamentoDev2B\Dev2B\Aula2\Aula2\bin\Debug\netcoreapp3.1\Aula2.exe
+D:\dev2b\TreinamentoDev2B\Dev2B\Aula2\Aula2\bin\Debug\netcoreapp3.1\Aula2.deps.json
+D:\dev2b\TreinamentoDev2B\Dev2B\Aula2\Aula2\bin\Debug\netcoreapp3.1\Aula2.runtimeconfig.json
+D:\dev2b\TreinamentoDev2B\Dev2B\Aula2\Aula2\bin\Debug\netcoreapp3.1\Aula2.runtimeconfig.dev.json
+D:\dev2b\TreinamentoDev2B\Dev2B\Aula2\Aula2\bin\Debug\netcoreapp3.1\Aula2.dll
+D:\dev2b\TreinamentoDev2B\Dev2B\Aula2\Aula2\bin\Debug\netcoreapp3.1\Aula2.pdb
+D:\dev2b\TreinamentoDev2B\Dev2B\Aula2\Aula2\obj\Debug\netcoreapp3.1\Aula2.csprojAssemblyReference.cache
+D:\dev2b\TreinamentoDev2B\Dev2B\Aula2\Aula2\obj\Debug\netcoreapp3.1\Aula2.AssemblyInfoInputs.cache
+D:\dev2b\TreinamentoDev2B\Dev2B\Aula2\Aula2\obj\Debug\netcoreapp3.1\Aula2.AssemblyInfo.cs
+D:\dev2b\TreinamentoDev2B\Dev2B\Aula2\Aula2\obj\Debug\netcoreapp3.1\Aula2.csproj.CoreCompileInputs.cache
+D:\dev2b\TreinamentoDev2B\Dev2B\Aula2\Aula2\obj\Debug\netcoreapp3.1\Aula2.dll
+D:\dev2b\TreinamentoDev2B\Dev2B\Aula2\Aula2\obj\Debug\netcoreapp3.1\Aula2.pdb
+D:\dev2b\TreinamentoDev2B\Dev2B\Aula2\Aula2\obj\Debug\netcoreapp3.1\Aula2.genruntimeconfig.cache
