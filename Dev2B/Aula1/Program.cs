@@ -11,7 +11,8 @@ namespace Aula1
             //exercicio3();
             //exercicio4();
             //exercicio5();
-            exercicio6();
+            //exercicio6();
+            exercicio7();
             Console.ReadKey();
         }
 
@@ -245,6 +246,43 @@ namespace Aula1
 
                 k++;
             } while (k >= 1 && k <= 100);
+        }
+
+        static void exercicio7()
+        {
+            int soma = 0, j = 1, k = 1;
+
+            //for (int i = 1; i >= 1 && i <= 100; i++)
+            //{
+            //    if (i % 3 != 0)
+            //    {
+            //        soma = soma + i;
+            //    }
+            //}
+
+            //while (j >= 1 && j <= 100)
+            //{
+            //    if (j % 3 != 0)
+            //    {
+            //        soma = soma + j;
+            //    }
+
+            //    j++;
+
+            //};
+
+            do
+            {
+                if (k % 3 != 0)
+                {
+                    soma = soma + k;
+                }
+
+                k++;
+
+            } while (k >= 1 && k <= 100);
+
+            Console.WriteLine("A soma dos valores que não são multiplos de 3 é (entre 1 e 100): " + soma);
         }
     }
 }
