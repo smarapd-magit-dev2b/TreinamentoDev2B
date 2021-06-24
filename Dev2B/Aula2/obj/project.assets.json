@@ -1,11 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    ".NETCoreApp,Version=v3.1": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0": []
+    ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
     "C:\\Users\\desenvolvedor\\.nuget\\packages\\": {}
@@ -13,26 +13,26 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\desenvolvedor\\Desktop\\Dev2B\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj",
-      "projectName": "Aula1",
-      "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\Dev2B\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj",
+      "projectUniqueName": "C:\\Users\\desenvolvedor\\Desktop\\Dev2B\\TreinamentoDev2B\\Dev2B\\Aula2\\Aula2.csproj",
+      "projectName": "Aula2",
+      "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\Dev2B\\TreinamentoDev2B\\Dev2B\\Aula2\\Aula2.csproj",
       "packagesPath": "C:\\Users\\desenvolvedor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\desenvolvedor\\Desktop\\Dev2B\\TreinamentoDev2B\\Dev2B\\Aula1\\obj\\",
+      "outputPath": "C:\\Users\\desenvolvedor\\Desktop\\Dev2B\\TreinamentoDev2B\\Dev2B\\Aula2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\desenvolvedor\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net5.0"
+        "netcoreapp3.1"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -43,8 +43,8 @@
       }
     },
     "frameworks": {
-      "net5.0": {
-        "targetAlias": "net5.0",
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
