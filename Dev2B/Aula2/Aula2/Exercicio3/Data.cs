@@ -12,9 +12,9 @@ namespace Aula2.Exercicio3
 
         public Data()
         {
-            Dia = DateTime.Now.Day;
-            Mes = DateTime.Now.Month;
-            Ano = DateTime.Now.Year;
+            Dia = Convert.ToInt32(Console.ReadLine());
+            Mes = Convert.ToInt32(Console.ReadLine());
+            Ano = Convert.ToInt32(Console.ReadLine());
         }
         public string toString()
         {
