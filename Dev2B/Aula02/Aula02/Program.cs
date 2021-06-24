@@ -12,7 +12,7 @@ namespace Aula02 {
             //Exercicio01();
             //Exercicio02();
             //Exercicio03();
-            Exercicio04();
+            //Exercicio04();
         }
         static void Exercicio01() {
             int codigo, quantidadeComprada;
@@ -101,30 +101,30 @@ namespace Aula02 {
         }
         static void Exercicio04() {
             //Instaciando a classe Aluno
-            Aluno aluno = new Aluno {
-                Nome = "Bruno",
-                DataNascimento = 15 / 10 / 98,
-                Endereço = "José Melos dos Reis",
-                Telefone = 123456789,
-                Email = "aluno@hotmail.com",
-                Nascionalidade = "brasilieiro",
-                Cidade = "Sertãozinho",
-                Estado = "São Paulo",
-                DataMatricula = 02 / 02 / 2020,
-                RA = 12345678910,
-            };
+            Aluno aluno = new Aluno();
+
+            aluno.Nome = "Bruno";
+            aluno.DataNascimento = Convert.ToDateTime("15 / 10 / 98");
+            aluno.Endereço = "José Melos dos Reis";
+            aluno.Telefone = Convert.ToInt32(123456789);
+            aluno.Email = "aluno@hotmail.com";
+            aluno.Nascionalidade = "brasilieiro";
+            aluno.Cidade = "Sertãozinho";
+            aluno.Estado = "São Paulo";
+            aluno.DataMatricula = Convert.ToDateTime("02 / 02 / 2020");
+            aluno.RA = 12345678910;
 
             //Instanciando a Classe Professor
             aluno.Professor = new Professor();
             aluno.Professor.Nome = "Glenison";
-            aluno.Professor.DataNascimento = 15 / 10 / 98;
+            aluno.Professor.DataNascimento = Convert.ToDateTime("12/11/2345");
             aluno.Professor.Endereço = "José Melos dos Reis";
             aluno.Professor.Telefone = 123456789;
             aluno.Professor.Email = "professor@hotmail.com";
             aluno.Professor.Nascionalidade = "brasilieiro";
-            aluno.Professor.Cidade = "Sertãozinho";
+            aluno.Professor.Cidade = "Ribeirão Preto";
             aluno.Professor.Estado = "São Paulo";
-            aluno.Professor.DataAdimissao = 02 / 02 / 2020;
+            aluno.Professor.DataAdimissao = Convert.ToDateTime("02 / 02 / 2020");
             aluno.Professor.CNH = 12345678910;
             aluno.Professor.Salario = 1000.00m;
             aluno.Professor.RegistroProfessor = 987654321;
@@ -133,7 +133,24 @@ namespace Aula02 {
             aluno.Professor.Disciplina.Nome = "Progamação";
             aluno.Professor.Disciplina.CID = 321;
             aluno.Professor.Disciplina.Curso = "ADS";
-            aluno.Professor.Disciplina.DataInclusao = 01 / 01 / 2015;
+            aluno.Professor.Disciplina.DataInclusao = Convert.ToDateTime("01 / 01 / 2015");
+
+            Console.WriteLine("------------------------------------FICHA ALUNO-----------------------------------\n" +
+                              $"\nNome: {aluno.Nome}\nData de Nascimento: {aluno.DataNascimento}\n" +
+                              $"\nEndereço: {aluno.Endereço}\nTelefone: {aluno.Telefone}\n" +
+                              $"\nEmail: {aluno.Email}\nNascionalidade: {aluno.Nascionalidade}\n" +
+                              $"\nCidade: {aluno.Cidade}/{aluno.Estado}\n" +
+                              $"\nData de Matricula{aluno.DataMatricula}\nRA: {aluno.RA}");
+            
+            Console.WriteLine("----------------------------------FICHA PROFESSOR---------------------------------\n" +
+                             $"\nNome: {aluno.Professor.Nome}\nData de Nascimento: {aluno.Professor.DataNascimento}\n" +
+                             $"\nEndereço: {aluno.Endereço}\nTelefone: {aluno.Professor.Telefone}\n" +
+                             $"\nEmail: {aluno.Professor.Email}\nNasciolidade: {aluno.Professor.Nascionalidade}\n" +
+                             $"\nCidade: {aluno.Professor.Cidade}/{aluno.Professor.Estado}\n" +
+                             $"\nCNH: {aluno.Professor.CNH}\nData de Adimissão: {aluno.Professor.DataAdimissao}\n" +
+                             $"\nResgistro do Professor: {aluno.Professor.RegistroProfessor}\nSalario: R${aluno.Professor.Salario}\n" +
+                             $"\nDisciplina: {aluno.Professor.Disciplina.Nome}\nCurso:{aluno.Professor.Disciplina.Curso}\n" +
+                             $"\nCID: {aluno.Professor.Disciplina.CID}\nData de Inclusão: {aluno.Professor.Disciplina.DataInclusao}");
         }
     }
 }

@@ -1,0 +1,16 @@
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Desafios01\Desafios01\bin\Debug\net5.0\Desafios01.exe
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Desafios01\Desafios01\bin\Debug\net5.0\Desafios01.deps.json
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Desafios01\Desafios01\bin\Debug\net5.0\Desafios01.runtimeconfig.json
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Desafios01\Desafios01\bin\Debug\net5.0\Desafios01.runtimeconfig.dev.json
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Desafios01\Desafios01\bin\Debug\net5.0\Desafios01.dll
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Desafios01\Desafios01\bin\Debug\net5.0\ref\Desafios01.dll
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Desafios01\Desafios01\bin\Debug\net5.0\Desafios01.pdb
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Desafios01\Desafios01\obj\Debug\net5.0\Desafios01.csproj.AssemblyReference.cache
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Desafios01\Desafios01\obj\Debug\net5.0\Desafios01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Desafios01\Desafios01\obj\Debug\net5.0\Desafios01.AssemblyInfoInputs.cache
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Desafios01\Desafios01\obj\Debug\net5.0\Desafios01.AssemblyInfo.cs
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Desafios01\Desafios01\obj\Debug\net5.0\Desafios01.csproj.CoreCompileInputs.cache
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Desafios01\Desafios01\obj\Debug\net5.0\Desafios01.dll
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Desafios01\Desafios01\obj\Debug\net5.0\ref\Desafios01.dll
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Desafios01\Desafios01\obj\Debug\net5.0\Desafios01.pdb
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Desafios01\Desafios01\obj\Debug\net5.0\Desafios01.genruntimeconfig.cache
