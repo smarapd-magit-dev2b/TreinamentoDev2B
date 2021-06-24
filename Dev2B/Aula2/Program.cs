@@ -57,15 +57,65 @@ namespace Aula2
         static void exercicio3()
         {
             Data data = new Data();
+            bool validacao = true;
 
             Console.Write("Digite um dia: ");
-            data.Dia = int.Parse(Console.ReadLine());
+            int dia = int.Parse(Console.ReadLine());
 
-            Console.Write("Digite um mês: ");
-            data.Mes = int.Parse(Console.ReadLine());
+            do
+            {
+                if (dia > 0 && dia <= 30)
+                {
+                    data.Dia = dia;
+                    validacao = false;
+                }
+                else
+                {
+                    Console.WriteLine("Dia inválido!");
+                    Console.Write("Insira um dia válido: ");
+                    dia = int.Parse(Console.ReadLine());
+                }
+            } while (validacao);
+
+            validacao = true;
+
+            Console.Write("Digite um mes: ");
+            int mes = int.Parse(Console.ReadLine());
+
+            do
+            {
+                if (mes > 0 && mes <= 12)
+                {
+                    data.Mes = mes;
+                    validacao = false;
+                }
+                else
+                {
+                    Console.WriteLine("Mes inválido!");
+                    Console.Write("Insira um mes válido: ");
+                    mes = int.Parse(Console.ReadLine());
+                }
+            } while (validacao);
+
+            validacao = true;
 
             Console.Write("Digite um ano: ");
-            data.Ano = int.Parse(Console.ReadLine());
+            int ano = int.Parse(Console.ReadLine());
+
+            do
+            {
+                if (ano > 0)
+                {
+                    data.Ano = ano;
+                    validacao = false;
+                }
+                else
+                {
+                    Console.WriteLine("Ano inválido!");
+                    Console.WriteLine("Insira um ano válido: ");
+                    ano = int.Parse(Console.ReadLine());
+                }
+            } while (validacao);
 
             Console.WriteLine();
             Console.WriteLine();

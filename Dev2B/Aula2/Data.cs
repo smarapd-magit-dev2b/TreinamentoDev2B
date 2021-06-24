@@ -17,52 +17,8 @@ namespace Aula2
 
         public Data(int dia, int mes, int ano)
         {
-            bool validador = false;
-
-            do
-            {
-                if (dia >= 1 && dia <= 30)
-                {
-                    validador = true;
-                }
-
-                else
-                {
-                    Console.WriteLine("Dia inválido. Insira um novo dia");
-                    dia = Convert.ToInt32(Console.ReadLine());
-                }
-            } while (!validador);
             Dia = dia;
-
-            validador = false;
-            do
-            {
-                if (mes >= 1 && mes <= 12)
-                {
-                    validador = true;
-                }
-
-                else
-                {
-                    Console.WriteLine("Mês inválido. Insira um novo mês");
-                    mes = Convert.ToInt32(Console.ReadLine());
-                }
-            } while (!validador);
             Mes = mes;
-
-            do
-            {
-                if (ano > 0)
-                {
-                    validador = true;
-                }
-
-                else
-                {
-                    Console.WriteLine("Ano inválido. Insira um novo ano");
-                    ano = Convert.ToInt32(Console.ReadLine());
-                }
-            } while (!validador);
             Ano = ano;
         }
 
