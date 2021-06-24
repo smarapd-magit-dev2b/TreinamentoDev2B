@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Exercicios_3_OOP/1.0.0": {
+        "dependencies": {
+          "Calendario": "1.0.0"
+        },
+        "runtime": {
+          "Exercicios_3_OOP.dll": {}
+        }
+      },
+      "Calendario/1.0.0": {
+        "runtime": {
+          "Calendario.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Exercicios_3_OOP/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Calendario/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

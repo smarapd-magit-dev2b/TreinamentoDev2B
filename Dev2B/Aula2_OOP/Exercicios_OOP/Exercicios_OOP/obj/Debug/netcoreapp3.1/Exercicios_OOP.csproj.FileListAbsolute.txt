@@ -1,0 +1,16 @@
+C:\Users\desenvolvedor\source\repos\Exercicios_OOP\Exercicios_OOP\bin\Debug\netcoreapp3.1\Exercicios_OOP.exe
+C:\Users\desenvolvedor\source\repos\Exercicios_OOP\Exercicios_OOP\bin\Debug\netcoreapp3.1\Exercicios_OOP.deps.json
+C:\Users\desenvolvedor\source\repos\Exercicios_OOP\Exercicios_OOP\bin\Debug\netcoreapp3.1\Exercicios_OOP.runtimeconfig.json
+C:\Users\desenvolvedor\source\repos\Exercicios_OOP\Exercicios_OOP\bin\Debug\netcoreapp3.1\Exercicios_OOP.runtimeconfig.dev.json
+C:\Users\desenvolvedor\source\repos\Exercicios_OOP\Exercicios_OOP\bin\Debug\netcoreapp3.1\Exercicios_OOP.dll
+C:\Users\desenvolvedor\source\repos\Exercicios_OOP\Exercicios_OOP\bin\Debug\netcoreapp3.1\Exercicios_OOP.pdb
+C:\Users\desenvolvedor\source\repos\Exercicios_OOP\Exercicios_OOP\bin\Debug\netcoreapp3.1\Classes.dll
+C:\Users\desenvolvedor\source\repos\Exercicios_OOP\Exercicios_OOP\bin\Debug\netcoreapp3.1\Classes.pdb
+C:\Users\desenvolvedor\source\repos\Exercicios_OOP\Exercicios_OOP\obj\Debug\netcoreapp3.1\Exercicios_OOP.csproj.AssemblyReference.cache
+C:\Users\desenvolvedor\source\repos\Exercicios_OOP\Exercicios_OOP\obj\Debug\netcoreapp3.1\Exercicios_OOP.AssemblyInfoInputs.cache
+C:\Users\desenvolvedor\source\repos\Exercicios_OOP\Exercicios_OOP\obj\Debug\netcoreapp3.1\Exercicios_OOP.AssemblyInfo.cs
+C:\Users\desenvolvedor\source\repos\Exercicios_OOP\Exercicios_OOP\obj\Debug\netcoreapp3.1\Exercicios_OOP.csproj.CoreCompileInputs.cache
+C:\Users\desenvolvedor\source\repos\Exercicios_OOP\Exercicios_OOP\obj\Debug\netcoreapp3.1\Exercicios_OOP.csproj.CopyComplete
+C:\Users\desenvolvedor\source\repos\Exercicios_OOP\Exercicios_OOP\obj\Debug\netcoreapp3.1\Exercicios_OOP.dll
+C:\Users\desenvolvedor\source\repos\Exercicios_OOP\Exercicios_OOP\obj\Debug\netcoreapp3.1\Exercicios_OOP.pdb
+C:\Users\desenvolvedor\source\repos\Exercicios_OOP\Exercicios_OOP\obj\Debug\netcoreapp3.1\Exercicios_OOP.genruntimeconfig.cache
