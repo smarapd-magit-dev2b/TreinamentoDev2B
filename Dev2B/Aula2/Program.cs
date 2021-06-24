@@ -9,7 +9,7 @@ namespace Aula2
         {
             //Ex1();
             //Ex2();
-            Ex3();
+            //Ex3();
         }
         private static void Ex1()
         {
@@ -36,6 +36,44 @@ namespace Aula2
             Console.WriteLine($"Data atual: {data.toString()}");
             data.ProximoDia();
             Console.WriteLine($"Data atual: {data.toString()}");
+        }
+        private static void Ex4()
+        {
+            Aluno aluno = new Aluno() {
+                Nome = "Lucas",
+                Endereco = "Rua Domingos Rizzo",
+                Telefone = 00928922,
+                Email = "arroba@arroba",
+                Nacionalidade = "Cubano",
+                Cidade = "Jardim Nópolis",
+                Estado = "Serjipe",
+                Ra = 3812938,
+            };
+            aluno.DataMatricula.Dia = 13;
+            aluno.DataMatricula.Mes = 10;
+            aluno.DataMatricula.Ano = 1333;
+            aluno.Professor.Nome = "Glenilsson";
+            aluno.Professor.DataNascimento.Dia = 21;
+            aluno.Professor.DataNascimento.Mes = 10;
+            aluno.Professor.DataNascimento.Ano = 2048;
+            aluno.Professor.Endereco = "Rua Onório Reberbes";
+            aluno.Professor.Telefone = 3902193;
+            aluno.Professor.Email = "luras@arroba";
+            aluno.Professor.Nacionalidade = "Romano";
+            aluno.Professor.Cidade = "Sutão";
+            aluno.Professor.Estado = "Santa Catarina";
+            aluno.Professor.Cnh = 3213;
+            aluno.Professor.DataAdmissao.Dia = 12;
+            aluno.Professor.DataAdmissao.Mes = 12;
+            aluno.Professor.DataAdmissao.Ano = 3021;
+            aluno.Professor.Registro = 33213423;
+            aluno.Professor.Salario = 20000;
+            aluno.Professor.Disciplina.Nome = "Redes";
+            aluno.Professor.Disciplina.Cid = 321312;
+            aluno.Professor.Disciplina.Curso = "Ciência";
+            aluno.Professor.Disciplina.DataInclusao.Dia = 5;
+            aluno.Professor.Disciplina.DataInclusao.Mes = 5;
+            aluno.Professor.Disciplina.DataInclusao.Ano = 100005;
         }
     }
 }

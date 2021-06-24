@@ -36,6 +36,8 @@ namespace Domain
             }
         }
 
+        public Data() { }
+
         // Etapa 3
 
         private bool ValidateMes(int mes)
