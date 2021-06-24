@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain;
+using System;
 
 namespace Aula1
 {
@@ -23,8 +24,10 @@ namespace Aula1
             //Ex8for();
             //Ex8while();
             //Ex8do();
-            Ex9();
+            //Ex9();
             //Ex10();
+
+            //Desafio1();
         }
 
         static void Ex1()
@@ -385,6 +388,32 @@ namespace Aula1
             Console.WriteLine("Há " + pessoa50 + " pessoas com idade superior a 50 anos");
             Console.WriteLine("A média das alturas das pessoas entre 10 e 20 anos é " + media10a20);
             Console.WriteLine("A porcentagem das pessoas com peso inferior a 40 kilos é " + (porcentagem40 * 100) + "%");
+        }
+
+        //Desafios
+        static void Desafio1()
+        {
+            bool run = true;
+            do
+            {
+                int? valor = null;
+                try
+                {
+                    valor = int.Parse(Console.ReadLine());
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Digite um número inteiro");
+                }
+                if (valor == 0)
+                {
+                    run = false;
+                }
+                else if (valor <= 0)
+                {
+                    Console.WriteLine(valor + "é um valor inválido");
+                }
+            } while (run);
         }
     }
 }

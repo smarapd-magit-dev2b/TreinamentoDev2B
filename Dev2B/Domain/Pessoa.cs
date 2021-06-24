@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Aula1
+﻿namespace Domain
 {
-    class Pessoa
+    public class Pessoa
     {
         public int idade { get; set; }
         public decimal altura { get; set; }
