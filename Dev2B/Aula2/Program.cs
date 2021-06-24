@@ -10,6 +10,7 @@ namespace Aula2
             //Ex1();
             //Ex2();
             //Ex3();
+            Ex4();
         }
         private static void Ex1()
         {
@@ -74,6 +75,8 @@ namespace Aula2
             aluno.Professor.Disciplina.DataInclusao.Dia = 5;
             aluno.Professor.Disciplina.DataInclusao.Mes = 5;
             aluno.Professor.Disciplina.DataInclusao.Ano = 100005;
+
+            aluno.ImprimirDados();
         }
     }
 }

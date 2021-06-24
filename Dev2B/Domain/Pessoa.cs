@@ -12,5 +12,10 @@
             this.altura = altura;
             this.peso = peso;
         }
+
+        public void ImprimirDados()
+        {
+
+        }
     }
 }

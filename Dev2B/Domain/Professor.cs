@@ -25,5 +25,22 @@ namespace Domain
             Disciplina = new Disciplina();
             DataAdmissao = new Data();
         }
+        public void ImprimirDados()
+        {
+            Console.WriteLine("Professor");
+            Console.WriteLine($"Nome: {Nome}");
+            Console.WriteLine($"Data de nascimento: {DataNascimento.toString()}");
+            Console.WriteLine($"Endereço: {Endereco}");
+            Console.WriteLine($"Telefone: {Telefone}");
+            Console.WriteLine($"Email: {Email}");
+            Console.WriteLine($"Nacionalidade: {Nacionalidade}");
+            Console.WriteLine($"Cidade: {Cidade}");
+            Console.WriteLine($"Estado: {Estado}");
+            Console.WriteLine($"CNH: {Cnh}");
+            Console.WriteLine($"Data de admissão: {DataAdmissao.toString()}");
+            Console.WriteLine($"Registro: {Registro}");
+            Console.WriteLine($"Salario: R${Salario}\n");
+            Disciplina.ImprimirDados();
+        }
     }
 }
