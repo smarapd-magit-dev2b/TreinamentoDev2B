@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace Aula1
 {
@@ -14,7 +15,8 @@ namespace Aula1
             //exercicio6();
             //exercicio7();
             //exercicio8();
-            exercicio9();
+            //exercicio9();
+            exercicio10();
             Console.ReadKey();
         }
 
@@ -367,6 +369,48 @@ namespace Aula1
                     k = 11;
                 }
             } while (k <= 10);
+        }
+
+        static void exercicio10()
+        {
+            decimal somaAltura = 0m, mediaAltura = 0m, peso = 0m, altura = 0m;
+            int cont50 = 0, contMenor40 = 0, idade = 0, contEntre10e20 = 0;
+
+            for (int i = 0; i < 5; i++)
+            {
+                Console.Write("Digite a idade da " + (i + 1) + " pessoa: ");
+                idade = int.Parse(Console.ReadLine());
+
+                Console.Write($"Digite o peso da {i + 1} pessoa: ");
+                peso = decimal.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+                Console.Write($"Digite a altura da {i + 1} pessoa: ");
+                altura = decimal.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+                Console.WriteLine();
+
+                if (idade > 50)
+                {
+                    cont50++;
+                }
+
+                if (idade >= 10 && idade <= 20)
+                {
+                    somaAltura += altura;
+                    contEntre10e20++;
+                }
+
+                if (peso < 40)
+                {
+                    contMenor40++;
+                }
+            }
+
+            mediaAltura = (somaAltura / contEntre10e20 == 0) ? 0 : somaAltura / contEntre10e20;
+
+            Console.WriteLine($"O número de pessoa com mais de 50 anos é {cont50}");
+            Console.WriteLine($"A média das alturas das pessoas com idade entre 10 e 20 anos é de: {mediaAltura}");
+            Console.WriteLine($"A porcentagem de pessoas com peso inferior a 40Kg é de: {100 * contMenor40 / 5}");
         }
     }
 }
