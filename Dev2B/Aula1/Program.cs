@@ -27,7 +27,7 @@ namespace Aula1
             //Exercicio9While();
             //Exercicio9DoWhile();
             //Exercicio10();
-            Exercicio10_2();
+            //Exercicio10_2();
         }
 
         static void Exercicio1()
@@ -158,8 +158,6 @@ namespace Aula1
         static void Exercicio5For()
         {
             decimal somaFor = 0;
-
-
 
             for (int i = 1; i <= 100; i++)
             {
