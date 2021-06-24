@@ -13,7 +13,8 @@ namespace Aula1
             //exercicio5();
             //exercicio6();
             //exercicio7();
-            exercicio8();
+            //exercicio8();
+            exercicio9();
             Console.ReadKey();
         }
 
@@ -317,6 +318,55 @@ namespace Aula1
 
                 k++;
             } while (k <= 30);
+        }
+
+        static void exercicio9()
+        {
+            int num, j = 0, k = 0;
+
+            Console.Write("Digite um valor de 0 a 100 para saber sua tabuada: ");
+            num = int.Parse(Console.ReadLine());
+
+            //for (int i = 0; i <= 10; i++)
+            //{
+            //    if (num >= 0 && num <= 100)
+            //    {
+            //        Console.WriteLine(num + " x " + i + " = " + (num * i));
+            //    }
+            //    else
+            //    {
+            //        i = 11;
+            //        Console.WriteLine("valor inválido");
+            //    }
+            //}
+
+            //while (j <= 10)
+            //{
+            //    if (num >= 0 && num <= 100)
+            //    {
+            //        Console.WriteLine(num + " x " + j + " = " + (num * j));
+            //        j++;
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("valor inválido");
+            //        j = 11;
+            //    }
+            //};
+
+            do
+            {
+                if (num >= 0 && num <= 100)
+                {
+                    Console.WriteLine(num + " x " + k + " = " + (num * k));
+                    k++;
+                }
+                else
+                {
+                    Console.WriteLine("valor inválido");
+                    k = 11;
+                }
+            } while (k <= 10);
         }
     }
 }
