@@ -12,7 +12,8 @@ namespace Aula1
             //exercicio4();
             //exercicio5();
             //exercicio6();
-            exercicio7();
+            //exercicio7();
+            exercicio8();
             Console.ReadKey();
         }
 
@@ -283,6 +284,39 @@ namespace Aula1
             } while (k >= 1 && k <= 100);
 
             Console.WriteLine("A soma dos valores que não são multiplos de 3 é (entre 1 e 100): " + soma);
+        }
+
+        static void exercicio8()
+        {
+            int j = 0, k = 0;
+
+            //for (int i = 0; i <= 30; i++)
+            //{
+            //    if (i % 3 == 0 || i % 4 == 0)
+            //    {
+            //        Console.WriteLine(i + " é multiplos de 3 ou 4!");
+            //    }
+            //}
+
+            //while (j <= 30)
+            //{
+            //    if (j % 3 == 0 || j % 4 == 0)
+            //    {
+            //        Console.WriteLine(j + " é multiplos de 3 ou 4!");
+            //    }
+
+            //    j++;
+            //};
+
+            do
+            {
+                if (k % 3 == 0 || k % 4 == 0)
+                {
+                    Console.WriteLine(k + " é multiplos de 3 ou 4!");
+                }
+
+                k++;
+            } while (k <= 30);
         }
     }
 }
