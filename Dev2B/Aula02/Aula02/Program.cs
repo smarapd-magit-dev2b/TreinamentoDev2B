@@ -114,8 +114,7 @@ namespace Aula02 {
             aluno.DataMatricula = Convert.ToDateTime("02 / 02 / 2020");
             aluno.RA = 12345678910;
 
-            //Instanciando a Classe Professor
-            aluno.Professor = new Professor();
+            
             aluno.Professor.Nome = "Glenison";
             aluno.Professor.DataNascimento = Convert.ToDateTime("12/11/2345");
             aluno.Professor.Endereço = "José Melos dos Reis";
@@ -136,21 +135,21 @@ namespace Aula02 {
             aluno.Professor.Disciplina.DataInclusao = Convert.ToDateTime("01 / 01 / 2015");
 
             Console.WriteLine("------------------------------------FICHA ALUNO-----------------------------------\n" +
-                              $"\nNome: {aluno.Nome}\nData de Nascimento: {aluno.DataNascimento}\n" +
+                              $"\nNome: {aluno.Nome}\nData de Nascimento: {aluno.DataNascimento.ToShortDateString()}\n" +
                               $"\nEndereço: {aluno.Endereço}\nTelefone: {aluno.Telefone}\n" +
                               $"\nEmail: {aluno.Email}\nNascionalidade: {aluno.Nascionalidade}\n" +
                               $"\nCidade: {aluno.Cidade}/{aluno.Estado}\n" +
-                              $"\nData de Matricula{aluno.DataMatricula}\nRA: {aluno.RA}");
+                              $"\nData de Matricula: {aluno.DataMatricula.ToShortDateString()}\nRA: {aluno.RA}");
             
             Console.WriteLine("----------------------------------FICHA PROFESSOR---------------------------------\n" +
-                             $"\nNome: {aluno.Professor.Nome}\nData de Nascimento: {aluno.Professor.DataNascimento}\n" +
+                             $"\nNome: {aluno.Professor.Nome}\nData de Nascimento: {aluno.Professor.DataNascimento.ToShortDateString()}\n" +
                              $"\nEndereço: {aluno.Endereço}\nTelefone: {aluno.Professor.Telefone}\n" +
                              $"\nEmail: {aluno.Professor.Email}\nNasciolidade: {aluno.Professor.Nascionalidade}\n" +
                              $"\nCidade: {aluno.Professor.Cidade}/{aluno.Professor.Estado}\n" +
-                             $"\nCNH: {aluno.Professor.CNH}\nData de Adimissão: {aluno.Professor.DataAdimissao}\n" +
+                             $"\nCNH: {aluno.Professor.CNH}\nData de Adimissão: {aluno.Professor.DataAdimissao.ToShortDateString()}\n" +
                              $"\nResgistro do Professor: {aluno.Professor.RegistroProfessor}\nSalario: R${aluno.Professor.Salario}\n" +
                              $"\nDisciplina: {aluno.Professor.Disciplina.Nome}\nCurso:{aluno.Professor.Disciplina.Curso}\n" +
-                             $"\nCID: {aluno.Professor.Disciplina.CID}\nData de Inclusão: {aluno.Professor.Disciplina.DataInclusao}");
+                             $"\nCID: {aluno.Professor.Disciplina.CID}\nData de Inclusão: {aluno.Professor.Disciplina.DataInclusao.ToShortDateString()}");
         }
     }
 }

@@ -15,7 +15,7 @@ namespace Aula02.Exercicio04 {
         public Professor Professor { get; set; }
 
         public Aluno() {
-            
+            Professor = new Professor();
         }
     }
 }
