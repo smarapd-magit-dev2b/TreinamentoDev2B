@@ -1,0 +1,13 @@
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Application.exe
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Application.deps.json
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Application.runtimeconfig.json
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Application.runtimeconfig.dev.json
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Application.dll
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Application.pdb
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.csproj.AssemblyReference.cache
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfoInputs.cache
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfo.cs
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.csproj.CoreCompileInputs.cache
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.dll
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.pdb
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.genruntimeconfig.cache
