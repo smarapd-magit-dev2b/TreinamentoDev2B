@@ -1,0 +1,16 @@
+C:\Users\FACCARDOSO\Documents\Projetos2021\Aula2Ex\Aula2Ex\bin\Debug\netcoreapp3.1\Aula2Ex.exe
+C:\Users\FACCARDOSO\Documents\Projetos2021\Aula2Ex\Aula2Ex\bin\Debug\netcoreapp3.1\Aula2Ex.deps.json
+C:\Users\FACCARDOSO\Documents\Projetos2021\Aula2Ex\Aula2Ex\bin\Debug\netcoreapp3.1\Aula2Ex.runtimeconfig.json
+C:\Users\FACCARDOSO\Documents\Projetos2021\Aula2Ex\Aula2Ex\bin\Debug\netcoreapp3.1\Aula2Ex.runtimeconfig.dev.json
+C:\Users\FACCARDOSO\Documents\Projetos2021\Aula2Ex\Aula2Ex\bin\Debug\netcoreapp3.1\Aula2Ex.dll
+C:\Users\FACCARDOSO\Documents\Projetos2021\Aula2Ex\Aula2Ex\bin\Debug\netcoreapp3.1\Aula2Ex.pdb
+C:\Users\FACCARDOSO\Documents\Projetos2021\Aula2Ex\Aula2Ex\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\FACCARDOSO\Documents\Projetos2021\Aula2Ex\Aula2Ex\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\FACCARDOSO\Documents\Projetos2021\Aula2Ex\Aula2Ex\obj\Debug\netcoreapp3.1\Aula2Ex.csproj.AssemblyReference.cache
+C:\Users\FACCARDOSO\Documents\Projetos2021\Aula2Ex\Aula2Ex\obj\Debug\netcoreapp3.1\Aula2Ex.AssemblyInfoInputs.cache
+C:\Users\FACCARDOSO\Documents\Projetos2021\Aula2Ex\Aula2Ex\obj\Debug\netcoreapp3.1\Aula2Ex.AssemblyInfo.cs
+C:\Users\FACCARDOSO\Documents\Projetos2021\Aula2Ex\Aula2Ex\obj\Debug\netcoreapp3.1\Aula2Ex.csproj.CoreCompileInputs.cache
+C:\Users\FACCARDOSO\Documents\Projetos2021\Aula2Ex\Aula2Ex\obj\Debug\netcoreapp3.1\Aula2Ex.csproj.CopyComplete
+C:\Users\FACCARDOSO\Documents\Projetos2021\Aula2Ex\Aula2Ex\obj\Debug\netcoreapp3.1\Aula2Ex.dll
+C:\Users\FACCARDOSO\Documents\Projetos2021\Aula2Ex\Aula2Ex\obj\Debug\netcoreapp3.1\Aula2Ex.pdb
+C:\Users\FACCARDOSO\Documents\Projetos2021\Aula2Ex\Aula2Ex\obj\Debug\netcoreapp3.1\Aula2Ex.genruntimeconfig.cache
