@@ -10,7 +10,8 @@ namespace Aula1
             //exercicio2();
             //exercicio3();
             //exercicio4();
-            exercicio5();
+            //exercicio5();
+            exercicio6();
             Console.ReadKey();
         }
 
@@ -211,6 +212,39 @@ namespace Aula1
             } while (j < 101);
 
             Console.WriteLine("O valor da soma de 1 a 100 é: " + soma);
+        }
+
+        static void exercicio6()
+        {
+            int j = 1, k = 1;
+
+            //for (int i = 1; i >= 1 && i <= 100; i++)
+            //{
+            //    if (i % 3 == 0)
+            //    {
+            //        Console.WriteLine(i + " é multiplo de três!");
+            //    }
+            //}
+
+            //while (j >= 1 && j <= 100)
+            //{
+            //    if (j % 3 == 0)
+            //    {
+            //        Console.WriteLine(j + " é multiplo de três!");
+            //    }
+
+            //    j++;
+            //}
+
+            do
+            {
+                if (k % 3 == 0)
+                {
+                    Console.WriteLine(k + " é multiplo de três!");
+                }
+
+                k++;
+            } while (k >= 1 && k <= 100);
         }
     }
 }
