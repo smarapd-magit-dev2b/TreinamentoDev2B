@@ -9,6 +9,10 @@ namespace Aula1 {
             //Exercicio03();
             //Exercicio04IF();
             //Exercicio05();
+            //Exercicio06();
+            //Exercicio07();
+            //Exercicio08();
+            //Exercicio09();
             //Exercicio10();
         }
         static void Exercicio01() {
@@ -173,6 +177,30 @@ namespace Aula1 {
                 i++;
             } while (i <= 100);
             Console.WriteLine("Usando o DO-WHILE: " + aux);
+        }
+        static void Exercicio06() {
+            
+            for(int i = 1; i <= 100; i++) {
+                if(i % 3 == 0) {
+                    Console.Write(i + " ");
+                }
+            }
+        }
+        static void Exercicio07() {
+            int aux = 0;
+            for(int i = 1; i <=100; i++) {
+                if(i % 3 != 0) {
+                    aux += i;
+                }
+            }
+            Console.Write($"A soma total: {aux}");
+        }
+        static void Exercicio08() {
+            for (int i = 0; i <= 30; i++) {
+                if (i % 3 == 0 || i % 4 == 0) {
+                    Console.Write(i + " ");
+                }
+            }
         }
         static void Exercicio09() {
             bool rodando = true;
