@@ -98,6 +98,37 @@ namespace Aula2
                 RA = "827333",
                 Professor = professor
             };
+
+            Console.WriteLine($"************* ALUNO *************");
+            Console.WriteLine($"Nome: {aluno.Nome}");
+            Console.WriteLine($"Nacionalidade: {aluno.Nacionalidade}");
+            Console.WriteLine($"Email: {aluno.Email}");
+            Console.WriteLine($"Telefone: {aluno.Telefone}");
+            Console.WriteLine($"Data da Matricula: {aluno.DataMatricula.ToShortDateString()}");
+            Console.WriteLine($"Data de nascimento: {aluno.DataNascimento.ToShortDateString()}");
+            Console.WriteLine($"Registro de Aluno (RA): {aluno.RA}");
+            Console.WriteLine($"Rua: {aluno.Endereco.Rua}");
+            Console.WriteLine($"Cidade: {aluno.Endereco.Cidade}");
+            Console.WriteLine($"Estado: {aluno.Endereco.Estado}");
+            Console.WriteLine("\n");
+            Console.WriteLine($"************* Professor *************");
+            Console.WriteLine($"Nome: {professor.Nome}");
+            Console.WriteLine($"Nacionalidade: {professor.Nacionalidade}");
+            Console.WriteLine($"Email: {professor.Email}");
+            Console.WriteLine($"Telefone: {professor.Telefone}");
+            Console.WriteLine($"Resgitro de Professor: {professor.RegistroProfessor}");
+            Console.WriteLine($"Data de adimiçao: {professor.DataAdimicao.ToShortDateString()}");
+            Console.WriteLine($"Data de nascimento: {professor.DataNascimento.ToShortDateString()}");
+            Console.WriteLine($"Salario: {professor.Salario}");
+            Console.WriteLine($"CNH: {professor.CNH}");
+            Console.WriteLine($"Rua: {professor.Endereco.Rua}");
+            Console.WriteLine($"Cidade: {professor.Endereco.Cidade}");
+            Console.WriteLine($"Estado: {professor.Endereco.Estado}");
+            Console.WriteLine($"Nome da disciplina: {professor.Disciplina.Nome}");
+            Console.WriteLine($"CID Disciplica: {professor.Disciplina.CID}");
+            Console.WriteLine($"Curso: {professor.Disciplina.Curso}");
+            Console.WriteLine($"Data Inclusao: {professor.Disciplina.DataInclusao.ToShortDateString()}");
+            
         }
 
     }
