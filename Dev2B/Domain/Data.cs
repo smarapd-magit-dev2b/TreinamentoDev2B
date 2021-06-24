@@ -62,7 +62,7 @@ namespace Domain
                 return false;
         }
 
-        public string toString()
+        public string ToUserString()
         {
             if (Dia != null && Mes != null && Ano != null)
                 return Convert.ToString(Dia) + "/" + Convert.ToString(Mes) + "/" + Convert.ToString(Ano);

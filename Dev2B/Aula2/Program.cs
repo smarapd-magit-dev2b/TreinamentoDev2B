@@ -7,10 +7,23 @@ namespace Aula2
     {
         static void Main(string[] args)
         {
+            bool run = true;
+            do
+            {
+                Console.Write("Escolha uma opção:");
+                switch (int.Parse(Console.ReadLine()))
+                {
+                    case 0:
+                        run = false;
+                        break;
+                    default:
+                        break;
+                }
+            } while (run);
             //Ex1();
             //Ex2();
             //Ex3();
-            Ex4();
+            //Ex4();
         }
         private static void Ex1()
         {
@@ -21,22 +34,22 @@ namespace Aula2
         {
             Empregado manuel = new Empregado("Manoel", "Robson", 15200);
             Console.WriteLine($"O salário anual de {manuel.Nome} é R${manuel.CalcularSalarioAtual()}");
-            manuel.reajustarSalario(0.15m);
+            manuel.ReajustarSalario(0.15m);
             Console.WriteLine($"Com um aumento de 15%, seu salário mensal será {manuel.Salario}");
         }
         private static void Ex3()
         {
             //Retornar Data invalida
             Data data = new Domain.Data(31, 2, 2014);
-            Console.WriteLine($"Data atual: {data.toString()}");
+            Console.WriteLine($"Data atual: {data.ToUserString()}");
 
             //Retornar data válida e pular de ano
             data.Dia = 31;
             data.Mes = 12;
             data.Ano = 2021;
-            Console.WriteLine($"Data atual: {data.toString()}");
+            Console.WriteLine($"Data atual: {data.ToUserString()}");
             data.ProximoDia();
-            Console.WriteLine($"Data atual: {data.toString()}");
+            Console.WriteLine($"Data atual: {data.ToUserString()}");
         }
         private static void Ex4()
         {

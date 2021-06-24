@@ -330,7 +330,7 @@ namespace Aula1
                 numero = int.Parse(Console.ReadLine());
                 if (numero >= 0 && numero <= 100)
                 {
-                    tabuada(numero);
+                    Tabuada(numero);
                     run = false;
                 }
                 else
@@ -340,7 +340,7 @@ namespace Aula1
             } while (run);
         }
 
-        static void tabuada(int numero)
+        static void Tabuada(int numero)
         {
             for (int i = 0; i <= 10 ; i++)
             {
@@ -355,25 +355,25 @@ namespace Aula1
 
             for (int i = 1; i <= 5; i++)
             {
-                Pessoa pessoa = new Pessoa();
+                PessoaFisica pessoa = new();
                 Console.Write("Digite a idade da " + i + "º pessoa: ");
-                pessoa.idade = int.Parse(Console.ReadLine());
+                pessoa.Idade = int.Parse(Console.ReadLine());
                 Console.Write("Digite a altura da " + i + "º pessoa: ");
-                pessoa.altura = decimal.Parse(Console.ReadLine());
+                pessoa.Altura = decimal.Parse(Console.ReadLine());
                 Console.Write("Digite o peso da " + i + "º pessoa: ");
-                pessoa.peso = decimal.Parse(Console.ReadLine());
+                pessoa.Peso = decimal.Parse(Console.ReadLine());
 
                 //Regras de negócio
-                if (pessoa.idade > 50)
+                if (pessoa.Idade > 50)
                 {
                     pessoa50++;
                 }
-                if (pessoa.idade >= 10 && pessoa.idade <= 20)
+                if (pessoa.Idade >= 10 && pessoa.Idade <= 20)
                 {
                     dezA20++;
-                    alturas10a20 += pessoa.altura;
+                    alturas10a20 += pessoa.Altura;
                 }
-                if (pessoa.peso < 40)
+                if (pessoa.Peso < 40)
                 {
                     pesos40++;
                 }

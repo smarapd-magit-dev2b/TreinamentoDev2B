@@ -20,7 +20,7 @@ namespace Domain
             Console.WriteLine($"Nome: {Nome}");
             Console.WriteLine($"CID: {Cid}");
             Console.WriteLine($"Curso: {Curso}");
-            Console.WriteLine($"Data de inclusão: {DataInclusao.toString()}");
+            Console.WriteLine($"Data de inclusão: {DataInclusao.ToUserString()}");
         }
     }
 }
