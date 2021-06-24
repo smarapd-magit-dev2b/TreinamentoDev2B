@@ -179,28 +179,104 @@ namespace Aula1 {
             Console.WriteLine("Usando o DO-WHILE: " + aux);
         }
         static void Exercicio06() {
-            
-            for(int i = 1; i <= 100; i++) {
-                if(i % 3 == 0) {
+
+            int i;
+            Console.WriteLine("Usando o FOR:");
+
+            for (i = 1; i <= 100; i++) {
+                if (i % 3 == 0) {
                     Console.Write(i + " ");
                 }
             }
+            //reutilizando a variavel
+            i = 1;
+
+            Console.WriteLine("\nUsando o WHILE:");
+            
+            while (i <= 100) {
+                if (i % 3 == 0) {
+                    Console.Write(i + " ");
+                }
+                i++;
+            }
+
+            //reutilizando a variavel
+            i = 1;
+
+            Console.WriteLine("\nUsando o DO - WHILE:");
+            do {
+                if (i % 3 == 0) {
+                    Console.Write(i + " ");
+                }
+                i++;
+            } while (i <= 100);
         }
         static void Exercicio07() {
-            int aux = 0;
-            for(int i = 1; i <=100; i++) {
-                if(i % 3 != 0) {
+            int i = 1, aux = 0;
+            Console.WriteLine("Usando o FOR:");
+            for (i = 1; i <= 100; i++) {
+                if (i % 3 != 0) {
                     aux += i;
                 }
             }
-            Console.Write($"A soma total: {aux}");
+            Console.WriteLine($"A soma total: {aux}");
+
+            //reutilizando as variaveis
+            i = 1;
+            aux = 0;
+
+            Console.WriteLine("Usando o While:");
+            while(i <= 100) {
+                if (i % 3 != 0) {
+                    aux += i;
+                }
+                i++;
+            }
+            Console.WriteLine($"A soma total: {aux}");
+
+            //reutilizando as variaveis
+            i = 1;
+            aux = 0;
+
+            Console.WriteLine("Usando o DO-WHILE:");
+            do {
+                if (i % 3 != 0) {
+                    aux += i;
+                }
+                i++;
+            } while (i <= 100);
+            Console.WriteLine($"A soma total: {aux}");
         }
         static void Exercicio08() {
-            for (int i = 0; i <= 30; i++) {
+            int i;
+            Console.WriteLine("Usando o FOR:");
+            for (i = 0; i <= 30; i++) {
                 if (i % 3 == 0 || i % 4 == 0) {
                     Console.Write(i + " ");
                 }
             }
+
+            //reutilizando as variaveis
+            i = 0;
+
+            Console.WriteLine("\nUsando o WHILE: ");
+            while (i <= 30) {
+                if (i % 3 == 0 || i % 4 == 0) {
+                    Console.Write(i + " ");
+                }
+                i++;
+            }
+            //reutilizando as variaveis
+            i = 0;
+
+            Console.WriteLine("\nUsando o DO-WHILE: ");
+            do {
+                if (i % 3 == 0 || i % 4 == 0) {
+                    Console.Write(i + " ");
+                }
+                i++;
+            } while (i <= 30);
+
         }
         static void Exercicio09() {
             bool rodando = true;
@@ -251,15 +327,15 @@ namespace Aula1 {
             Pessoa Pessoa5 = new Pessoa();
             Pessoa Variavel = null;
 
-            int i = 1,contadorPeso=0, contadorIdade = 0, mais50anos = 0;
+            int i = 1, contadorPeso = 0, contadorIdade = 0, mais50anos = 0;
             decimal auxVariavel = 0;
-     
+
             while (i <= 5) {
 
                 if (i == 1) {
-                    Variavel = Pessoa1;                
+                    Variavel = Pessoa1;
                 }
-                else if(i == 2){
+                else if (i == 2) {
                     Variavel = Pessoa2;
                 }
                 else if (i == 3) {
@@ -271,10 +347,10 @@ namespace Aula1 {
                 else if (i == 5) {
                     Variavel = Pessoa5;
                 }
-                
+
                 Console.Write($"Idade {i}° Pessoa: ");
                 Variavel.idade = int.Parse(Console.ReadLine());
-                
+
                 //Realizando as operações lógicas
                 if (Variavel.idade > 50) {
                     mais50anos++;

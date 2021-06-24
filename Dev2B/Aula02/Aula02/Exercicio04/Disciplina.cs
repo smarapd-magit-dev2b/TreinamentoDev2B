@@ -1,10 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Aula02.Exercicio04 {
-    class Disciplina {
+    public class Disciplina {
+        public String Nome { get; set; }
+        public int CID { get; set; }
+        public string Curso { get; set; }
+        public DateTime DataInclusao{get; set;}
     }
 }

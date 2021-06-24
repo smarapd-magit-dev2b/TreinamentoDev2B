@@ -12,6 +12,7 @@ namespace Aula02 {
             //Exercicio01();
             //Exercicio02();
             //Exercicio03();
+            Exercicio04();
         }
         static void Exercicio01() {
             int codigo, quantidadeComprada;
@@ -94,12 +95,45 @@ namespace Aula02 {
                     Console.WriteLine("Dia Invalido...");
             }
             Data data = new Data(dia, mes, ano);
-            
+
             Console.WriteLine(data);
             data.ProximoDia();
         }
         static void Exercicio04() {
+            //Instaciando a classe Aluno
+            Aluno aluno = new Aluno {
+                Nome = "Bruno",
+                DataNascimento = 15 / 10 / 98,
+                Endereço = "José Melos dos Reis",
+                Telefone = 123456789,
+                Email = "aluno@hotmail.com",
+                Nascionalidade = "brasilieiro",
+                Cidade = "Sertãozinho",
+                Estado = "São Paulo",
+                DataMatricula = 02 / 02 / 2020,
+                RA = 12345678910,
+            };
 
+            //Instanciando a Classe Professor
+            aluno.Professor = new Professor();
+            aluno.Professor.Nome = "Glenison";
+            aluno.Professor.DataNascimento = 15 / 10 / 98;
+            aluno.Professor.Endereço = "José Melos dos Reis";
+            aluno.Professor.Telefone = 123456789;
+            aluno.Professor.Email = "professor@hotmail.com";
+            aluno.Professor.Nascionalidade = "brasilieiro";
+            aluno.Professor.Cidade = "Sertãozinho";
+            aluno.Professor.Estado = "São Paulo";
+            aluno.Professor.DataAdimissao = 02 / 02 / 2020;
+            aluno.Professor.CNH = 12345678910;
+            aluno.Professor.Salario = 1000.00m;
+            aluno.Professor.RegistroProfessor = 987654321;
+
+            //Instanciando a Classe Disciplina
+            aluno.Professor.Disciplina.Nome = "Progamação";
+            aluno.Professor.Disciplina.CID = 321;
+            aluno.Professor.Disciplina.Curso = "ADS";
+            aluno.Professor.Disciplina.DataInclusao = 01 / 01 / 2015;
         }
     }
 }
