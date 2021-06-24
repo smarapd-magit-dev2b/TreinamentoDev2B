@@ -12,7 +12,7 @@ namespace Aula02 {
             //Exercicio01();
             //Exercicio02();
             //Exercicio03();
-            //Exercicio04();
+            Exercicio04();
         }
         static void Exercicio01() {
             int codigo, quantidadeComprada;
@@ -100,39 +100,79 @@ namespace Aula02 {
             data.ProximoDia();
         }
         static void Exercicio04() {
-            //Instaciando a classe Aluno
+ 
             Aluno aluno = new Aluno();
 
-            aluno.Nome = "Bruno";
-            aluno.DataNascimento = Convert.ToDateTime("15 / 10 / 98");
-            aluno.Endereço = "José Melos dos Reis";
-            aluno.Telefone = Convert.ToInt32(123456789);
-            aluno.Email = "aluno@hotmail.com";
-            aluno.Nascionalidade = "brasilieiro";
-            aluno.Cidade = "Sertãozinho";
-            aluno.Estado = "São Paulo";
-            aluno.DataMatricula = Convert.ToDateTime("02 / 02 / 2020");
-            aluno.RA = 12345678910;
-
+            Console.Write("Nome do aluno: ");
+            aluno.Nome = Console.ReadLine();
             
-            aluno.Professor.Nome = "Glenison";
-            aluno.Professor.DataNascimento = Convert.ToDateTime("12/11/2345");
-            aluno.Professor.Endereço = "José Melos dos Reis";
-            aluno.Professor.Telefone = 123456789;
-            aluno.Professor.Email = "professor@hotmail.com";
-            aluno.Professor.Nascionalidade = "brasilieiro";
-            aluno.Professor.Cidade = "Ribeirão Preto";
-            aluno.Professor.Estado = "São Paulo";
-            aluno.Professor.DataAdimissao = Convert.ToDateTime("02 / 02 / 2020");
-            aluno.Professor.CNH = 12345678910;
-            aluno.Professor.Salario = 1000.00m;
-            aluno.Professor.RegistroProfessor = 987654321;
+            Console.Write("Data de Nascimento do Aluno: ");
+            aluno.DataNascimento = DateTime.Parse(Console.ReadLine());
+            
+            Console.Write("Endereço: ");
+            aluno.Endereço = Console.ReadLine();
+            
+            Console.Write("Telefone: ");
+            aluno.Telefone = int.Parse(Console.ReadLine());
+            
+            Console.Write("Email: ");
+            aluno.Email = Console.ReadLine();
+            
+            Console.Write("Nacionalidade: ");
+            aluno.Nascionalidade = Console.ReadLine();
+            
+            Console.Write("Cidade: ");
+            aluno.Cidade = Console.ReadLine();
+            
+            Console.Write("Estado: ");
+            aluno.Estado = Console.ReadLine();
+            
+            Console.Write("Data de Matricula: ");
+            aluno.DataMatricula = DateTime.Parse(Console.ReadLine());
+            
+            Console.Write("RA: ");
+            aluno.RA = long.Parse(Console.ReadLine());
 
-            //Instanciando a Classe Disciplina
-            aluno.Professor.Disciplina.Nome = "Progamação";
-            aluno.Professor.Disciplina.CID = 321;
-            aluno.Professor.Disciplina.Curso = "ADS";
-            aluno.Professor.Disciplina.DataInclusao = Convert.ToDateTime("01 / 01 / 2015");
+            Console.Clear();
+
+            //dados professor
+            Console.Write("Nome do Professor: ");
+            aluno.Professor.Nome = Console.ReadLine();
+            
+            Console.Write("Data de Nascimento: ");
+            aluno.Professor.DataNascimento = DateTime.Parse(Console.ReadLine());
+           
+            Console.Write("Rua: ");
+            aluno.Professor.Endereço = Console.ReadLine();
+           
+            Console.Write("Telefone: ");
+            aluno.Professor.Telefone = int.Parse(Console.ReadLine());
+            
+            Console.Write("Email: ");
+            aluno.Professor.Email = Console.ReadLine();
+           
+            Console.Write("Nascionalidade: ");
+            aluno.Professor.Nascionalidade = Console.ReadLine();
+            
+            Console.Write("Cidade: ");
+            aluno.Professor.Cidade = Console.ReadLine();
+           
+            Console.Write("Estado: ");
+            aluno.Professor.Estado = Console.ReadLine();
+           
+            Console.Write("Data de Adimissão: ");
+            aluno.Professor.DataAdimissao = DateTime.Parse(Console.ReadLine());
+           
+            Console.Write("CNH: ");
+            aluno.Professor.CNH = long.Parse(Console.ReadLine());
+           
+            Console.Write("Salário: R$");
+            aluno.Professor.Salario = decimal.Parse(Console.ReadLine());
+           
+            Console.Write("Registro: ");
+            aluno.Professor.RegistroProfessor = int.Parse(Console.ReadLine());
+
+            Console.Clear();
 
             Console.WriteLine("------------------------------------FICHA ALUNO-----------------------------------\n" +
                               $"\nNome: {aluno.Nome}\nData de Nascimento: {aluno.DataNascimento.ToShortDateString()}\n" +
@@ -148,8 +188,8 @@ namespace Aula02 {
                              $"\nCidade: {aluno.Professor.Cidade}/{aluno.Professor.Estado}\n" +
                              $"\nCNH: {aluno.Professor.CNH}\nData de Adimissão: {aluno.Professor.DataAdimissao.ToShortDateString()}\n" +
                              $"\nResgistro do Professor: {aluno.Professor.RegistroProfessor}\nSalario: R${aluno.Professor.Salario}\n" +
-                             $"\nDisciplina: {aluno.Professor.Disciplina.Nome}\nCurso:{aluno.Professor.Disciplina.Curso}\n" +
-                             $"\nCID: {aluno.Professor.Disciplina.CID}\nData de Inclusão: {aluno.Professor.Disciplina.DataInclusao.ToShortDateString()}");
+                             $"\nDisciplina: {aluno.Professor.Disciplina.GetNome()}\nCurso:{aluno.Professor.Disciplina.GetCurso()}\n" +
+                             $"\nCID: {aluno.Professor.Disciplina.GetCID()}\nData de Inclusão: {aluno.Professor.Disciplina.GetDate().ToShortDateString()}");
         }
     }
 }
