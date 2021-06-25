@@ -11,8 +11,8 @@ namespace Application {
             ExercicioAula02 Exe2 = new ExercicioAula02();
             ExercicioAula03 Exe3 = new ExercicioAula03();
 
-            Exe1.Executar();
-            Exe2.Executar();
+            //Exe1.Executar();
+            //Exe2.Executar();
             Exe3.Executar();
         }
     }
