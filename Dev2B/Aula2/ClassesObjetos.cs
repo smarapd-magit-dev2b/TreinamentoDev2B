@@ -55,7 +55,8 @@ namespace Aula2
         }
         private void Ex1()
         {
-            ItemVenda ps5 = new ItemVenda(23, "PS5", 99, 5999.9m);
+            var ps5 = new ItemVenda(
+                23, "PS5", -2, 5999.9m);
             Console.WriteLine($"O valor total do produto será de R${ps5.CalcularValorTotal()}");
         }
         private void Ex2()
@@ -104,7 +105,7 @@ namespace Aula2
             aluno.Professor.Nacionalidade = "Romano";
             aluno.Professor.Endereco.Cidade = "Sutão";
             aluno.Professor.Endereco.Estado = "Santa Catarina";
-            aluno.Professor.Cnh = 3213;
+            aluno.Professor.Cnh = "3213";
             aluno.Professor.DataAdmissao.Dia = 12;
             aluno.Professor.DataAdmissao.Mes = 12;
             aluno.Professor.DataAdmissao.Ano = 3021;
