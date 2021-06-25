@@ -136,7 +136,10 @@ namespace Aula3
         }
         private static void Ex2()
         {
-
+            Console.WriteLine($"15 + 13 = {new Soma(15, 13).Calcular()}");
+            Console.WriteLine($"15 - 13 = {new Subtracao(15, 13).Calcular()}");
+            Console.WriteLine($"15 x 13 = {new Multiplicacao(15, 13).Calcular()}");
+            Console.WriteLine($"15 / 13 = {new Divisao(15, 13).Calcular()}");
         }
     }
 }
