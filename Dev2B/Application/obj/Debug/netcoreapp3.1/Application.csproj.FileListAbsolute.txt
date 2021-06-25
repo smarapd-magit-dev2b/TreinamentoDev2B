@@ -1,0 +1,13 @@
+D:\dev2B\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Application.exe
+D:\dev2B\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Application.deps.json
+D:\dev2B\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Application.runtimeconfig.json
+D:\dev2B\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Application.runtimeconfig.dev.json
+D:\dev2B\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Application.dll
+D:\dev2B\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Application.pdb
+D:\dev2B\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.csprojAssemblyReference.cache
+D:\dev2B\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfoInputs.cache
+D:\dev2B\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfo.cs
+D:\dev2B\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.csproj.CoreCompileInputs.cache
+D:\dev2B\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.dll
+D:\dev2B\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.pdb
+D:\dev2B\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.genruntimeconfig.cache
