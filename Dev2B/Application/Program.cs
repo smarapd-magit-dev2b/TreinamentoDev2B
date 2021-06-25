@@ -13,6 +13,7 @@ namespace Application
             Menu menu = new Menu("Aulas");
             menu.AddItem("Estrutura e Comandos");
             menu.AddItem("Classes e Objetos");
+            menu.AddItem("Herança");
             menu.AddItem("Classes Abstratas e Interfaces");
             bool run = true;
             do
@@ -33,6 +34,10 @@ namespace Application
                             new ClassesObjetos().Execute();
                             break;
                         case 3:
+                            Console.Clear();
+                            new Heranca().Execute();
+                            break;
+                        case 4:
                             Console.Clear();
                             new ClasseAbstrataInterface().Execute();
                             break;
