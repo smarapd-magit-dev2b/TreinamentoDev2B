@@ -7,19 +7,24 @@ namespace Aula2
     {
         public void Execute()
         {
-            Menu menu = new Menu("Exercícios de Classes e Objetos");
+            var menu = new Menu("Exercícios de Classes e Objetos");
+
             menu.AddItem("Exercício 1");
             menu.AddItem("Exercício 2");
             menu.AddItem("Exercício 3");
             menu.AddItem("Exercício 4");
+
             bool run = true;
+
             do
             {
                 menu.Print();
+
                 Console.Write("Digite o número que deseja executar: ");
                 try
                 {
                     var escolha = int.Parse(Console.ReadLine());
+
                     switch (escolha)
                     {
                         case 1:
@@ -53,12 +58,27 @@ namespace Aula2
                 }
             } while (run);
         }
+
         private void Ex1()
         {
-            var ps5 = new ItemVenda(
-                23, "PS5", -2, 5999.9m);
-            Console.WriteLine($"O valor total do produto será de R${ps5.CalcularValorTotal()}");
+            Console.Write("Exercício \n\n" +
+                "Item da Venda\n\n" +
+                "Digite o Número do Item: ");
+            var numero = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite o Nome do Item: ");
+            var descricao = Console.ReadLine();
+
+            Console.Write("Digite a Quantidade de compra desse Item: ");
+            var qtdCompra = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite o Preço do Item: ");
+            var preco = int.Parse(Console.ReadLine());
+
+            var item = new ItemVenda(numero, descricao, qtdCompra, preco);
+            Console.WriteLine($"O valor total do Item {item.Numero} ({item.Descricao}) será de R${item.CalcularValorTotal()}");
         }
+
         private void Ex2()
         {
             Empregado manuel = new Empregado("Manoel", "Robson", 15200);
@@ -66,6 +86,7 @@ namespace Aula2
             manuel.ReajustarSalario(0.15m);
             Console.WriteLine($"Com um aumento de 15%, seu salário mensal será {manuel.Salario}");
         }
+
         private void Ex3()
         {
             //Retornar Data invalida
