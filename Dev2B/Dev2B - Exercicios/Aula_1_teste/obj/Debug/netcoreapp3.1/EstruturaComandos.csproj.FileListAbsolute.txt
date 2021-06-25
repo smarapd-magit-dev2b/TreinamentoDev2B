@@ -1,0 +1,12 @@
+C:\Users\desenvolvedor\source\repos\Aula_1_teste\bin\Debug\netcoreapp3.1\EstruturaComandos.exe
+C:\Users\desenvolvedor\source\repos\Aula_1_teste\bin\Debug\netcoreapp3.1\EstruturaComandos.deps.json
+C:\Users\desenvolvedor\source\repos\Aula_1_teste\bin\Debug\netcoreapp3.1\EstruturaComandos.runtimeconfig.json
+C:\Users\desenvolvedor\source\repos\Aula_1_teste\bin\Debug\netcoreapp3.1\EstruturaComandos.runtimeconfig.dev.json
+C:\Users\desenvolvedor\source\repos\Aula_1_teste\bin\Debug\netcoreapp3.1\EstruturaComandos.dll
+C:\Users\desenvolvedor\source\repos\Aula_1_teste\bin\Debug\netcoreapp3.1\EstruturaComandos.pdb
+C:\Users\desenvolvedor\source\repos\Aula_1_teste\obj\Debug\netcoreapp3.1\EstruturaComandos.AssemblyInfoInputs.cache
+C:\Users\desenvolvedor\source\repos\Aula_1_teste\obj\Debug\netcoreapp3.1\EstruturaComandos.AssemblyInfo.cs
+C:\Users\desenvolvedor\source\repos\Aula_1_teste\obj\Debug\netcoreapp3.1\EstruturaComandos.csproj.CoreCompileInputs.cache
+C:\Users\desenvolvedor\source\repos\Aula_1_teste\obj\Debug\netcoreapp3.1\EstruturaComandos.dll
+C:\Users\desenvolvedor\source\repos\Aula_1_teste\obj\Debug\netcoreapp3.1\EstruturaComandos.pdb
+C:\Users\desenvolvedor\source\repos\Aula_1_teste\obj\Debug\netcoreapp3.1\EstruturaComandos.genruntimeconfig.cache

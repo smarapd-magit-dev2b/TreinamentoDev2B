@@ -1,0 +1,13 @@
+C:\Users\desenvolvedor\source\repos\Aula_1_teste\bin\Debug\netcoreapp3.1\Aula_1_teste.exe
+C:\Users\desenvolvedor\source\repos\Aula_1_teste\bin\Debug\netcoreapp3.1\Aula_1_teste.deps.json
+C:\Users\desenvolvedor\source\repos\Aula_1_teste\bin\Debug\netcoreapp3.1\Aula_1_teste.runtimeconfig.json
+C:\Users\desenvolvedor\source\repos\Aula_1_teste\bin\Debug\netcoreapp3.1\Aula_1_teste.runtimeconfig.dev.json
+C:\Users\desenvolvedor\source\repos\Aula_1_teste\bin\Debug\netcoreapp3.1\Aula_1_teste.dll
+C:\Users\desenvolvedor\source\repos\Aula_1_teste\bin\Debug\netcoreapp3.1\Aula_1_teste.pdb
+C:\Users\desenvolvedor\source\repos\Aula_1_teste\obj\Debug\netcoreapp3.1\Aula_1_teste.csproj.AssemblyReference.cache
+C:\Users\desenvolvedor\source\repos\Aula_1_teste\obj\Debug\netcoreapp3.1\Aula_1_teste.AssemblyInfoInputs.cache
+C:\Users\desenvolvedor\source\repos\Aula_1_teste\obj\Debug\netcoreapp3.1\Aula_1_teste.AssemblyInfo.cs
+C:\Users\desenvolvedor\source\repos\Aula_1_teste\obj\Debug\netcoreapp3.1\Aula_1_teste.csproj.CoreCompileInputs.cache
+C:\Users\desenvolvedor\source\repos\Aula_1_teste\obj\Debug\netcoreapp3.1\Aula_1_teste.dll
+C:\Users\desenvolvedor\source\repos\Aula_1_teste\obj\Debug\netcoreapp3.1\Aula_1_teste.pdb
+C:\Users\desenvolvedor\source\repos\Aula_1_teste\obj\Debug\netcoreapp3.1\Aula_1_teste.genruntimeconfig.cache

@@ -1,9 +1,0 @@
-C:\Users\desenvolvedor\source\repos\Exercicio_4_OOP\Escola\bin\Debug\netcoreapp3.1\Escola.deps.json
-C:\Users\desenvolvedor\source\repos\Exercicio_4_OOP\Escola\bin\Debug\netcoreapp3.1\Escola.dll
-C:\Users\desenvolvedor\source\repos\Exercicio_4_OOP\Escola\bin\Debug\netcoreapp3.1\Escola.pdb
-C:\Users\desenvolvedor\source\repos\Exercicio_4_OOP\Escola\obj\Debug\netcoreapp3.1\Escola.csproj.AssemblyReference.cache
-C:\Users\desenvolvedor\source\repos\Exercicio_4_OOP\Escola\obj\Debug\netcoreapp3.1\Escola.AssemblyInfoInputs.cache
-C:\Users\desenvolvedor\source\repos\Exercicio_4_OOP\Escola\obj\Debug\netcoreapp3.1\Escola.AssemblyInfo.cs
-C:\Users\desenvolvedor\source\repos\Exercicio_4_OOP\Escola\obj\Debug\netcoreapp3.1\Escola.csproj.CoreCompileInputs.cache
-C:\Users\desenvolvedor\source\repos\Exercicio_4_OOP\Escola\obj\Debug\netcoreapp3.1\Escola.dll
-C:\Users\desenvolvedor\source\repos\Exercicio_4_OOP\Escola\obj\Debug\netcoreapp3.1\Escola.pdb

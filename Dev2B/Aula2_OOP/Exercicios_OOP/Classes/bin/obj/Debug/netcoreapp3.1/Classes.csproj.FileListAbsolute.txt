@@ -1,9 +1,0 @@
-C:\Users\desenvolvedor\source\repos\Exercicios_OOP\Classes\bin\Debug\netcoreapp3.1\Classes.deps.json
-C:\Users\desenvolvedor\source\repos\Exercicios_OOP\Classes\bin\Debug\netcoreapp3.1\Classes.dll
-C:\Users\desenvolvedor\source\repos\Exercicios_OOP\Classes\bin\Debug\netcoreapp3.1\Classes.pdb
-C:\Users\desenvolvedor\source\repos\Exercicios_OOP\Classes\obj\Debug\netcoreapp3.1\Classes.AssemblyInfoInputs.cache
-C:\Users\desenvolvedor\source\repos\Exercicios_OOP\Classes\obj\Debug\netcoreapp3.1\Classes.AssemblyInfo.cs
-C:\Users\desenvolvedor\source\repos\Exercicios_OOP\Classes\obj\Debug\netcoreapp3.1\Classes.csproj.CoreCompileInputs.cache
-C:\Users\desenvolvedor\source\repos\Exercicios_OOP\Classes\obj\Debug\netcoreapp3.1\Classes.dll
-C:\Users\desenvolvedor\source\repos\Exercicios_OOP\Classes\obj\Debug\netcoreapp3.1\Classes.pdb
-C:\Users\desenvolvedor\source\repos\Exercicios_OOP\Classes\obj\Debug\netcoreapp3.1\Classes.csproj.AssemblyReference.cache

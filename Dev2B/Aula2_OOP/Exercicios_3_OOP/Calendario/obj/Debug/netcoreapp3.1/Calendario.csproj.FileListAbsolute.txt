@@ -1,8 +1,0 @@
-C:\Users\desenvolvedor\source\repos\Exercicios_3_OOP\Calendario\bin\Debug\netcoreapp3.1\Calendario.deps.json
-C:\Users\desenvolvedor\source\repos\Exercicios_3_OOP\Calendario\bin\Debug\netcoreapp3.1\Calendario.dll
-C:\Users\desenvolvedor\source\repos\Exercicios_3_OOP\Calendario\bin\Debug\netcoreapp3.1\Calendario.pdb
-C:\Users\desenvolvedor\source\repos\Exercicios_3_OOP\Calendario\obj\Debug\netcoreapp3.1\Calendario.AssemblyInfoInputs.cache
-C:\Users\desenvolvedor\source\repos\Exercicios_3_OOP\Calendario\obj\Debug\netcoreapp3.1\Calendario.AssemblyInfo.cs
-C:\Users\desenvolvedor\source\repos\Exercicios_3_OOP\Calendario\obj\Debug\netcoreapp3.1\Calendario.csproj.CoreCompileInputs.cache
-C:\Users\desenvolvedor\source\repos\Exercicios_3_OOP\Calendario\obj\Debug\netcoreapp3.1\Calendario.dll
-C:\Users\desenvolvedor\source\repos\Exercicios_3_OOP\Calendario\obj\Debug\netcoreapp3.1\Calendario.pdb
