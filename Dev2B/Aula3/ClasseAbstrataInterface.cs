@@ -9,6 +9,7 @@ namespace Aula3
         {
             Menu menu = new Menu("Exercícios de Classes Abstratas e Interfaces");
             menu.AddItem("Exercício 1");
+            menu.AddItem("Exercício 2");
             bool run = true;
             do
             {
@@ -22,6 +23,10 @@ namespace Aula3
                         case 1:
                             Console.Clear();
                             Ex1();
+                            break;
+                        case 2:
+                            Console.Clear();
+                            Ex2();
                             break;
                         case 0:
                             Console.Clear();
