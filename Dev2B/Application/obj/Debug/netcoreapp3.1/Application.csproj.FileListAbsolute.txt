@@ -1,0 +1,38 @@
+C:\Users\ghsilva\Desktop\Dev2B\Nova pasta\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Application.exe
+C:\Users\ghsilva\Desktop\Dev2B\Nova pasta\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Application.deps.json
+C:\Users\ghsilva\Desktop\Dev2B\Nova pasta\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Application.runtimeconfig.json
+C:\Users\ghsilva\Desktop\Dev2B\Nova pasta\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Application.runtimeconfig.dev.json
+C:\Users\ghsilva\Desktop\Dev2B\Nova pasta\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Application.dll
+C:\Users\ghsilva\Desktop\Dev2B\Nova pasta\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Application.pdb
+C:\Users\ghsilva\Desktop\Dev2B\Nova pasta\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula1.dll
+C:\Users\ghsilva\Desktop\Dev2B\Nova pasta\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula2.dll
+C:\Users\ghsilva\Desktop\Dev2B\Nova pasta\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula1.pdb
+C:\Users\ghsilva\Desktop\Dev2B\Nova pasta\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula2.pdb
+C:\Users\ghsilva\Desktop\Dev2B\Nova pasta\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.csprojAssemblyReference.cache
+C:\Users\ghsilva\Desktop\Dev2B\Nova pasta\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfoInputs.cache
+C:\Users\ghsilva\Desktop\Dev2B\Nova pasta\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfo.cs
+C:\Users\ghsilva\Desktop\Dev2B\Nova pasta\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.csproj.CoreCompileInputs.cache
+C:\Users\ghsilva\Desktop\Dev2B\Nova pasta\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.csproj.CopyComplete
+C:\Users\ghsilva\Desktop\Dev2B\Nova pasta\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.dll
+C:\Users\ghsilva\Desktop\Dev2B\Nova pasta\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.pdb
+C:\Users\ghsilva\Desktop\Dev2B\Nova pasta\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.genruntimeconfig.cache
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Application.exe
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Application.deps.json
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Application.runtimeconfig.json
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Application.runtimeconfig.dev.json
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Application.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Application.pdb
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.csproj.AssemblyReference.cache
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfoInputs.cache
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfo.cs
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.csproj.CoreCompileInputs.cache
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.csproj.CopyComplete
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.pdb
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.genruntimeconfig.cache
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula01.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula02.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula03.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula03.pdb
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula01.pdb
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula02.pdb
