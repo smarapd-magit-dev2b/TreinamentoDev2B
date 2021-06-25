@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Aula3\Aula3.csproj" />
     <ProjectReference Include="..\Aula_1_teste\Aula1.csproj" />
     <ProjectReference Include="..\ClassesObjetos\Aula2.csproj" />
   </ItemGroup>

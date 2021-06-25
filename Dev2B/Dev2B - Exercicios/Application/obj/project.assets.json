@@ -21,6 +21,16 @@
         "runtime": {
           "bin/placeholder/Aula2.dll": {}
         }
+      },
+      "Aula3/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Aula3.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula3.dll": {}
+        }
       }
     }
   },
@@ -34,12 +44,18 @@
       "type": "project",
       "path": "../ClassesObjetos/Aula2.csproj",
       "msbuildProject": "../ClassesObjetos/Aula2.csproj"
+    },
+    "Aula3/1.0.0": {
+      "type": "project",
+      "path": "../Aula3/Aula3.csproj",
+      "msbuildProject": "../Aula3/Aula3.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Aula1 >= 1.0.0",
-      "Aula2 >= 1.0.0"
+      "Aula2 >= 1.0.0",
+      "Aula3 >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -69,6 +85,9 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
+            "C:\\Users\\desenvolvedor\\Desktop\\Dev2B - Exercicios\\Aula3\\Aula3.csproj": {
+              "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\Dev2B - Exercicios\\Aula3\\Aula3.csproj"
+            },
             "C:\\Users\\desenvolvedor\\Desktop\\Dev2B - Exercicios\\Aula_1_teste\\Aula1.csproj": {
               "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\Dev2B - Exercicios\\Aula_1_teste\\Aula1.csproj"
             },
