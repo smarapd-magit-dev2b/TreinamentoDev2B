@@ -37,13 +37,13 @@
   "libraries": {
     "Aula01/1.0.0": {
       "type": "project",
-      "path": "../Aula1/Aula01.csproj",
-      "msbuildProject": "../Aula1/Aula01.csproj"
+      "path": "../Aula01/Aula01.csproj",
+      "msbuildProject": "../Aula01/Aula01.csproj"
     },
     "Aula02/1.0.0": {
       "type": "project",
-      "path": "../Aula2/Aula02.csproj",
-      "msbuildProject": "../Aula2/Aula02.csproj"
+      "path": "../Aula02/Aula02.csproj",
+      "msbuildProject": "../Aula02/Aula02.csproj"
     },
     "Aula03/1.0.0": {
       "type": "project",
@@ -85,6 +85,12 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
+            "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula01\\Aula01.csproj": {
+              "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula01\\Aula01.csproj"
+            },
+            "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula02\\Aula02.csproj": {
+              "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula02\\Aula02.csproj"
+            },
             "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula03\\Aula03.csproj": {
               "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula03\\Aula03.csproj"
             },

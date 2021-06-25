@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Folder Include="ClassesAula03\" />
+    <Folder Include="ClassesAula03\" />
   </ItemGroup>
 
 </Project>
