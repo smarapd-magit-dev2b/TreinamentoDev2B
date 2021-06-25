@@ -61,7 +61,7 @@ namespace Aula2
 
         private void Ex1()
         {
-            Console.Write("Exercício \n\n" +
+            Console.Write("Exercício 1\n\n" +
                 "Item da Venda\n\n" +
                 "Digite o Número do Item: ");
             var numero = int.Parse(Console.ReadLine());
@@ -81,24 +81,44 @@ namespace Aula2
 
         private void Ex2()
         {
-            Empregado manuel = new Empregado("Manoel", "Robson", 15200);
-            Console.WriteLine($"O salário anual de {manuel.Nome} é R${manuel.CalcularSalarioAtual()}");
-            manuel.ReajustarSalario(0.15m);
-            Console.WriteLine($"Com um aumento de 15%, seu salário mensal será {manuel.Salario}");
+            Console.Write("Exercício 2\n\n" +
+                "Empregado\n\n" +
+                "Digite seu Nome: ");
+            var nome = Console.ReadLine();
+
+            Console.Write("Digite seu Sobrenome: ");
+            var sobrenome = Console.ReadLine();
+
+            Console.Write("Digite seu Salário: ");
+            var salario = decimal.Parse(Console.ReadLine());
+
+            Empregado empregado = new Empregado(nome, sobrenome, salario);
+
+            Console.WriteLine($"O salário anual de {empregado.Nome + empregado.Sobrenome} é R${empregado.CalcularSalarioAtual()}");
+
+            empregado.ReajustarSalario(0.15m);
+
+            Console.WriteLine($"Com um aumento de 15%, seu salário mensal será {empregado.Salario}");
         }
 
         private void Ex3()
         {
-            //Retornar Data invalida
-            Data data = new Domain.Data(31, 2, 2014);
+            Console.Write("Exercício 3\n\n" +
+                "Formatador de Data\n\n" +
+                "Digite o Dia: ");
+            var dia = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite o Mês: ");
+            var mes = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite o Ano: ");
+            var ano = int.Parse(Console.ReadLine());
+
+            Data data = new Domain.Data(dia, mes, ano);
             Console.WriteLine($"Data atual: {data.ToUserString()}");
-            //Retornar data válida e pular de ano
-            data.Dia = 31;
-            data.Mes = 12;
-            data.Ano = 2021;
-            Console.WriteLine($"Data atual: {data.ToUserString()}");
+
             data.ProximoDia();
-            Console.WriteLine($"Data atual: {data.ToUserString()}");
+            Console.WriteLine($"Próximo dia: {data.ToUserString()}");
         }
         private void Ex4()
         {

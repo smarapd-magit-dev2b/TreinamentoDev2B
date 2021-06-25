@@ -1,17 +1,23 @@
-﻿namespace Domain
+﻿using Domain;
+
+namespace Aula2
 {
-    public class Empregado
+    public class Empregado : PessoaFisica
     {
-        public string Nome { get; set; }
-        public string Sobrenome { get; set; }
-        public decimal Salario { get; set; }
+        public decimal Salario {
+            get { return Salario; }
+            set {
+                if (value < 0)
+                    Salario = 0;
+                else
+                    Salario = value;
+            }
+        }
 
         public Empregado(string nome, string sobrenome, decimal salario)
         {
             Nome = nome;
             Sobrenome = sobrenome;
-            if (salario < 0)
-                Salario = 0;
             Salario = salario;
         }
         public decimal CalcularSalarioAtual()

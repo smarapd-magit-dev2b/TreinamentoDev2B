@@ -7,6 +7,7 @@ namespace Domain
 {
     public class PessoaFisica : Pessoa, IImprimirDadosEssenciais
     {
+        public string Sobrenome { get; set; }
         public decimal Altura { get; set; }
         public decimal Peso { get; set; }
         public Data DataNascimento { get; set; }
