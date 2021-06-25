@@ -1,9 +1,0 @@
-C:\Users\LGOLIVEIRA\Desktop\TreinamentoDev2B\Dev2B\Aula3\bin\Debug\netcoreapp3.1\Aula3.deps.json
-C:\Users\LGOLIVEIRA\Desktop\TreinamentoDev2B\Dev2B\Aula3\bin\Debug\netcoreapp3.1\Aula3.dll
-C:\Users\LGOLIVEIRA\Desktop\TreinamentoDev2B\Dev2B\Aula3\bin\Debug\netcoreapp3.1\Aula3.pdb
-C:\Users\LGOLIVEIRA\Desktop\TreinamentoDev2B\Dev2B\Aula3\obj\Debug\netcoreapp3.1\Aula3.csproj.AssemblyReference.cache
-C:\Users\LGOLIVEIRA\Desktop\TreinamentoDev2B\Dev2B\Aula3\obj\Debug\netcoreapp3.1\Aula3.AssemblyInfoInputs.cache
-C:\Users\LGOLIVEIRA\Desktop\TreinamentoDev2B\Dev2B\Aula3\obj\Debug\netcoreapp3.1\Aula3.AssemblyInfo.cs
-C:\Users\LGOLIVEIRA\Desktop\TreinamentoDev2B\Dev2B\Aula3\obj\Debug\netcoreapp3.1\Aula3.csproj.CoreCompileInputs.cache
-C:\Users\LGOLIVEIRA\Desktop\TreinamentoDev2B\Dev2B\Aula3\obj\Debug\netcoreapp3.1\Aula3.dll
-C:\Users\LGOLIVEIRA\Desktop\TreinamentoDev2B\Dev2B\Aula3\obj\Debug\netcoreapp3.1\Aula3.pdb
