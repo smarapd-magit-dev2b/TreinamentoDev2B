@@ -11,3 +11,10 @@ C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\obj\Debug\netco
 C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.dll
 C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.pdb
 C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.genruntimeconfig.cache
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula1.dll
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula2.dll
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula1.pdb
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula2.pdb
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.csproj.CopyComplete
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula3.dll
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula3.pdb

@@ -1,11 +1,62 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "Aula1/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Aula1.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula1.dll": {}
+        }
+      },
+      "Aula2/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Aula2.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula2.dll": {}
+        }
+      },
+      "Aula3/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Aula3.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula3.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Aula1/1.0.0": {
+      "type": "project",
+      "path": "../Aula1/Aula1.csproj",
+      "msbuildProject": "../Aula1/Aula1.csproj"
+    },
+    "Aula2/1.0.0": {
+      "type": "project",
+      "path": "../Aula2/Aula2.csproj",
+      "msbuildProject": "../Aula2/Aula2.csproj"
+    },
+    "Aula3/1.0.0": {
+      "type": "project",
+      "path": "../Aula3/Aula3.csproj",
+      "msbuildProject": "../Aula3/Aula3.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "Aula1 >= 1.0.0",
+      "Aula2 >= 1.0.0",
+      "Aula3 >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\FACCARDOSO\\.nuget\\packages\\": {},
@@ -38,7 +89,17 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\FACCARDOSO\\Documents\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj": {
+              "projectPath": "C:\\Users\\FACCARDOSO\\Documents\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj"
+            },
+            "C:\\Users\\FACCARDOSO\\Documents\\TreinamentoDev2B\\Dev2B\\Aula2\\Aula2.csproj": {
+              "projectPath": "C:\\Users\\FACCARDOSO\\Documents\\TreinamentoDev2B\\Dev2B\\Aula2\\Aula2.csproj"
+            },
+            "C:\\Users\\FACCARDOSO\\Documents\\TreinamentoDev2B\\Dev2B\\Aula3\\Aula3.csproj": {
+              "projectPath": "C:\\Users\\FACCARDOSO\\Documents\\TreinamentoDev2B\\Dev2B\\Aula3\\Aula3.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

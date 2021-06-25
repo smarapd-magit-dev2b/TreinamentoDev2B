@@ -1,4 +1,7 @@
 ﻿using System;
+using Aula1;
+using Aula2;
+using Aula3;
 
 namespace Application
 {
@@ -6,7 +9,13 @@ namespace Application
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            EstruturasComando estruturasComando = new EstruturasComando();
+            ClassesObjetos classesObjetos = new ClassesObjetos();
+            Herancas herancas = new Herancas();
+
+            estruturasComando.Execute();
+            classesObjetos.Execute();
+            herancas.Execute();
         }
     }
 }
