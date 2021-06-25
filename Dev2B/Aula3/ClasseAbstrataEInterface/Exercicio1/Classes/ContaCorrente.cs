@@ -11,7 +11,7 @@ namespace Aula3.Exercicio4.Classes
 
         public void AplicarTaxaServico(decimal valor)
         {
-            Saldo -= valor;
+            Sacar(valor);
         }
 
 

@@ -11,7 +11,7 @@ namespace Aula3.Exercicio4.Classes
 
         public void AplicarRendimento(decimal valor)
         {
-            Saldo += valor;
+            Depositar(valor);
         }
 
     }

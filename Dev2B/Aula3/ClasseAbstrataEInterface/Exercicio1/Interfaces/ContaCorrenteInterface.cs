@@ -4,15 +4,15 @@ namespace Aula3.Exercicio4.Classes
 {
     public class ContaCorrenteInterface : IConta
     {
-        public decimal Saldo { get; private set; }
+       
         public int NumeroConta { get; set; }
-        public int MovimentacoesSaques { get; private set; }
-        public int MovimentacoesDepositos { get; private set; }
+        public decimal MovimentacoesSaques { get; private set; }
+        public decimal MovimentacoesDepositos { get; private set; }
         public string Agencia { get; set; }
 
         public ContaCorrenteInterface( int numeroConta,  string agencia)
         {
-            Saldo = 0;
+            
             NumeroConta = numeroConta;
             MovimentacoesSaques = 0;
             MovimentacoesDepositos = 0;
@@ -21,7 +21,7 @@ namespace Aula3.Exercicio4.Classes
 
         public void Depositar(decimal valor)
         {
-            Saldo += valor;
+            MovimentacoesDepositos += valor;
         }
 
         public void ImpreExtrato()
@@ -29,19 +29,18 @@ namespace Aula3.Exercicio4.Classes
             Console.WriteLine("======= Extrato =======");
             Console.WriteLine($"Numero da conta: {NumeroConta}");
             Console.WriteLine($"Agencia: {NumeroConta}");
-            Console.WriteLine($"Saldo: {Saldo}");
             Console.WriteLine($"Movimentacoes de saque: {MovimentacoesSaques}");
             Console.WriteLine($"Movimentacoes de deposito: {MovimentacoesDepositos}");
         }
 
         public void Sacar(decimal valor)
         {
-            Saldo -= valor;
+            MovimentacoesSaques -= valor;
         }
 
         public void AplicarTaxaServico(decimal valor)
         {
-            Saldo -= valor;
+            MovimentacoesSaques -= valor;
         }
     }
 }
