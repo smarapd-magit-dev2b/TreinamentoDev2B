@@ -12,7 +12,7 @@ namespace Domain
         public Data DataNascimento { get; set; }
         public string Cpf { get; set; }
         public string Rg { get; set; }
-        public int Cnh { get; set; }
+        public string Cnh { get; set; }
         public int QuantidadeFilhos { get; set; }
         public string EstadoCivil { get; set; }
         public void ImprimirDadosEssenciais()

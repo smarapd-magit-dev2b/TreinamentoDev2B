@@ -11,7 +11,7 @@ namespace Domain
         public string Estado { get; set; }
         internal void Imprimir()
         {
-            Console.WriteLine($"Endereço\n\nCidade: {Cidade}\nEstado{Estado}");
+            Console.WriteLine($"Endereço\n\nCidade: {Cidade}\nEstado{Estado}\n");
         }
     }
 }

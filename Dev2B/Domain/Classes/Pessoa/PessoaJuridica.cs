@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Domain
 {
-    class PessoaJuridica : Pessoa, IImprimirDadosEssenciais
+    public class PessoaJuridica : Pessoa, IImprimirDadosEssenciais
     {
         public string Cnpj { get; set; }
         public void ImprimirDadosEssenciais()

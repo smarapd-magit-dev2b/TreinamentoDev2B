@@ -10,6 +10,10 @@ namespace Application
     {
         static void Main(string[] args)
         {
+            if (args is null)
+            {
+                throw new ArgumentNullException(nameof(args));
+            }
             Menu menu = new Menu("Aulas");
             menu.AddItem("Estrutura e Comandos");
             menu.AddItem("Classes e Objetos");

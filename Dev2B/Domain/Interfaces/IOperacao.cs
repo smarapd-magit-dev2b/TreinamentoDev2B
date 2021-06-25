@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Domain.Classes.Conta
+namespace Domain.Interfaces
 {
-    class ContaPoupança
+    interface IOperacao
     {
+        decimal Calcular();
     }
 }
