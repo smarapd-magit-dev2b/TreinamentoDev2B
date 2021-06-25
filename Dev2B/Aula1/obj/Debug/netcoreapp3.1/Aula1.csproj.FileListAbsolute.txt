@@ -1,0 +1,12 @@
+C:\Users\LGOLIVEIRA\Desktop\TreinamentoDev2B\Dev2B\Aula1\bin\Debug\netcoreapp3.1\Aula1.deps.json
+C:\Users\LGOLIVEIRA\Desktop\TreinamentoDev2B\Dev2B\Aula1\bin\Debug\netcoreapp3.1\Aula1.dll
+C:\Users\LGOLIVEIRA\Desktop\TreinamentoDev2B\Dev2B\Aula1\bin\Debug\netcoreapp3.1\Aula1.pdb
+C:\Users\LGOLIVEIRA\Desktop\TreinamentoDev2B\Dev2B\Aula1\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\LGOLIVEIRA\Desktop\TreinamentoDev2B\Dev2B\Aula1\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\LGOLIVEIRA\Desktop\TreinamentoDev2B\Dev2B\Aula1\obj\Debug\netcoreapp3.1\Aula1.csproj.AssemblyReference.cache
+C:\Users\LGOLIVEIRA\Desktop\TreinamentoDev2B\Dev2B\Aula1\obj\Debug\netcoreapp3.1\Aula1.AssemblyInfoInputs.cache
+C:\Users\LGOLIVEIRA\Desktop\TreinamentoDev2B\Dev2B\Aula1\obj\Debug\netcoreapp3.1\Aula1.AssemblyInfo.cs
+C:\Users\LGOLIVEIRA\Desktop\TreinamentoDev2B\Dev2B\Aula1\obj\Debug\netcoreapp3.1\Aula1.csproj.CoreCompileInputs.cache
+C:\Users\LGOLIVEIRA\Desktop\TreinamentoDev2B\Dev2B\Aula1\obj\Debug\netcoreapp3.1\Aula1.csproj.CopyComplete
+C:\Users\LGOLIVEIRA\Desktop\TreinamentoDev2B\Dev2B\Aula1\obj\Debug\netcoreapp3.1\Aula1.dll
+C:\Users\LGOLIVEIRA\Desktop\TreinamentoDev2B\Dev2B\Aula1\obj\Debug\netcoreapp3.1\Aula1.pdb
