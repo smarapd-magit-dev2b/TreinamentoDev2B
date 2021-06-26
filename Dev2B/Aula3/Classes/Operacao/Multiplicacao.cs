@@ -1,6 +1,4 @@
-﻿using Domain;
-
-namespace Aula3
+﻿namespace Domain.Operacao
 {
     public class Multiplicacao : Operacao, IOperacao
     {

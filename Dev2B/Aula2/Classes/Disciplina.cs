@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Aula2
+namespace Domain
 {
     public class Disciplina
     {

@@ -1,9 +1,6 @@
-﻿using Domain;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
 
-namespace Aula3
+namespace Domain.Conta
 {
     public class ContaPoupanca : Conta
     {

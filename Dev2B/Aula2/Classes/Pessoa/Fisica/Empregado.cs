@@ -1,6 +1,4 @@
-﻿using Domain;
-
-namespace Aula2
+﻿namespace Domain.Pessoa.Fisica
 {
     public class Empregado : PessoaFisica
     {

@@ -1,10 +1,4 @@
-﻿using Domain;
-using Domain.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Aula3
+﻿namespace Domain.Operacao
 {
     public class Divisao : Operacao, IOperacao
     {

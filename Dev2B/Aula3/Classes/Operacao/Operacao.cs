@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Aula3
+namespace Domain.Operacao
 {
     public abstract class Operacao
     {

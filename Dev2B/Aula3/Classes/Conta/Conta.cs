@@ -1,4 +1,6 @@
-﻿namespace Aula3
+﻿using System;
+
+namespace Domain.Conta
 {
     public abstract class Conta
     {
