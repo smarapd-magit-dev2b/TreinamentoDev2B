@@ -1,12 +1,13 @@
-﻿using System;
+﻿using Domain;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Aula1
 {
-    public class Exercicio1
+    public class Exercicio1 : IExecute
     {
-        public Exercicio1()
+        public void Execute()
         {
             Console.Write("Exercício 1\n\nDigite sua nota: ");
             decimal numero = decimal.Parse(Console.ReadLine());

@@ -15,7 +15,7 @@ namespace Aula3
             bool run = true;
             do
             {
-                menu.Print();
+                menu.PrintString();
                 Console.Write("Digite o número que deseja executar: ");
                 try
                 {

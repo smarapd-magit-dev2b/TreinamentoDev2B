@@ -7,17 +7,27 @@ namespace Domain
     public class Menu
     {
         public string Title { get; set; }
-        public List<IExecute> Items { get; set; }
+        private List<IExecute> ItemsExecute { get; set; }
+        private List<string> ItemsString { get; set; }
 
         public Menu(string title)
         {
             Title = title;
-            Items = new List<IExecute>();
+            ItemsString = new List<String>();
         }
 
         public void AddItem(IExecute item)
         {
-            Items.Add(item);
+            if (ItemsExecute == null)
+                ItemsExecute = new List<IExecute>();
+            ItemsExecute.Add(item);
+        }
+
+        public void AddItem(string item)
+        {
+            if (ItemsString == null)
+                ItemsString = new List<string>();
+            ItemsString.Add(item);
         }
 
         public void Execute()
@@ -25,7 +35,7 @@ namespace Domain
             bool run = true;
             do
             {
-                Print();
+                PrintExecute();
                 Console.Write("Digite o número que deseja executar: ");
                 try
                 {
@@ -33,7 +43,7 @@ namespace Domain
                     Console.Clear();
 
                     if (escolha != 0)
-                        Items[escolha - 1].Execute();
+                        ItemsExecute[escolha - 1].Execute();
                     else
                         run = false;
                 }
@@ -45,12 +55,21 @@ namespace Domain
             } while (run);
         }
 
-        private void Print()
+        private void PrintExecute()
         {
             Console.WriteLine($"{Title}\n");
 
-            for (int i = 0; i < Items.Count; i++)
-                Console.WriteLine($"{i + 1} - {Items[i].GetType().Name}");
+            for (int i = 0; i < ItemsExecute.Count; i++)
+                Console.WriteLine($"{i + 1} - {ItemsExecute[i].GetType().Name}");
+
+            Console.WriteLine("0 - Sair\n");
+        }
+        public void PrintString()
+        {
+            Console.WriteLine($"{Title}\n");
+
+            for (int i = 0; i < ItemsString.Count; i++)
+                Console.WriteLine($"{i + 1} - {ItemsString[i]}");
 
             Console.WriteLine("0 - Sair\n");
         }
