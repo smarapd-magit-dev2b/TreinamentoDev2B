@@ -1,4 +1,4 @@
-﻿namespace Domain.Pessoa.Fisica
+﻿namespace Domain.Classes.Pessoa.Fisica
 {
     public class Funcionario : PessoaFisica
     {

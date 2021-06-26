@@ -1,9 +1,7 @@
-﻿using Domain;
+﻿using Domain.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Aula1
+namespace Aula1.Exercicios
 {
     public class Exercicios4 : IExecute
     {

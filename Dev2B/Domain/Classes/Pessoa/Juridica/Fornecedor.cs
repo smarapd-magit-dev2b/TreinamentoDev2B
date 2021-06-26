@@ -1,9 +1,4 @@
-﻿using Domain;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Domain.Pessoa.Juridica
+﻿namespace Domain.Classes.Pessoa.Juridica
 {
     public class Fornecedor : PessoaJuridica
     {

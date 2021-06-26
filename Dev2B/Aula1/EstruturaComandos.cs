@@ -1,5 +1,6 @@
-﻿using Domain;
-using System;
+﻿using Aula1.Exercicios;
+using Domain.Classes;
+using Domain.Interfaces;
 
 namespace Aula1
 {

@@ -1,4 +1,6 @@
-﻿namespace Domain.Operacao
+﻿using Domain.Interfaces;
+
+namespace Domain.Classes.Operacao
 {
     public class Divisao : Operacao, IOperacao
     {

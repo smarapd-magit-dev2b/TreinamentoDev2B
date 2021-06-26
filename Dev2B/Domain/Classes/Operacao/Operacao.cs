@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Domain.Operacao
+﻿namespace Domain.Classes.Operacao
 {
     public abstract class Operacao
     {

@@ -1,4 +1,4 @@
-﻿namespace Domain
+﻿namespace Domain.Classes
 {
     public class ItemVenda
     {

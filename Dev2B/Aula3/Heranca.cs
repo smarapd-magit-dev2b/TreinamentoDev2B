@@ -1,8 +1,6 @@
 ﻿using Aula3.Exercicios.Heranca;
-using Domain;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using Domain.Classes;
+using Domain.Interfaces;
 
 namespace Aula3
 {

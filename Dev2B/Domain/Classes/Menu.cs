@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Domain.Interfaces;
+using System;
 using System.Collections.Generic;
-using System.Text;
 
-namespace Domain
+namespace Domain.Classes
 {
     public class Menu : IExecute
     {

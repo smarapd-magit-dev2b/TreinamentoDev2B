@@ -1,7 +1,7 @@
-﻿using Domain;
+﻿using Domain.Classes.Pessoa.Fisica;
+using Domain.Classes.Pessoa.Juridica;
+using Domain.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Aula3.Exercicios.Heranca
 {

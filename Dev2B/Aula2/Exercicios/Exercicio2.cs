@@ -1,7 +1,6 @@
-﻿using Domain;
+﻿using Domain.Classes.Pessoa.Fisica;
+using Domain.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Aula2
 {

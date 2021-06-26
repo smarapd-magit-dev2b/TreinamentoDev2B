@@ -1,5 +1,7 @@
-﻿using Aula3.Exercicios.ClasseAbstrataInterface;
-using Domain;
+﻿using Aula3.Exercicios;
+using Aula3.Exercicios.ClasseAbstrataInterface;
+using Domain.Classes;
+using Domain.Interfaces;
 
 namespace Aula3
 {

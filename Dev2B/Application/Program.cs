@@ -1,7 +1,7 @@
 ﻿using Aula1;
 using Aula2;
 using Aula3;
-using Domain;
+using Domain.Classes;
 using System;
 
 namespace Application

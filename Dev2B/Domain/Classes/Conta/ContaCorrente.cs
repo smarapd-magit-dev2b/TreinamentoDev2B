@@ -1,8 +1,7 @@
-﻿using Domain;
-using System;
+﻿using System;
 
 
-namespace Domain.Conta
+namespace Domain.Classes.Conta
 {
     public class ContaCorrente : Conta
     {

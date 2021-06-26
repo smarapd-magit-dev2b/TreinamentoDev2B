@@ -1,4 +1,4 @@
-﻿namespace Domain.Veiculo
+﻿namespace Domain.Classes.Veiculo
 {
     class Veiculo
     {

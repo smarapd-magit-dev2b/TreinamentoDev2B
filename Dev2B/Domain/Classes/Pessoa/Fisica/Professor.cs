@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Domain.Pessoa.Fisica
+namespace Domain.Classes.Pessoa.Fisica
 {
     public class Professor : Funcionario
     {

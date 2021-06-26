@@ -1,9 +1,4 @@
-﻿using Domain;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Domain.Veiculo
+﻿namespace Domain.Classes.Veiculo
 {
     class Carro : Veiculo
     {

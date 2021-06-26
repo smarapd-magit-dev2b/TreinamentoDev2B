@@ -1,7 +1,7 @@
-﻿using Domain;
+﻿using Domain.Classes;
+using Domain.Classes.Conta;
+using Domain.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Aula3.Exercicios.ClasseAbstrataInterface
 {

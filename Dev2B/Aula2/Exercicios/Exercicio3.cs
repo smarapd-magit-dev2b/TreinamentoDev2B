@@ -1,7 +1,6 @@
-﻿using Domain;
+﻿using Domain.Classes;
+using Domain.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Aula2
 {
@@ -20,7 +19,7 @@ namespace Aula2
             Console.Write("Digite o Ano: ");
             var ano = int.Parse(Console.ReadLine());
 
-            Data data = new Domain.Data(dia, mes, ano);
+            Data data = new Data(dia, mes, ano);
             Console.WriteLine($"Data atual: {data.ToUserString()}");
 
             data.ProximoDia();

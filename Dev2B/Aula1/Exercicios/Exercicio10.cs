@@ -1,9 +1,8 @@
-﻿using Domain;
+﻿using Domain.Classes.Pessoa.Fisica;
+using Domain.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Aula1
+namespace Aula1.Exercicios
 {
     public class Exercicio10 : IExecute
     {

@@ -1,9 +1,7 @@
 ﻿using Domain.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Domain
+namespace Domain.Classes.Pessoa.Fisica
 {
     public class PessoaFisica : Pessoa, IImprimirDadosEssenciais
     {

@@ -1,7 +1,5 @@
-﻿using Domain;
+﻿using Domain.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Aula3.Exercicios.Heranca
 {

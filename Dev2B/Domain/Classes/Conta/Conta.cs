@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Domain.Conta
+namespace Domain.Classes.Conta
 {
     public abstract class Conta
     {

@@ -1,4 +1,4 @@
-﻿namespace Domain.Pessoa
+﻿namespace Domain.Classes.Pessoa
 {
     public abstract class Pessoa
     {

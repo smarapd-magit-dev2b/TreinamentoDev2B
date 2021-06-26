@@ -1,9 +1,8 @@
-﻿using Domain;
+﻿using Domain.Classes.Operacao;
+using Domain.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Aula3.Exercicios.ClasseAbstrataInterface
+namespace Aula3.Exercicios
 {
     public class Exercicio2 : IExecute
     {

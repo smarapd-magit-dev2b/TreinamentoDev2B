@@ -1,4 +1,5 @@
-﻿using Domain;
+﻿using Domain.Classes;
+using Domain.Interfaces;
 
 namespace Aula2
 {
