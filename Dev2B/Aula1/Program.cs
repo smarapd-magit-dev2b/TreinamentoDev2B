@@ -13,10 +13,10 @@ namespace Application
         static void Main(string[] args)
         {
             ClassesObjetos classesObjetos = new ClassesObjetos();
-            EstruturasComando estruturasComando = new EstruturasComando();
+            //EstruturasComando estruturasComando = new EstruturasComando();
                 
             classesObjetos.Execute();
-            estruturasComando.Execute();
+            //estruturasComando.Execute();
         }
     }
 }
