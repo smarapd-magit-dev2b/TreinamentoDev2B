@@ -3,7 +3,7 @@ using System;
 
 namespace Aula3
 {
-    public class ClasseAbstrataInterface
+    public class ClasseAbstrataInterface : IExecute
     {
         public void Execute()
         {

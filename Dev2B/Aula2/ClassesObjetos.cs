@@ -3,7 +3,7 @@ using System;
 
 namespace Aula2
 {
-    public class ClassesObjetos
+    public class ClassesObjetos : IExecute
     {
         public void Execute()
         {

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Aula3
 {
-    public class Heranca
+    public class Heranca : IExecute
     {
         public void Execute()
         {

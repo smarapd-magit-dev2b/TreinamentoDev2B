@@ -3,7 +3,7 @@ using System;
 
 namespace Aula1
 {
-    public class EstruturaComandos
+    public class EstruturaComandos : IExecute
     {
         public void Execute()
         {
@@ -30,7 +30,7 @@ namespace Aula1
                     {
                         case 1:
                             Console.Clear();
-                            Ex1();
+                            new Exercicio1();
                             break;
                         case 2:
                             Console.Clear();
@@ -94,19 +94,7 @@ namespace Aula1
                 }
             } while (run);
         }
-        private void Ex1()
-        {
-            Console.Write("Exercício 1\n\nDigite sua nota: ");
-            decimal numero = decimal.Parse(Console.ReadLine());
-            if (numero <= 10 && numero >= 7)
-                Console.WriteLine("Aprovado");
-            else if (numero < 7)
-                Console.WriteLine("Exame");
-            else if (numero < 4)
-                Console.WriteLine("Reprovado");
-            else
-                Console.WriteLine("Média Inválida\n");
-        }
+
         private void Ex2()
         {
             int maiorNumero = 0, menorNumero = 0;
