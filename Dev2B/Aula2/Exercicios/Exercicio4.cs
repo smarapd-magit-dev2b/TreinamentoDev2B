@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Aula2.Exercicios
 {
-    class Exercicio4 : IExecute
+    public class Exercicio4 : IExecute
     {
         public void Execute()
         {
