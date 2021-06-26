@@ -12,7 +12,7 @@ namespace Domain.Classes
 
         public Menu(string title)
         {
-            Title = title;
+            Title = $"\n{title}\n";
             ItemsString = new List<String>();
         }
 
@@ -59,7 +59,7 @@ namespace Domain.Classes
 
         public void PrintString()
         {
-            Console.WriteLine($"{Title}\n");
+            Console.WriteLine($"{Title}");
 
             for (int i = 0; i < ItemsString.Count; i++)
                 Console.WriteLine($"{i + 1} - {ItemsString[i]}");
@@ -69,7 +69,7 @@ namespace Domain.Classes
 
         private void PrintExecute()
         {
-            Console.WriteLine($"{Title}\n");
+            Console.WriteLine($"{Title}");
 
             for (int i = 0; i < ItemsExecute.Count; i++)
                 Console.WriteLine($"{i + 1} - {ItemsExecute[i].GetType().Name}");
