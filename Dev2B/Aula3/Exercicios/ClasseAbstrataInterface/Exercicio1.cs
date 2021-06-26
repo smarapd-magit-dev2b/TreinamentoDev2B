@@ -99,7 +99,6 @@ namespace Aula3.Exercicios.ClasseAbstrataInterface
                 }
             } while (run);
             poupanca.ImpreExtrato();
-            Console.WriteLine("\n");
         }
     }
 }

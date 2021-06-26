@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Aula3;
+using Domain;
+using System;
 
-namespace Domain
+namespace Aula2
 {
     public class Professor : Funcionario
     {

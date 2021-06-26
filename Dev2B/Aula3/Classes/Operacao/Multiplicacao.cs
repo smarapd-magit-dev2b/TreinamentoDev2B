@@ -1,9 +1,6 @@
-﻿using Domain.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Domain;
 
-namespace Domain
+namespace Aula3
 {
     public class Multiplicacao : Operacao, IOperacao
     {

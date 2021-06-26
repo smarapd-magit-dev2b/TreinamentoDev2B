@@ -19,7 +19,6 @@ namespace Aula1
             for (int i = 3; i < 30; i++)
                 if ((i % 3) == 0 || (i % 4) == 0)
                     Console.WriteLine(i);
-            Console.WriteLine("\n");
         }
         
         private void Exercicio8while()
@@ -32,7 +31,6 @@ namespace Aula1
                     Console.WriteLine(i);
                 i++;
             }
-            Console.WriteLine("\n");
         }
 
         private void Exercicio8do()
@@ -45,7 +43,6 @@ namespace Aula1
                     Console.WriteLine(i);
                 i++;
             } while (i < 30);
-            Console.WriteLine("\n");
         }
     }
 }

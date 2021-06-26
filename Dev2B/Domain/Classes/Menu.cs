@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Domain
 {
-    public class Menu
+    public class Menu : IExecute
     {
         public string Title { get; set; }
         private List<string> ItemsString { get; set; }
@@ -36,7 +36,7 @@ namespace Domain
             do
             {
                 PrintExecute();
-                Console.Write("Digite o número que deseja executar: ");
+                Console.Write("\nDigite o número que deseja executar: ");
                 try
                 {
                     var escolha = int.Parse(Console.ReadLine());
@@ -44,13 +44,15 @@ namespace Domain
 
                     if (escolha != 0 && escolha < ItemsExecute.Count)
                         ItemsExecute[escolha - 1].Execute();
+                    else if (escolha > ItemsExecute.Count)
+                        Console.WriteLine($"{escolha} não está na lista!");
                     else
                         run = false;
                 }
                 catch (FormatException)
                 {
                     Console.Clear();
-                    Console.WriteLine("Digite apenas números!\n");
+                    Console.WriteLine("Digite apenas números!");
                 }
             } while (run);
         }
@@ -72,7 +74,7 @@ namespace Domain
             for (int i = 0; i < ItemsExecute.Count; i++)
                 Console.WriteLine($"{i + 1} - {ItemsExecute[i].GetType().Name}");
 
-            Console.WriteLine("0 - Sair\n");
+            Console.WriteLine("0 - Sair");
         }
     }
 }

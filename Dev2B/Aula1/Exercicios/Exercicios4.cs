@@ -42,7 +42,6 @@ namespace Aula1
                 Console.WriteLine($"{numero1} / {numero2} = {numero1 / numero2}");
             else
                 Console.WriteLine($"{operacao} é uma operação inválida!");
-            Console.WriteLine("\n");
         }
 
         private void Exercicio4switch()
@@ -82,7 +81,6 @@ namespace Aula1
                     Console.WriteLine($"{operacao} é uma operação inválida!");
                     break;
             }
-            Console.WriteLine("\n");
         }
     }
 }

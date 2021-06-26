@@ -27,7 +27,7 @@ namespace Aula1
                     menorNumero = numero;
             }
             Console.WriteLine($"O maior número digitado foi o {maiorNumero}");
-            Console.WriteLine($"O menor número digitado foi o {menorNumero}\n");
+            Console.WriteLine($"O menor número digitado foi o {menorNumero}");
         }
     }
 }

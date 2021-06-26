@@ -23,7 +23,6 @@ namespace Aula1
                 else
                     Console.WriteLine($"{numero} é um número inválido");
             } while (run);
-            Console.WriteLine("\n");
         }
 
         private void Tabuada(int numero)

@@ -1,7 +1,5 @@
 ﻿using Domain;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Aula1
 {
@@ -20,7 +18,7 @@ namespace Aula1
             for (int i = 1; i <= 100; i++)
                 if ((i % 3) != 0)
                     soma += i;
-            Console.WriteLine($"Exercício 7 For\n\nSoma de 1 a 100 menos os múltiplos de 3: {soma}\n");
+            Console.WriteLine($"Exercício 7 For\n\nSoma de 1 a 100 menos os múltiplos de 3: {soma}");
         }
 
         private void Exercicio7while()
@@ -32,7 +30,7 @@ namespace Aula1
                     soma += i;
                 i++;
             }
-            Console.WriteLine($"Exercício 7 While\n\nSoma de 1 a 100 menos os múltiplos de 3: {soma}\n");
+            Console.WriteLine($"Exercício 7 While\n\nSoma de 1 a 100 menos os múltiplos de 3: {soma}");
         }
 
         private void Exercicio7do()
@@ -44,7 +42,7 @@ namespace Aula1
                     soma += i;
                 i++;
             } while (i <= 100);
-            Console.WriteLine($"Exercício 7 Do While\n\nSoma de 1 a 100 menos os múltiplos de 3: {soma}\n");
+            Console.WriteLine($"Exercício 7 Do While\n\nSoma de 1 a 100 menos os múltiplos de 3: {soma}");
         }
     }
 }

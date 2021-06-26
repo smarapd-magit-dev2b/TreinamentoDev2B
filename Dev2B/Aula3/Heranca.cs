@@ -11,7 +11,11 @@ namespace Aula3
         public void Execute()
         {
             Menu menu = new Menu("Herança");
+
             menu.AddItem(new Exercicio1());
             menu.AddItem(new Exercicio2());
+
+            menu.Execute();
+        }
     }
 }

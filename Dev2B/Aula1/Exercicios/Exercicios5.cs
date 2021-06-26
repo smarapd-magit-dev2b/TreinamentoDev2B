@@ -19,7 +19,7 @@ namespace Aula1
             int soma = 0;
             for (int i = 1; i <= 100; i++)
                 soma += i;
-            Console.WriteLine($"Exercício 5 for\n\nSoma de 1 a 100: {soma}\n");
+            Console.WriteLine($"Exercício 5 for\n\nSoma de 1 a 100: {soma}");
         }
 
         private void Exercicio5while()
@@ -30,7 +30,7 @@ namespace Aula1
                 soma += i;
                 i++;
             }
-            Console.WriteLine($"Exercício 5 While\n\nSoma de 1 a 100: {soma}\n");
+            Console.WriteLine($"Exercício 5 While\n\nSoma de 1 a 100: {soma}");
         }
 
         private void Exercicio5do()
@@ -41,7 +41,7 @@ namespace Aula1
                 soma += i;
                 i++;
             } while (i <= 100);
-            Console.WriteLine($"Exercício 5 Do While\n\nSoma de 1 a 100: {soma}\n");
+            Console.WriteLine($"Exercício 5 Do While\n\nSoma de 1 a 100: {soma}");
         }
     }
 }

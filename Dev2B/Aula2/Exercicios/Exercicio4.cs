@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Aula2.Exercicios
+namespace Aula2
 {
     public class Exercicio4 : IExecute
     {

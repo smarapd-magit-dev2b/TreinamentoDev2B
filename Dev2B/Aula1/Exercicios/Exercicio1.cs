@@ -19,7 +19,7 @@ namespace Aula1
             else if (numero < 4)
                 Console.WriteLine("Reprovado");
             else
-                Console.WriteLine("Média Inválida\n");
+                Console.WriteLine("Média Inválida");
         }
     }
 }

@@ -3,9 +3,7 @@
     public class ItemVenda
     {
         public int Numero { get; }
-
         public string Descricao { get; }
-
         private int QtdCompra {
             get { return QtdCompra; } 
             set {

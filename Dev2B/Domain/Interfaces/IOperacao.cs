@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Domain.Interfaces
+﻿namespace Domain
 {
-    interface IOperacao
+    public interface IOperacao
     {
         decimal Calcular();
     }

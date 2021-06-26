@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Domain
+namespace Aula2
 {
     public class Data
     {
@@ -38,8 +38,6 @@ namespace Domain
 
         public Data() { }
 
-        // Etapa 3
-
         private bool ValidateMes(int mes)
         {
             if (mes > 0 && mes < 13)
@@ -69,6 +67,7 @@ namespace Domain
             else
                 return "Data Inválida";
         }
+
         public void ProximoDia()
         {
             if (Dia != null && Mes != null && Ano != null)
