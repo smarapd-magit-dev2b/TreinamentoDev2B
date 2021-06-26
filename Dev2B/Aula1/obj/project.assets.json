@@ -1,38 +1,81 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "Aula01/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Aula01.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula01.dll": {}
+        }
+      },
+      "Aula2/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Aula2.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula2.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Aula01/1.0.0": {
+      "type": "project",
+      "path": "../Aula01/Aula01.csproj",
+      "msbuildProject": "../Aula01/Aula01.csproj"
+    },
+    "Aula2/1.0.0": {
+      "type": "project",
+      "path": "../Aula2/Aula2.csproj",
+      "msbuildProject": "../Aula2/Aula2.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "Aula01 >= 1.0.0",
+      "Aula2 >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\jardel\\.nuget\\packages\\": {}
+    "C:\\Users\\Administrador\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jardel\\Desktop\\Dev2B\\BackEnd\\CSharp\\Exercicios\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj",
-      "projectName": "Aula1",
-      "projectPath": "C:\\Users\\jardel\\Desktop\\Dev2B\\BackEnd\\CSharp\\Exercicios\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj",
-      "packagesPath": "C:\\Users\\jardel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jardel\\Desktop\\Dev2B\\BackEnd\\CSharp\\Exercicios\\TreinamentoDev2B\\Dev2B\\Aula1\\obj\\",
+      "projectUniqueName": "C:\\Users\\Administrador\\Desktop\\DEV2BTr\\TreinamentoDev2B\\Dev2B\\Aula1\\Application.csproj",
+      "projectName": "Application",
+      "projectPath": "C:\\Users\\Administrador\\Desktop\\DEV2BTr\\TreinamentoDev2B\\Dev2B\\Aula1\\Application.csproj",
+      "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Administrador\\Desktop\\DEV2BTr\\TreinamentoDev2B\\Dev2B\\Aula1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jardel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Administrador\\Desktop\\DEV2BTr\\TreinamentoDev2B\\Dev2B\\Aula01\\Aula01.csproj": {
+              "projectPath": "C:\\Users\\Administrador\\Desktop\\DEV2BTr\\TreinamentoDev2B\\Dev2B\\Aula01\\Aula01.csproj"
+            },
+            "C:\\Users\\Administrador\\Desktop\\DEV2BTr\\TreinamentoDev2B\\Dev2B\\Aula2\\Aula2.csproj": {
+              "projectPath": "C:\\Users\\Administrador\\Desktop\\DEV2BTr\\TreinamentoDev2B\\Dev2B\\Aula2\\Aula2.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -59,7 +102,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
