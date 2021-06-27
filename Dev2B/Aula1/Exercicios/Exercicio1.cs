@@ -8,7 +8,7 @@ namespace Aula1.Exercicios
         public void Execute()
         {
             Console.Write("Exercício 1\n\nDigite sua média: ");
-            decimal numero = decimal.Parse(Console.ReadLine());
+            var numero = decimal.Parse(Console.ReadLine());
 
             if (numero <= 10 && numero >= 7)
                 Console.WriteLine("Aprovado");
