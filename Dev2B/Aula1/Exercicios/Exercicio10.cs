@@ -21,13 +21,13 @@ namespace Aula1.Exercicios
             {
                 PessoaFisica pessoa = new PessoaFisica();
 
-                Console.Write("Digite a idade da " + i + "º pessoa: ");
+                Console.Write($"Digite a idade da {i}º pessoa: ");
                 pessoa.Idade = int.Parse(Console.ReadLine());
 
-                Console.Write("Digite a altura da " + i + "º pessoa: ");
+                Console.Write($"Digite a altura da {i}º pessoa: ");
                 pessoa.Altura = decimal.Parse(Console.ReadLine());
 
-                Console.Write("Digite o peso da " + i + "º pessoa: ");
+                Console.Write($"Digite o peso da {i}º pessoa: ");
                 pessoa.Peso = decimal.Parse(Console.ReadLine());
 
                 //Regras de negócio

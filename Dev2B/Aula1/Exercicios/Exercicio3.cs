@@ -7,11 +7,14 @@ namespace Aula1.Exercicios
     {
         public void Execute()
         {
-            int valor1, valor2;
-            Console.WriteLine("Exercício 3\n\nDigite 2 valores\n\nPrimeiro valor: ");
-            valor1 = int.Parse(Console.ReadLine());
+            Console.Write("Exercício 3\n\nDigite 2 valores\n\nPrimeiro valor: ");
+            var valor1 = int.Parse(Console.ReadLine());
+
             Console.Write("Segundo valor: ");
-            valor2 = int.Parse(Console.ReadLine());
+            var valor2 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine();
+
             if ((valor1 % valor2) == 0)
                 Console.WriteLine($"{valor1} é múltiplo de {valor2}");
             else if ((valor2 % valor1) == 0)

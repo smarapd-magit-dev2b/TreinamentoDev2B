@@ -42,7 +42,7 @@ namespace Domain.Classes
                     var escolha = int.Parse(Console.ReadLine());
                     Console.Clear();
 
-                    if (escolha != 0 && escolha < ItemsExecute.Count)
+                    if (escolha != 0 && escolha <= ItemsExecute.Count)
                         ItemsExecute[escolha - 1].Execute();
                     else if (escolha > ItemsExecute.Count)
                         Console.WriteLine($"{escolha} não está na lista!");
