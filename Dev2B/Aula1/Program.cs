@@ -1,6 +1,7 @@
 ﻿using System;
 using Aula01;
 using Aula2;
+using Aula3;
 //using System;
 //using System.Collections.Generic;
 //using System.Linq;
@@ -12,11 +13,15 @@ namespace Application
     {
         static void Main(string[] args)
         {
-            ClassesObjetos classesObjetos = new ClassesObjetos();
             //EstruturasComando estruturasComando = new EstruturasComando();
-                
-            classesObjetos.Execute();
+            //ClassesObjetos classesObjetos = new ClassesObjetos(); 
+            //HerancasClassesAbstratasInterfaces herancasClassesAbstratasInterfaces = new HerancasClassesAbstratasInterfaces();
+            HerancasClassesAbstratasInterfaces herancasClassesAbstratasInterfaces = new HerancasClassesAbstratasInterfaces();
+
             //estruturasComando.Execute();
+            //classesObjetos.Execute();
+            herancasClassesAbstratasInterfaces.Execute();
+
         }
     }
 }
