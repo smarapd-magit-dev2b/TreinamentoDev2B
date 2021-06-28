@@ -15,6 +15,7 @@ namespace Aula2
                 Nacionalidade = "Cubano",
                 Ra = 3812938,
             };
+
             aluno.Endereco.Rua = "Rua Domingos Rizzo";
             aluno.Endereco.Cidade = "Jardim Nópolis";
             aluno.Endereco.Estado = "Serjipe";
