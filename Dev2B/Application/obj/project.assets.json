@@ -1,0 +1,147 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Aula01/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Aula01.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula01.dll": {}
+        }
+      },
+      "Aula02/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Aula02.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula02.dll": {}
+        }
+      },
+      "Aula03/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Aula03.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula03.dll": {}
+        }
+      },
+      "Aula04/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Aula04.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula04.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Aula01/1.0.0": {
+      "type": "project",
+      "path": "../Aula01/Aula01.csproj",
+      "msbuildProject": "../Aula01/Aula01.csproj"
+    },
+    "Aula02/1.0.0": {
+      "type": "project",
+      "path": "../Aula02/Aula02.csproj",
+      "msbuildProject": "../Aula02/Aula02.csproj"
+    },
+    "Aula03/1.0.0": {
+      "type": "project",
+      "path": "../Aula03/Aula03.csproj",
+      "msbuildProject": "../Aula03/Aula03.csproj"
+    },
+    "Aula04/1.0.0": {
+      "type": "project",
+      "path": "../Aula04/Aula04.csproj",
+      "msbuildProject": "../Aula04/Aula04.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Aula01 >= 1.0.0",
+      "Aula02 >= 1.0.0",
+      "Aula03 >= 1.0.0",
+      "Aula04 >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\AMJARIA\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\AMJARIA\\Desktop\\treinamento\\exercícios\\TreinamentoDev2B\\Dev2B\\Application\\Application.csproj",
+      "projectName": "Application",
+      "projectPath": "C:\\Users\\AMJARIA\\Desktop\\treinamento\\exercícios\\TreinamentoDev2B\\Dev2B\\Application\\Application.csproj",
+      "packagesPath": "C:\\Users\\AMJARIA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\AMJARIA\\Desktop\\treinamento\\exercícios\\TreinamentoDev2B\\Dev2B\\Application\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\AMJARIA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "C:\\Users\\AMJARIA\\Desktop\\treinamento\\exercícios\\TreinamentoDev2B\\Dev2B\\Aula01\\Aula01.csproj": {
+              "projectPath": "C:\\Users\\AMJARIA\\Desktop\\treinamento\\exercícios\\TreinamentoDev2B\\Dev2B\\Aula01\\Aula01.csproj"
+            },
+            "C:\\Users\\AMJARIA\\Desktop\\treinamento\\exercícios\\TreinamentoDev2B\\Dev2B\\Aula02\\Aula02.csproj": {
+              "projectPath": "C:\\Users\\AMJARIA\\Desktop\\treinamento\\exercícios\\TreinamentoDev2B\\Dev2B\\Aula02\\Aula02.csproj"
+            },
+            "C:\\Users\\AMJARIA\\Desktop\\treinamento\\exercícios\\TreinamentoDev2B\\Dev2B\\Aula03\\Aula03.csproj": {
+              "projectPath": "C:\\Users\\AMJARIA\\Desktop\\treinamento\\exercícios\\TreinamentoDev2B\\Dev2B\\Aula03\\Aula03.csproj"
+            },
+            "C:\\Users\\AMJARIA\\Desktop\\treinamento\\exercícios\\TreinamentoDev2B\\Dev2B\\Aula04\\Aula04.csproj": {
+              "projectPath": "C:\\Users\\AMJARIA\\Desktop\\treinamento\\exercícios\\TreinamentoDev2B\\Dev2B\\Aula04\\Aula04.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
