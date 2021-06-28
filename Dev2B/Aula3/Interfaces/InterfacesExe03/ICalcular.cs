@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace Aula3.Interfaces {
-    public interface InterfacesExe03 {
+    public interface ICalcular {
 
         void Calcular();
     }

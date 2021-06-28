@@ -9,11 +9,11 @@ namespace Application {
         static void Main(string[] args) {
             ExercicioAula01 Exe1 = new ExercicioAula01();
             ExercicioAula02 Exe2 = new ExercicioAula02();
-            ExercicioAula03 Exe3 = new ExercicioAula03();
+            IExercicioAula03 Exe3 = new IExercicioAula03();
 
-            //Exe1.Executar();
+            Exe1.Executar();
             //Exe2.Executar();
-            Exe3.Executar();
+            //Exe3.Executar();
         }
     }
 }

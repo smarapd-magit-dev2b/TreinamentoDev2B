@@ -2,9 +2,7 @@
 using System;
 
 namespace Aula3.Classes.ClassesExe03 {
-    public class Multiplicacao : InterfacesExe03 {
-        public decimal Valor1 { get; set; }
-        public decimal Valor2 { get; set; }
+    public class Multiplicacao : Valor, ICalcular {
 
         public Multiplicacao(decimal n1, decimal n2) {
             Valor1 = n1;

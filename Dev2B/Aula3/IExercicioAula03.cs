@@ -1,16 +1,18 @@
 ﻿using Aula3.Classes.ClassesExe01;
 using Aula3.Classes.ClassesExe02;
+using Aula3.Classes.ClassesExe03;
+using Aula3.Classes.ClassesExe04;
 using System.Globalization;
 using System;
-using Aula3.Classes.ClassesExe03;
 
 namespace Aula3 {
 
-    public class ExercicioAula03 {
+    public class IExercicioAula03 {
         public void Executar() {
             Exercicio01();
             Exercicio02();
             Exercicio03();
+            Exercicio04();
         }
         private void Exercicio01() {
 
@@ -122,8 +124,6 @@ namespace Aula3 {
 
         }
         private void Exercicio02() {
-            var i = 1;
-
             Aviao aviao = new Aviao("Branco", 300, "Diesel", "AirGood", 3, 100, 3, 120, "Grande");
             Moto moto = new Moto("Vermela", 200, "Gasolina", "Honda", 2, 2, true);
             Carro carro = new Carro("Prata", 250, "Etanol", "FIAT", 4, 4, 4, true, false);
@@ -144,7 +144,7 @@ namespace Aula3 {
             carro.FichaMecanica();
             Console.WriteLine("Qnt. de Portas: " + carro.QntPortas);
             Console.WriteLine("Possui Step: " + carro.PossuiStep);
-            Console.WriteLine("Possui Tração Traseira: "+ carro.PossuiTracaoTraseira);
+            Console.WriteLine("Possui Tração Traseira: " + carro.PossuiTracaoTraseira);
             Console.WriteLine("------------------------------------");
             Console.ReadKey();
 
@@ -175,7 +175,7 @@ namespace Aula3 {
                     case "+":
                         Console.Write("Digite o primeiro valor: ");
                         var valor1 = decimal.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-                        
+
                         Console.Write("Digite o primeiro valor: ");
                         var valor2 = decimal.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
@@ -229,15 +229,78 @@ namespace Aula3 {
                         Console.WriteLine("Opção Invalida...");
                         Console.ReadKey();
                         break;
-                    
 
                 }
-            
-            
             }
         }
         private void Exercicio04() {
+            Console.WriteLine("-----BEM VINDO(A) A SMARAPD BANK-----");
 
+            Console.Write("Nome do Titular: ");
+            string nome = Console.ReadLine();
+
+            Console.Write("Número da Conta: ");
+            var numconta = int.Parse(Console.ReadLine());
+
+            Console.Write("Número da Agencia: ");
+            var numagencia = int.Parse(Console.ReadLine());
+
+            Console.Clear();
+
+            Console.WriteLine($"Titular: {nome}\n" +
+                              $"Conta: {numconta}  Agencia: {numagencia}\n");
+
+            Console.Write("[1] - Conta Corrente\n" +
+                          "[2] - Conta Poupança\n" +
+                          "[3] - Sair\n");
+            Console.Write("Sua Opção: ");
+            var opcao = int.Parse(Console.ReadLine());
+
+            switch (opcao) {
+                case 1:
+                    ContaCorrente contacorrente = new ContaCorrente(numconta, numagencia);
+                    Console.Write("Depositar: R$");
+                    contacorrente.MovimentacoesDepositos = decimal.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                    contacorrente.Deposito(contacorrente.MovimentacoesDepositos);
+
+                    bool rodando = true;
+                    while (rodando) {
+                        Console.Write("Sacar: R$");
+                        contacorrente.MovimentacoesSaques = decimal.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+                        if (contacorrente.MovimentacoesSaques + contacorrente.AplicarTaxaServico() < contacorrente.Saldo) {
+                            contacorrente.Sacar();
+                            rodando = false;
+                        }
+                        else
+                            Console.WriteLine("Saldo Insulficiente...");
+                    }
+                    Console.WriteLine("\n---Imprimindo Extrato---\n");
+                    contacorrente.ImprimeExtrato(nome);
+                    break;
+                case 2:
+                    ContaPoupanca contapoupanca = new ContaPoupanca(numconta, numagencia);
+                    Console.Write("Depositar: R$");
+                    contapoupanca.MovimentacoesDepositos = decimal.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                    contapoupanca.Deposito(contapoupanca.MovimentacoesDepositos);
+
+                    Console.Write("Qual o valor dos aportes mensais: R$");
+                    var aportesmensais = decimal.Parse(Console.ReadLine());
+                    Console.Write("Quanto tempo em meses deseja deixar o dinheiro investido: ");
+                    var tempo = int.Parse(Console.ReadLine());
+
+                    contapoupanca.AplicarRendimentos(tempo, aportesmensais);
+
+                    Console.WriteLine("\n---Imprimindo Extrato---\n");
+                    contapoupanca.ImprimeExtrato(nome);
+                    break;
+                case 3:
+                    Console.WriteLine("Saindo... Obrigado pela preferência !");
+                    break;
+                default:
+                    Console.WriteLine("Opção Invalida...");
+                    break;
+            }
         }
     }
 }

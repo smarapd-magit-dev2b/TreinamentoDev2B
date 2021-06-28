@@ -2,10 +2,8 @@
 using System;
 
 namespace Aula3.Classes.ClassesExe03 {
-    public class Subtracao : InterfacesExe03 {
-        public decimal Valor1 { get; set; }
-        public decimal Valor2 { get; set; }
-
+    public class Subtracao : Valor, ICalcular {
+       
         public Subtracao(decimal n1, decimal n2) {
             Valor1 = n1;
             Valor2 = n2;

@@ -9,3 +9,4 @@ C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Aula1\bin\Debug\n
 C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Aula1\obj\Debug\net5.0\Aula1.dll
 C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Aula1\obj\Debug\net5.0\ref\Aula1.dll
 C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Aula1\obj\Debug\net5.0\Aula1.pdb
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Aula1\obj\Debug\net5.0\Aula1.csproj.AssemblyReference.cache

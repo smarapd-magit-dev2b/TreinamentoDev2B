@@ -4,17 +4,22 @@ using System.Globalization;
 namespace Aula1 {
     public class ExercicioAula01 {
         public void Executar() {
-            Exercicio01();
-            Exercicio02();
-            Exercicio03();
-            Exercicio04IF();
-            Exercicio05();
-            Exercicio06();
-            Exercicio07();
-            Exercicio08();
-            Exercicio09();
-            Exercicio10();
-            Desafio01();
+            //Exercicio01();
+            //Exercicio02();
+            //Exercicio03();
+            //Exercicio04IF();
+            //Exercicio04SWITCH();
+            //Exercicio05();
+            //Exercicio06();
+            //Exercicio07();
+            //Exercicio08();
+            //Exercicio09();
+            //Exercicio10();
+            //Desafio01();
+            //Desafio02();
+            //Desafio03();
+            //Desafio04();
+            //Desafio05();
         }
         private void Exercicio01() {
             bool rodando = true;
@@ -429,6 +434,230 @@ namespace Aula1 {
 
             }
         }
+        private void Desafio02() {
+            bool rodando = true;
 
+            //Para encerrar o programa o código do usuario tem que ser menor ou igual a 0 
+
+            while (rodando) {
+                Console.Clear();
+                Console.Write("Digite o código do cliente: ");
+                int codigo = int.Parse(Console.ReadLine());
+                if (codigo <= 0) {
+                    Console.WriteLine("Saindo...");
+                    rodando = false;
+                }
+                else {
+                    Console.Write("-----MENU-----\n" +
+                                  "[1] - Poupança 1,5% a.m.\n" +
+                                  "[2] - Poupança Plus 2% a.m.\n" +
+                                  "[3] - Fundos de Renda Fixa 4% a.m.\n" +
+                                  "Escolha: ");
+                    int opcao = int.Parse(Console.ReadLine());
+
+                    switch (opcao) {
+                        case 1:
+                            Console.Write("Valor do deposito: R$");
+                            decimal deposito = decimal.Parse(Console.ReadLine());
+                            decimal SaldoInicial = 0m;
+                            SaldoInicial = deposito;
+
+                            Console.Write("Quantos meses o dinheiro ficará investido: ");
+                            int tempo = int.Parse(Console.ReadLine());
+
+                            decimal rendimento = deposito * (1.5m / 100m);
+
+                            decimal jurospago = 0m;
+
+                            for (int i = 1; i <= tempo; i++) {
+                                rendimento = deposito * (1.5m / 100m);
+                                deposito += rendimento;
+                                jurospago += rendimento;
+                            }
+                            Console.WriteLine("\n\n-------------------------------\n");
+                            Console.WriteLine("Saldo inicial: R$" + SaldoInicial.ToString("F2") + "\n" +
+                                              "Total de juros pago: R$" + jurospago.ToString("F2") + "\n" +
+                                              "Saldo no final do período: R$" + deposito.ToString("F2"));
+                            Console.ReadKey();
+                            break;
+                        case 2:
+                            Console.Write("Valor do deposito: R$");
+                            deposito = decimal.Parse(Console.ReadLine());
+                            SaldoInicial = deposito;
+
+                            Console.Write("Quantos meses o dinheiro ficará investido: ");
+                            tempo = int.Parse(Console.ReadLine());
+
+                            jurospago = 0m;
+
+                            for (int i = 1; i <= tempo; i++) {
+                                rendimento = deposito * (2m / 100m);
+                                deposito += rendimento;
+                                jurospago += rendimento;
+                            }
+                            Console.WriteLine("Saldo inicial: R$" + SaldoInicial.ToString("F2") + "\n" +
+                                              "Total de juros pago: R$" + jurospago.ToString("F2") + "\n" +
+                                              "Saldo no final do período: R$" + deposito.ToString("F2"));
+                            Console.ReadKey();
+                            break;
+                        case 3:
+                            Console.Write("Valor do deposito: R$");
+                            deposito = decimal.Parse(Console.ReadLine());
+                            SaldoInicial = deposito;
+
+                            Console.Write("Quantos meses o dinheiro ficará investido: ");
+                            tempo = int.Parse(Console.ReadLine());
+
+                            jurospago = 0m;
+
+                            for (int i = 1; i <= tempo; i++) {
+                                rendimento = deposito * (4m / 100m);
+                                deposito += rendimento;
+                                jurospago += rendimento;
+                            }
+
+                            Console.WriteLine("\n\n-------------------------------\n");
+
+                            Console.WriteLine("Saldo inicial: R$" + SaldoInicial.ToString("F2") + "\n" +
+                                              "Total de juros pago: R$" + jurospago.ToString("F2") + "\n" +
+                                              "Saldo no final do período: R$" + deposito.ToString("F2"));
+                            Console.ReadKey();
+                            break;
+                        default:
+                            Console.WriteLine("Opção Invalida....");
+                            Console.ReadKey();
+                            break;
+                    }
+                }
+
+            }
+        }
+        private void Desafio03() {
+            decimal valor1 = 0m, valorauxiliar;
+            bool rodando = true;
+
+            while (rodando) {
+                Console.Clear();
+                Console.WriteLine("----CALCULADORA----");
+                Console.WriteLine(valor1.ToString("F2", CultureInfo.InvariantCulture));
+                Console.WriteLine("-------------------");
+                Console.WriteLine("[+] - Adição\n" +
+                                  "[-] - Subtração\n" +
+                                  "[*] - Multiplicação\n" +
+                                  "[/] - Divisão\n" +
+                                  "[C] - Limpar Tela\n" +
+                                  "[S] - Sair");
+                string opcao = Console.ReadLine();
+
+                switch (opcao) {
+                    case "+":
+                        Console.Write($"{valor1} + ");
+                        valorauxiliar = decimal.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                        valor1 += valorauxiliar;
+                        break;
+                    case "-":
+                        Console.Write($"{valor1} - ");
+                        valorauxiliar = decimal.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                        valor1 -= valorauxiliar;
+                        break;
+                    case "*":
+                        if (valor1 == 0) {
+                            Console.Write("Digite o primeiro valor: ");
+                            valor1 = decimal.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                            Console.Write($"{valor1} * ");
+                            valorauxiliar = decimal.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                        }
+                        else {
+                            Console.Write($"{valor1} * ");
+                            valorauxiliar = decimal.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                        }
+                        valor1 *= valorauxiliar;
+
+                        break;
+                    case "/":
+                        if (valor1 == 0) {
+                            Console.Write("Digite o primeiro valor: ");
+                            valor1 = decimal.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                            Console.Write($"{valor1} / ");
+                            valorauxiliar = decimal.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                        }
+                        Console.Write($"{valor1} / ");
+                        valorauxiliar = decimal.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                        if (valorauxiliar == 0) {
+                            Console.WriteLine("Impossivel realizar divisão por 0");
+                            Console.ReadKey();
+                        }
+                        else
+                            valor1 /= valorauxiliar;
+                        break;
+                    case "C":
+                        valor1 = 0;
+                        break;
+                    case "S":
+                        Console.WriteLine("Saindo...");
+                        rodando = false;
+                        break;
+                    default:
+                        Console.WriteLine("Opção Invalida....");
+                        Console.ReadKey();
+                        break;
+                }
+            }
+        }
+        private void Desafio04() {
+            int contador = 0, contador2 = 0;
+            string pontos = "*";
+
+            do {
+                if (contador <= 3) {
+                    contador++;
+                    contador2++;
+                    Console.WriteLine(pontos);
+                    pontos += "*";
+                }
+                else {
+                    contador2--;
+                    Console.WriteLine(pontos.Substring(0, contador2));
+
+                }
+            } while (contador2 > 0);
+        }
+        private void Desafio05() {
+            //string nomeEpontos = null;
+
+            //Console.Write("Número de partidas: ");
+            //int numpartidas = int.Parse(Console.ReadLine());
+
+            //Console.Write("Número de times: ");
+            //int numtimes = int.Parse(Console.ReadLine());
+
+            //string[] nometime = new string[numtimes];
+            //int[] pontos = new int[numtimes];
+
+            //for (int i = 0; i < numtimes; i++) {
+            //    Console.Write("Digite o nome do time e quantidade de pontos: ");
+            //    nomeEpontos = Console.ReadLine();
+
+            //    var aux = nomeEpontos.Split(" ");
+
+            //    nometime[i] = aux[0];
+            //    pontos[i] = Convert.ToInt32(aux[1]);
+
+            //    Console.WriteLine(nometime[i]);
+            //    Console.WriteLine(pontos[i]);
+            //}
+
+            //int pontostotal = 0;
+
+            //for (int i = 0; i < numtimes; i++) {
+            //    pontostotal += pontos[i];
+            //}
+            //if (pontostotal > (3 * numpartidas ) && pontostotal < (2 * numpartidas))
+            //    Console.WriteLine("Pontos de partidas não condiz com a quantidade total de partidas...");
+            //else {
+
+            //}
+            
+        }
     }
 }

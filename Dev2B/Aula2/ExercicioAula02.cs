@@ -13,6 +13,7 @@ namespace Aula2 {
             Exercicio02();
             Exercicio03();
             Exercicio04();
+            Desafio01();
         }
         private void Exercicio01() {
             int codigo, quantidadeComprada;
@@ -190,6 +191,11 @@ namespace Aula2 {
                              $"\nResgistro do Professor: {aluno.Professor.RegistroProfessor}\nSalario: R${aluno.Professor.Salario}\n" +
                              $"\nDisciplina: {aluno.Professor.Disciplina.GetNome()}\nCurso:{aluno.Professor.Disciplina.GetCurso()}\n" +
                              $"\nCID: {aluno.Professor.Disciplina.GetCID()}\nData de Inclusão: {aluno.Professor.Disciplina.GetDate().ToShortDateString()}");
+        }
+        private void Desafio01() {
+            //O desafio01 é uma manipulação de classes, alterando-as ou implementando-as conforme o desafio vai prosseguindo
+
+            //NÃO TEM TESTE PRATICO - PASTA "ClassesDes01" CONTÉM O DESAFIO 
         }
     }
 }
