@@ -15,6 +15,7 @@ namespace Aula1.Exercicios
         private void Exercicio6for()
         {
             Console.WriteLine("Exercício 6 For\n");
+
             for (int i = 3; i < 100; i += 3)
                 Console.WriteLine(i);
         }
@@ -22,7 +23,9 @@ namespace Aula1.Exercicios
         private void Exercicio6while()
         {
             Console.WriteLine("Exercício 6 While\n");
-            int i = 3;
+
+            var i = 3;
+
             while (i < 100)
             {
                 Console.WriteLine(i);
@@ -33,7 +36,9 @@ namespace Aula1.Exercicios
         private void Exexercicio6do()
         {
             Console.WriteLine("Exercício 6 Do While\n");
+
             int i = 3;
+
             do
             {
                 Console.WriteLine(i);

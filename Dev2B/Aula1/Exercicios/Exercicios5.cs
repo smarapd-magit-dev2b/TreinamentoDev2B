@@ -24,7 +24,7 @@ namespace Aula1.Exercicios
 
         private void Exercicio5while()
         {
-            int i = 1;
+            var i = 1;
 
             while (i <= 100)
             {
@@ -37,7 +37,7 @@ namespace Aula1.Exercicios
 
         private void Exercicio5do()
         {
-            int i = 1;
+            var i = 1;
 
             do
             {

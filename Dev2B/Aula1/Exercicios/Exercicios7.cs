@@ -5,6 +5,8 @@ namespace Aula1.Exercicios
 {
     public class Exercicios7 : IExecute
     {
+        private int Soma { get; set; }
+
         public void Execute()
         {
             Exercicio7for();
@@ -14,35 +16,39 @@ namespace Aula1.Exercicios
 
         private void Exercicio7for()
         {
-            int soma = 0;
             for (int i = 1; i <= 100; i++)
                 if ((i % 3) != 0)
-                    soma += i;
-            Console.WriteLine($"Exercício 7 For\n\nSoma de 1 a 100 menos os múltiplos de 3: {soma}");
+                    Soma += i;
+
+            Console.WriteLine($"Exercício 7 For\n\nSoma de 1 a 100 menos os múltiplos de 3: {Soma}");
         }
 
         private void Exercicio7while()
         {
-            int soma = 0, i = 1;
+            var i = 1;
+
             while (i <= 100)
             {
                 if ((i % 3) != 0)
-                    soma += i;
+                    Soma += i;
                 i++;
             }
-            Console.WriteLine($"Exercício 7 While\n\nSoma de 1 a 100 menos os múltiplos de 3: {soma}");
+
+            Console.WriteLine($"Exercício 7 While\n\nSoma de 1 a 100 menos os múltiplos de 3: {Soma}");
         }
 
         private void Exercicio7do()
         {
-            int soma = 0, i = 1;
+            var i = 1;
+            
             do
             {
                 if ((i % 3) != 0)
-                    soma += i;
+                    Soma += i;
                 i++;
             } while (i <= 100);
-            Console.WriteLine($"Exercício 7 Do While\n\nSoma de 1 a 100 menos os múltiplos de 3: {soma}");
+
+            Console.WriteLine($"Exercício 7 Do While\n\nSoma de 1 a 100 menos os múltiplos de 3: {Soma}");
         }
     }
 }

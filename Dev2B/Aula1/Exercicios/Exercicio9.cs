@@ -7,11 +7,9 @@ namespace Aula1.Exercicios
     {
         public void Execute()
         {
-            bool run;
+            bool run = true;
             do
             {
-                run = true;
-
                 Console.Write("Exercício 9 \n\nDigite um número de 1 a 100: ");
                 var numero = int.Parse(Console.ReadLine());
 
