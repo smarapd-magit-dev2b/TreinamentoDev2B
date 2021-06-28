@@ -8,8 +8,7 @@ namespace Aula04
         public void Execute()
         {
             Ex1();
-            
-
+            Ex2();
         }
 
         static void Ex1()
@@ -24,6 +23,25 @@ namespace Aula04
             
             Funcionario funcionario = new Funcionario("Fulvia Oliveira", "Travessa da União", "842555", "23254", "7888", "878855", 1, "Divorciada", 1500, "158444", DateTime.Now);
             funcionario.EscreverInformacoes();
+
+        }
+
+        static void Ex2()
+        {
+            Console.WriteLine("Informações Aviao\n\n");
+            Aviao aviao = new Aviao("Branco", 1000m, "Diesel", "Boing", 200, 8, 2, "Grande");
+            aviao.EscreverDadosEspecificos();
+
+
+            Console.WriteLine("\n\nInformações Carro\n\n");
+            Carro carro = new Carro("Preto", 200m, "Alcool", "Gol", 4, 4, true, true, 2);
+            carro.EscreverDadosEspecificos();
+
+
+            Console.WriteLine("\n\nInformações Moto\n\n");
+            Moto moto = new Moto("Preto", 100m, "Alcool", "Kawasaki", 2, 2, false);
+            moto.EscreverDadosEspecificos();
+                      
 
         }
     }

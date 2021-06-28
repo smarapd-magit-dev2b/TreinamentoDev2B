@@ -16,9 +16,9 @@ namespace Application
             AbstrataInterface abstrataInterface = new AbstrataInterface();
             Heranca heranca = new Heranca();
 
-            //estruturasComando.Execute();
-            //classesObjetos.Execute();
-            //abstrataInterface.Execute();
+            estruturasComando.Execute();
+            classesObjetos.Execute();
+            abstrataInterface.Execute();
             heranca.Execute();
         }
     }

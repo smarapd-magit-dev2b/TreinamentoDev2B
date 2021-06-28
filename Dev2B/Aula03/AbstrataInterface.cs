@@ -8,10 +8,52 @@ namespace Aula03
     {
         public void Execute()
         {
-            //Ex2Abstrata();
-            //Ex2Interface();
+            Ex1Abstrata();
+            Ex1Interface();
+            Ex2Abstrata();
+            Ex2Interface();
+        }
+
+
+        static void Ex1Abstrata()
+        {
+            Console.WriteLine("\n\nPOUPANÇA\n");
+            ContaPoupanca contaPoupanca = new ContaPoupanca(54, "Agência Centro");
+            contaPoupanca.ImpreExtrato();
+            contaPoupanca.Depositar(1000m);
+            contaPoupanca.Sacar(500m);
+            contaPoupanca.AplicarRendimento(10);           
+            contaPoupanca.ImpreExtrato();          
+
+            Console.WriteLine("\n\nCONTA CORRENTE\n");
+            ContaCorrente contaCorrente = new ContaCorrente(45, "Agência Centro");
+            contaCorrente.ImpreExtrato();
+            contaCorrente.Depositar(1000m);
+            contaCorrente.Sacar(500m);
+            contaCorrente.AplicarTaxaServico(100);
+            contaCorrente.ImpreExtrato();            
+        }
+
+        static void Ex1Interface()
+        {
+            Console.WriteLine("\n\nPOUPANÇA\n");
+            ContaPoupancaI contaPoupanca = new ContaPoupancaI(54, "Agência Centro");
+            contaPoupanca.ImpreExtrato();
+            contaPoupanca.Depositar(1000m);
+            contaPoupanca.Sacar(500m);
+            contaPoupanca.AplicarRendimento(10);
+            contaPoupanca.ImpreExtrato();
+
+            Console.WriteLine("\n\nCONTA CORRENTE\n");
+            ContaCorrenteI contaCorrente = new ContaCorrenteI(45, "Agência Centro");
+            contaCorrente.ImpreExtrato();
+            contaCorrente.Depositar(1000m);
+            contaCorrente.Sacar(500m);
+            contaCorrente.AplicarTaxaServico(100);
+            contaCorrente.ImpreExtrato();
 
         }
+
 
         static void Ex2Abstrata()
         {
@@ -34,6 +76,7 @@ namespace Aula03
             Console.WriteLine("A multiplicacao é: " + resultado);
 
         }
+
 
         static void Ex2Interface()
         {            

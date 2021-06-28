@@ -12,8 +12,7 @@ namespace Aula02
             Ex2();
             Ex3();
             Ex4();
-            ExExtra();
-            
+            ExExtra();            
         }
 
         static void Ex1()
