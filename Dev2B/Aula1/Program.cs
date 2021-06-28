@@ -15,7 +15,6 @@ namespace Application
         {
             //EstruturasComando estruturasComando = new EstruturasComando();
             //ClassesObjetos classesObjetos = new ClassesObjetos(); 
-            //HerancasClassesAbstratasInterfaces herancasClassesAbstratasInterfaces = new HerancasClassesAbstratasInterfaces();
             HerancasClassesAbstratasInterfaces herancasClassesAbstratasInterfaces = new HerancasClassesAbstratasInterfaces();
 
             //estruturasComando.Execute();
