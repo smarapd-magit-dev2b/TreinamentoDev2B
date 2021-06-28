@@ -5,6 +5,8 @@ namespace Aula1.Exercicios
 {
     public class Exercicios5 : IExecute
     {
+        private int Soma { get; set; }
+
         public void Execute()
         {
             Exercicio5for();
@@ -14,32 +16,36 @@ namespace Aula1.Exercicios
 
         private void Exercicio5for()
         {
-            int soma = 0;
             for (int i = 1; i <= 100; i++)
-                soma += i;
-            Console.WriteLine($"Exercício 5 for\n\nSoma de 1 a 100: {soma}");
+                Soma += i;
+
+            Console.WriteLine($"Exercício 5 for\n\nSoma de 1 a 100: {Soma}");
         }
 
         private void Exercicio5while()
         {
-            int soma = 0, i = 1;
+            int i = 1;
+
             while (i <= 100)
             {
-                soma += i;
+                Soma += i;
                 i++;
             }
-            Console.WriteLine($"Exercício 5 While\n\nSoma de 1 a 100: {soma}");
+
+            Console.WriteLine($"Exercício 5 While\n\nSoma de 1 a 100: {Soma}");
         }
 
         private void Exercicio5do()
         {
-            int soma = 0, i = 1;
+            int i = 1;
+
             do
             {
-                soma += i;
+                Soma += i;
                 i++;
             } while (i <= 100);
-            Console.WriteLine($"Exercício 5 Do While\n\nSoma de 1 a 100: {soma}");
+
+            Console.WriteLine($"Exercício 5 Do While\n\nSoma de 1 a 100: {Soma}");
         }
     }
 }

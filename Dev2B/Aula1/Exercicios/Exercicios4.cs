@@ -5,7 +5,8 @@ namespace Aula1.Exercicios
 {
     public class Exercicios4 : IExecute
     {
-        public char Operacao { get; set; }
+        private char Operacao { get; set; }
+
         public void Execute()
         {
             Exercicio4if();
