@@ -7,12 +7,14 @@ namespace Aula1.Exercicios
     {
         public void Execute()
         {
-            int numero;
-            bool run = true;
+            bool run;
             do
             {
+                run = true;
+
                 Console.Write("Exercício 9 \n\nDigite um número de 1 a 100: ");
-                numero = int.Parse(Console.ReadLine());
+                var numero = int.Parse(Console.ReadLine());
+
                 if (numero >= 0 && numero <= 100)
                 {
                     Tabuada(numero);

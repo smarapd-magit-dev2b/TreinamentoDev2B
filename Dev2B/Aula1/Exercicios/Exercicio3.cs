@@ -21,6 +21,8 @@ namespace Aula1.Exercicios
                 Console.WriteLine($"{valor2} é múltiplo de {valor1}");
             else
                 Console.WriteLine($"{valor1} e {valor2} não são múltiplos");
+
+            Console.WriteLine();
         }
     }
 }

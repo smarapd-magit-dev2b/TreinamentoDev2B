@@ -9,7 +9,6 @@ namespace Aula1.Exercicios
         private int PessoasIdadeSuperior50 { get; set; }
         private int PessoasIdade10a20 { get; set; }
         private decimal MediaAlturaPessoas10a20anos { get; set; }
-        private decimal PorcentagemPessoasPesoInferior40 { get; set; }
         private decimal MediaAlturasPessoas10a20anos { get; set; }
         private decimal PessoasPesoInferior40 { get; set; }
 
@@ -41,15 +40,14 @@ namespace Aula1.Exercicios
                 if (pessoa.Peso < 40)
                     PessoasPesoInferior40++;
             }
+
             //Regras de negócio
             if (PessoasIdade10a20 != 0)
                 MediaAlturaPessoas10a20anos = MediaAlturasPessoas10a20anos / PessoasIdade10a20;
 
-            PorcentagemPessoasPesoInferior40 = PessoasPesoInferior40 / 5;
-
             Console.WriteLine($"Há {PessoasIdadeSuperior50} pessoas com idade superior a 50 anos");
             Console.WriteLine($"A média das alturas das pessoas entre 10 e 20 anos é {MediaAlturaPessoas10a20anos}");
-            Console.WriteLine($"A porcentagem das pessoas com peso inferior a 40 kilos é {PorcentagemPessoasPesoInferior40 * 100}%");
+            Console.WriteLine($"A porcentagem das pessoas com peso inferior a 40 kilos é {20 * PessoasPesoInferior40}%");
         }
     }
 }

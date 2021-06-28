@@ -5,6 +5,7 @@ namespace Aula1.Exercicios
 {
     public class Exercicios4 : IExecute
     {
+        public char Operacao { get; set; }
         public void Execute()
         {
             Exercicio4if();
@@ -13,55 +14,57 @@ namespace Aula1.Exercicios
 
         private void Exercicio4if()
         {
-            decimal numero1, numero2;
-            char? operacao = null;
-            Console.WriteLine("Exercício 4 If\n\nDigite dois números e a operação que deseja realizar com eles\n\n" +
-                "Operações: Soma(+), Subtração(-), Multiplicação(x), Divisão(/)\n");
-            Console.Write("Primeiro número: ");
-            numero1 = decimal.Parse(Console.ReadLine());
+            Console.Write("Exercício 4 If\n\nDigite dois números e a operação que deseja realizar com eles\n\n" +
+                "Operações: Soma(+), Subtração(-), Multiplicação(x), Divisão(/)\n\n" +
+                "Primeiro número: ");
+            var numero1 = decimal.Parse(Console.ReadLine());
+
             Console.Write("Segundo número: ");
-            numero2 = decimal.Parse(Console.ReadLine());
+            var numero2 = decimal.Parse(Console.ReadLine());
+
             Console.Write("Operação: ");
             try
             {
-                operacao = char.Parse(Console.ReadLine());
+                Operacao = char.Parse(Console.ReadLine());
             }
             catch (FormatException)
             {
                 Console.WriteLine("Digite apenas 1 caractere!");
             }
-            if (operacao == '+')
+
+            if (Operacao == '+')
                 Console.WriteLine($"{numero1} + {numero2} = {numero1 + numero2}");
-            else if (operacao == '-')
+            else if (Operacao == '-')
                 Console.WriteLine($"{numero1} - {numero2} = {numero1 - numero2}");
-            else if (operacao == 'x')
+            else if (Operacao == 'x')
                 Console.WriteLine($"{numero1} x {numero2} = {numero1 * numero2}");
-            else if (operacao == '/')
+            else if (Operacao == '/')
                 Console.WriteLine($"{numero1} / {numero2} = {numero1 / numero2}");
             else
-                Console.WriteLine($"{operacao} é uma operação inválida!");
+                Console.WriteLine($"{Operacao} é uma operação inválida!");
         }
 
         private void Exercicio4switch()
         {
-            decimal numero1, numero2;
-            char? operacao = null;
             Console.WriteLine("Exercício 4 Switch\n\nDigite dois números e a operação que deseja realizar com eles\n\n" +
-                "Operações: Soma(+), Subtração(-), Multiplicação(x), Divisão(/)\n");
-            Console.Write("Primeiro número: ");
-            numero1 = decimal.Parse(Console.ReadLine());
+                "Operações: Soma(+), Subtração(-), Multiplicação(x), Divisão(/)\n\n" +
+                "Primeiro número: ");
+            var numero1 = decimal.Parse(Console.ReadLine());
+
             Console.Write("Segundo número: ");
-            numero2 = decimal.Parse(Console.ReadLine());
+            var numero2 = decimal.Parse(Console.ReadLine());
+
             Console.Write("Operação: ");
             try
             {
-                operacao = char.Parse(Console.ReadLine());
+                Operacao = char.Parse(Console.ReadLine());
             }
             catch (FormatException)
             {
                 Console.WriteLine("Digite apenas 1 caractere!");
             }
-            switch (operacao)
+
+            switch (Operacao)
             {
                 case '+':
                     Console.WriteLine($"{numero1} + {numero2} = {numero1 + numero2}");
@@ -76,7 +79,7 @@ namespace Aula1.Exercicios
                     Console.WriteLine($"{numero1} / {numero2} = {numero1 / numero2}");
                     break;
                 default:
-                    Console.WriteLine($"{operacao} é uma operação inválida!");
+                    Console.WriteLine($"{Operacao} é uma operação inválida!");
                     break;
             }
         }
