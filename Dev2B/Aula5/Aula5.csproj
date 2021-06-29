@@ -5,9 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Exercicio2Classes\" />
-    <Folder Include="Exercicio3Classes\" />
-    <Folder Include="Exercicio4Classes\" />
     <Folder Include="Exercicio5Classes\" />
   </ItemGroup>
 

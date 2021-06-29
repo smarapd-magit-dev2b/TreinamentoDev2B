@@ -15,6 +15,5 @@ namespace Aula5.Exercicio1Classes
         public decimal Peso { get; set; }
         public string NomeDoPai { get; set; }
         public string NomeDaMae { get; set; }
-
     }
 }
