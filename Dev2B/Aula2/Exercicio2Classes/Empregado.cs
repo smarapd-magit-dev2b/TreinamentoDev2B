@@ -46,4 +46,5 @@ namespace Aula2.Exercicio2Classes
             Console.WriteLine($"Salário anual: {salarioAtualAnual}");
             Console.WriteLine($"Salário reajustado: {salarioReajustado}");
         }
+    }
 }

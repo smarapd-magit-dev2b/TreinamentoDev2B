@@ -1,6 +1,7 @@
 ﻿using Aula1;
 using Aula2;
 using Aula3;
+using Aula5;
 using System;
 
 namespace Application
@@ -9,13 +10,15 @@ namespace Application
     {
         static void Main(string[] args)
         {
-            EstruturasDeComando estruturasDeComando = new EstruturasDeComando();
-            ClassesObjeto classesObjeto = new ClassesObjeto();
-            HerancaAbstrataInterface herancaAbstrataInterface = new HerancaAbstrataInterface();
+            //EstruturasDeComando estruturasDeComando = new EstruturasDeComando();
+            //ClassesObjeto classesObjeto = new ClassesObjeto();
+            //HerancaAbstrataInterface herancaAbstrataInterface = new HerancaAbstrataInterface();
+            ColecoesLista colecoesLista = new ColecoesLista();
 
-            estruturasDeComando.Executar();
-            classesObjeto.Executar();
-            herancaAbstrataInterface.Executar();
+            //estruturasDeComando.Executar();
+            //classesObjeto.Executar();
+            //herancaAbstrataInterface.Executar();
+            colecoesLista.Executar();
         }
     }
 }

@@ -45,4 +45,5 @@ namespace Aula2.Exercicio3Classes
                 Dia = Dia + 1;
             }
         }
+    }
 }

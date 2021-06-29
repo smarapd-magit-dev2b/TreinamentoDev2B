@@ -203,10 +203,10 @@ namespace Aula3
             Console.Write("Digite o valor do segundo número: ");
             decimal valor2 = decimal.Parse(Console.ReadLine());
 
-            Soma soma = new Soma(valor1, valor2);
-            Subtracao subtracao = new Subtracao(valor1, valor2);
-            Multiplicacao multiplicacao = new Multiplicacao(valor1, valor2);
-            Divisao divisao = new Divisao(valor1, valor2);
+            Exercicio2Abstrata.Soma soma = new Exercicio2Abstrata.Soma(valor1, valor2);
+            Exercicio2Abstrata.Subtracao subtracao = new Exercicio2Abstrata.Subtracao(valor1, valor2);
+            Exercicio2Abstrata.Multiplicacao multiplicacao = new Exercicio2Abstrata.Multiplicacao(valor1, valor2);
+            Exercicio2Abstrata.Divisao divisao = new Exercicio2Abstrata.Divisao(valor1, valor2);
 
             Console.WriteLine("\n ----- RESULTADOS -----");
             Console.WriteLine($"Soma = {soma.Calcular(valor1, valor2)}");

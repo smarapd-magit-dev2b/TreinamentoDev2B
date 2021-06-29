@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Exercicio2Classes\" />
+    <Folder Include="Exercicio3Classes\" />
+    <Folder Include="Exercicio4Classes\" />
+    <Folder Include="Exercicio5Classes\" />
+  </ItemGroup>
+
+</Project>

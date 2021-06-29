@@ -181,7 +181,7 @@ namespace Aula1
 
         private void Exercicio5()
         {
-            int soma = 0, k = 1, j = 1;
+            int soma = 0, /*k = 1,*/ j = 1;
 
             // utilizando FOR 
             //for (int i = 1; i < 101; i++)
@@ -208,7 +208,7 @@ namespace Aula1
 
         private void Exercicio6()
         {
-            int j = 1, k = 1;
+            int /*j = 1,*/ k = 1;
 
             //for (int i = 1; i >= 1 && i <= 100; i++)
             //{
@@ -241,7 +241,7 @@ namespace Aula1
 
         private void Exercicio7()
         {
-            int soma = 0, j = 1, k = 1;
+            int soma = 0, /*j = 1,*/ k = 1;
 
             //for (int i = 1; i >= 1 && i <= 100; i++)
             //{
@@ -278,7 +278,7 @@ namespace Aula1
 
         private void Exercicio8()
         {
-            int j = 0, k = 0;
+            int /*j = 0,*/ k = 0;
 
             //for (int i = 0; i <= 30; i++)
             //{
@@ -311,7 +311,7 @@ namespace Aula1
 
         private void Exercicio9()
         {
-            int num, j = 0, k = 0;
+            int num, /*j = 0,*/ k = 0;
 
             Console.Write("Digite um valor de 0 a 100 para saber sua tabuada: ");
             num = int.Parse(Console.ReadLine());
