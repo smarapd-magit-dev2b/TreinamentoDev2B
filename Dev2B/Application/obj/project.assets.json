@@ -31,6 +31,16 @@
         "runtime": {
           "bin/placeholder/Aula3.dll": {}
         }
+      },
+      "Aula4/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Aula4.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula4.dll": {}
+        }
       }
     }
   },
@@ -49,13 +59,19 @@
       "type": "project",
       "path": "../Aula3/Aula3.csproj",
       "msbuildProject": "../Aula3/Aula3.csproj"
+    },
+    "Aula4/1.0.0": {
+      "type": "project",
+      "path": "../Aula4/Aula4.csproj",
+      "msbuildProject": "../Aula4/Aula4.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Aula1 >= 1.0.0",
       "Aula2 >= 1.0.0",
-      "Aula3 >= 1.0.0"
+      "Aula3 >= 1.0.0",
+      "Aula4 >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -64,11 +80,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\GTBESERRA\\Desktop\\TreinamentoDev2B\\Dev2B\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\GTBESERRA\\source\\repos\\TreinamentoDev2B\\Dev2B\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\GTBESERRA\\Desktop\\TreinamentoDev2B\\Dev2B\\Application\\Application.csproj",
+      "projectPath": "C:\\Users\\GTBESERRA\\source\\repos\\TreinamentoDev2B\\Dev2B\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\GTBESERRA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\GTBESERRA\\Desktop\\TreinamentoDev2B\\Dev2B\\Application\\obj\\",
+      "outputPath": "C:\\Users\\GTBESERRA\\source\\repos\\TreinamentoDev2B\\Dev2B\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\GTBESERRA\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -85,14 +101,17 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\GTBESERRA\\Desktop\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj": {
-              "projectPath": "C:\\Users\\GTBESERRA\\Desktop\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj"
+            "C:\\Users\\GTBESERRA\\source\\repos\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj": {
+              "projectPath": "C:\\Users\\GTBESERRA\\source\\repos\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj"
             },
-            "C:\\Users\\GTBESERRA\\Desktop\\TreinamentoDev2B\\Dev2B\\Aula2\\Aula2.csproj": {
-              "projectPath": "C:\\Users\\GTBESERRA\\Desktop\\TreinamentoDev2B\\Dev2B\\Aula2\\Aula2.csproj"
+            "C:\\Users\\GTBESERRA\\source\\repos\\TreinamentoDev2B\\Dev2B\\Aula2\\Aula2.csproj": {
+              "projectPath": "C:\\Users\\GTBESERRA\\source\\repos\\TreinamentoDev2B\\Dev2B\\Aula2\\Aula2.csproj"
             },
-            "C:\\Users\\GTBESERRA\\Desktop\\TreinamentoDev2B\\Dev2B\\Aula3\\Aula3.csproj": {
-              "projectPath": "C:\\Users\\GTBESERRA\\Desktop\\TreinamentoDev2B\\Dev2B\\Aula3\\Aula3.csproj"
+            "C:\\Users\\GTBESERRA\\source\\repos\\TreinamentoDev2B\\Dev2B\\Aula3\\Aula3.csproj": {
+              "projectPath": "C:\\Users\\GTBESERRA\\source\\repos\\TreinamentoDev2B\\Dev2B\\Aula3\\Aula3.csproj"
+            },
+            "C:\\Users\\GTBESERRA\\source\\repos\\TreinamentoDev2B\\Dev2B\\Aula4\\Aula4.csproj": {
+              "projectPath": "C:\\Users\\GTBESERRA\\source\\repos\\TreinamentoDev2B\\Dev2B\\Aula4\\Aula4.csproj"
             }
           }
         }

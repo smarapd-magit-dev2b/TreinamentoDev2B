@@ -9,6 +9,7 @@
     <ProjectReference Include="..\Aula1\Aula1.csproj" />
     <ProjectReference Include="..\Aula2\Aula2.csproj" />
     <ProjectReference Include="..\Aula3\Aula3.csproj" />
+    <ProjectReference Include="..\Aula4\Aula4.csproj" />
   </ItemGroup>
 
 </Project>

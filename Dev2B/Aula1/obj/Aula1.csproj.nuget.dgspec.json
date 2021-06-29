@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\GTBESERRA\\Desktop\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj": {}
+    "C:\\Users\\GTBESERRA\\source\\repos\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\GTBESERRA\\Desktop\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj": {
+    "C:\\Users\\GTBESERRA\\source\\repos\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GTBESERRA\\Desktop\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj",
+        "projectUniqueName": "C:\\Users\\GTBESERRA\\source\\repos\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj",
         "projectName": "Aula1",
-        "projectPath": "C:\\Users\\GTBESERRA\\Desktop\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj",
+        "projectPath": "C:\\Users\\GTBESERRA\\source\\repos\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj",
         "packagesPath": "C:\\Users\\GTBESERRA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GTBESERRA\\Desktop\\TreinamentoDev2B\\Dev2B\\Aula1\\obj\\",
+        "outputPath": "C:\\Users\\GTBESERRA\\source\\repos\\TreinamentoDev2B\\Dev2B\\Aula1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\GTBESERRA\\AppData\\Roaming\\NuGet\\NuGet.Config",
