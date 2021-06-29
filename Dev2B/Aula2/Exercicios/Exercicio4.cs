@@ -1,5 +1,6 @@
 ﻿using Domain.Classes.Pessoa.Fisica;
 using Domain.Interfaces;
+using System;
 
 namespace Aula2
 {
@@ -14,6 +15,7 @@ namespace Aula2
                 Email = "arroba@arroba",
                 Nacionalidade = "Cubano",
                 Ra = 3812938,
+                DataNascimento = new DateTime(2048, 10, 2048)
             };
 
             aluno.Endereco.Rua = "Rua Domingos Rizzo";
@@ -23,9 +25,6 @@ namespace Aula2
             aluno.DataMatricula.Mes = 10;
             aluno.DataMatricula.Ano = 1333;
             aluno.Professor.Nome = "Glenilsson";
-            aluno.Professor.DataNascimento.Dia = 21;
-            aluno.Professor.DataNascimento.Mes = 10;
-            aluno.Professor.DataNascimento.Ano = 2048;
             aluno.Professor.Endereco.Rua = "Rua Onório Reberbes";
             aluno.Professor.Telefone = 3902193;
             aluno.Professor.Email = "luras@arroba";

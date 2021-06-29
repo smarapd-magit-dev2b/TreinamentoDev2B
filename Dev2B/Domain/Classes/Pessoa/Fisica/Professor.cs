@@ -8,7 +8,7 @@ namespace Domain.Classes.Pessoa.Fisica
         public Disciplina Disciplina { get; set; }
         public Professor()
         {
-            DataNascimento = new Data();
+            DataNascimento = new DateTime();
             Disciplina = new Disciplina();
             DataAdmissao = new Data();
         }
@@ -16,7 +16,7 @@ namespace Domain.Classes.Pessoa.Fisica
         {
             Console.WriteLine("Professor");
             Console.WriteLine($"Nome: {Nome}");
-            Console.WriteLine($"Data de nascimento: {DataNascimento.ToUserString()}");
+            Console.WriteLine($"Data de nascimento: {DataNascimento.ToString()}");
             Console.WriteLine($"Endereço: {Endereco}");
             Console.WriteLine($"Telefone: {Telefone}");
             Console.WriteLine($"Email: {Email}");

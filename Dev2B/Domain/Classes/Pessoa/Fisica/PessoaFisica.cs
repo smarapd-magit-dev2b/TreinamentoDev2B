@@ -8,7 +8,7 @@ namespace Domain.Classes.Pessoa.Fisica
         public string Sobrenome { get; set; }
         public decimal Altura { get; set; }
         public decimal Peso { get; set; }
-        public Data DataNascimento { get; set; }
+        public DateTime DataNascimento { get; set; }
         public string Cpf { get; set; }
         public string Rg { get; set; }
         public string Cnh { get; set; }
@@ -18,6 +18,11 @@ namespace Domain.Classes.Pessoa.Fisica
         {
             Console.WriteLine($"Cliente\n\nNome: {Nome}\nCPF: {Cpf}\nRG: {Rg}\n");
             Endereco.Imprimir();
+        }
+
+        public override string ToString()
+        {
+            return $"{Nome} {Sobrenome} do CPF: {Cpf}; Nascida em {DataNascimento.ToString("dd/MM/yyyy")}";
         }
     }
 }
