@@ -36,7 +36,7 @@ namespace Domain.Classes
             do
             {
                 PrintExecute();
-                Console.Write("\nDigite o número que deseja executar: ");
+                Console.Write("Digite o número que deseja executar: ");
                 try
                 {
                     var escolha = int.Parse(Console.ReadLine());

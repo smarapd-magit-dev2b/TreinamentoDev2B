@@ -14,6 +14,9 @@ namespace Domain.Classes.Pessoa.Fisica
         public string Cnh { get; set; }
         public int QuantidadeFilhos { get; set; }
         public string EstadoCivil { get; set; }
+        public string NomePai { get; set; }
+        public string NomeMae { get; set; }
+
         public void ImprimirDadosEssenciais()
         {
             Console.WriteLine($"Cliente\n\nNome: {Nome}\nCPF: {Cpf}\nRG: {Rg}\n");
