@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Aula5/1.0.0": {
+        "dependencies": {
+          "Aula3": "1.0.0"
+        },
+        "runtime": {
+          "Aula5.dll": {}
+        }
+      },
+      "Aula3/1.0.0": {
+        "runtime": {
+          "Aula3.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Aula5/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aula3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

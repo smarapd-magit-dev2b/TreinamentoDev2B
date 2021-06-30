@@ -135,13 +135,13 @@ namespace Aula3
 
             };
 
-            Console.WriteLine("Informe a velocidade máxima do carro: ");
+            Console.WriteLine("Informe a velocidade máxima da moto: ");
             var vmaxMot = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Informe o tipo de combustível do carro: ");
+            Console.WriteLine("Informe o tipo de combustível da moto: ");
             var tipoCombustivelMot = Console.ReadLine();
 
-            Console.WriteLine("Informe a marca do carro: ");
+            Console.WriteLine("Informe a marca da moto: ");
             var marcaMot = Console.ReadLine();
 
             Moto moto = new Moto(vmaxMot, tipoCombustivelMot, marcaMot)
@@ -160,5 +160,7 @@ namespace Aula3
 
             Console.ReadLine();
         }
+
+        
     }
 }

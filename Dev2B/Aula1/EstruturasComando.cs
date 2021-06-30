@@ -8,15 +8,16 @@ namespace Aula1
     {
 		public void Execute()
         {
-            Ex1();
-            Ex2();
-            Ex3();
-            Ex4_1();
-			Ex4_2();
-			Ex5_1();
-			Ex5_2();
-			Ex5_3();
-			Ex10();
+   //         Ex1();
+   //         Ex2();
+   //         Ex3();
+   //         Ex4_1();
+			//Ex4_2();
+			//Ex5_1();
+			//Ex5_2();
+			//Ex5_3();
+			//Ex10();
+			//Desafio1();
         }
 		private void Ex1()
 		{
@@ -59,7 +60,7 @@ namespace Aula1
 			int numeromenor = 0;
 
 			Console.WriteLine("Digite 10 números: ");
-			for (int i = 1; i < 11; i++)
+			for (int i = 1; i <= 10; i++)
 			{
 				Console.WriteLine("Inserir o número " + i);
 				num = Convert.ToInt32(Console.ReadLine());
@@ -250,6 +251,45 @@ namespace Aula1
 			Console.WriteLine("Idade Superior a 50: " + idade50);
 			Console.WriteLine("Media das alturas: " + media_altura);
 			Console.WriteLine("Porcentagem peso: " + porcentagemPessoas + " %");
+
+			Console.ReadLine();
+		}
+
+		private void Desafio1()
+        {
+			int numeros;
+			int maior = 0;
+			int menor = 0;
+			string operacao;
+			bool condicao = true;
+
+			while (condicao)
+			{
+				Console.WriteLine("Digite um número: ");
+				numeros = int.Parse(Console.ReadLine());
+
+				menor = numeros;
+				if (numeros > 0)
+				{
+					if (numeros > maior)
+						maior = numeros;
+
+					if (numeros < menor)
+						menor = numeros;
+				}
+				else if (numeros == 0)
+				{
+					condicao = false;
+					Console.WriteLine("\nEntrada de valores encerrada.");
+				}
+				else
+				{
+					Console.WriteLine("\nNúmero Inválido. Informar um número maior que 0.");
+				}
+			}
+			Console.WriteLine("O maior número é: " + maior);
+			Console.WriteLine("O menor número é: " + menor);
+			Console.WriteLine("A soma é: ");
 
 			Console.ReadLine();
 		}
