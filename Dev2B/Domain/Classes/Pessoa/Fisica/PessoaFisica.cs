@@ -25,7 +25,7 @@ namespace Domain.Classes.Pessoa.Fisica
 
         public override string ToString()
         {
-            return $"{Nome} {Sobrenome} do CPF: {Cpf}; Nascida em {DataNascimento.ToString("dd/MM/yyyy")}";
+            return $"{Nome} {Sobrenome} do CPF: {Cpf}; Nascida em {DataNascimento:dd/MM/yyyy}";
         }
     }
 }

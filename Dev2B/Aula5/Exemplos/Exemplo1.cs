@@ -1,5 +1,4 @@
-﻿using Domain.Classes.Pessoa;
-using Domain.Classes.Pessoa.Fisica;
+﻿using Domain.Classes.Pessoa.Fisica;
 using Domain.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -38,7 +37,7 @@ namespace Aula5.Exemplos
 
             foreach (var pessoa in pessoas)
             {
-                Console.WriteLine($"{pessoa.Nome} {pessoa.Sobrenome} do CPF: {pessoa.Cpf}; Nascida em {pessoa.DataNascimento.ToString("dd/MM/yyyy")}");
+                Console.WriteLine($"{pessoa.Nome} {pessoa.Sobrenome} do CPF: {pessoa.Cpf}; Nascida em {pessoa.DataNascimento:dd/MM/yyyy}");
             }
         }
     }

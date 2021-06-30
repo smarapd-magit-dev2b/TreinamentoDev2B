@@ -1,26 +1,26 @@
-﻿using System;
+﻿using Domain.Interfaces;
+using System;
 using System.Collections.Generic;
 
 namespace Domain.Classes
 {
-    public class Cadastro<T>
+    public class Cadastro : IExecute
     {
         public string Tittle { get; set; }
         private object Objeto { get; set; }
-        public List<T> ListaObjetos { get; set; }
 
-        public Cadastro(T objeto)
+        public Cadastro(object objeto)
         {
             Objeto = objeto;
         }
 
-        public Cadastro(T objeto, string tittle)
+        public Cadastro(object objeto, string tittle)
         {
             Tittle = tittle;
             Objeto = objeto;
         }
 
-        public void Cadastrar()
+        public void Execute()
         {
             if (Tittle != null)
                 Console.WriteLine(Tittle);
