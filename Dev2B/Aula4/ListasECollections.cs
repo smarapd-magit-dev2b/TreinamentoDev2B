@@ -18,7 +18,7 @@ namespace Aula4
             //Exercicio2();
             //Exercicio3();
             //Exercicio4();
-            Exercicio5();
+            //Exercicio5();
         }
 
         private void Exemplo1()
@@ -61,7 +61,17 @@ namespace Aula4
             pessoas.Add(pessoa1);
             pessoas.Add(pessoa2);
 
-            foreach (var item in pessoas) Console.WriteLine($"Nome: {item.Nome}");
+            foreach (var item in pessoas)
+            {
+                Console.WriteLine($"Nome: {item.Nome}");
+                Console.WriteLine($"Nome da mae: {item.NomeMae}");
+                Console.WriteLine($"Nome do pai: {item.NomePai}");
+                Console.WriteLine($"Data de Nascimento: {item.DataNascimento.ToString("dd/MM/yyyy")}");
+                Console.WriteLine($"Telefone: {item.Telefone}");
+                Console.WriteLine($"Peso: {item.Peso}");
+                Console.WriteLine($"Salario: {item.Salario}");
+                Console.WriteLine($"Quantidade de filhos: {item.QuantidadeFilhos}");
+            }
         }
 
         private void Exercicio2()
@@ -188,51 +198,48 @@ namespace Aula4
             var vendas = new List<Venda>();
 
             var opcaoMenu = 0;
+            var autoId = 1;
             while (opcaoMenu != 9)
             {
                 switch (opcaoMenu)
                 {
                     case 1:
-                        var autoId = 1;
                         if (vendas.Count != 0)
                             autoId = vendas[vendas.Count].Id + 1;
 
                         var venda = new Venda(autoId);
-
-
                         var itemOp = 0;
 
                         while (itemOp != 2)
                         {
                             venda.items.Add(new ItemVenda());
 
-                            MenuExercicioItemVendas4();
+                            itemOp = MenuExercicioItemVendas4();
                         }
-
 
                         vendas.Add(venda);
                         break;
                     case 2:
-                    {
-                        foreach (var item in vendas)
                         {
-                            Console.WriteLine($"ID VENDA: {item.Id}");
-                            Console.WriteLine($"Vendedor: {item.Vendedor}");
-                            Console.WriteLine($"Data da venda: {item.DataVenda.ToString("dd/MM/yyyy")}");
-                            Console.WriteLine("Item da venda");
-                            foreach (var itemV in item.items)
+                            foreach (var item in vendas)
                             {
-                                Console.WriteLine($"- ID: {itemV.Id}");
-                                Console.WriteLine($"- Descricao: {itemV.Descricao}");
-                                Console.WriteLine($"- Preço: {itemV.Preco}");
-                                Console.WriteLine($"- Quantidade: {itemV.Quantidade}\n");
+                                Console.WriteLine($"ID VENDA: {item.Id}");
+                                Console.WriteLine($"Vendedor: {item.Vendedor}");
+                                Console.WriteLine($"Data da venda: {item.DataVenda.ToString("dd/MM/yyyy")}");
+                                Console.WriteLine("Item da venda");
+                                foreach (var itemV in item.items)
+                                {
+                                    Console.WriteLine($"- ID: {itemV.Id}");
+                                    Console.WriteLine($"- Descricao: {itemV.Descricao}");
+                                    Console.WriteLine($"- Preço: {itemV.Preco}");
+                                    Console.WriteLine($"- Quantidade: {itemV.Quantidade}\n");
+                                }
+
+                                Console.WriteLine("");
                             }
 
-                            Console.WriteLine("");
+                            break;
                         }
-
-                        break;
-                    }
                     case 3:
                         Console.WriteLine("Informe o ID da venda para deletar: ");
                         var idExclusao = int.Parse(Console.ReadLine());
@@ -252,7 +259,14 @@ namespace Aula4
                             var idItemVenda = int.Parse(Console.ReadLine());
                             var itemParaExcluir = vendaPorId.items.FirstOrDefault(i => i.Id == idItemVenda);
 
-                            if (itemParaExcluir != null) vendaPorId.items.Remove(itemParaExcluir);
+                            if (itemParaExcluir != null)
+                            {
+                                vendaPorId.items.Remove(itemParaExcluir);
+                            }
+                            else
+                            {
+                                Console.WriteLine("Não existem registros com esse ID");
+                            };
                         }
                         else
                         {
@@ -291,6 +305,7 @@ namespace Aula4
                         var pesquisaPorPeriodo =
                             vendas.Where(v => v.DataVenda > dataBusca1 && v.DataVenda < dataBusca2);
                         if (pesquisaPorPeriodo != null)
+                        {
                             foreach (var item in pesquisaPorPeriodo)
                             {
                                 Console.WriteLine($"ID VENDA: {item.Id}");
@@ -307,6 +322,11 @@ namespace Aula4
 
                                 Console.WriteLine("");
                             }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Não existem registros com esse ID");
+                        }
 
                         break;
                     case 7:
@@ -314,6 +334,7 @@ namespace Aula4
                         var vendedorBusca = Console.ReadLine();
                         var pesquisaPorVendedor = vendas.Where(v => v.Vendedor.ToLower() == vendedorBusca.ToLower());
                         if (pesquisaPorVendedor != null)
+                        {
                             foreach (var item in pesquisaPorVendedor)
                             {
                                 Console.WriteLine($"ID VENDA: {item.Id}");
@@ -330,6 +351,11 @@ namespace Aula4
 
                                 Console.WriteLine("");
                             }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Não existem registros com esse ID");
+                        }
 
                         break;
                     case 8:
@@ -375,98 +401,129 @@ namespace Aula4
             var contas = new List<Conta>();
 
             var opcaoMenu = 0;
+            var autoId = 1;
             while (opcaoMenu != 7)
             {
                 switch (opcaoMenu)
                 {
                     case 1:
-                    {
-                        var autoId = 1;
-                        if (contas.Count != 0)
-                            autoId = contas[contas.Count].NumeroConta + 1;
+                        {
+                            if (contas.Count != 0)
+                                autoId = contas[contas.Count - 1].NumeroConta + 1;
 
-                        Console.WriteLine("Criação de conta");
-                        contas.Add(new Conta(autoId));
-                        Console.WriteLine($"Conta criada com o ID {autoId}");
+                            Console.WriteLine("Criação de conta");
+                            Console.WriteLine("");
+                            contas.Add(new Conta(autoId));
+                            Console.WriteLine("");
+                            Console.WriteLine($"Conta criada com o ID {autoId}");
 
-                        break;
-                    }
+                            break;
+                        }
                     case 2:
-                    {
-                        Console.WriteLine("Informe o numero da conta de deseja excluir");
-                        var id = int.Parse(Console.ReadLine());
-                        var contaParaExcluir = contas.FirstOrDefault(c => c.NumeroConta == id);
-                        if (contaParaExcluir != null)
-                            Console.WriteLine("Conta excluida");
-                        contas.Remove(contaParaExcluir);
-                        break;
-                    }
-                    case 3:
-                    {
-                        Console.WriteLine("Informe o numero da conta de deseja sacar");
-                        var id = int.Parse(Console.ReadLine());
-
-                        var contaParaSacar = contas.FirstOrDefault(c => c.NumeroConta == id);
-
-
-                        if (contaParaSacar != null)
                         {
-                            Console.WriteLine("Informe o valor que deseja sacar");
-                            var valor = decimal.Parse(Console.ReadLine());
-                            contaParaSacar.Sacar(valor);
-                        }
-
-                        break;
-                    }
-                    case 4:
-                    {
-                        Console.WriteLine("Informe o numero da conta de deseja depositar");
-                        var id = int.Parse(Console.ReadLine());
-
-                        var contaParaDepositar = contas.FirstOrDefault(c => c.NumeroConta == id);
-
-
-                        if (contaParaDepositar != null)
-                        {
-                            Console.WriteLine("Informe o valor que deseja depositar");
-                            var valor = decimal.Parse(Console.ReadLine());
-                            contaParaDepositar.Depositar(valor);
-                        }
-
-                        break;
-                    }
-                    case 5:
-                    {
-                        Console.WriteLine("Qual numero da conta para imprimir o extrato?");
-                        var id = int.Parse(Console.ReadLine());
-
-                        var contaParaDepositar = contas.FirstOrDefault(c => c.NumeroConta == id);
-
-                        if (contaParaDepositar != null) contaParaDepositar.ImprimirExtrato();
-                        break;
-                    }
-                    case 6:
-                    {
-                        Console.WriteLine("Informe o numero da conta de deseja transferir");
-                        var id = int.Parse(Console.ReadLine());
-
-                        var contaParaTranferir = contas.FirstOrDefault(c => c.NumeroConta == id);
-
-                        if (contaParaTranferir != null)
-                        {
-                            Console.WriteLine("Informe o numero da conta que vai receber");
-                            var idTarget = int.Parse(Console.ReadLine());
-                            var contaQueVaiATranferencia = contas.FirstOrDefault(c => c.NumeroConta == idTarget);
-                            if (contaQueVaiATranferencia != null)
+                            Console.WriteLine("Informe o numero da conta de deseja excluir");
+                            var id = int.Parse(Console.ReadLine());
+                            var contaParaExcluir = contas.FirstOrDefault(c => c.NumeroConta == id);
+                            if (contaParaExcluir != null)
                             {
-                                Console.WriteLine("Qual o valor que vai tranferir ?");
-                                var valor = decimal.Parse(Console.ReadLine());
-                                contaParaTranferir.Tranferir(contaParaTranferir, valor);
+                                Console.WriteLine("Conta excluida");
+                                contas.Remove(contaParaExcluir);
                             }
+                            else
+                            {
+                                Console.WriteLine("A conta nao existe!");
+                            }
+                            break;
                         }
+                    case 3:
+                        {
+                            Console.WriteLine("Informe o numero da conta de deseja sacar");
+                            var id = int.Parse(Console.ReadLine());
 
-                        break;
-                    }
+                            var contaParaSacar = contas.FirstOrDefault(c => c.NumeroConta == id);
+
+
+                            if (contaParaSacar != null)
+                            {
+                                Console.WriteLine("Informe o valor que deseja sacar");
+                                var valor = decimal.Parse(Console.ReadLine());
+                                contaParaSacar.Sacar(valor);
+                            }
+                            else
+                            {
+                                Console.WriteLine("A conta nao existe!");
+                            }
+
+                            break;
+                        }
+                    case 4:
+                        {
+                            Console.WriteLine("Informe o numero da conta de deseja depositar");
+                            var id = int.Parse(Console.ReadLine());
+
+                            var contaParaDepositar = contas.FirstOrDefault(c => c.NumeroConta == id);
+
+
+                            if (contaParaDepositar != null)
+                            {
+                                Console.WriteLine("Informe o valor que deseja depositar");
+                                var valor = decimal.Parse(Console.ReadLine());
+                                contaParaDepositar.Depositar(valor);
+                            }
+                            else
+                            {
+                                Console.WriteLine("A conta nao existe!");
+                            }
+
+                            break;
+                        }
+                    case 5:
+                        {
+                            Console.WriteLine("Qual numero da conta para imprimir o extrato?");
+                            var id = int.Parse(Console.ReadLine());
+
+                            var contaParaDepositar = contas.FirstOrDefault(c => c.NumeroConta == id);
+
+                            if (contaParaDepositar != null)
+                            {
+                                contaParaDepositar.ImprimirExtrato();
+                            }
+                            else
+                            {
+                                Console.WriteLine("A conta nao existe!");
+                            };
+                            break;
+                        }
+                    case 6:
+                        {
+                            Console.WriteLine("Informe o numero da conta de deseja transferir");
+                            var id = int.Parse(Console.ReadLine());
+
+                            var contaParaTranferir = contas.FirstOrDefault(c => c.NumeroConta == id);
+
+                            if (contaParaTranferir != null)
+                            {
+                                Console.WriteLine("Informe o numero da conta que vai receber");
+                                var idTarget = int.Parse(Console.ReadLine());
+                                var contaQueVaiATranferencia = contas.FirstOrDefault(c => c.NumeroConta == idTarget);
+                                if (contaQueVaiATranferencia != null)
+                                {
+                                    Console.WriteLine("Qual o valor que vai tranferir ?");
+                                    var valor = decimal.Parse(Console.ReadLine());
+                                    contaParaTranferir.Tranferir(contaQueVaiATranferencia, valor);
+                                }
+                                else
+                                {
+                                    Console.WriteLine("A conta nao existe!");
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("A conta nao existe!");
+                            }
+
+                            break;
+                        }
                 }
 
                 opcaoMenu = MenuExercicio5();
@@ -475,6 +532,8 @@ namespace Aula4
 
         private int MenuExercicio5()
         {
+
+            Console.WriteLine("");
             Console.WriteLine("1 - Criar conta");
             Console.WriteLine("2 - Excluir conta");
             Console.WriteLine("3 - Sacar");
@@ -482,6 +541,7 @@ namespace Aula4
             Console.WriteLine("5 - Imprimir Extrato");
             Console.WriteLine("6 - Transferir");
             Console.WriteLine("7 - Sair");
+            Console.WriteLine("");
             return int.Parse(Console.ReadLine());
         }
     }

@@ -4,6 +4,7 @@
     {
         DEPOSITO = 0,
         SAQUE = 1,
-        TRANFERENCIA = 2
+        ENVIAR_TRANSFERENCIA = 2,
+        RECEBER_TRANSFERENCIA = 3
     }
 }

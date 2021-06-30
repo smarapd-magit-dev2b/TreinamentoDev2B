@@ -46,6 +46,22 @@ namespace Aula4.Exercicio5.Classes
             return false;
         }
 
+        private bool RemoverSaldo(decimal valor)
+        {
+            if ((Saldo - valor) >= 0)
+            {
+                Saldo -= valor;
+                return true;
+            }
+
+            return false;
+        }
+        public void ReceberTransferencia(decimal valor)
+        {
+            Movimentacoes.Add(new Movimentacoes(valor, EnumDescricao.RECEBER_TRANSFERENCIA, EnumTipoMovimentacao.CREDITO));
+            Saldo += valor;
+        }
+
         public void Depositar(decimal valor)
         {
             Movimentacoes.Add(new Movimentacoes(valor, EnumDescricao.DEPOSITO, EnumTipoMovimentacao.CREDITO));
@@ -55,18 +71,23 @@ namespace Aula4.Exercicio5.Classes
 
         public void Tranferir(Conta contaDestino, decimal valor)
         {
-            if (Sacar(valor))
+            if (RemoverSaldo(valor))
             {
                 Console.WriteLine("Transferido com sucesso!");
-                contaDestino.Depositar(Saldo);
-                return;
+                Movimentacoes.Add(new Movimentacoes(valor, EnumDescricao.ENVIAR_TRANSFERENCIA, EnumTipoMovimentacao.CREDITO));
+                contaDestino.ReceberTransferencia(Saldo);
+            }
+            else
+            {
+                Console.WriteLine("Ocorreu algum erro durante a tranferecia");
             }
 
-            Movimentacoes.Add(new Movimentacoes(valor, EnumDescricao.TRANFERENCIA, EnumTipoMovimentacao.CREDITO));
         }
 
         public void ImprimirExtrato()
         {
+            Console.Clear();
+            Console.WriteLine("-----------------");
             Console.WriteLine("Status da conta");
             Console.WriteLine($"Limite de saque R${Limite}");
             Console.WriteLine("Tipo da conta: " + (ContaEspecial ? "ESPECIAL" : "NORMAL"));
@@ -80,6 +101,7 @@ namespace Aula4.Exercicio5.Classes
                 Console.WriteLine($" Saldo: {item.Valor}");
                 Console.WriteLine("=============================");
             }
+            Console.WriteLine("-----------------");
         }
     }
 }
