@@ -5,21 +5,19 @@ namespace Aula4.Exercicio4.Classes
 {
     public class Venda
     {
+        public Venda(int id)
+        {
+            Id = id;
+            items = new List<ItemVenda>();
+            Console.WriteLine("Informe a data de venda");
+            DataVenda = DateTime.Parse(Console.ReadLine());
+            Console.WriteLine("Informe o nome do vendedor");
+            Vendedor = Console.ReadLine();
+        }
+
         public List<ItemVenda> items { get; set; }
-        public int Id { get; set; }
+        public int Id { get; }
         public DateTime DataVenda { get; set; }
         public string Vendedor { get; set; }
-
-        public Venda()
-        {
-            items = new List<ItemVenda>();
-        }
-        public Venda(List<ItemVenda> items, int id, DateTime dataVenda, string vendedor)
-        {
-            this.items = items;
-            Id = id;
-            DataVenda = dataVenda;
-            Vendedor = vendedor;
-        }
     }
 }
