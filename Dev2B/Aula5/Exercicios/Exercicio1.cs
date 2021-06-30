@@ -21,24 +21,29 @@ namespace Aula5.Exercicios
             do
             {
                 menu.PrintString();
-
-                Console.Write("Digite o número da Operação a ser executada: ");
-                switch (int.Parse(Console.ReadLine()))
+                try
                 {
-                    case 1:
-                        Console.Clear();
+                    switch (int.Parse(Console.ReadLine()))
+                    {
+                        case 1:
+                            Console.Clear();
 
-                        Pessoa pessoa = new Pessoa();
-                        new Cadastro(pessoa).Cadastrar();
-                        pessoas.Add(pessoa);
-                        break;
-                    case 0:
-                        Console.Clear();
+                            Pessoa pessoa = new Pessoa();
+                            new Cadastro(pessoa).Cadastrar();
+                            pessoas.Add(pessoa);
+                            break;
+                        case 0:
+                            Console.Clear();
 
-                        run = false;
-                        break;
+                            run = false;
+                            break;
+                    }
                 }
-
+                catch (FormatException)
+                {
+                    Console.Clear();
+                    Console.WriteLine("Digite apenas números!");
+                }
             } while (run);
 
             Console.WriteLine("\nNome das Pessoas\n");

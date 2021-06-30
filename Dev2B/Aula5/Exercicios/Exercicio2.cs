@@ -24,39 +24,44 @@ namespace Aula5.Exercicios
             do
             {
                 menu.PrintString();
-
-                Console.Write("Digite o número da Operação a ser executada: ");
-                switch (int.Parse(Console.ReadLine()))
+                try
                 {
-                    case 1:
-                        Console.Clear();
+                    switch (int.Parse(Console.ReadLine()))
+                    {
+                        case 1:
+                            Console.Clear();
 
-                        Carro carro = new Carro();
-                        new Cadastro(carro).Cadastrar();
-                        carros.Add(carro);
-                        break;
-                    case 2:
-                        Console.Clear();
+                            Carro carro = new Carro();
+                            new Cadastro(carro).Cadastrar();
+                            carros.Add(carro);
+                            break;
+                        case 2:
+                            Console.Clear();
 
-                        foreach (var wCarro in carros)
-                            new Write(wCarro).WritePropriedades();
-                        break;
-                    case 3:
-                        Console.Clear();
+                            foreach (var wCarro in carros)
+                                new Write(wCarro).Propriedades();
+                            break;
+                        case 3:
+                            Console.Clear();
 
-                        Console.Write("Digite o ID a ser excluido: ");
-                        var carroASerExcluido = carros.FirstOrDefault(c => c.Id == int.Parse(Console.ReadLine()));
+                            Console.Write("\nDigite o ID a ser excluido: ");
+                            var carroASerExcluido = carros.FirstOrDefault(c => c.Id == int.Parse(Console.ReadLine()));
 
-                        if (carroASerExcluido != null)
-                            carros.Remove(carroASerExcluido);
-                        break;
-                    case 0:
-                        Console.Clear();
+                            if (carroASerExcluido != null)
+                                carros.Remove(carroASerExcluido);
+                            break;
+                        case 0:
+                            Console.Clear();
 
-                        run = false;
-                        break;
+                            run = false;
+                            break;
+                    }
                 }
-
+                catch (FormatException)
+                {
+                    Console.Clear();
+                    Console.WriteLine("Digite apenas números!");
+                }
             } while (run);
         }
     }

@@ -11,7 +11,7 @@ namespace Domain.Classes
             Objeto = objeto;
         }
 
-        public void WritePropriedades()
+        public void Propriedades()
         {
             Console.WriteLine($"\n{Objeto.GetType().Name}\n");
             foreach (var propriedade in Objeto.GetType().GetProperties())

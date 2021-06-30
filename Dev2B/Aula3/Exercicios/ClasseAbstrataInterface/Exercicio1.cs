@@ -27,9 +27,6 @@ namespace Aula3.Exercicios.ClasseAbstrataInterface
             do
             {
                 menu.PrintString();
-
-                Console.Write("Digite o número que deseja executar: ");
-
                 try
                 {
                     var escolha = int.Parse(Console.ReadLine());
@@ -81,9 +78,6 @@ namespace Aula3.Exercicios.ClasseAbstrataInterface
             do
             {
                 menu.PrintString();
-
-                Console.Write("Digite o número que deseja executar: ");
-
                 try
                 {
                     var escolha = int.Parse(Console.ReadLine());

@@ -48,7 +48,7 @@ namespace Domain.Classes
                 }
                 else
                 {
-                    Console.WriteLine(
+                    Console.Write(
                         $"\n{propriedade.Name}\n\n" +
                         "Digite o Dia: "
                         );

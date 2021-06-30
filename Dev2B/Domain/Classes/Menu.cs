@@ -64,7 +64,10 @@ namespace Domain.Classes
             for (int i = 0; i < ItemsString.Count; i++)
                 Console.WriteLine($"{i + 1} - {ItemsString[i]}");
 
-            Console.WriteLine("0 - Sair\n");
+            Console.Write(
+                    "0 - Sair\n\n" +
+                    "Digite o número que deseja executar: "
+                );
         }
 
         private void PrintExecute()
