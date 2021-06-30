@@ -5,7 +5,7 @@ namespace Aula2
 {
     public class ClassesObjetos : IExecute
     {
-        public void Execute()
+        public void Cadastrar()
         {
             var menu = new Menu("Exercícios de Classes e Objetos");
 
@@ -14,7 +14,7 @@ namespace Aula2
             menu.AddItem(new Exercicio3());
             menu.AddItem(new Exercicio4());
 
-            menu.Execute();
+            menu.Cadastrar();
         }
     }
 }

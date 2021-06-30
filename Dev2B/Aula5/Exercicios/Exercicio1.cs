@@ -8,14 +8,16 @@ namespace Aula5.Exercicios
 {
     public class Exercicio1 : IExecute
     {
-        public void Execute()
+        public void Cadastrar()
         {
-            var run = true;
-
             var lista = new List<Pessoa>();
 
             var menu = new Menu("Lista de Pessoas");
+
             menu.AddItem("Adicionar Pessoa");
+
+            var run = true;
+
             do
             {
                 menu.PrintString();
@@ -23,7 +25,7 @@ namespace Aula5.Exercicios
                 {
                     case 1:
                         Pessoa pessoa = new Pessoa();
-                        new Cadastro(pessoa).Execute();
+                        new Cadastro(pessoa).Cadastrar();
                         lista.Add(pessoa);
                         break;
                     case 0:
@@ -32,11 +34,11 @@ namespace Aula5.Exercicios
                 }
                 
             } while (run);
+
             Console.WriteLine("\nNome das Pessoas\n");
+
             foreach (var pessoa in lista)
-            {
                 Console.WriteLine(pessoa.Nome);
-            }
         }
     }
 }

@@ -7,7 +7,7 @@ namespace Aula3.Exercicios.Heranca
 {
     public class Exercicio2 : IExecute
     {
-        public void Execute()
+        public void Cadastrar()
         {
             //Cliente
             Cliente cliente = new Cliente();

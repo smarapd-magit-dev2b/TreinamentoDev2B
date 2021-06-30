@@ -7,7 +7,7 @@ namespace Aula3.Exercicios.ClasseAbstrataInterface
 {
     public class Exercicio1 : IExecute
     {
-        public void Execute()
+        public void Cadastrar()
         {
             //Conta Corrente
             ContaCorrente corrente = new ContaCorrente();

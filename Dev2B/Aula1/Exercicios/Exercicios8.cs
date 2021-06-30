@@ -5,7 +5,7 @@ namespace Aula1.Exercicios
 {
     public class Exercicios8 : IExecute
     {
-        public void Execute()
+        public void Cadastrar()
         {
             Exercicio8for();
             Exercicio8while();

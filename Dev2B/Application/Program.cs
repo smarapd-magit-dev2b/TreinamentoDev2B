@@ -22,7 +22,7 @@ namespace Application
             menu.AddItem(new ClasseAbstrataInterface());
             menu.AddItem(new Listas());
 
-            menu.Execute();
+            menu.Cadastrar();
         }
     }
 }

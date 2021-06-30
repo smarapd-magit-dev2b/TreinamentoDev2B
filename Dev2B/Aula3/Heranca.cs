@@ -6,14 +6,14 @@ namespace Aula3
 {
     public class Heranca : IExecute
     {
-        public void Execute()
+        public void Cadastrar()
         {
             Menu menu = new Menu("Herança");
 
             menu.AddItem(new Exercicio1());
             menu.AddItem(new Exercicio2());
 
-            menu.Execute();
+            menu.Cadastrar();
         }
     }
 }

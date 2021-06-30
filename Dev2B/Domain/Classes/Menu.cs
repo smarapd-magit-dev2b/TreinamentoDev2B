@@ -30,7 +30,7 @@ namespace Domain.Classes
             ItemsExecute.Add(item);
         }
 
-        public void Execute()
+        public void Cadastrar()
         {
             var run = true;
             do
@@ -43,7 +43,7 @@ namespace Domain.Classes
                     Console.Clear();
 
                     if (escolha != 0 && escolha <= ItemsExecute.Count)
-                        ItemsExecute[escolha - 1].Execute();
+                        ItemsExecute[escolha - 1].Cadastrar();
                     else if (escolha > ItemsExecute.Count)
                         Console.WriteLine($"{escolha} não está na lista!");
                     else

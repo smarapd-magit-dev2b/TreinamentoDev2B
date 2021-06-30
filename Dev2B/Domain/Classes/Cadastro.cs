@@ -6,7 +6,10 @@ namespace Domain.Classes
 {
     public class Cadastro : IExecute
     {
-        public string Tittle { get; set; }
+        public string Tittle {
+            get { return Tittle; }
+            set { Tittle = $"\n{value}\n"; }
+        }
         private object Objeto { get; set; }
 
         public Cadastro(object objeto)
@@ -20,7 +23,7 @@ namespace Domain.Classes
             Objeto = objeto;
         }
 
-        public void Execute()
+        public void Cadastrar()
         {
             if (Tittle != null)
                 Console.WriteLine(Tittle);

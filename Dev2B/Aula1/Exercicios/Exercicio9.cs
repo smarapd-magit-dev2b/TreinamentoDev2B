@@ -5,7 +5,7 @@ namespace Aula1.Exercicios
 {
     public class Exercicio9 : IExecute
     {
-        public void Execute()
+        public void Cadastrar()
         {
             bool run = true;
             do

@@ -5,7 +5,7 @@ namespace Aula1.Exercicios
 {
     public class Exercicio1 : IExecute
     {
-        public void Execute()
+        public void Cadastrar()
         {
             Console.Write("Exercício 1\n\nDigite sua média: ");
             var numero = decimal.Parse(Console.ReadLine());

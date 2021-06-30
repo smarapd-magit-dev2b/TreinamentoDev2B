@@ -7,14 +7,14 @@ namespace Aula3
 {
     public class ClasseAbstrataInterface : IExecute
     {
-        public void Execute()
+        public void Cadastrar()
         {
             var menu = new Menu("Exercícios de Classes Abstratas e Interfaces");
 
             menu.AddItem(new Exercicio1());
             menu.AddItem(new Exercicio2());
 
-            menu.Execute();
+            menu.Cadastrar();
         }
     }
 }

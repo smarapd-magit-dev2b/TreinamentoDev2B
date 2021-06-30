@@ -5,7 +5,7 @@ namespace Aula3.Exercicios.Heranca
 {
     public class Exercicio1 : IExecute
     {
-        public void Execute()
+        public void Cadastrar()
         {
             throw new NotImplementedException();
         }

@@ -7,7 +7,7 @@ namespace Aula5.Exemplos
 {
     class Exemplo1 : IExecute
     {
-        public void Execute()
+        public void Cadastrar()
         {
             var pessoas = new List<PessoaFisica>() { 
                 new PessoaFisica()

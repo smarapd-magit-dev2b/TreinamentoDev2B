@@ -6,7 +6,7 @@ namespace Aula1
 {
     public class EstruturaComandos : IExecute
     {
-        public void Execute()
+        public void Cadastrar()
         {
             var menu = new Menu("Exercícios de Estrutura de Comandos");
 
@@ -21,7 +21,7 @@ namespace Aula1
             menu.AddItem(new Exercicio9());
             menu.AddItem(new Exercicio10());
 
-            menu.Execute();
+            menu.Cadastrar();
         }
     }
 }

@@ -12,7 +12,7 @@ namespace Aula1.Exercicios
         private decimal MediaAlturasPessoas10a20anos { get; set; }
         private decimal PessoasPesoInferior40 { get; set; }
 
-        public void Execute()
+        public void Cadastrar()
         {
             Console.WriteLine("Exercício 10\n");
 

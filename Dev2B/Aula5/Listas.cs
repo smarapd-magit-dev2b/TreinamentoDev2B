@@ -7,7 +7,7 @@ namespace Aula5
 {
     public class Listas : IExecute
     {
-        public void Execute()
+        public void Cadastrar()
         {
             var menu = new Menu("Listas");
 
@@ -15,7 +15,7 @@ namespace Aula5
             menu.AddItem(new Exemplo2());
             menu.AddItem(new Exercicio1());
 
-            menu.Execute();
+            menu.Cadastrar();
         }
     }
 }
