@@ -41,6 +41,16 @@
         "runtime": {
           "bin/placeholder/Aula04.dll": {}
         }
+      },
+      "Aula05/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Aula05.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula05.dll": {}
+        }
       }
     }
   },
@@ -64,6 +74,11 @@
       "type": "project",
       "path": "../Aula04/Aula04.csproj",
       "msbuildProject": "../Aula04/Aula04.csproj"
+    },
+    "Aula05/1.0.0": {
+      "type": "project",
+      "path": "../Aula05/Aula05.csproj",
+      "msbuildProject": "../Aula05/Aula05.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -71,7 +86,8 @@
       "Aula01 >= 1.0.0",
       "Aula02 >= 1.0.0",
       "Aula03 >= 1.0.0",
-      "Aula04 >= 1.0.0"
+      "Aula04 >= 1.0.0",
+      "Aula05 >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -112,6 +128,9 @@
             },
             "C:\\Users\\AMJARIA\\Desktop\\treinamento\\exercícios\\TreinamentoDev2B\\Dev2B\\Aula04\\Aula04.csproj": {
               "projectPath": "C:\\Users\\AMJARIA\\Desktop\\treinamento\\exercícios\\TreinamentoDev2B\\Dev2B\\Aula04\\Aula04.csproj"
+            },
+            "C:\\Users\\AMJARIA\\Desktop\\treinamento\\exercícios\\TreinamentoDev2B\\Dev2B\\Aula05\\Aula05.csproj": {
+              "projectPath": "C:\\Users\\AMJARIA\\Desktop\\treinamento\\exercícios\\TreinamentoDev2B\\Dev2B\\Aula05\\Aula05.csproj"
             }
           }
         }

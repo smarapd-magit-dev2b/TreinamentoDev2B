@@ -1,0 +1,9 @@
+C:\Users\AMJARIA\Desktop\treinamento\exercícios\TreinamentoDev2B\Dev2B\Aula05\bin\Debug\netcoreapp3.1\Aula05.deps.json
+C:\Users\AMJARIA\Desktop\treinamento\exercícios\TreinamentoDev2B\Dev2B\Aula05\bin\Debug\netcoreapp3.1\Aula05.dll
+C:\Users\AMJARIA\Desktop\treinamento\exercícios\TreinamentoDev2B\Dev2B\Aula05\bin\Debug\netcoreapp3.1\Aula05.pdb
+C:\Users\AMJARIA\Desktop\treinamento\exercícios\TreinamentoDev2B\Dev2B\Aula05\obj\Debug\netcoreapp3.1\Aula05.csproj.AssemblyReference.cache
+C:\Users\AMJARIA\Desktop\treinamento\exercícios\TreinamentoDev2B\Dev2B\Aula05\obj\Debug\netcoreapp3.1\Aula05.AssemblyInfoInputs.cache
+C:\Users\AMJARIA\Desktop\treinamento\exercícios\TreinamentoDev2B\Dev2B\Aula05\obj\Debug\netcoreapp3.1\Aula05.AssemblyInfo.cs
+C:\Users\AMJARIA\Desktop\treinamento\exercícios\TreinamentoDev2B\Dev2B\Aula05\obj\Debug\netcoreapp3.1\Aula05.csproj.CoreCompileInputs.cache
+C:\Users\AMJARIA\Desktop\treinamento\exercícios\TreinamentoDev2B\Dev2B\Aula05\obj\Debug\netcoreapp3.1\Aula05.dll
+C:\Users\AMJARIA\Desktop\treinamento\exercícios\TreinamentoDev2B\Dev2B\Aula05\obj\Debug\netcoreapp3.1\Aula05.pdb

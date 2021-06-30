@@ -8,10 +8,10 @@ namespace Aula02
     {
         public void Execute()
         {
-            Ex1();
-            Ex2();
-            Ex3();
-            Ex4();
+            //Ex1();
+            //Ex2();
+            //Ex3();
+            //Ex4();
             ExExtra();            
         }
 

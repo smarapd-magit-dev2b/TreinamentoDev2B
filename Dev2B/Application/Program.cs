@@ -2,6 +2,7 @@
 using Aula02;
 using Aula03;
 using Aula04;
+using Aula05;
 using System;
 
 namespace Application
@@ -15,11 +16,13 @@ namespace Application
             ClassesObjetos classesObjetos = new ClassesObjetos();
             AbstrataInterface abstrataInterface = new AbstrataInterface();
             Heranca heranca = new Heranca();
+            Listas listas = new Listas();
 
-            estruturasComando.Execute();
-            classesObjetos.Execute();
-            abstrataInterface.Execute();
-            heranca.Execute();
+            //estruturasComando.Execute();
+            //classesObjetos.Execute();
+            //abstrataInterface.Execute();
+            //heranca.Execute();
+            listas.Execute();
         }
     }
 }
