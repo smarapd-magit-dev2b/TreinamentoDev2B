@@ -8,7 +8,7 @@ namespace Aula1.Exercicios
         public int MaiorNumero { get; set; }
         public int MenorNumero { get; set; }
 
-        public void Cadastrar()
+        public void Execute()
         {
             Console.WriteLine("Exercício 2\n\nDigite 10 números\n");
 

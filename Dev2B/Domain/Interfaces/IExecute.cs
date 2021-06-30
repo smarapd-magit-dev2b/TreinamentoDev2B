@@ -2,6 +2,6 @@
 {
     public interface IExecute
     {
-        void Cadastrar();
+        void Execute();
     }
 }

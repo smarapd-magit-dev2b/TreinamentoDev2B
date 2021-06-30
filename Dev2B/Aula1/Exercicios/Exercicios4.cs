@@ -7,7 +7,7 @@ namespace Aula1.Exercicios
     {
         private char Operacao { get; set; }
 
-        public void Cadastrar()
+        public void Execute()
         {
             Exercicio4if();
             Exercicio4switch();

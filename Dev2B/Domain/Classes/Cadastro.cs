@@ -1,19 +1,20 @@
-﻿using Domain.Interfaces;
-using System;
-using System.Collections.Generic;
+﻿using System;
 
 namespace Domain.Classes
 {
-    public class Cadastro : IExecute
+    public class Cadastro
     {
-        public string Tittle {
-            get { return Tittle; }
-            set { Tittle = $"\n{value}\n"; }
+        private string _tittle;
+        public string Tittle
+        {
+            get => _tittle;
+            set => _tittle = value != null ? $"\n{value}\n" : null;
         }
         private object Objeto { get; set; }
 
         public Cadastro(object objeto)
         {
+            Tittle = null;
             Objeto = objeto;
         }
 
@@ -37,6 +38,7 @@ namespace Domain.Classes
                 if (propriedade.PropertyType.Name != "DateTime")
                 {
                     Console.Write($"Digite o valor da propriedade {propriedade.Name}: ");
+
                     if (propriedade.PropertyType.Name == "Int32")
                         propriedade.SetValue(Objeto, int.Parse(Console.ReadLine()));
                     else if (propriedade.PropertyType.Name == "Decimal")
@@ -46,13 +48,18 @@ namespace Domain.Classes
                 }
                 else
                 {
-                    Console.WriteLine($"{propriedade.Name}\n");
-                    Console.Write($"Digite o Dia: ");
+                    Console.WriteLine(
+                        $"\n{propriedade.Name}\n\n" +
+                        "Digite o Dia: "
+                        );
                     var dia = int.Parse(Console.ReadLine());
-                    Console.Write($"Digite o Mês: ");
+
+                    Console.Write("Digite o Mês: ");
                     var mes = int.Parse(Console.ReadLine());
-                    Console.Write($"Digite o Ano: ");
+
+                    Console.Write("Digite o Ano: ");
                     var ano = int.Parse(Console.ReadLine());
+
                     propriedade.SetValue(Objeto, new DateTime(ano, mes, dia));
                 }
             }

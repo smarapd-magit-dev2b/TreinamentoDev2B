@@ -7,7 +7,7 @@ namespace Aula1.Exercicios
     {
         private int Soma { get; set; }
 
-        public void Cadastrar()
+        public void Execute()
         {
             Exercicio7for();
             Exercicio7while();

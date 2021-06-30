@@ -6,7 +6,7 @@ namespace Aula2
 {
     public class Exercicio4 : IExecute
     {
-        public void Cadastrar()
+        public void Execute()
         {
             Aluno aluno = new Aluno()
             {

@@ -6,7 +6,7 @@ namespace Domain.Classes
 {
     public class Menu : IExecute
     {
-        public string Title { get; set; }
+        private string Title { get; set; }
         private List<string> ItemsString { get; set; }
         private List<IExecute> ItemsExecute { get; set; }
 
@@ -30,7 +30,7 @@ namespace Domain.Classes
             ItemsExecute.Add(item);
         }
 
-        public void Cadastrar()
+        public void Execute()
         {
             var run = true;
             do
@@ -43,7 +43,7 @@ namespace Domain.Classes
                     Console.Clear();
 
                     if (escolha != 0 && escolha <= ItemsExecute.Count)
-                        ItemsExecute[escolha - 1].Cadastrar();
+                        ItemsExecute[escolha - 1].Execute();
                     else if (escolha > ItemsExecute.Count)
                         Console.WriteLine($"{escolha} não está na lista!");
                     else
@@ -74,7 +74,7 @@ namespace Domain.Classes
             for (int i = 0; i < ItemsExecute.Count; i++)
                 Console.WriteLine($"{i + 1} - {ItemsExecute[i].GetType().Name}");
 
-            Console.WriteLine("0 - Sair");
+            Console.WriteLine("0 - Sair\n");
         }
     }
 }

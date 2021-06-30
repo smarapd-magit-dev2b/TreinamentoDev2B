@@ -8,9 +8,9 @@ namespace Aula5.Exercicios
 {
     public class Exercicio1 : IExecute
     {
-        public void Cadastrar()
+        public void Execute()
         {
-            var lista = new List<Pessoa>();
+            var pessoas = new List<Pessoa>();
 
             var menu = new Menu("Lista de Pessoas");
 
@@ -21,23 +21,29 @@ namespace Aula5.Exercicios
             do
             {
                 menu.PrintString();
+
+                Console.Write("Digite o número da Operação a ser executada: ");
                 switch (int.Parse(Console.ReadLine()))
                 {
                     case 1:
+                        Console.Clear();
+
                         Pessoa pessoa = new Pessoa();
                         new Cadastro(pessoa).Cadastrar();
-                        lista.Add(pessoa);
+                        pessoas.Add(pessoa);
                         break;
                     case 0:
+                        Console.Clear();
+
                         run = false;
                         break;
                 }
-                
+
             } while (run);
 
             Console.WriteLine("\nNome das Pessoas\n");
 
-            foreach (var pessoa in lista)
+            foreach (var pessoa in pessoas)
                 Console.WriteLine(pessoa.Nome);
         }
     }

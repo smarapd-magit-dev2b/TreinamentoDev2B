@@ -6,7 +6,7 @@ namespace Aula2
 {
     class Exercicio2 : IExecute
     {
-        public void Cadastrar()
+        public void Execute()
         {
             Console.Write("Exercício 2\n\n" +
                 "Empregado\n\n" +

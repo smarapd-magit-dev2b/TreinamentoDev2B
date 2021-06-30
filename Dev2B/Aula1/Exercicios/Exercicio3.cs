@@ -5,7 +5,7 @@ namespace Aula1.Exercicios
 {
     public class Exercicio3 : IExecute
     {
-        public void Cadastrar()
+        public void Execute()
         {
             Console.Write("Exercício 3\n\nDigite 2 valores\n\nPrimeiro valor: ");
             var valor1 = int.Parse(Console.ReadLine());

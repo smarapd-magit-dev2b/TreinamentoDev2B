@@ -2,18 +2,18 @@
 
 namespace Domain.Classes
 {
-    public class Print
+    public class Write
     {
         private object Objeto { get; set; }
 
-        public Print(object objeto)
+        public Write(object objeto)
         {
             Objeto = objeto;
         }
 
-        public void PrintarPropriedades()
+        public void WritePropriedades()
         {
-            Console.WriteLine($"{Objeto.GetType().Name}\n");
+            Console.WriteLine($"\n{Objeto.GetType().Name}\n");
             foreach (var propriedade in Objeto.GetType().GetProperties())
                 Console.WriteLine($"{propriedade.Name}: {propriedade.GetValue(Objeto)}");
         }
