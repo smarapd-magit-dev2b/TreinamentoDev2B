@@ -12,6 +12,14 @@ namespace Aula2
 {
     public class ExerciciosAula2
     {
+        public void Execute()
+        {
+            Exercicio1();
+            Exercicio2();
+            Exercicio3();
+            Exercicio4();
+            Exercicio5();
+        }
         private void Exercicio1()
         {
             Console.WriteLine("digite o numero do produto, descrição, quantidade comprada e valor unitario: ");

@@ -1,0 +1,8 @@
+D:\dev2B\TreinamentoDev2B\Dev2B\Aula4\bin\Debug\netstandard2.0\Aula4.deps.json
+D:\dev2B\TreinamentoDev2B\Dev2B\Aula4\bin\Debug\netstandard2.0\Aula4.dll
+D:\dev2B\TreinamentoDev2B\Dev2B\Aula4\bin\Debug\netstandard2.0\Aula4.pdb
+D:\dev2B\TreinamentoDev2B\Dev2B\Aula4\obj\Debug\netstandard2.0\Aula4.AssemblyInfoInputs.cache
+D:\dev2B\TreinamentoDev2B\Dev2B\Aula4\obj\Debug\netstandard2.0\Aula4.AssemblyInfo.cs
+D:\dev2B\TreinamentoDev2B\Dev2B\Aula4\obj\Debug\netstandard2.0\Aula4.csproj.CoreCompileInputs.cache
+D:\dev2B\TreinamentoDev2B\Dev2B\Aula4\obj\Debug\netstandard2.0\Aula4.dll
+D:\dev2B\TreinamentoDev2B\Dev2B\Aula4\obj\Debug\netstandard2.0\Aula4.pdb
