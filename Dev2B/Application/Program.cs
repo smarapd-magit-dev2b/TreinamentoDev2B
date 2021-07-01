@@ -24,7 +24,6 @@ namespace Application
             //interfaces.Execute();
             //listas.Execute();
             expressoesLambdas.Execute();
-            
         }
     }
 }

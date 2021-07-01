@@ -1,5 +1,4 @@
-﻿using Aula5.Classes;
-using Aula5.Exercicio1.Classes;
+﻿using Aula5.Exercicio1.Classes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -121,7 +120,8 @@ namespace Aula5
 
             var resultadoCount = PessoaCollection.Count();
 
-            var resultadoSelect = PessoaCollection.Select(x => new
+            var resultadoSelect = PessoaCollection.Select(x =>
+            new
             {
                 x.Id,
                 x.Nome
@@ -139,7 +139,9 @@ namespace Aula5
             Base bse = new Base();
 
             #region Exercicio 1
+            Console.WriteLine("------------------------------------");
             Console.WriteLine("Exercicio 1");
+            Console.WriteLine("------------------------------------");
             var exercicio1 = bse.PessoaCollection.Where(x => x.Nome.Contains("a")).ToList();
             exercicio1.ForEach(x =>
             {
@@ -147,7 +149,9 @@ namespace Aula5
             });
             #endregion
             #region Exercicio 2
+            Console.WriteLine("------------------------------------");
             Console.WriteLine("Exercicio 2");
+            Console.WriteLine("------------------------------------");
             var exercicio2 = bse.PessoaCollection.Where(x => x.Endereco.Logradouro.Contains("a"))
                 .Select(p => new
                 {
@@ -164,7 +168,9 @@ namespace Aula5
             });
             #endregion
             #region Exercicio 3
+            Console.WriteLine("------------------------------------");
             Console.WriteLine("Exercicio 3");
+            Console.WriteLine("------------------------------------");
             var exercicio3 = bse.PessoaCollection.Where(x => x.Filhos != null && x.Filhos.Any())
                 .Select(p => new
                 {
@@ -176,7 +182,9 @@ namespace Aula5
             });
             #endregion
             #region Exercicio 4
+            Console.WriteLine("------------------------------------");
             Console.WriteLine("Exercicio 4");
+            Console.WriteLine("------------------------------------");
             var exercicio4 = bse.PessoaCollection.Where(x => x.Filhos != null && x.Filhos.Count > 2)
                 .Select(p => new
                 {
@@ -199,7 +207,9 @@ namespace Aula5
             });
             #endregion
             #region Exercicio 5
+            Console.WriteLine("------------------------------------");
             Console.WriteLine("Exercicio 5");
+            Console.WriteLine("------------------------------------");
             var exercicio5 = bse.PessoaCollection.Where(x => x.Filhos == null || !x.Filhos.Any())
                 .Select(p => new
                 {
@@ -217,7 +227,9 @@ namespace Aula5
             });
             #endregion
             #region Exercicio 6
+            Console.WriteLine("------------------------------------");
             Console.WriteLine("Exercicio 6");
+            Console.WriteLine("------------------------------------");
             var exercicio6 = bse.PessoaCollection.Where(x => x.Filhos != null)
                 .Select(p => new
                 {
@@ -241,13 +253,102 @@ namespace Aula5
             });
             #endregion
             #region Exercicio 7
+            Console.WriteLine("------------------------------------");
             Console.WriteLine("Exercicio 7");
+            Console.WriteLine("------------------------------------");
             var exercicio7 = bse.PessoaCollection.Count(x => x.Filhos != null
-            && x.Filhos.Where(f => DateTime.Now.Year - f.DataNascimento.Year > 25).Any());
+                && x.Filhos.Where(f => DateTime.Now.Year - f.DataNascimento.Year > 25).Any());
 
             Console.WriteLine($"Quantidade: {exercicio7}");
             #endregion
-        }
+            #region Exercicio 8
+            Console.WriteLine("------------------------------------");
+            Console.WriteLine("Exercucuio 8");
+            Console.WriteLine("------------------------------------");
+            var exercicio8 = bse.PessoaCollection.GroupBy(x => x.Raca).ToList();
 
+            foreach (var item in exercicio8)
+            {
+                Console.WriteLine($"Raca: {item.Key}");
+                int count = 0;
+                foreach (var n in item)
+                {
+                    Console.WriteLine($"Nome: {n.Nome}");
+                    count++;
+                }
+                Console.WriteLine($"Quantidade: {count}");
+            }
+            #endregion
+            #region Exercicio 9
+            Console.WriteLine("------------------------------------");
+            Console.WriteLine("Exercicio 9");
+            Console.WriteLine("------------------------------------");
+            var menorPeso = bse.PessoaCollection.OrderBy(x => x.Peso).FirstOrDefault();
+            Console.WriteLine($"Pessoa com menor peso: {menorPeso.Nome}");
+            #endregion
+            #region Exercicio 10
+            Console.WriteLine("------------------------------------");
+            Console.WriteLine("Exercicio 9");
+            Console.WriteLine("------------------------------------");
+            var maiorAltura = bse.PessoaCollection.OrderByDescending(x => x.Altura).FirstOrDefault();
+            Console.WriteLine($"Pessoa com maior altura: {menorPeso.Nome}");
+            #endregion
+            #region Exercicio 11
+            Console.WriteLine("------------------------------------");
+            Console.WriteLine("Exercicio 11");
+            Console.WriteLine("------------------------------------");
+            var exercicio9 = bse.PessoaCollection.OrderBy(x => x.Nome).GroupBy(x => x.Nome.First()).ToList();
+
+            foreach (var item in exercicio9)
+            {
+                Console.WriteLine($"{item.Key}");
+
+                foreach (var n in item)
+                {
+                    Console.WriteLine($" Nome: {n.Nome}");
+                }
+            }
+            #endregion
+            #region Exercicio 12
+            Console.WriteLine("------------------------------------");
+            Console.WriteLine("Exercicio 12");
+            Console.WriteLine("------------------------------------");
+            var exercicio10 = bse.PessoaCollection
+                    .Where(pessoa1 => pessoa1.Filhos != null)
+                    .SelectMany(a => a.Filhos).Select(x => x.Nome)
+                    .ToList();
+
+            foreach (var item in exercicio10)
+            {
+                Console.WriteLine($"Nome: {item}");
+            }
+            #endregion
+            #region Exercicio 13
+            Console.WriteLine("------------------------------------");
+            Console.WriteLine("Exercicio 13");
+            Console.WriteLine("------------------------------------");
+            var exercicio13 = bse.PessoaCollection
+                .Union(
+                    bse.PessoaCollection
+                    .Where(pessoa1 => pessoa1.Filhos != null)
+                    .SelectMany(a => a.Filhos)
+                ).Average(x => x.Altura);
+
+            Console.WriteLine($"A media e: {exercicio13}");
+
+            #endregion
+            #region Exercicio 14
+            Console.WriteLine("------------------------------------");
+            Console.WriteLine("Exercicio 14");
+            Console.WriteLine("------------------------------------");
+            var execicio14 = bse.PessoaCollection
+                .GroupBy(x => DateTime.Now.Year - x.DataNascimento.Year).ToList();
+
+            foreach (var item in execicio14)
+            {
+                Console.WriteLine($"Idade: {item.Key}");
+            }
+            #endregion
+        }
     }
 }
