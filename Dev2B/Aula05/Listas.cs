@@ -13,7 +13,8 @@ namespace Aula05
             //Ex1();
             //Ex2();
             //Ex3();
-            Ex4();
+            //Ex4();
+            //Ex5();            
         }
 
         static void ExExemplo()
@@ -114,14 +115,14 @@ namespace Aula05
             Console.WriteLine("\n\nPessoas com sobrenome ajustado");
             foreach (var pessoa in listaPessoa)
             {
-                Console.WriteLine($"O nome é  {pessoa.Nome} {pessoa.Sobrenome}");                
+                Console.WriteLine($"O nome é  {pessoa.Nome} {pessoa.Sobrenome}");
             }
 
         }
 
         static void Ex1()
         {
-            
+
             var listaPessoa = new List<PessoaCadastrada>();
 
             string opcao = "";
@@ -138,7 +139,7 @@ namespace Aula05
                 opcao = Console.ReadLine();
 
                 switch (opcao)
-                {                    
+                {
                     case "1":
                         Console.WriteLine("\nEntre com o nome");
                         string nome = Console.ReadLine();
@@ -184,7 +185,7 @@ namespace Aula05
         {
             var listaCarros = new List<Carro>();
 
-            string opcao = "";            
+            string opcao = "";
 
             do
             {
@@ -214,9 +215,9 @@ namespace Aula05
                         Console.WriteLine("Entre com a quantidade de portas");
                         int quantidadePortas = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Entre com a quilometragem");
-                        decimal quilometragem = Convert.ToDecimal(Console.ReadLine());                        
+                        decimal quilometragem = Convert.ToDecimal(Console.ReadLine());
                         Console.WriteLine("");
-                        listaCarros.Add(new Carro(id,marca,cor,anoFabricacao,preco,quantidadePortas,quilometragem));
+                        listaCarros.Add(new Carro(id, marca, cor, anoFabricacao, preco, quantidadePortas, quilometragem));
                         break;
 
                     case "2":
@@ -237,8 +238,8 @@ namespace Aula05
                     case "3":
                         Console.WriteLine("Insira o id do carro que quer deletar.");
                         string idDeletar = Console.ReadLine();
-                        
-                        var deletar = listaCarros.FirstOrDefault(carro => carro.Id == idDeletar);                        
+
+                        var deletar = listaCarros.FirstOrDefault(carro => carro.Id == idDeletar);
 
                         if (deletar != null)
                         {
@@ -299,10 +300,10 @@ namespace Aula05
                         Console.WriteLine("Entre com o ra");
                         string ra = Console.ReadLine();
                         Console.WriteLine("Entre com a data de nascimento");
-                        DateTime dataNascimento = Convert.ToDateTime(Console.ReadLine());                       
+                        DateTime dataNascimento = Convert.ToDateTime(Console.ReadLine());
                         Console.WriteLine("");
 
-                        listaAlunos.Add(new Aluno(id, nome, idade, nomePai, nomeMae, ra,dataNascimento));
+                        listaAlunos.Add(new Aluno(id, nome, idade, nomePai, nomeMae, ra, dataNascimento));
                         break;
 
                     case "2":
@@ -364,7 +365,7 @@ namespace Aula05
                         if (alunoAlterar != null)
                         {
                             Console.WriteLine("Insira o novo nome do aluno.");
-                            alunoAlterar.Nome=Console.ReadLine();
+                            alunoAlterar.Nome = Console.ReadLine();
                         }
                         else
                         {
@@ -403,6 +404,10 @@ namespace Aula05
                                   "0 - Sair\n"
                                   );
 
+                //Console.Clear();
+                //listaCarro.Any() ver se tem pelo menos um elemento na lista
+                //moedas
+
                 Console.WriteLine("Escolha a opção");
                 opcao = Console.ReadLine();
 
@@ -436,9 +441,9 @@ namespace Aula05
                             Console.WriteLine("\nDeseja adicionar mais itens? S ou N");
                             adicionar = Console.ReadLine().ToUpper();
 
-                        } while (adicionar=="S");  
-                        
-                        Console.WriteLine("");                      
+                        } while (adicionar == "S");
+
+                        Console.WriteLine("");
                         break;
 
                     case "2":
@@ -462,7 +467,7 @@ namespace Aula05
                             Console.WriteLine("\n-----------\n");
                         }
                         Console.WriteLine("");
-                        break;                   
+                        break;
 
                     case "3":
                         Console.WriteLine("Insira o id da venda que quer deletar.");
@@ -489,12 +494,12 @@ namespace Aula05
                             var itemExcluir = vendaExcluir.Itens.FirstOrDefault(item => item.Id == idItemExcluir);
                             if (itemExcluir != null)
                             {
-                                vendaExcluir.Itens.Remove(itemExcluir);                             
+                                vendaExcluir.Itens.Remove(itemExcluir);
                             }
                             else
                             {
                                 Console.WriteLine("Item não encontrado.");
-                            }                            
+                            }
                         }
                         else
                         {
@@ -531,7 +536,7 @@ namespace Aula05
                         else
                         {
                             Console.WriteLine("Venda não encontrada.");
-                        }    
+                        }
                         Console.WriteLine("");
                         break;
 
@@ -540,7 +545,7 @@ namespace Aula05
                         DateTime dataPesquisaInicial = Convert.ToDateTime(Console.ReadLine());
                         Console.WriteLine("Entre com a data final que deseja pesquisar");
                         DateTime dataPesquisaFinal = Convert.ToDateTime(Console.ReadLine());
-                        vendasData = listaVendas.Where(venda => venda.DataVenda >= dataPesquisaInicial && venda.DataVenda<=dataPesquisaFinal);
+                        vendasData = listaVendas.Where(venda => venda.DataVenda >= dataPesquisaInicial && venda.DataVenda <= dataPesquisaFinal).ToList();
 
 
                         if (vendasData != null)
@@ -568,7 +573,7 @@ namespace Aula05
                         else
                         {
                             Console.WriteLine("Venda não encontrada.");
-                        }                        
+                        }
                         Console.WriteLine("");
                         break;
 
@@ -618,7 +623,7 @@ namespace Aula05
                             {
                                 Console.WriteLine("Entre com a nova quantidade");
                                 int novaQuantidade = Convert.ToInt32(Console.ReadLine());
-                                itemAlterar.Quantidade=novaQuantidade;
+                                itemAlterar.Quantidade = novaQuantidade;
                             }
                             else
                             {
@@ -642,5 +647,14 @@ namespace Aula05
             } while (!(opcao == "0"));
 
         }
+
+        //no any tem que ver se não é null
+        //x.filhos != null && x.filhos.Any().tolist();      
+
+        static void Ex5()
+        {
+
+        }
     }
+    
 }

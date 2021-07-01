@@ -3,6 +3,7 @@ using Aula02;
 using Aula03;
 using Aula04;
 using Aula05;
+using Aula06;
 using System;
 
 namespace Application
@@ -17,12 +18,14 @@ namespace Application
             AbstrataInterface abstrataInterface = new AbstrataInterface();
             Heranca heranca = new Heranca();
             Listas listas = new Listas();
+            Lambda lambda = new Lambda();
 
             //estruturasComando.Execute();
             //classesObjetos.Execute();
             //abstrataInterface.Execute();
             //heranca.Execute();
-            listas.Execute();
+            //listas.Execute();
+            lambda.Execute();
         }
     }
 }

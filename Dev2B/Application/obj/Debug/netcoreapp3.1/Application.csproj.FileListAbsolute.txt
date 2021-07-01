@@ -22,3 +22,5 @@ C:\Users\AMJARIA\Desktop\treinamento\exercícios\TreinamentoDev2B\Dev2B\Applicat
 C:\Users\AMJARIA\Desktop\treinamento\exercícios\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula04.pdb
 C:\Users\AMJARIA\Desktop\treinamento\exercícios\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula05.dll
 C:\Users\AMJARIA\Desktop\treinamento\exercícios\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula05.pdb
+C:\Users\AMJARIA\Desktop\treinamento\exercícios\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula06.dll
+C:\Users\AMJARIA\Desktop\treinamento\exercícios\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula06.pdb
