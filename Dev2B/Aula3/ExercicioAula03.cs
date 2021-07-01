@@ -7,7 +7,7 @@ using System;
 
 namespace Aula3 {
 
-    public class IExercicioAula03 {
+    public class ExercicioAula03 {
         public void Executar() {
             Exercicio01();
             Exercicio02();

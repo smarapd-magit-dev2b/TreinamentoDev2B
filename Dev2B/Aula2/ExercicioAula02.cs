@@ -9,11 +9,11 @@ using Aula02.Exercicio04;
 namespace Aula2 {
     public class ExercicioAula02 {
         public void Executar() {
-            Exercicio01();
-            Exercicio02();
-            Exercicio03();
-            Exercicio04();
-            Desafio01();
+            //Exercicio01();
+            //Exercicio02();
+            //Exercicio03();
+            //Exercicio04();
+            //Desafio01();
         }
         private void Exercicio01() {
             int codigo, quantidadeComprada;

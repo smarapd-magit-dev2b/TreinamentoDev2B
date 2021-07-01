@@ -21,3 +21,7 @@ C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Application\obj\D
 C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Application\obj\Debug\net5.0\Application.genruntimeconfig.cache
 C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula3.dll
 C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula3.pdb
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula4.dll
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula4.pdb
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula5.dll
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula5.pdb
