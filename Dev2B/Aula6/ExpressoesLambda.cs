@@ -16,7 +16,14 @@ namespace Aula6
             //Exercicio4();
             //Exercicio5();
             //Exercicio6();
-            Exercicio7();
+            //Exercicio7();
+            //Exercicio8();
+            //Exercicio9();
+            //Exercicio10();
+            Exercicio11();
+            //Exercicio12();
+            //Exercicio13();
+            //Exercicio14();
         }
 
         private void Exercicio1()
@@ -32,7 +39,6 @@ namespace Aula6
             }
 
         }
-
         private void Exercicio2()
         {
             Base bse = new Base();
@@ -70,7 +76,6 @@ namespace Aula6
             foreach (var pessoa in contemFilhos)
             {
                 Console.WriteLine($"Nome: {pessoa.Nome}\n");
-
             }
         }
         private void Exercicio4()
@@ -162,6 +167,105 @@ namespace Aula6
             && x.Filhos.Where(f => DateTime.Now.Year - f.DataNascimento.Year > 25).Any());
 
             Console.WriteLine($"{quantidadePessoas} pessoa(s) possuem filhos maiores de 25 anos.");
+        }
+        private void Exercicio8()
+        {
+            Base bse = new Base();
+
+            Console.WriteLine("----- Agrupar por raça e mostrar o nome e quantidade -----\n");
+
+            var agruparRaca = bse.PessoaCollection.GroupBy(x => x.Raca);
+
+            foreach(var grupo in agruparRaca)
+            {
+                Console.WriteLine($"Raça: {grupo.Key}");
+                int quantidadeRaca = 0;
+
+                foreach(var pessoa in grupo)
+                {
+                    Console.WriteLine($"Nome: {pessoa.Nome}");
+                    quantidadeRaca++;
+                }
+                Console.WriteLine($"Quantidade: {quantidadeRaca}");
+                Console.WriteLine();
+            }
+        }
+        private void Exercicio9()
+        {
+            Base bse = new Base();
+
+            Console.WriteLine("----- Pessoa de menor peso -----\n");
+
+            var pessoaMenorPeso = bse.PessoaCollection.OrderBy(x => x.Peso).FirstOrDefault();
+
+            Console.WriteLine($"Pessoa com menor peso: {pessoaMenorPeso.Nome}");
+        }
+        private void Exercicio10()
+        {
+            Base bse = new Base();
+
+            Console.WriteLine("----- Pessoa de maior altura -----\n");
+
+            var pessoaMaiorAltura = bse.PessoaCollection.OrderByDescending(x => x.Altura).FirstOrDefault();
+
+            Console.WriteLine($"Pessoa com maior altura: {pessoaMaiorAltura.Nome}");
+        }
+        private void Exercicio11()
+        {
+            Base bse = new Base();
+
+            Console.WriteLine("----- Nomes agrupados pela primeira letra -----\n");
+
+            var nomesAgrupadosPrimeiraLetra = bse.PessoaCollection.OrderBy(y => y.Nome).GroupBy(x => x.Nome.First());
+
+            foreach(var grupo in nomesAgrupadosPrimeiraLetra)
+            {
+                Console.WriteLine($"{grupo.Key}");
+                
+                foreach (var pessoa in grupo)
+                {
+                    Console.WriteLine($"Nome: {pessoa.Nome}");
+                }
+
+                Console.WriteLine();
+            }
+
+        }
+        private void Exercicio12()
+        {
+            Base bse = new Base();
+
+            Console.WriteLine("----- Pessoas ordenadas de menor idade para maior idade -----\n");
+
+            var ordenadaDeMenorParaMaiorIdade = bse.PessoaCollection.OrderByDescending(x => x.DataNascimento);
+
+            foreach (var pessoa in ordenadaDeMenorParaMaiorIdade)
+            {
+                Console.WriteLine($"Nome: {pessoa.Nome} Idade: {DateTime.Now.Year - pessoa.DataNascimento.Year}");
+            }
+        }
+        private void Exercicio13()
+        {
+            Base bse = new Base();
+
+            Console.WriteLine("----- Listar o nome de todos os filhos -----\n");
+
+            var todosFilhos = bse.PessoaCollection.Where(x => x.Filhos != null).SelectMany(y => y.Filhos).ToList();
+
+            foreach (var filho in todosFilhos)
+            {
+                Console.WriteLine($"Nome: {filho.Nome}");
+            }
+
+        }
+        private void Exercicio14()
+        {
+            Base bse = new Base();
+
+            var mediaAltura = bse.PessoaCollection.Union(bse.PessoaCollection.Where(x => x.Filhos != null).SelectMany(y => y.Filhos)).Average(z => z.Altura);
+
+            Console.WriteLine($"A média de altura (pais e filhos) é de: {mediaAltura}");
+
         }
 
     }
