@@ -1,0 +1,11 @@
+C:\Users\jssantana\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula01\bin\Debug\net5.0\Aula01.deps.json
+C:\Users\jssantana\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula01\bin\Debug\net5.0\Aula01.dll
+C:\Users\jssantana\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula01\bin\Debug\net5.0\ref\Aula01.dll
+C:\Users\jssantana\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula01\bin\Debug\net5.0\Aula01.pdb
+C:\Users\jssantana\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula01\obj\Debug\net5.0\Aula01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jssantana\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula01\obj\Debug\net5.0\Aula01.AssemblyInfoInputs.cache
+C:\Users\jssantana\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula01\obj\Debug\net5.0\Aula01.AssemblyInfo.cs
+C:\Users\jssantana\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula01\obj\Debug\net5.0\Aula01.csproj.CoreCompileInputs.cache
+C:\Users\jssantana\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula01\obj\Debug\net5.0\Aula01.dll
+C:\Users\jssantana\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula01\obj\Debug\net5.0\ref\Aula01.dll
+C:\Users\jssantana\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula01\obj\Debug\net5.0\Aula01.pdb
