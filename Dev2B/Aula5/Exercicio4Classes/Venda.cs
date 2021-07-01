@@ -9,6 +9,11 @@ namespace Aula5.Exercicio4Classes
         public int Id { get; set; }
         public DateTime DataVenda { get; set; }
         public string Vendedor { get; set; }
-        public List<ItemVenda> Itens { get; set; } = new List<ItemVenda>();
+        public List<ItemVenda> Itens { get; set; }
+
+        public Venda()
+        {
+            Itens = new List<ItemVenda>();
+        }
     }
 }
