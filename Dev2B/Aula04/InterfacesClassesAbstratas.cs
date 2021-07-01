@@ -10,8 +10,8 @@ namespace Aula04
             //Exercicio1Abstrata();
             //Exercicio2Abstrata();
 
-            Exercicio1Interface();
-            Exercicio2Interface();
+            //Exercicio1Interface();
+            //Exercicio2Interface();
 
         }
 

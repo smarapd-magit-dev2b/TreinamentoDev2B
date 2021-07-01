@@ -8,7 +8,7 @@ namespace Aula04.Interfaces
 {
     class Adicao: Calculo, ICalculo
     {
-        public Adicao(decimal valo1, decimal valor2): base(valor1, valor2) { }
+        public Adicao(decimal valor1, decimal valor2): base(valor1, valor2) { }
     
         public decimal Calcular()
         {

@@ -17,3 +17,11 @@ C:\Users\jssantana\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\obj\Debug\
 C:\Users\jssantana\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula01.dll
 C:\Users\jssantana\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula01.pdb
 C:\Users\jssantana\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\obj\Debug\net5.0\Application.csproj.CopyComplete
+C:\Users\jssantana\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula02.dll
+C:\Users\jssantana\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula03.dll
+C:\Users\jssantana\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula04.dll
+C:\Users\jssantana\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula05.dll
+C:\Users\jssantana\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula02.pdb
+C:\Users\jssantana\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula03.pdb
+C:\Users\jssantana\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula04.pdb
+C:\Users\jssantana\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula05.pdb

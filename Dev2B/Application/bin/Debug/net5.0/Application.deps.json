@@ -8,7 +8,11 @@
     ".NETCoreApp,Version=v5.0": {
       "Application/1.0.0": {
         "dependencies": {
-          "Aula01": "1.0.0"
+          "Aula01": "1.0.0",
+          "Aula02": "1.0.0",
+          "Aula03": "1.0.0",
+          "Aula04": "1.0.0",
+          "Aula05": "1.0.0"
         },
         "runtime": {
           "Application.dll": {}
@@ -17,6 +21,26 @@
       "Aula01/1.0.0": {
         "runtime": {
           "Aula01.dll": {}
+        }
+      },
+      "Aula02/1.0.0": {
+        "runtime": {
+          "Aula02.dll": {}
+        }
+      },
+      "Aula03/1.0.0": {
+        "runtime": {
+          "Aula03.dll": {}
+        }
+      },
+      "Aula04/1.0.0": {
+        "runtime": {
+          "Aula04.dll": {}
+        }
+      },
+      "Aula05/1.0.0": {
+        "runtime": {
+          "Aula05.dll": {}
         }
       }
     }
@@ -28,6 +52,26 @@
       "sha512": ""
     },
     "Aula01/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aula02/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aula03/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aula04/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aula05/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
