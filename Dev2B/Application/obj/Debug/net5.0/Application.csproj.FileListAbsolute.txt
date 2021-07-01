@@ -46,3 +46,5 @@ C:\Users\GTBESERRA\source\repos\TreinamentoDev2B\Dev2B\Application\obj\Debug\net
 C:\Users\GTBESERRA\source\repos\TreinamentoDev2B\Dev2B\Application\obj\Debug\net5.0\Application.genruntimeconfig.cache
 C:\Users\GTBESERRA\source\repos\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula4.dll
 C:\Users\GTBESERRA\source\repos\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula4.pdb
+C:\Users\GTBESERRA\source\repos\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula5.dll
+C:\Users\GTBESERRA\source\repos\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula5.pdb

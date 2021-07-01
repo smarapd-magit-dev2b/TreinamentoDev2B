@@ -1,0 +1,12 @@
+C:\Users\GTBESERRA\source\repos\TreinamentoDev2B\Dev2B\Aula5\bin\Debug\net5.0\Aula5.deps.json
+C:\Users\GTBESERRA\source\repos\TreinamentoDev2B\Dev2B\Aula5\bin\Debug\net5.0\Aula5.dll
+C:\Users\GTBESERRA\source\repos\TreinamentoDev2B\Dev2B\Aula5\bin\Debug\net5.0\ref\Aula5.dll
+C:\Users\GTBESERRA\source\repos\TreinamentoDev2B\Dev2B\Aula5\bin\Debug\net5.0\Aula5.pdb
+C:\Users\GTBESERRA\source\repos\TreinamentoDev2B\Dev2B\Aula5\obj\Debug\net5.0\Aula5.csproj.AssemblyReference.cache
+C:\Users\GTBESERRA\source\repos\TreinamentoDev2B\Dev2B\Aula5\obj\Debug\net5.0\Aula5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GTBESERRA\source\repos\TreinamentoDev2B\Dev2B\Aula5\obj\Debug\net5.0\Aula5.AssemblyInfoInputs.cache
+C:\Users\GTBESERRA\source\repos\TreinamentoDev2B\Dev2B\Aula5\obj\Debug\net5.0\Aula5.AssemblyInfo.cs
+C:\Users\GTBESERRA\source\repos\TreinamentoDev2B\Dev2B\Aula5\obj\Debug\net5.0\Aula5.csproj.CoreCompileInputs.cache
+C:\Users\GTBESERRA\source\repos\TreinamentoDev2B\Dev2B\Aula5\obj\Debug\net5.0\Aula5.dll
+C:\Users\GTBESERRA\source\repos\TreinamentoDev2B\Dev2B\Aula5\obj\Debug\net5.0\ref\Aula5.dll
+C:\Users\GTBESERRA\source\repos\TreinamentoDev2B\Dev2B\Aula5\obj\Debug\net5.0\Aula5.pdb
