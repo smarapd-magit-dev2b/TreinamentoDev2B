@@ -10,7 +10,7 @@ namespace Application
             //Console.WriteLine("Hello World! Application");
             EstruturasComando estruturasComando = new EstruturasComando();
 
-            estruturasComando.Exercicio();
+            estruturasComando.Execute();
         }
     }
 }
