@@ -342,11 +342,11 @@ namespace Aula5
             Console.WriteLine("Exercicio 14");
             Console.WriteLine("------------------------------------");
             var execicio14 = bse.PessoaCollection
-                .GroupBy(x => DateTime.Now.Year - x.DataNascimento.Year).ToList();
+                .OrderBy(x => DateTime.Now.Year - x.DataNascimento.Year).ToList();
 
             foreach (var item in execicio14)
             {
-                Console.WriteLine($"Idade: {item.Key}");
+                Console.WriteLine($"Idade: {item.Nome} | Idade: {item.DataNascimento}");
             }
             #endregion
         }
