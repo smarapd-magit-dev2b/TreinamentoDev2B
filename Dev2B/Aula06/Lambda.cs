@@ -54,7 +54,7 @@ namespace Aula06
                 new Pessoa
                 {
                     Id = 10,
-                    Nome = "Willian",
+                    Nome = "William",
                     Altura = 1.7m,
                     DataNascimento = new DateTime(1950, 10, 4),
                     Peso = 100.0m,
@@ -140,7 +140,7 @@ namespace Aula06
 
 
             //• Exiba todas as pessoas que contenha a letra “a” no nome.
-
+            Console.WriteLine("\nExiba todas as pessoas que contenha a letra “a” no nome.\n");
             var resultadoSelect = PessoaCollection.Select(r => new
             {
                 Nome = r.Nome
@@ -152,7 +152,9 @@ namespace Aula06
             }
             Console.WriteLine("\n------------------\n");
 
+
             //• Exiba o Nome, a Idade e a Altura das pessoas que contenha a letra “a” no Logradouro de seu Endereço.
+            Console.WriteLine("\nExiba o Nome, a Idade e a Altura das pessoas que contenha a letra “a” no Logradouro de seu Endereço.\n");
 
             var consulta2 = PessoaCollection.Where(pessoa => pessoa.Endereco.Logradouro.Contains("a")).ToList();
             foreach (var pessoa in consulta2)
@@ -164,7 +166,9 @@ namespace Aula06
             }
             Console.WriteLine("\n------------------\n");
 
+
             //• Exiba o Nome de todas as pessoas que possuem filhos
+            Console.WriteLine("\nExiba o Nome de todas as pessoas que possuem filhos\n");
             var consulta3 = PessoaCollection.Where(pessoa => pessoa.Filhos != null && pessoa.Filhos.Any()).ToList();
             foreach (var pessoa in consulta3)
             {
@@ -173,6 +177,7 @@ namespace Aula06
             Console.WriteLine("\n------------------\n");
 
             //• Exiba o Nome, Data Nascimento, Peso, Logradouro, Bairro e o Complemento das pessoas que possuem mais de dois filhos
+            Console.WriteLine("\nExiba o Nome, Data Nascimento, Peso, Logradouro, Bairro e o Complemento das pessoas que possuem mais de dois filhos\n");
             var consulta4 = PessoaCollection.Where(pessoa => pessoa.Filhos != null && pessoa.Filhos.Count > 2)
                .Select(p => new
                {
@@ -185,7 +190,7 @@ namespace Aula06
 
                }).ToList();
 
-            foreach (var pessoa in consulta4)                
+            foreach (var pessoa in consulta4)
             {
                 Console.WriteLine($"Nome: {pessoa.Nome}");
                 Console.WriteLine($"Data de Nascimento: {pessoa.DataNascimento}");
@@ -197,6 +202,7 @@ namespace Aula06
             Console.WriteLine("\n------------------\n");
 
             //• Exiba Nome, a Idade e a Altura das pessoas que não possuem filhos.
+            Console.WriteLine("\nExiba Nome, a Idade e a Altura das pessoas que não possuem filhos.\n");
             var consulta5 = PessoaCollection.Where(pessoa => pessoa.Filhos == null || !(pessoa.Filhos.Any())).ToList();
             foreach (var pessoa in consulta5)
             {
@@ -208,7 +214,7 @@ namespace Aula06
             Console.WriteLine("\n------------------\n");
 
             //• Exiba o Nome das pessoas com os seus respectivos filhos(Nome e Data de Nascimento)
-
+            Console.WriteLine("\nExiba o Nome das pessoas com os seus respectivos filhos(Nome e Data de Nascimento)\n");
             var consulta6 = PessoaCollection.Where(pessoa => pessoa.Filhos != null && pessoa.Filhos.Any())
                 .Select(p => new
                 {
@@ -236,8 +242,88 @@ namespace Aula06
             Console.WriteLine("\n------------------\n");
 
             //• Quantidade de Pessoas que possuam Filhos maiores de 25 anos
-            int quantidade=PessoaCollection.Count(pessoa => pessoa.Filhos != null && pessoa.Filhos.Where(filho => DateTime.Now.Year - filho.DataNascimento.Year > 25).Any());
+            Console.WriteLine("\nQuantidade de Pessoas que possuam Filhos maiores de 25 anos\n");
+            int quantidade = PessoaCollection.Count(pessoa => pessoa.Filhos != null && pessoa.Filhos.Where(filho => new DateTime((DateTime.Now - pessoa.DataNascimento).Ticks).Year > 25).Any());
             Console.WriteLine($"Quantidade: {quantidade}");
+
+
+            //-Agrupar por raça e mostrar o nome da raça e quantidade
+            Console.WriteLine("\nAgrupar por raça e mostrar o nome da raça e quantidade\n");
+            var consulta7 = PessoaCollection.GroupBy(pessoa => pessoa.Raca).Select(g => new { raca = g.Key, quantidade = g.Count() }).ToList();
+            foreach (var raca in consulta7)
+            {
+                Console.WriteLine($"Raça: {raca.raca}  Quantidade:{raca.quantidade}");
+            }
+            Console.WriteLine("\n\n-----------------\n\n");
+
+            //-Mostrar a pessoa de menor peso, não precisa considerar filhos
+            Console.WriteLine("\nMostrar a pessoa de menor peso, não precisa considerar filhos\n");
+            var consulta8 = PessoaCollection.Where(pessoa => pessoa.Peso == PessoaCollection.Min(pessoa => pessoa.Peso)).Select(g => new { nome = g.Nome, peso = g.Peso }).ToList();
+            foreach (var pessoa in consulta8)
+            {
+                Console.WriteLine($"Nome: {pessoa.nome}  Peso:{pessoa.peso}");
+            }
+            Console.WriteLine("\n\n-----------------\n\n");
+
+
+            //-Mostrar a pessoa de maior altura, não precisa considerar filhos
+            Console.WriteLine("\nMostrar a pessoa de maior altura, não precisa considerar filhos\n");
+            var consulta9 = PessoaCollection.Where(pessoa => pessoa.Altura == PessoaCollection.Max(pessoa => pessoa.Altura)).Select(g => new { nome = g.Nome, altura = g.Altura }).ToList();
+            foreach (var pessoa in consulta9)
+            {
+                Console.WriteLine($"Nome: {pessoa.nome}  Altura:{pessoa.altura}");
+            }
+            Console.WriteLine("\n\n-----------------\n\n");
+
+
+            //-Listar todos os nomes agrupados pela primeira letra
+            Console.WriteLine("\nListar todos os nomes agrupados pela primeira letra\n");
+
+            //var listaLetras = PessoaCollection.Where(pessoa => !string.IsNullOrEmpty(pessoa.Nome)).Select(s => s.Nome[0]).Distinct().ToList();
+            //var listaLetras = PessoaCollection.Select(s => s.Nome.ElementAtOrDefault(0)).ToList(); //não precisa do distinct pq o order by já vai fazer isso
+            var consulta10 = PessoaCollection.GroupBy(s => s.Nome.ElementAtOrDefault(0)).Select(g => new { Letra = g.Key, Lista = g.ToList() }).ToList();
+            //var consulta10 = PessoaCollection.GroupBy(s => s.Nome.First()).Select(g => new { letra = g.Key, lista = g.ToList() });                 
+
+            foreach (var letra in consulta10)
+            {
+                //Console.WriteLine($"Letras: {pessoa.letra}");
+                Console.WriteLine($"{letra.Letra}");
+
+                foreach (var nome in letra.Lista)
+                {
+                    Console.WriteLine(nome.Nome);
+                }
+            }
+            Console.WriteLine("\n\n-----------------\n\n");
+
+            //- Mostrar as pessoas ordenadas de menor idade para maior idade
+            Console.WriteLine("\nMostrar as pessoas ordenadas de menor idade para maior idade\n");
+            var consulta11 = PessoaCollection.OrderByDescending(p => p.DataNascimento.Year).Select(g => new { g.Nome, g.DataNascimento });
+            foreach (var pessoa in consulta11)
+            {
+                Console.WriteLine($"Nome: {pessoa.Nome}  Idade:{new DateTime((DateTime.Now - pessoa.DataNascimento).Ticks).Year}");
+            }
+            Console.WriteLine("\n\n-----------------\n\n");
+
+            //- Listar os nomes de todos os filhos
+            Console.WriteLine("\nListar os nomes de todos os filhos\n");
+            var consulta12 = PessoaCollection.Where(pessoa => pessoa.Filhos != null && pessoa.Filhos.Any()).SelectMany(x => x.Filhos).ToList();
+
+            foreach (var pessoa in consulta12)
+            {
+
+                Console.WriteLine($"Nome Filho: {pessoa.Nome}");
+
+            }
+            Console.WriteLine("\n------------------\n");
+
+
+            //-Média de altura, incluindo filhos
+            Console.WriteLine("\nMédia de altura, incluindo filhos\n");
+            var uniao = PessoaCollection.Union(PessoaCollection.Where(x => x.Filhos != null).SelectMany(x => x.Filhos));
+            var media = uniao.Select(x => x.Altura).Average();
+            Console.WriteLine($"Media das alturas: {media}");
+            Console.WriteLine("\n------------------\n");
 
 
         }
