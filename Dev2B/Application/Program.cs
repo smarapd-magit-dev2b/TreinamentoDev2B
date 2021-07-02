@@ -2,6 +2,7 @@
 using Aula2;
 using Aula3;
 using Aula5;
+using Aula6;
 using Domain.Classes;
 using System;
 
@@ -21,6 +22,7 @@ namespace Application
             menu.AddItem(new Heranca());
             menu.AddItem(new ClasseAbstrataInterface());
             menu.AddItem(new Listas());
+            menu.AddItem(new Lambda());
 
             menu.Execute();
         }

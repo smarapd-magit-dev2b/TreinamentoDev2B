@@ -16,6 +16,7 @@ namespace Aula5
             menu.AddItem(new Exercicio1());
             menu.AddItem(new Exercicio2());
             menu.AddItem(new Exercicio3());
+            menu.AddItem(new Exercicio4());
 
             menu.Execute();
         }

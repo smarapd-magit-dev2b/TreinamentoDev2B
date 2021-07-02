@@ -46,7 +46,7 @@ namespace Domain.Classes
                     else if (propriedade.PropertyType.Name == "String")
                         propriedade.SetValue(Objeto, Console.ReadLine());
                 }
-                else
+                else if (propriedade.PropertyType.Name == "DateTime")
                 {
                     Console.Write(
                         $"\n{propriedade.Name}\n\n" +
