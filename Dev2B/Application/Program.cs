@@ -18,11 +18,11 @@ namespace Application
             ColecoesListas colecoes = new ColecoesListas();
             ExpressoesLambdas expressoesLambdas = new ExpressoesLambdas();
 
-            //estruturasComando.Execute();
-            //classesObjetos.Execute();
-            //herancas.Execute();
-            //classesAbstrata.Execute();
-            //colecoes.Execute();
+            estruturasComando.Execute();
+            classesObjetos.Execute();
+            herancas.Execute();
+            classesAbstrata.Execute();
+            colecoes.Execute();
             expressoesLambdas.Execute();
         }
     }

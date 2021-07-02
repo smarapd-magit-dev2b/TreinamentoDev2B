@@ -16,13 +16,13 @@ namespace Aula5
     {
         public void Execute()
         {
-            //Exercicio1();
-            //Exercicio2();
-            //Exercicio3();
-            //Exercicio4();
-            //Exercicio5();
+            Exercicio1();
+            Exercicio2();
+            Exercicio3();
+            Exercicio4();
+            Exercicio5();
             Exercicio6();
-            //Exercicio7();
+            Exercicio7();
         }
         private void Exercicio1()
         {
@@ -215,7 +215,7 @@ namespace Aula5
                             Console.Clear();
                             Console.WriteLine("\nNão existem carros cadastrados.");
                         }
-                            
+
                         break;
                     case "3":
                         Console.WriteLine("\nExcluir carros");
@@ -232,7 +232,7 @@ namespace Aula5
                             Console.Clear();
                             Console.WriteLine("\nNão existe o veiculo informado");
                         }
-                            
+
                         break;
                     default:
                         Console.WriteLine("\nOpcão Inválida");
@@ -301,7 +301,7 @@ namespace Aula5
                         }
                         else
                             Console.WriteLine("Lista vazia");
-                        
+
                         Console.ReadLine();
                         break;
                     case "3":
@@ -313,7 +313,7 @@ namespace Aula5
                             Console.WriteLine(listarAluno.AlunoToString());
                         else
                             Console.WriteLine("ID/Nome inválido ou não cadastrado");
-                        
+
 
                         break;
                     case "4":
@@ -444,7 +444,7 @@ namespace Aula5
                         }
                         else
                             Console.WriteLine("ID inválido ou não cadastrado");
-                        
+
                         Console.ReadLine();
                         Console.Clear();
                         break;
@@ -468,7 +468,7 @@ namespace Aula5
                         }
                         else
                             Console.WriteLine("\nID venda inválido ou não cadastrado.");
-                        
+
                         Console.ReadLine();
                         Console.Clear();
                         break;
@@ -601,7 +601,19 @@ namespace Aula5
                 {
                     case "1":
                         Console.Clear();
-                        
+                        Console.WriteLine("\nCadastro de contas");
+                        Console.WriteLine("Informe o numero da conta: ");
+                        var numConta = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Informe o saldo da conta: ");
+                        var saldo = decimal.Parse(Console.ReadLine());
+                        Console.WriteLine("Informe se a conta é especial:");
+                        var contaEspecial = (Console.ReadLine());
+                        Console.WriteLine("Informe o limite da conta:");
+                        var limite = decimal.Parse(Console.ReadLine());
+
+                        var conta = new ContaCorrente(numConta, saldo, contaEspecial, limite);
+                        listaContaCorrente.Add(conta);
+                        Console.WriteLine("Conta adicionada com sucesso");
                         Console.ReadLine();
                         break;
                     case "2":
@@ -621,44 +633,91 @@ namespace Aula5
                         Console.WriteLine("Informe o numero da conta: ");
                         var numContaSacar = int.Parse(Console.ReadLine());
 
-                        Console.WriteLine("Informe o valor que deseja sacar: ");
-                        var valorSaque = decimal.Parse(Console.ReadLine());
-
-                        var sacar = listaContaCorrente.FirstOrDefault(x => x.NumeroConta == numContaSacar);
-                        if ((sacar.Saldo-valorSaque) >= 0 && valorSaque <= sacar.Limite)
+                        var contaSacar = listaContaCorrente.FirstOrDefault(x => x.NumeroConta == numContaSacar);
+                        if (contaSacar != null)
                         {
-                            sacar.Saldo = sacar.Saldo - valorSaque;
+                            Console.WriteLine("Informe o valor que deseja sacar: ");
+                            var valorSaque = decimal.Parse(Console.ReadLine());
+                            contaSacar.Sacar(valorSaque);
                         }
                         else
-                            Console.WriteLine("Não é possivel realizar o saque.");
-                        
-                        foreach (var contaCC in listaContaCorrente)
-                        {
-                            Console.WriteLine($"\nNumero da conta: {contaCC.NumeroConta}");
-                            Console.WriteLine($"Saldo da conta: {contaCC.Saldo}");
-                        }
-                        Console.WriteLine("Saque realizado com sucesso.");
+                            Console.WriteLine("Número da conta inválido.");
+
                         Console.ReadLine();
                         break;
                     case "4":
+                        Console.Clear();
+                        Console.WriteLine("\nOperacação de Depósito");
+                        Console.WriteLine("Informe o numero da conta: ");
+                        var numContaDep = int.Parse(Console.ReadLine());
+
+                        var contaDepositar = listaContaCorrente.FirstOrDefault(x => x.NumeroConta == numContaDep);
+                        if (contaDepositar != null)
+                        {
+                            Console.WriteLine("Informe o valor que deseja depositar: ");
+                            var valorDep = decimal.Parse(Console.ReadLine());
+                            contaDepositar.Depositar(valorDep);
+                        }
+                        else
+                            Console.WriteLine("Número da conta inválido.");
+
+                        Console.ReadLine();
                         break;
                     case "5":
+                        Console.Clear();
                         Console.WriteLine("Emissao de saldo e extrato");
-                        Console.WriteLine("Saldo");
+                        Console.WriteLine("Informe o numero da conta: ");
+                        var numContaExtrato = int.Parse(Console.ReadLine());
 
+                        var contaExtrato = listaContaCorrente.FirstOrDefault(x => x.NumeroConta == numContaExtrato);
+                        if (contaExtrato != null)
+                            contaExtrato.ExibirExtrato();
+                        else
+                            Console.WriteLine("Número da conta inválido.");
 
+                        Console.ReadLine();
                         break;
                     case "6":
+                        Console.Clear();
+                        Console.WriteLine("\nTransferencia entre contas");
+                        Console.WriteLine("Informe o numero da conta: ");
+                        var numeroConta = int.Parse(Console.ReadLine());
+
+                        var contaTransferencia = listaContaCorrente
+                            .FirstOrDefault(x => x.NumeroConta == numeroConta);
+                        if (contaTransferencia != null)
+                        {
+                            Console.WriteLine("Informe o número da conta de destino");
+                            var numeroContaDestino = int.Parse(Console.ReadLine());
+                            var contaDestino = listaContaCorrente
+                                .FirstOrDefault(x => x.NumeroConta == numeroContaDestino);
+                            if (contaDestino != null)
+                            {
+                                Console.WriteLine("Informe o valor da transferência: ");
+                                var valorTransferencia = decimal.Parse(Console.ReadLine());
+                                contaTransferencia.Transferencia(contaDestino, valorTransferencia);
+                            }
+                            else
+                                Console.WriteLine("Número da conta de destino inválido.");
+                        }
+                        else
+                            Console.WriteLine("Número da conta inválido.");
+                        Console.ReadLine();
                         break;
 
                     default:
+                        Console.WriteLine("Opção Inválida.");
+                        Console.ReadLine();
+                        Console.Clear();
+                        Console.WriteLine(ObterOpcaoUsuario());
                         break;
                 }
                 Console.Clear();
                 opcaoUsuario = ObterOpcaoUsuario();
-                
-            }
 
+            }
+            Console.WriteLine("Programa encerrado.");
+            Console.ReadKey();
 
             static string ObterOpcaoUsuario()
             {

@@ -11,7 +11,7 @@ namespace Aula6
     {
         public void Execute()
         {
-            //Exemplo1Aula();
+            Exemplo1Aula();
             Ex1();
         }
 

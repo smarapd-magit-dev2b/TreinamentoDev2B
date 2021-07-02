@@ -8,18 +8,18 @@ namespace Aula1
     {
 		public void Execute()
         {
-   //         Ex1();
-   //         Ex2();
-   //         Ex3();
-   //         Ex4_1();
-			//Ex4_2();
-			//Ex5_1();
-			//Ex5_2();
-			//Ex5_3();
-			//Ex10();
-			//Desafio1();
+            Ex1();
+            Ex2();
+            Ex3();
+            Ex4_1();
+            Ex4_2();
+            Ex5_1();
+            Ex5_2();
+            Ex5_3();
+            Ex10();
+            Desafio1();
         }
-		private void Ex1()
+        private void Ex1()
 		{
 
 			decimal media;

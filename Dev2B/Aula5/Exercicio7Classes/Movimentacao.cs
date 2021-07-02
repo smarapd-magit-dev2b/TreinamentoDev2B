@@ -8,11 +8,13 @@ namespace Aula5.Exercicio7Classes
     {
         public string Descricao { get; set; }
         public decimal Valor { get; set; }
+        public string TipoMovimentacao { get; set; }
 
-        public Movimentacao(string descricao, decimal valor)
+        public Movimentacao(string descricao, decimal valor, string tipoMovimentacao)
         {
             Descricao = descricao;
             Valor = valor;
+            TipoMovimentacao = tipoMovimentacao;
         }
     }
 }
