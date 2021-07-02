@@ -10,7 +10,6 @@ namespace Aula5.Exercicio6Classes
         public string Descricao { get; set; }
         public int Quantidade { get; set; }
         public decimal PrecoUnitario { get; set; }
-        public int VendaId { get; set; }
 
         public ItemVenda(int idItem, string descricao, int quantidade, decimal precoUnit)
         {

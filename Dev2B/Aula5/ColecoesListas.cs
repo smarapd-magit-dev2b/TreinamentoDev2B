@@ -8,6 +8,7 @@ using Aula5.Exercicio3Classes;
 using Aula5.Exercicio4Classes;
 using Aula5.Exercicio5Classes;
 using Aula5.Exercicio6Classes;
+using Aula5.Exercicio7Classes;
 
 namespace Aula5
 {
@@ -20,7 +21,8 @@ namespace Aula5
             //Exercicio3();
             //Exercicio4();
             //Exercicio5();
-            //Exercicio6();
+            Exercicio6();
+            //Exercicio7();
         }
         private void Exercicio1()
         {
@@ -200,7 +202,7 @@ namespace Aula5
                         break;
                     case "2":
                         Console.WriteLine("\nLista de todos os carros cadastrados");
-                        if (listaCarro != null)
+                        if (listaCarro != null && listaCarro.Any())
                         {
                             foreach (var carro in listaCarro)
                             {
@@ -209,18 +211,31 @@ namespace Aula5
                             Console.ReadLine();
                         }
                         else
-                            Console.WriteLine("Não existem carros cadastrados.");
+                        {
+                            Console.Clear();
+                            Console.WriteLine("\nNão existem carros cadastrados.");
+                        }
+                            
                         break;
                     case "3":
                         Console.WriteLine("\nExcluir carros");
                         Console.WriteLine("Informe o id do carro que deseja excluir: ");
                         var idRemover = int.Parse(Console.ReadLine());
-                        var excluirCarro = listaCarro.Where(x => x.Id == idRemover).FirstOrDefault();
-                        listaCarro.Remove(excluirCarro);
-                        Console.WriteLine("Carro Excluido.");
+                        var excluirCarro = listaCarro.FirstOrDefault(x => x.Id == idRemover);
+                        if (excluirCarro != null)
+                        {
+                            listaCarro.Remove(excluirCarro);
+                            Console.WriteLine("Carro Excluido.");
+                        }
+                        else
+                        {
+                            Console.Clear();
+                            Console.WriteLine("\nNão existe o veiculo informado");
+                        }
+                            
                         break;
                     default:
-                        Console.WriteLine("Opcão Inválida");
+                        Console.WriteLine("\nOpcão Inválida");
                         Console.WriteLine(ObterOpcaoUsuario());
                         break;
                 }
@@ -277,18 +292,28 @@ namespace Aula5
                         break;
                     case "2":
                         Console.WriteLine("\nLista de todos os alunos cadastrados");
-                        foreach (var aluno in listaAluno)
+                        if (listaAluno.Count != 0)
                         {
-                            Console.WriteLine(aluno.AlunoToString());
+                            foreach (var aluno in listaAluno)
+                            {
+                                Console.WriteLine(aluno.AlunoToString());
+                            }
                         }
+                        else
+                            Console.WriteLine("Lista vazia");
+                        
                         Console.ReadLine();
                         break;
                     case "3":
                         Console.WriteLine("\nPesquisar aluno");
                         Console.WriteLine("Informe o id ou nome do aluno: ");
                         var idPesquisar = Console.ReadLine();
-                        var listarAluno = listaAluno.Where(x => x.Id == int.Parse(idPesquisar) || x.Nome == idPesquisar).FirstOrDefault();
-                        Console.WriteLine(listarAluno.AlunoToString());
+                        var listarAluno = listaAluno.FirstOrDefault(x => x.Id == int.Parse(idPesquisar) || x.Nome == idPesquisar);
+                        if (listarAluno != null)
+                            Console.WriteLine(listarAluno.AlunoToString());
+                        else
+                            Console.WriteLine("ID/Nome inválido ou não cadastrado");
+                        
 
                         break;
                     case "4":
@@ -296,8 +321,14 @@ namespace Aula5
                         Console.WriteLine("Informe o id ou nome do aluno: ");
                         var idRemover = Console.ReadLine();
                         var excluirAluno = listaAluno.FirstOrDefault(x => x.Id == int.Parse(idRemover) || x.Nome == idRemover);
-                        listaAluno.Remove(excluirAluno);
-                        Console.WriteLine("Aluno Excluido.");
+                        if (excluirAluno != null)
+                        {
+                            listaAluno.Remove(excluirAluno);
+                            Console.WriteLine("Aluno Excluido.");
+                        }
+                        else
+                            Console.WriteLine("ID/Nome inválido ou não cadastrado");
+
                         break;
 
                     case "5":
@@ -309,10 +340,13 @@ namespace Aula5
                         Console.WriteLine("\nInforme o novo nome do aluno: ");
                         var nomeAlterado = Console.ReadLine();
                         var alterarAluno = listaAluno.FirstOrDefault(x => x.Id == int.Parse(idAlterar) || x.Nome == idAlterar);
-                        alterarAluno.Nome = nomeAlterado;
-                        Console.WriteLine("Nome alterado.");
-
-
+                        if (alterarAluno != null)
+                        {
+                            alterarAluno.Nome = nomeAlterado;
+                            Console.WriteLine("Nome alterado.");
+                        }
+                        else
+                            Console.WriteLine("ID/Nome inválido ou não cadastrado");
                         break;
                     default:
                         Console.WriteLine("Opcão Inválida");
@@ -364,7 +398,7 @@ namespace Aula5
                         var idItem = int.Parse(Console.ReadLine());
 
                         Console.WriteLine("Informe a descrição do item: ");
-                        var descricao  = Console.ReadLine();
+                        var descricao = Console.ReadLine();
 
                         Console.WriteLine("Informe a quantidade de itens: ");
                         var quantidade = int.Parse(Console.ReadLine());
@@ -387,7 +421,7 @@ namespace Aula5
                             Console.WriteLine($"Data da venda: {vendas.DataVenda.ToString("dd/MM/yyyy")}");
                             Console.WriteLine($"Nome do vendedor: {vendas.Vendedor}");
 
-                            foreach (var itemV in vendas.Itens )
+                            foreach (var itemV in vendas.Itens)
                             {
                                 Console.WriteLine($"ID do item: {itemV.IdItem}");
                                 Console.WriteLine($"Descrição do item: {itemV.Descricao}");
@@ -403,8 +437,14 @@ namespace Aula5
                         Console.WriteLine("Informe o id da venda: ");
                         var idRemover = Console.ReadLine();
                         var excluirVenda = listaVenda.FirstOrDefault(x => x.Id == int.Parse(idRemover));
-                        listaVenda.Remove(excluirVenda);
-                        Console.WriteLine("Venda Excluida.");
+                        if (listaVenda != null)
+                        {
+                            listaVenda.Remove(excluirVenda);
+                            Console.WriteLine("Venda Excluida.");
+                        }
+                        else
+                            Console.WriteLine("ID inválido ou não cadastrado");
+                        
                         Console.ReadLine();
                         Console.Clear();
                         break;
@@ -416,13 +456,19 @@ namespace Aula5
                         var idItemRemover = Console.ReadLine();
                         var listarVendas = listaVenda.FirstOrDefault(x => x.Id == int.Parse(idVendaRemover));
                         var excluirItem = listarVendas.Itens.FirstOrDefault(x => x.IdItem == int.Parse(idItemRemover));
-                        if (excluirItem != null)
+                        if (listarVendas != null)
                         {
-                            listarVendas.Itens.Remove(excluirItem);
-                            Console.WriteLine("Item Excluido.");
-                        }        
+                            if (excluirItem != null)
+                            {
+                                listarVendas.Itens.Remove(excluirItem);
+                                Console.WriteLine("\nItem Excluido.");
+                            }
+                            else
+                                Console.WriteLine("\nItem não encontrado");
+                        }
                         else
-                            Console.WriteLine("Item não encontrado");
+                            Console.WriteLine("\nID venda inválido ou não cadastrado.");
+                        
                         Console.ReadLine();
                         Console.Clear();
                         break;
@@ -430,7 +476,7 @@ namespace Aula5
                         Console.WriteLine("\nPesquisar venda por data");
                         Console.WriteLine("\nInforme a data: ");
                         var dataPesquisar = DateTime.Parse(Console.ReadLine());
-                        var listarData = listaVenda.Where(x => x.DataVenda == dataPesquisar);
+                        var listarData = listaVenda.Where(x => x.DataVenda == dataPesquisar).ToList();
                         if (listarData != null)
                         {
                             foreach (var vendas in listarData)
@@ -450,7 +496,7 @@ namespace Aula5
                         }
                         else
                             Console.WriteLine("Data não encontrada");
-                        
+
                         Console.ReadLine();
                         Console.Clear();
                         break;
@@ -508,7 +554,7 @@ namespace Aula5
                         Console.WriteLine("Informe o ID do item: ");
                         var idItemAlterar = int.Parse(Console.ReadLine());
                         Console.WriteLine("Informe a nova quantidade do item: ");
-                        var idQuantidadeAlterada = int.Parse(Console.ReadLine()) ;
+                        var idQuantidadeAlterada = int.Parse(Console.ReadLine());
 
                         var listarVendasQ = listaVenda.FirstOrDefault(x => x.Id == idVendaAlterar);
                         var alterarQuantidade = listarVendasQ.Itens.FirstOrDefault(x => x.IdItem == idItemAlterar);
@@ -540,6 +586,90 @@ namespace Aula5
                 Console.WriteLine("7 - Pesquisar venda por Vendedor");
                 Console.WriteLine("8 - Alterar a quantidade do item");
                 Console.WriteLine("9 - Sair");
+                var opcaoUsuario = Console.ReadLine();
+                return opcaoUsuario;
+            }
+        }
+        private void Exercicio7()
+        {
+            var listaContaCorrente = new List<ContaCorrente>();
+            var opcaoUsuario = ObterOpcaoUsuario();
+
+            while (opcaoUsuario != "7")
+            {
+                switch (opcaoUsuario)
+                {
+                    case "1":
+                        Console.Clear();
+                        
+                        Console.ReadLine();
+                        break;
+                    case "2":
+                        Console.Clear();
+                        Console.WriteLine("\nExclusão de contas");
+                        Console.WriteLine("Informe o numero da conta: ");
+                        var numContaExcluir = int.Parse(Console.ReadLine());
+                        var excluiContaCorrente = listaContaCorrente.FirstOrDefault(x =>
+                        x.NumeroConta == numContaExcluir);
+                        listaContaCorrente.Remove(excluiContaCorrente);
+                        Console.WriteLine("Conta removida com sucesso");
+                        Console.ReadLine();
+                        break;
+                    case "3":
+                        Console.Clear();
+                        Console.WriteLine("\nOperacação de Saque");
+                        Console.WriteLine("Informe o numero da conta: ");
+                        var numContaSacar = int.Parse(Console.ReadLine());
+
+                        Console.WriteLine("Informe o valor que deseja sacar: ");
+                        var valorSaque = decimal.Parse(Console.ReadLine());
+
+                        var sacar = listaContaCorrente.FirstOrDefault(x => x.NumeroConta == numContaSacar);
+                        if ((sacar.Saldo-valorSaque) >= 0 && valorSaque <= sacar.Limite)
+                        {
+                            sacar.Saldo = sacar.Saldo - valorSaque;
+                        }
+                        else
+                            Console.WriteLine("Não é possivel realizar o saque.");
+                        
+                        foreach (var contaCC in listaContaCorrente)
+                        {
+                            Console.WriteLine($"\nNumero da conta: {contaCC.NumeroConta}");
+                            Console.WriteLine($"Saldo da conta: {contaCC.Saldo}");
+                        }
+                        Console.WriteLine("Saque realizado com sucesso.");
+                        Console.ReadLine();
+                        break;
+                    case "4":
+                        break;
+                    case "5":
+                        Console.WriteLine("Emissao de saldo e extrato");
+                        Console.WriteLine("Saldo");
+
+
+                        break;
+                    case "6":
+                        break;
+
+                    default:
+                        break;
+                }
+                Console.Clear();
+                opcaoUsuario = ObterOpcaoUsuario();
+                
+            }
+
+
+            static string ObterOpcaoUsuario()
+            {
+                Console.WriteLine("\nInforme a opção desejada: ");
+                Console.WriteLine("1 - Cadastrar nova conta");
+                Console.WriteLine("2 - Excluir contas");
+                Console.WriteLine("3 - Sacar");
+                Console.WriteLine("4 - Depositar");
+                Console.WriteLine("5 - Emissão de Saldo e Extrato");
+                Console.WriteLine("6 - Transferencias entre contas");
+                Console.WriteLine("7 - Sair");
                 var opcaoUsuario = Console.ReadLine();
                 return opcaoUsuario;
             }

@@ -20,3 +20,5 @@ C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\bin\Debug\netco
 C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula3.pdb
 C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula5.dll
 C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula5.pdb
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula6.dll
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula6.pdb
