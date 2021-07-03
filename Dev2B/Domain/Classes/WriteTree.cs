@@ -1,55 +1,40 @@
 ﻿using System;
 using System.Collections;
+using System.Linq;
 
 namespace Domain.Classes
 {
     public static class WriteTree
     {
-        public static void Propriedades(object objeto)
-        {
-            string[] a = null;
-            ForEachTree(objeto, ref a, "   ");
-        }
         public static void Propriedades(object objeto, params string[] titulos)
         {
-            ForEachTree(objeto, ref titulos, "   ");
-        }
-
-        private static void ForEachTree(object objeto, ref string[] titulos, string espacamento)
-        {
             var classe = objeto.GetType();
+            var titulosList = titulos.ToList();
 
-            if (titulos.Length == 0)
-                Console.WriteLine($"\n{Espacamento}{classe.Name}\n");
+            if (!titulosList.Any())
+                Console.WriteLine($"\n{classe.Name}\n");
             else
             {
-                Console.WriteLine($"\n{Espacamento}{Titulo}\n");
-                Titulo = null;
+                Console.WriteLine($"\n{titulosList.First()}\n");
+                _ = titulosList.Remove(titulosList.First());
             }
 
             foreach (var propriedade in classe.GetProperties())
             {
                 if (propriedade.PropertyType.Namespace == "System")
-                    Console.WriteLine($"{Espacamento}{propriedade.Name}: {propriedade.GetValue(objeto)}");
-                else if(propriedade.PropertyType.Namespace == "System.Collections.Generic")
+                    Console.WriteLine($"{propriedade.Name}: {propriedade.GetValue(objeto)}");
+                else if (propriedade.PropertyType.Namespace == "System.Collections.Generic")
                 {
-                    var lista = (IEnumerable) propriedade.GetValue(objeto);
+                    var lista = (IEnumerable)propriedade.GetValue(objeto);
                     if (lista != null)
                     {
-                        Espacamento += "   ";
-                        Console.WriteLine($"\n{Espacamento}{propriedade.Name}\n");
-                        Espacamento += "   ";
+                        Console.WriteLine($"\n{propriedade.Name}\n");
                         foreach (var item in lista)
-                            ForEachTree(item);
-                        Espacamento = Espacamento.Substring(3);
+                            Propriedades(item);
                     }
                 }
                 else
-                {
-                    Espacamento += "   ";
-                    ForEachTree(propriedade.GetValue(objeto));
-                    Espacamento = Espacamento.Substring(3);
-                }
+                    Propriedades(propriedade.GetValue(objeto));
             }
             Console.WriteLine();
         }

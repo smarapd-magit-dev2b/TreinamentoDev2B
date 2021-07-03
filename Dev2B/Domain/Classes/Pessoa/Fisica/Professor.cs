@@ -16,7 +16,7 @@ namespace Domain.Classes.Pessoa.Fisica
         {
             Console.WriteLine("Professor");
             Console.WriteLine($"Nome: {Nome}");
-            Console.WriteLine($"Data de nascimento: {DataNascimento.ToString()}");
+            Console.WriteLine($"Data de nascimento: {DataNascimento}");
             Console.WriteLine($"Endereço: {Endereco}");
             Console.WriteLine($"Telefone: {Telefone}");
             Console.WriteLine($"Email: {Email}");

@@ -73,9 +73,9 @@ namespace Aula5.Exercicios
 
                             foreach (var wVenda in vendas)
                             {
-                                new WriteTree(wVenda).Propriedades();
+                                WriteTree.Propriedades(wVenda);
                                 foreach (var wItem in wVenda.Items)
-                                    new WriteTree(wItem).Propriedades();
+                                    WriteTree.Propriedades(wItem);
                             }
 
                             break;

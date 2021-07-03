@@ -39,7 +39,7 @@ namespace Aula5.Exercicios
                             Console.Clear();
 
                             foreach (var wCarro in carros)
-                                new WriteTree(wCarro).Propriedades();
+                                WriteTree.Propriedades(wCarro);
                             break;
                         case 3:
                             Console.Clear();
