@@ -1,4 +1,4 @@
-﻿using Aula5.Classes;
+﻿ using Aula5.Classes;
 using Domain.Classes;
 using Domain.Interfaces;
 using System;
@@ -73,9 +73,9 @@ namespace Aula5.Exercicios
 
                             foreach (var wVenda in vendas)
                             {
-                                new Write(wVenda).Propriedades();
+                                new WriteTree(wVenda).Propriedades();
                                 foreach (var wItem in wVenda.Items)
-                                    new Write(wItem).Propriedades();
+                                    new WriteTree(wItem).Propriedades();
                             }
 
                             break;

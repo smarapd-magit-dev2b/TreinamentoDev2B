@@ -3,52 +3,31 @@ using System.Collections;
 
 namespace Domain.Classes
 {
-    public class Write
+    public static class WriteTree
     {
-        private object Objeto { get; set; }
-        private string Titulo { get; set; }
-        private string Titulo1 { get; set; }
-        private string Espacamento { get; set; }
-
-        public Write(object objeto)
+        public static void Propriedades(object objeto)
         {
-            Objeto = objeto;
+            string[] a = null;
+            ForEachTree(objeto, ref a, "   ");
+        }
+        public static void Propriedades(object objeto, params string[] titulos)
+        {
+            ForEachTree(objeto, ref titulos, "   ");
         }
 
-        public Write(object objeto, string titulo)
+        private static void ForEachTree(object objeto, ref string[] titulos, string espacamento)
         {
-            Objeto = objeto;
-            Titulo = titulo;
-        }
-        public Write(object objeto, string titulo, string titulo1)
-        {
-            Objeto = objeto;
-            Titulo = titulo;
-            Titulo1 = titulo1;
-        }
+            var classe = objeto.GetType();
 
-        public void Propriedades()
-        {
-            Espacamento = "   ";
-            ForEach(Objeto);
-        }
-
-        private void ForEach(object objeto)
-        {
-            if (Titulo != null)
+            if (titulos.Length == 0)
+                Console.WriteLine($"\n{Espacamento}{classe.Name}\n");
+            else
             {
                 Console.WriteLine($"\n{Espacamento}{Titulo}\n");
                 Titulo = null;
             }
-            else if (Titulo1 != null)
-            {
-                Console.WriteLine($"\n{Espacamento}{Titulo1}\n");
-                Titulo = null;
-            }
-            else
-                Console.WriteLine($"\n{Espacamento}{objeto.GetType().Name}\n");
 
-            foreach (var propriedade in objeto.GetType().GetProperties())
+            foreach (var propriedade in classe.GetProperties())
             {
                 if (propriedade.PropertyType.Namespace == "System")
                     Console.WriteLine($"{Espacamento}{propriedade.Name}: {propriedade.GetValue(objeto)}");
@@ -61,14 +40,14 @@ namespace Domain.Classes
                         Console.WriteLine($"\n{Espacamento}{propriedade.Name}\n");
                         Espacamento += "   ";
                         foreach (var item in lista)
-                            ForEach(item);
+                            ForEachTree(item);
                         Espacamento = Espacamento.Substring(3);
                     }
                 }
                 else
                 {
                     Espacamento += "   ";
-                    ForEach(propriedade.GetValue(objeto));
+                    ForEachTree(propriedade.GetValue(objeto));
                     Espacamento = Espacamento.Substring(3);
                 }
             }

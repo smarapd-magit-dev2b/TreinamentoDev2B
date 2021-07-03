@@ -117,7 +117,8 @@ namespace Aula6.Exercicios
             #region Exercicio 1
             Console.WriteLine("\nPessoas que contêm 'a' no Nome:");
             foreach (var pessoa in todasPessoas
-                .Where(p => p.Nome.Contains("a"))
+                .Where(p => p.Nome
+                .ToLower().Contains("a"))
                 .Select(p => new
                 {
                     p.Id,
@@ -127,7 +128,7 @@ namespace Aula6.Exercicios
                     p.Peso,
                     p.Raca,
                     p.Endereco
-                })) new Write(pessoa, "Pessoa").Propriedades();
+                })) new WriteTree(pessoa, "Pessoa").Propriedades();
             #endregion
             #region Exercicio 2
             Console.WriteLine("Nome e Altura de Pessoas que contêm 'a' no Logradouro:");
@@ -141,7 +142,7 @@ namespace Aula6.Exercicios
                     p.Altura
                 }
                 ).ToList()
-                ) new Write(pessoa, "Pessoa").Propriedades();
+                ) new WriteTree(pessoa, "Pessoa").Propriedades();
             #endregion
             #region Exercício 3
             Console.WriteLine("Nome das Pessoas que possuem filhos:");
@@ -153,7 +154,7 @@ namespace Aula6.Exercicios
                     p.Nome
                 }
                 ).ToList()
-                ) new Write(pessoa, "Pessoa").Propriedades();
+                ) new WriteTree(pessoa, "Pessoa").Propriedades();
             #endregion
             #region Exercicio 4
             Console.WriteLine("Nome das Pessoas que possuem mais de 2 filhos:");
@@ -170,7 +171,7 @@ namespace Aula6.Exercicios
                     p.Endereco.Complemento
                 }
                 ).ToList()
-                ) new Write(pessoa, "Pessoa").Propriedades();
+                ) new WriteTree(pessoa, "Pessoa").Propriedades();
             #endregion
             #region Exercicio 5
             Console.WriteLine("Nome, a Idade e a Altura das pessoas que não possuem filhos:");
@@ -184,7 +185,7 @@ namespace Aula6.Exercicios
                     p.Altura,
                 }
                 ).ToList()
-                ) new Write(pessoa, "Pessoa").Propriedades();
+                ) new WriteTree(pessoa, "Pessoa").Propriedades();
             #endregion
             #region Exercicio 6
             Console.WriteLine("Nome das pessoas com os seus respectivos filhos (Nome e Data de Nascimento):");
@@ -201,7 +202,7 @@ namespace Aula6.Exercicios
                     })
                 }
                 ).ToList()
-                ) new Write(pessoa, "Pessoa", "Filho").Propriedades();
+                ) new WriteTree(pessoa, "Pessoa", "Filho").Propriedades();
             #endregion
             #region Exercicio 7
 
@@ -235,7 +236,7 @@ namespace Aula6.Exercicios
                 })
                 .First();
             Console.WriteLine("Pessoa com menor peso: ");
-            new Write(pessoaComMenorPeso, "Pessoa").Propriedades();
+            new WriteTree(pessoaComMenorPeso, "Pessoa").Propriedades();
             #endregion
             #region Exercício 10
             var pessoaMaisAlta = pessoaCollection
@@ -252,7 +253,7 @@ namespace Aula6.Exercicios
                 })
                 .First();
             Console.WriteLine("Pessoa mais alta: ");
-            new Write(pessoaMaisAlta, "Pessoa").Propriedades();
+            new WriteTree(pessoaMaisAlta, "Pessoa").Propriedades();
             #endregion
             #region Exercício 11
             Console.WriteLine("Pessoas agrupadas pelo primeiro nome:\n");
@@ -272,7 +273,7 @@ namespace Aula6.Exercicios
             {
                 Console.WriteLine(primeiraLetra.Key);
                 foreach (var pessoa in primeiraLetra)
-                    new Write(pessoa, "Pessoa").Propriedades();
+                    new WriteTree(pessoa, "Pessoa").Propriedades();
             }
             #endregion
             #region Exercício 12
@@ -290,7 +291,7 @@ namespace Aula6.Exercicios
                     })
                     .OrderByDescending(p => p.DataNascimento.Year))
                     
-                new Write(pessoa, "Pessoa").Propriedades();
+                new WriteTree(pessoa, "Pessoa").Propriedades();
             #endregion
             #region Exercício 13
             Console.WriteLine("Nomes de todos os filhos: ");
@@ -299,7 +300,7 @@ namespace Aula6.Exercicios
                        .SelectMany(a => a.Filhos.Select(f => new
                        {
                            f.Nome
-                       }))) new Write(filho, "Filho").Propriedades();
+                       }))) new WriteTree(filho, "Filho").Propriedades();
 
             #endregion
             #region Exercicio 14

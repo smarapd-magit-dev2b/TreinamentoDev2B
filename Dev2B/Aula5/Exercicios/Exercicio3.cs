@@ -41,11 +41,11 @@ namespace Aula5.Exercicios
                             Console.Clear();
 
                             foreach (var wAluno in alunos)
-                                new Write(wAluno).Propriedades();
+                                new WriteTree(wAluno).Propriedades();
                             break;
                         case 3:
                             Console.Write("\nDigite o ID do aluno a ser pesquisado: ");
-                            new Write(alunos.FirstOrDefault(a => a.Id == int.Parse(Console.ReadLine()))).Propriedades();
+                            new WriteTree(alunos.FirstOrDefault(a => a.Id == int.Parse(Console.ReadLine()))).Propriedades();
                             break;
                         case 4:
                             Console.Clear();
