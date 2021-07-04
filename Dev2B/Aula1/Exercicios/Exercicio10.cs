@@ -39,6 +39,7 @@ namespace Aula1.Exercicios
                     PessoasIdade10a20++;
                     MediaAlturasPessoas10a20anos += pessoa.Altura;
                 }
+
                 if (pessoa.Peso < 40)
                     PessoasPesoInferior40++;
             }
