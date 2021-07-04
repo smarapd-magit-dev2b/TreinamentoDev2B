@@ -17,15 +17,19 @@ namespace Aula1.Exercicios
                 Console.Write($"{i}º número: ");
                 var numero = int.Parse(Console.ReadLine());
 
-                if (i == 1)
+                switch (i)
                 {
-                    MaiorNumero = numero;
-                    MenorNumero = numero;
+                    case 1:
+                        MaiorNumero = numero;
+                        MenorNumero = numero;
+                        break;
+                    default:
+                        if (numero > MaiorNumero)
+                            MaiorNumero = numero;
+                        else if (numero < MenorNumero)
+                            MenorNumero = numero;
+                        break;
                 }
-                else if (numero > MaiorNumero)
-                    MaiorNumero = numero;
-                else if (numero < MenorNumero)
-                    MenorNumero = numero;
             }
 
             Console.WriteLine($"\nO maior número digitado foi o {MaiorNumero}\n");

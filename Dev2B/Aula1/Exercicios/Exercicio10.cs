@@ -18,7 +18,7 @@ namespace Aula1.Exercicios
 
             for (int i = 1; i <= 5; i++)
             {
-                PessoaFisica pessoa = new PessoaFisica();
+                var pessoa = new PessoaFisica();
 
                 Console.Write($"Digite a idade da {i}º pessoa: ");
                 pessoa.Idade = int.Parse(Console.ReadLine());
@@ -32,7 +32,9 @@ namespace Aula1.Exercicios
                 //Regras de negócio
                 if (pessoa.Idade > 50)
                     PessoasIdadeSuperior50++;
-                if (pessoa.Idade >= 10 && pessoa.Idade <= 20)
+
+                if (pessoa.Idade >= 10
+                    && pessoa.Idade <= 20)
                 {
                     PessoasIdade10a20++;
                     MediaAlturasPessoas10a20anos += pessoa.Altura;
