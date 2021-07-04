@@ -15,17 +15,17 @@ namespace Aula5.Exercicios
 
             var menu = new Menu("Lista de Vendas");
 
-            menu.AddItem("Cadastrar Venda");
-            menu.AddItem("Listar Alunos");
-            menu.AddItem("Pesquisar Aluno");
-            menu.AddItem("Excluir Aluno");
-            menu.AddItem("Alterar Nome do Aluno");
+            menu.Add("Cadastrar Venda");
+            menu.Add("Listar Alunos");
+            menu.Add("Pesquisar Aluno");
+            menu.Add("Excluir Aluno");
+            menu.Add("Alterar Nome do Aluno");
 
             var run = true;
 
             do
             {
-                menu.PrintString();
+                menu.WriteString();
                 try
                 {
                     switch (int.Parse(Console.ReadLine()))
@@ -36,14 +36,14 @@ namespace Aula5.Exercicios
                             new Cadastro(venda).Cadastrar();
 
                             Menu menu1 = new Menu("Itens da Venda");
-                            menu1.AddItem("Adicionar Item");
-                            menu1.AddItem("Listar Vendas");
-                            menu1.AddItem("Excluir Venda");
+                            menu1.Add("Adicionar Item");
+                            menu1.Add("Listar Vendas");
+                            menu1.Add("Excluir Venda");
 
                             var run1 = true;
                             do
                             {
-                                menu1.PrintString();
+                                menu1.WriteString();
                                 try
                                 {
                                     switch (int.Parse(Console.ReadLine()))

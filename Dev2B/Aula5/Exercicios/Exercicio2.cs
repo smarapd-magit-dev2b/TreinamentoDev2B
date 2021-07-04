@@ -15,15 +15,15 @@ namespace Aula5.Exercicios
 
             var menu = new Menu("Lista de Carros");
 
-            menu.AddItem("Adicionar Carro");
-            menu.AddItem("Listar Carros");
-            menu.AddItem("Excluir Carro");
+            menu.Add("Adicionar Carro");
+            menu.Add("Listar Carros");
+            menu.Add("Excluir Carro");
 
             var run = true;
 
             do
             {
-                menu.PrintString();
+                menu.WriteString();
                 try
                 {
                     switch (int.Parse(Console.ReadLine()))

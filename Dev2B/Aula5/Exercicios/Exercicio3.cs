@@ -15,17 +15,17 @@ namespace Aula5.Exercicios
 
             var menu = new Menu("Lista de Carros");
 
-            menu.AddItem("Adicionar Aluno");
-            menu.AddItem("Listar Alunos");
-            menu.AddItem("Pesquisar Aluno");
-            menu.AddItem("Excluir Aluno");
-            menu.AddItem("Alterar Nome do Aluno");
+            menu.Add("Adicionar Aluno");
+            menu.Add("Listar Alunos");
+            menu.Add("Pesquisar Aluno");
+            menu.Add("Excluir Aluno");
+            menu.Add("Alterar Nome do Aluno");
 
             var run = true;
 
             do
             {
-                menu.PrintString();
+                menu.WriteString();
                 try
                 {
                     switch (int.Parse(Console.ReadLine()))

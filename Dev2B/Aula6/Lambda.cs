@@ -11,8 +11,8 @@ namespace Aula6
         {
             Menu menu = new Menu("Lambda");
 
-            menu.AddItem(new Exemplo1());
-            menu.AddItem(new Exercicio1());
+            menu.Add(new Exemplo1());
+            menu.Add(new Exercicio1());
 
             menu.Execute();
         }

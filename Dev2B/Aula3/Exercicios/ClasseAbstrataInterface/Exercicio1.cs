@@ -20,13 +20,13 @@ namespace Aula3.Exercicios.ClasseAbstrataInterface
 
             Menu menu = new Menu("Ações");
 
-            menu.AddItem("Depositar");
-            menu.AddItem("Sacar");
+            menu.Add("Depositar");
+            menu.Add("Sacar");
 
             bool run = true;
             do
             {
-                menu.PrintString();
+                menu.WriteString();
                 try
                 {
                     var escolha = int.Parse(Console.ReadLine());
@@ -77,7 +77,7 @@ namespace Aula3.Exercicios.ClasseAbstrataInterface
 
             do
             {
-                menu.PrintString();
+                menu.WriteString();
                 try
                 {
                     var escolha = int.Parse(Console.ReadLine());

@@ -10,16 +10,16 @@ namespace Aula1
         {
             var menu = new Menu("Exercícios de Estrutura de Comandos");
 
-            menu.AddItem(new Exercicio1());
-            menu.AddItem(new Exercicio2());
-            menu.AddItem(new Exercicio3());
-            menu.AddItem(new Exercicios4());
-            menu.AddItem(new Exercicios5());
-            menu.AddItem(new Exercicios6());
-            menu.AddItem(new Exercicios7());
-            menu.AddItem(new Exercicios8());
-            menu.AddItem(new Exercicio9());
-            menu.AddItem(new Exercicio10());
+            menu.Add(new Exercicio1());
+            menu.Add(new Exercicio2());
+            menu.Add(new Exercicio3());
+            menu.Add(new Exercicios4());
+            menu.Add(new Exercicios5());
+            menu.Add(new Exercicios6());
+            menu.Add(new Exercicios7());
+            menu.Add(new Exercicios8());
+            menu.Add(new Exercicio9());
+            menu.Add(new Exercicio10());
 
             menu.Execute();
         }

@@ -14,13 +14,13 @@ namespace Aula5.Exercicios
 
             var menu = new Menu("Lista de Pessoas");
 
-            menu.AddItem("Adicionar Pessoa");
+            menu.Add("Adicionar Pessoa");
 
             var run = true;
 
             do
             {
-                menu.PrintString();
+                menu.WriteString();
                 try
                 {
                     switch (int.Parse(Console.ReadLine()))
