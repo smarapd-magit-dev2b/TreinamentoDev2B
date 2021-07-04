@@ -4,6 +4,7 @@ using Aula2;
 using Aula3;
 using Aula5;
 using Aula6;
+using Aula7;
 
 namespace Application
 {
@@ -17,13 +18,15 @@ namespace Application
             ClassesAbstrata classesAbstrata = new ClassesAbstrata();
             ColecoesListas colecoes = new ColecoesListas();
             ExpressoesLambdas expressoesLambdas = new ExpressoesLambdas();
+            ExcecoesTryCatch excecoesTryCatch = new ExcecoesTryCatch();
 
-            estruturasComando.Execute();
-            classesObjetos.Execute();
-            herancas.Execute();
-            classesAbstrata.Execute();
-            colecoes.Execute();
-            expressoesLambdas.Execute();
+            //estruturasComando.Execute();
+            //classesObjetos.Execute();
+            //herancas.Execute();
+            //classesAbstrata.Execute();
+            //colecoes.Execute();
+            //expressoesLambdas.Execute();
+            excecoesTryCatch.Execute();
         }
     }
 }

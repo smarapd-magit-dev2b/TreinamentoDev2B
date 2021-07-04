@@ -1,0 +1,9 @@
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Aula7\bin\Debug\netcoreapp3.1\Aula7.deps.json
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Aula7\bin\Debug\netcoreapp3.1\Aula7.dll
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Aula7\bin\Debug\netcoreapp3.1\Aula7.pdb
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Aula7\obj\Debug\netcoreapp3.1\Aula7.csproj.AssemblyReference.cache
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Aula7\obj\Debug\netcoreapp3.1\Aula7.AssemblyInfoInputs.cache
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Aula7\obj\Debug\netcoreapp3.1\Aula7.AssemblyInfo.cs
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Aula7\obj\Debug\netcoreapp3.1\Aula7.csproj.CoreCompileInputs.cache
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Aula7\obj\Debug\netcoreapp3.1\Aula7.dll
+C:\Users\FACCARDOSO\Documents\TreinamentoDev2B\Dev2B\Aula7\obj\Debug\netcoreapp3.1\Aula7.pdb
