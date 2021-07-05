@@ -10,6 +10,7 @@ namespace Aula7.HelpersClasse
     {
         public static void GetArquivos<T>(List<T> lista)
         {
+            File.WriteAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "lista.txt"), null);
             foreach (T ex in lista)
             {
                     File.AppendAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "lista.txt"),

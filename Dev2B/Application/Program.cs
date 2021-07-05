@@ -20,12 +20,12 @@ namespace Application
             ExpressoesLambdas expressoesLambdas = new ExpressoesLambdas();
             ExcecoesTryCatch excecoesTryCatch = new ExcecoesTryCatch();
 
-            //estruturasComando.Execute();
-            //classesObjetos.Execute();
-            //herancas.Execute();
-            //classesAbstrata.Execute();
-            //colecoes.Execute();
-            //expressoesLambdas.Execute();
+            estruturasComando.Execute();
+            classesObjetos.Execute();
+            herancas.Execute();
+            classesAbstrata.Execute();
+            colecoes.Execute();
+            expressoesLambdas.Execute();
             excecoesTryCatch.Execute();
         }
     }
