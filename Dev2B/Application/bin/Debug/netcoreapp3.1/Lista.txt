@@ -1,0 +1,7 @@
+Nome: José
+ Data de Nascimento 09/12/1993 00:00:00 
+ Raça: BrancaNome: Willian
+ Data de Nascimento 04/10/1950 00:00:00 
+ Raça: NegroNome: Silas
+ Data de Nascimento 02/02/1968 00:00:00 
+ Raça: Branca

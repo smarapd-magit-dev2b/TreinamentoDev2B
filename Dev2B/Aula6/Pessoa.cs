@@ -13,5 +13,10 @@ namespace Aula6
         public string Raca { get; set; }
         public Endereco Endereco { get; set; }
         public List<Pessoa> Filhos { get; set; }
+
+        public override string ToString()
+        {
+            return $"Nome: {Nome}\n Data de Nascimento {DataNascimento} \n Raça: {Raca}\n";
+        }
     }
 }

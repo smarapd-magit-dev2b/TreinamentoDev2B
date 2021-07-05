@@ -1,7 +1,6 @@
 D:\dev2B\TreinamentoDev2B\Dev2B\Aula2\bin\Debug\netstandard2.0\Aula2.deps.json
 D:\dev2B\TreinamentoDev2B\Dev2B\Aula2\bin\Debug\netstandard2.0\Aula2.dll
 D:\dev2B\TreinamentoDev2B\Dev2B\Aula2\bin\Debug\netstandard2.0\Aula2.pdb
-D:\dev2B\TreinamentoDev2B\Dev2B\Aula2\obj\Debug\netstandard2.0\Aula2.csprojAssemblyReference.cache
 D:\dev2B\TreinamentoDev2B\Dev2B\Aula2\obj\Debug\netstandard2.0\Aula2.AssemblyInfoInputs.cache
 D:\dev2B\TreinamentoDev2B\Dev2B\Aula2\obj\Debug\netstandard2.0\Aula2.AssemblyInfo.cs
 D:\dev2B\TreinamentoDev2B\Dev2B\Aula2\obj\Debug\netstandard2.0\Aula2.csproj.CoreCompileInputs.cache

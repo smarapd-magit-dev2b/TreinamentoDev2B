@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO;
 
 namespace Aula6
 {
     public class ExerciciosAula6
+        
     {
         List<Pessoa> PessoaCollection = new List<Pessoa>
             {
@@ -102,28 +104,30 @@ namespace Aula6
                     Filhos = null
                 }
             };
-
         public void Execute()
         {
-            Exercicio1();
-            Exercicio2();
-            Exercicio3();
-            Exercicio4();
-            Exercicio5();
-            Exercicio6();
-            Exercicio7();
-            Exercicio8();
-            Exercicio9();
-            Exercicio10();
-            Exercicio11();
-            Exercicio12();
-            Exercicio13();
-            Exercicio14();
+            //Exercicio1();
+            //Exercicio2();
+            //Exercicio3();
+            //Exercicio4();
+            //Exercicio5();
+            //Exercicio6();
+            //Exercicio7();
+            //Exercicio8();
+            //Exercicio9();
+            //Exercicio10();
+            //Exercicio11();
+            //Exercicio12();
+            //Exercicio13();
+            //Exercicio14();
+            //Exercicio15();
+            //Exercicio16();
+            Exercicio17();
         }
         private void Exercicio1()
         {
             Console.WriteLine("Exercicio 1: ------------------------------------------");
-            var pessoas = PessoaCollection.Where(x => x.Nome.Contains("a")).ToList();
+            var pessoas = PessoaCollection.Where(x => x.Nome.Contains("a") || x.Nome.Contains("A")).ToList();
             foreach (var pessoa in pessoas)
             {
                 Console.WriteLine(pessoa);
@@ -132,7 +136,7 @@ namespace Aula6
         private void Exercicio2()
         {
             Console.WriteLine("Exercicio 2: ------------------------------------------");
-            var pessoas = PessoaCollection.Where(x => x.Endereco.Logradouro.Contains("a")).Select(x => new
+            var pessoas = PessoaCollection.Where(x => x.Endereco.Logradouro.Contains("a") || x.Endereco.Logradouro.Contains("A")).Select(x => new
             {
                 x.Nome,
                 x.DataNascimento,
@@ -184,14 +188,14 @@ namespace Aula6
             var pessoas = PessoaCollection.Where(x => x.Filhos != null).Select(x => new
             {
                 x.Nome,
-                x.DataNascimento.Date,
+                x.DataNascimento,
                 x.Altura
             });
             foreach (var pessoa in pessoas)
             {
                 Console.WriteLine("------------------------------------------");
                 Console.WriteLine(pessoa.Nome);
-                Console.WriteLine(pessoa.Date);
+                Console.WriteLine(new DateTime((DateTime.Now - pessoa.DataNascimento).Ticks).Year);
                 Console.WriteLine(pessoa.Altura);
             }
         }
@@ -288,12 +292,49 @@ namespace Aula6
         {
             Console.WriteLine("Exercicio 14: ------------------------------------------");
             var pessoas = PessoaCollection.Union(PessoaCollection.Where(x => x.Filhos != null).SelectMany(x => x.Filhos));
-            var alturas = pessoas.Select(x =>  x.Altura );
-            var media = alturas.Average();
+            var alturas = pessoas.Select(x =>  x.Altura ).Average();
             
             Console.WriteLine(alturas);
         }
+        private void Exercicio15() 
+        {
+            try
+            {
+                var pessoas = PessoaCollection.Where(y => new DateTime((DateTime.Now - y.DataNascimento).Ticks).Year > 90).ToList();
+                //Console.WriteLine("Quantidade de pessoas com filhos maiores de 25 anos: " + pessoas);
+                if (pessoas.Count() == 0)
+                    throw new NegocioException("Error");
 
+                foreach (var pessoa in pessoas)
+                {
+                    Console.WriteLine("Quantidade de pessoas com filhos maiores de 25 anos: " + pessoa.Nome);
+                }
+            }
+            catch(NegocioException ex)
+            {
+                int idErro =  new Random().Next();
+                Console.WriteLine("Erro de negócio: não existe pessoas com mais de 90 anos");
+            }
+            catch(Exception ex)
+            {
+                int idErro = new Random().Next();
+                Console.WriteLine("erro inesperado");
+            }
+        }
+        private void Exercicio16()
+        {
+            Console.WriteLine("Exercicio 16: ------------------------------------------");
+            var pessoas = PessoaCollection.Select(x => x.DataNascimento);
+            foreach (var pessoa in pessoas)
+            {
+                Console.WriteLine(DateTimeHelper.CalcularIdade(pessoa));
+            }
+        }
+        private void Exercicio17()
+        {
+            Console.WriteLine("Exercicio 17: ------------------------------------------");
+            PessoaCollectionHelper.Listar(PessoaCollection);
+        }
 
     }
 
