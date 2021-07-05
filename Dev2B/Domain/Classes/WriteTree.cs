@@ -9,50 +9,18 @@ namespace Domain.Classes
     public static class WriteTree
     {
         public static void Propriedades(object objeto,
-                                        params string[] titulos) => SubPropriedades(objeto, "   ", titulos.ToList(), 0);
-
-        private static void SubPropriedades(object objeto,
-                                            string tabulacao,
-                                            List<string> titulos,
-                                            int titulo)
+                                        params string[] titulos)
         {
-            var classe = objeto.GetType();
-
-            if (titulos.Count > titulo)
-                Console.WriteLine($"\n{tabulacao}{titulos[titulo]}\n");
-            else
-                Console.WriteLine($"\n{tabulacao}{classe.Name}\n");
-
-            foreach (var propriedade in classe.GetProperties())
-            {
-                switch (propriedade.PropertyType.Namespace)
-                {
-                    case "System":
-                        Console.WriteLine($"{tabulacao}{propriedade.Name}: {propriedade.GetValue(objeto)}");
-                        break;
-
-                    case "System.Collections.Generic":
-                        if (!(propriedade.GetValue(objeto) is IEnumerable lista))
-                            break;
-
-                        Console.WriteLine($"\n{tabulacao}{propriedade.Name}\n");
-                        foreach (var item in lista)
-                            SubPropriedades(item, $"{tabulacao}   ", titulos, titulo + 1);
-                        break;
-
-                    default:
-                        SubPropriedades(propriedade.GetValue(objeto), $"{tabulacao}   ", titulos, titulo + 1);
-                        break;
-                }
-            }
-            Console.WriteLine();
+            string arvore = "";
+            SubPropriedades(objeto, "   ", titulos.ToList(), 0, ref arvore);
+            Console.WriteLine(arvore);
         }
 
         public static void PropriedadesNumArquivo(object objeto,
                                         params string[] titulos)
         {
             string arvore = "";
-            SubPropriedadesNumArquivo(objeto, "   ", titulos.ToList(), 0, ref arvore);
+            SubPropriedades(objeto, "   ", titulos.ToList(), 0, ref arvore);
             arvore += "\n";
 
             string nomeArquivo;
@@ -67,7 +35,7 @@ namespace Domain.Classes
             Console.WriteLine($"Arquivo criado em {AppDomain.CurrentDomain.BaseDirectory}\nCom o nome de '{nomeArquivo}.txt'");
         }
 
-        private static void SubPropriedadesNumArquivo(object objeto,
+        private static void SubPropriedades(object objeto,
                                             string tabulacao,
                                             List<string> titulos,
                                             int titulo,
@@ -84,7 +52,7 @@ namespace Domain.Classes
             {
                 if (objeto is IEnumerable lista)
                     foreach (var item in lista)
-                        SubPropriedadesNumArquivo(item, $"{tabulacao}   ", titulos, titulo + 1, ref arvore);
+                        SubPropriedades(item, $"{tabulacao}   ", titulos, titulo + 1, ref arvore);
             }
             else
             {
@@ -102,11 +70,11 @@ namespace Domain.Classes
 
                             arvore += $"\n{tabulacao}{propriedade.Name}\n\n";
                             foreach (var item in lista)
-                                SubPropriedadesNumArquivo(item, $"{tabulacao}   ", titulos, titulo + 1, ref arvore);
+                                SubPropriedades(item, $"{tabulacao}   ", titulos, titulo + 1, ref arvore);
                             break;
 
                         default:
-                            SubPropriedadesNumArquivo(propriedade.GetValue(objeto), $"{tabulacao}   ", titulos, titulo + 1, ref arvore);
+                            SubPropriedades(propriedade.GetValue(objeto), $"{tabulacao}   ", titulos, titulo + 1, ref arvore);
                             break;
                     }
                 }
