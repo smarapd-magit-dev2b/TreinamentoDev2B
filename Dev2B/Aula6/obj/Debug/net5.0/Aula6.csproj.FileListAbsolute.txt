@@ -1,0 +1,12 @@
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Aula6\bin\Debug\net5.0\Aula6.deps.json
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Aula6\bin\Debug\net5.0\Aula6.dll
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Aula6\bin\Debug\net5.0\ref\Aula6.dll
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Aula6\bin\Debug\net5.0\Aula6.pdb
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Aula6\obj\Debug\net5.0\Aula6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Aula6\obj\Debug\net5.0\Aula6.AssemblyInfoInputs.cache
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Aula6\obj\Debug\net5.0\Aula6.AssemblyInfo.cs
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Aula6\obj\Debug\net5.0\Aula6.csproj.CoreCompileInputs.cache
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Aula6\obj\Debug\net5.0\Aula6.dll
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Aula6\obj\Debug\net5.0\ref\Aula6.dll
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Aula6\obj\Debug\net5.0\Aula6.pdb
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Aula6\obj\Debug\net5.0\Aula6.csproj.AssemblyReference.cache

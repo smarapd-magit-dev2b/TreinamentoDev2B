@@ -1,0 +1,33 @@
+Id: 1. 
+Nome: José. 
+Data de nascimento: 09/12/1993. 
+Altura: 1,9. 
+Peso: 80,0. 
+Raca: Branca.
+Logradouro: Rua Altair Gonçalves. 
+Numero: 85. 
+Complemento: Apartamento. 
+Bairro: Vila Tibério
+
+Id: 4. 
+Nome: Willian. 
+Data de nascimento: 04/10/1950. 
+Altura: 1,7. 
+Peso: 100,0. 
+Raca: Negro.
+Logradouro: Rua Guilherme Schmdit. 
+Numero: 111. 
+Complemento: Casa. 
+Bairro: Centro
+
+Id: 4. 
+Nome: Silas. 
+Data de nascimento: 02/02/1968. 
+Altura: 1,78. 
+Peso: 92,0. 
+Raca: Branca.
+Logradouro: Rua Joaquim Nabuco. 
+Numero: 854. 
+Complemento: Casa. 
+Bairro: Bairro Xis
+

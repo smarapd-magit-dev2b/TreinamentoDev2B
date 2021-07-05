@@ -3,6 +3,7 @@ using Aula2;
 using Aula3;
 using Aula4;
 using Aula5;
+using Aula6;
 using System;
 
 namespace Application {
@@ -13,12 +14,14 @@ namespace Application {
             ExercicioAula03 Exe3 = new ExercicioAula03();
             ExercicioAula04 Exe4 = new ExercicioAula04();
             ExercicioAula05 Exe5 = new ExercicioAula05();
+            ExercicioAula06 Exe6 = new ExercicioAula06();
 
             //Exe1.Executar();
             //Exe2.Executar();
             //Exe3.Executar();
             //Exe4.Executar();
-            Exe5.Executar();
+            //Exe5.Executar();
+            Exe6.Executar();
         }
     }
 }

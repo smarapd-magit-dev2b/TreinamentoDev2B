@@ -25,3 +25,5 @@ C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Application\bin\D
 C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula4.pdb
 C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula5.dll
 C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula5.pdb
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula6.dll
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula6.pdb
