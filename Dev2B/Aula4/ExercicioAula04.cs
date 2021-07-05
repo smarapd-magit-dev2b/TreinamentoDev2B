@@ -14,7 +14,7 @@ namespace Aula4 {
             //Exercicio01();
             //Exercicio02();
             //Exercicio03();
-            //Exercicio04();
+            Exercicio04();
             //Exercicio05();
         }
         private void Exercicio01() {

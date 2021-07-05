@@ -19,9 +19,9 @@ namespace Application {
             //Exe1.Executar();
             //Exe2.Executar();
             //Exe3.Executar();
-            //Exe4.Executar();
+            Exe4.Executar();
             //Exe5.Executar();
-            Exe6.Executar();
+            //Exe6.Executar();
         }
     }
 }
