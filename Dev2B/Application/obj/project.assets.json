@@ -51,6 +51,16 @@
         "runtime": {
           "bin/placeholder/Aula6.dll": {}
         }
+      },
+      "Aula7/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Aula7.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula7.dll": {}
+        }
       }
     }
   },
@@ -79,6 +89,11 @@
       "type": "project",
       "path": "../Aula6/Aula6.csproj",
       "msbuildProject": "../Aula6/Aula6.csproj"
+    },
+    "Aula7/1.0.0": {
+      "type": "project",
+      "path": "../Aula7/Aula7.csproj",
+      "msbuildProject": "../Aula7/Aula7.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -87,7 +102,8 @@
       "Aula2 >= 1.0.0",
       "Aula3 >= 1.0.0",
       "Aula5 >= 1.0.0",
-      "Aula6 >= 1.0.0"
+      "Aula6 >= 1.0.0",
+      "Aula7 >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -131,6 +147,9 @@
             },
             "C:\\Users\\desenvolvedor\\Desktop\\Dev2B\\TreinamentoDev2B\\Dev2B\\Aula6\\Aula6.csproj": {
               "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\Dev2B\\TreinamentoDev2B\\Dev2B\\Aula6\\Aula6.csproj"
+            },
+            "C:\\Users\\desenvolvedor\\Desktop\\Dev2B\\TreinamentoDev2B\\Dev2B\\Aula7\\Aula7.csproj": {
+              "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\Dev2B\\TreinamentoDev2B\\Dev2B\\Aula7\\Aula7.csproj"
             }
           }
         }

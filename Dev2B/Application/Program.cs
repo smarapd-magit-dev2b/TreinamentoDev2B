@@ -3,6 +3,7 @@ using Aula2;
 using Aula3;
 using Aula5;
 using Aula6;
+using Aula7;
 using System;
 
 namespace Application
@@ -15,13 +16,15 @@ namespace Application
             //ClassesObjeto classesObjeto = new ClassesObjeto();
             //HerancaAbstrataInterface herancaAbstrataInterface = new HerancaAbstrataInterface();
             //ColecoesLista colecoesLista = new ColecoesLista();
-            ExpressoesLambda expressoesLambda = new ExpressoesLambda();
+            //ExpressoesLambda expressoesLambda = new ExpressoesLambda();
+            TryCathStatic tryCathStatic = new TryCathStatic();
 
             //estruturasDeComando.Executar();
             //classesObjeto.Executar();
             //herancaAbstrataInterface.Executar();
             //colecoesLista.Executar();
-            expressoesLambda.Executar();
+            //expressoesLambda.Executar();
+            tryCathStatic.Executar();
         }
     }
 }

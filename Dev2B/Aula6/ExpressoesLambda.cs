@@ -20,7 +20,7 @@ namespace Aula6
             //Exercicio8();
             //Exercicio9();
             //Exercicio10();
-            Exercicio11();
+            //Exercicio11();
             //Exercicio12();
             //Exercicio13();
             //Exercicio14();
@@ -131,7 +131,7 @@ namespace Aula6
         {
             Base bse = new Base();
 
-            Console.WriteLine("----- Nome das pessoas com os seus respectivos filhos -----\n");
+            Console.WriteLine("----- Nome dos pais com os seus respectivos filhos -----\n");
 
             var pessoaComFilho = bse.PessoaCollection.Where(x => x.Filhos != null)
                 .Select(p => new
@@ -164,7 +164,7 @@ namespace Aula6
             Console.WriteLine("----- Quantidade de Pessoas que possuam Filhos maiores de 25 anos -----\n");
 
             var quantidadePessoas = bse.PessoaCollection.Count(x => x.Filhos != null
-            && x.Filhos.Where(f => DateTime.Now.Year - f.DataNascimento.Year > 25).Any());
+            && x.Filhos.Where(f => new DateTime((DateTime.Now - f.DataNascimento).Ticks).Year > 25).Any());
 
             Console.WriteLine($"{quantidadePessoas} pessoa(s) possuem filhos maiores de 25 anos.");
         }
@@ -226,10 +226,8 @@ namespace Aula6
                 {
                     Console.WriteLine($"Nome: {pessoa.Nome}");
                 }
-
                 Console.WriteLine();
             }
-
         }
         private void Exercicio12()
         {
@@ -241,7 +239,7 @@ namespace Aula6
 
             foreach (var pessoa in ordenadaDeMenorParaMaiorIdade)
             {
-                Console.WriteLine($"Nome: {pessoa.Nome} Idade: {DateTime.Now.Year - pessoa.DataNascimento.Year}");
+                Console.WriteLine($"Nome: {pessoa.Nome} Idade: {new DateTime((DateTime.Now - pessoa.DataNascimento).Ticks).Year}");
             }
         }
         private void Exercicio13()
@@ -250,11 +248,11 @@ namespace Aula6
 
             Console.WriteLine("----- Listar o nome de todos os filhos -----\n");
 
-            var todosFilhos = bse.PessoaCollection.Where(x => x.Filhos != null).SelectMany(y => y.Filhos).ToList();
+            var todosFilhos = bse.PessoaCollection.Where(x => x.Filhos != null).SelectMany(y => y.Filhos).Select(z => z.Nome).ToList();
 
             foreach (var filho in todosFilhos)
             {
-                Console.WriteLine($"Nome: {filho.Nome}");
+                Console.WriteLine($"Nome: {filho}");
             }
 
         }

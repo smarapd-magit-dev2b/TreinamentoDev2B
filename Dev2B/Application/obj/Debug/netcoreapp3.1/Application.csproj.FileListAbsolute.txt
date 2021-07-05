@@ -22,3 +22,5 @@ C:\Users\desenvolvedor\Desktop\Dev2B\TreinamentoDev2B\Dev2B\Application\obj\Debu
 C:\Users\desenvolvedor\Desktop\Dev2B\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.genruntimeconfig.cache
 C:\Users\desenvolvedor\Desktop\Dev2B\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula6.dll
 C:\Users\desenvolvedor\Desktop\Dev2B\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula6.pdb
+C:\Users\desenvolvedor\Desktop\Dev2B\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula7.dll
+C:\Users\desenvolvedor\Desktop\Dev2B\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula7.pdb
