@@ -51,6 +51,16 @@
         "runtime": {
           "bin/placeholder/Aula05.dll": {}
         }
+      },
+      "Aula06/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Aula06.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula06.dll": {}
+        }
       }
     }
   },
@@ -79,6 +89,11 @@
       "type": "project",
       "path": "../Aula05/Aula05.csproj",
       "msbuildProject": "../Aula05/Aula05.csproj"
+    },
+    "Aula06/1.0.0": {
+      "type": "project",
+      "path": "../Aula06/Aula06.csproj",
+      "msbuildProject": "../Aula06/Aula06.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -87,7 +102,8 @@
       "Aula02 >= 1.0.0",
       "Aula03 >= 1.0.0",
       "Aula04 >= 1.0.0",
-      "Aula05 >= 1.0.0"
+      "Aula05 >= 1.0.0",
+      "Aula06 >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -131,6 +147,9 @@
             },
             "C:\\Users\\jssantana\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula05\\Aula05.csproj": {
               "projectPath": "C:\\Users\\jssantana\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula05\\Aula05.csproj"
+            },
+            "C:\\Users\\jssantana\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula06\\Aula06.csproj": {
+              "projectPath": "C:\\Users\\jssantana\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula06\\Aula06.csproj"
             }
           }
         }

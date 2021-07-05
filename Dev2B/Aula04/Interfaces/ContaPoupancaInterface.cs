@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Aula04.Interfaces
 {
-    public class ContaPoupanca: IConta
+    public class ContaPoupancaInterface: IConta
     {
         public int NumeroConta { get; set; }
         public decimal MovimentacoesSaques { get; private set; }
         public decimal MovimentacoesDepositos { get; private set; }
         public string Agencia { get; set; }
 
-        public ContaPoupanca(int numeroConta, string agencia)
+        public ContaPoupancaInterface(int numeroConta, string agencia)
         {
             NumeroConta = numeroConta;
             MovimentacoesSaques = 0;

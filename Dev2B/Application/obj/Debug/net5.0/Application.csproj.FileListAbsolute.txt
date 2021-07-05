@@ -25,3 +25,5 @@ C:\Users\jssantana\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\
 C:\Users\jssantana\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula03.pdb
 C:\Users\jssantana\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula04.pdb
 C:\Users\jssantana\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula05.pdb
+C:\Users\jssantana\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula06.dll
+C:\Users\jssantana\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\net5.0\Aula06.pdb

@@ -3,6 +3,7 @@ using Aula02;
 using Aula03;
 using Aula04;
 using Aula05;
+using Aula06;
 using System;
 
 namespace Application
@@ -17,12 +18,14 @@ namespace Application
             //Herancas herancas = new Herancas();
             //InterfacesClassesAbstratas interfacesClassesAbstratas = new InterfacesClassesAbstratas();
             Listas listas = new Listas();
+            //ExpressoesLambdas expressoesLambda = new ExpressoesLambdas();
 
             //estruturasComando.Execute();
             //classesObjetos.Execute();
             //herancas.Execute();
             //interfacesClassesAbstratas.Execute();
             listas.Execute();
+            //expressoesLambda.Execute();
         }
     }
 }

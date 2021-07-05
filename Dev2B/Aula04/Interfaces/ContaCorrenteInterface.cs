@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Aula04.Interfaces
 {
-    public class ContaCorrente: IConta
+    public class ContaCorrenteInterface: IConta
     {
         public int NumeroConta { get; set; }
         public decimal MovimentacoesSaques { get; set; }
@@ -14,7 +14,7 @@ namespace Aula04.Interfaces
 
         public string Agencia { get; set; }
 
-        public ContaCorrente(int numeroConta, string agencia)
+        public ContaCorrenteInterface(int numeroConta, string agencia)
         {
             NumeroConta = numeroConta;
             MovimentacoesSaques = 0;
