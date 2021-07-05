@@ -1,0 +1,3 @@
+Id: 1 | Nome: José | DataNascimento: 09/12/1993 | Altura: 1,9 | Peso: 80,0 | Raca: Branca
+Id: 4 | Nome: Willian | DataNascimento: 04/10/1950 | Altura: 1,7 | Peso: 100,0 | Raca: Negro
+Id: 40 | Nome: Silas | DataNascimento: 02/02/1968 | Altura: 1,78 | Peso: 92,0 | Raca: Branca

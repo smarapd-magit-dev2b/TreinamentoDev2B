@@ -317,14 +317,13 @@ namespace Aula5
             foreach (var item in exercicio8)
             {
                 Console.WriteLine($"Raca: {item.Key}");
-                var count = 0;
+                
                 foreach (var n in item)
                 {
                     Console.WriteLine($"- Nome: {n.Nome}");
-                    count++;
                 }
 
-                Console.WriteLine($"Quantidade: {count}");
+                Console.WriteLine($"Quantidade: {item.Count()}");
             }
 
             #endregion
@@ -342,9 +341,10 @@ namespace Aula5
             #region Exercicio 10
 
             Console.WriteLine("------------------------------------");
-            Console.WriteLine("Exercicio 9\n");
+            Console.WriteLine("Exercicio 10\n");
 
             var maiorAltura = bse.PessoaCollection.OrderByDescending(x => x.Altura).FirstOrDefault();
+
             Console.WriteLine($"Pessoa com maior altura: {menorPeso.Nome}");
 
             #endregion
@@ -387,7 +387,8 @@ namespace Aula5
 
             var exercicio10 = bse.PessoaCollection
                 .Where(pessoa1 => pessoa1.Filhos != null)
-                .SelectMany(a => a.Filhos).Select(x => x.Nome)
+                .SelectMany(a => a.Filhos)
+                .Select(x => x.Nome)
                 .ToList();
 
             foreach (var item in exercicio10) Console.WriteLine($"Nome: {item}");
@@ -416,7 +417,7 @@ namespace Aula5
     {
         public static IOrderedEnumerable<Pessoa> OrderByDataNascimento(this IEnumerable<Pessoa> source)
         {
-            return source.OrderBy(x => DateTime.Now.Year - x.DataNascimento.Year);
+            return source.OrderBy(x => new DateTime((DateTime.Now - x.DataNascimento).Ticks));
         }
     }
 }

@@ -51,6 +51,16 @@
         "runtime": {
           "bin/placeholder/Aula5.dll": {}
         }
+      },
+      "Aula6/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Aula6.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula6.dll": {}
+        }
       }
     }
   },
@@ -79,6 +89,11 @@
       "type": "project",
       "path": "../Aula5/Aula5.csproj",
       "msbuildProject": "../Aula5/Aula5.csproj"
+    },
+    "Aula6/1.0.0": {
+      "type": "project",
+      "path": "../Aula6/Aula6.csproj",
+      "msbuildProject": "../Aula6/Aula6.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -87,7 +102,8 @@
       "Aula2 >= 1.0.0",
       "Aula3 >= 1.0.0",
       "Aula4 >= 1.0.0",
-      "Aula5 >= 1.0.0"
+      "Aula5 >= 1.0.0",
+      "Aula6 >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -131,6 +147,9 @@
             },
             "C:\\Users\\GTBESERRA\\source\\repos\\TreinamentoDev2B\\Dev2B\\Aula5\\Aula5.csproj": {
               "projectPath": "C:\\Users\\GTBESERRA\\source\\repos\\TreinamentoDev2B\\Dev2B\\Aula5\\Aula5.csproj"
+            },
+            "C:\\Users\\GTBESERRA\\source\\repos\\TreinamentoDev2B\\Dev2B\\Aula6\\Aula6.csproj": {
+              "projectPath": "C:\\Users\\GTBESERRA\\source\\repos\\TreinamentoDev2B\\Dev2B\\Aula6\\Aula6.csproj"
             }
           }
         }
