@@ -31,14 +31,44 @@
         "runtime": {
           "bin/placeholder/Aula3.dll": {}
         }
+      },
+      "Aula4/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Aula4.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula4.dll": {}
+        }
+      },
+      "Aula5/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Aula5.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula5.dll": {}
+        }
+      },
+      "Aula6/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Aula6.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula6.dll": {}
+        }
       }
     }
   },
   "libraries": {
     "Aula1/1.0.0": {
       "type": "project",
-      "path": "../Aula_1_teste/Aula1.csproj",
-      "msbuildProject": "../Aula_1_teste/Aula1.csproj"
+      "path": "../Aula1/Aula1.csproj",
+      "msbuildProject": "../Aula1/Aula1.csproj"
     },
     "Aula2/1.0.0": {
       "type": "project",
@@ -49,13 +79,31 @@
       "type": "project",
       "path": "../Aula3/Aula3.csproj",
       "msbuildProject": "../Aula3/Aula3.csproj"
+    },
+    "Aula4/1.0.0": {
+      "type": "project",
+      "path": "../Aula4/Aula4.csproj",
+      "msbuildProject": "../Aula4/Aula4.csproj"
+    },
+    "Aula5/1.0.0": {
+      "type": "project",
+      "path": "../Aula5/Aula5.csproj",
+      "msbuildProject": "../Aula5/Aula5.csproj"
+    },
+    "Aula6/1.0.0": {
+      "type": "project",
+      "path": "../Aula6/Aula6.csproj",
+      "msbuildProject": "../Aula6/Aula6.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Aula1 >= 1.0.0",
       "Aula2 >= 1.0.0",
-      "Aula3 >= 1.0.0"
+      "Aula3 >= 1.0.0",
+      "Aula4 >= 1.0.0",
+      "Aula5 >= 1.0.0",
+      "Aula6 >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -85,11 +133,20 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
+            "C:\\Users\\desenvolvedor\\Desktop\\Dev2B - Exercicios\\Aula1\\Aula1.csproj": {
+              "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\Dev2B - Exercicios\\Aula1\\Aula1.csproj"
+            },
             "C:\\Users\\desenvolvedor\\Desktop\\Dev2B - Exercicios\\Aula3\\Aula3.csproj": {
               "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\Dev2B - Exercicios\\Aula3\\Aula3.csproj"
             },
-            "C:\\Users\\desenvolvedor\\Desktop\\Dev2B - Exercicios\\Aula_1_teste\\Aula1.csproj": {
-              "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\Dev2B - Exercicios\\Aula_1_teste\\Aula1.csproj"
+            "C:\\Users\\desenvolvedor\\Desktop\\Dev2B - Exercicios\\Aula4\\Aula4.csproj": {
+              "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\Dev2B - Exercicios\\Aula4\\Aula4.csproj"
+            },
+            "C:\\Users\\desenvolvedor\\Desktop\\Dev2B - Exercicios\\Aula5\\Aula5.csproj": {
+              "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\Dev2B - Exercicios\\Aula5\\Aula5.csproj"
+            },
+            "C:\\Users\\desenvolvedor\\Desktop\\Dev2B - Exercicios\\Aula6\\Aula6.csproj": {
+              "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\Dev2B - Exercicios\\Aula6\\Aula6.csproj"
             },
             "C:\\Users\\desenvolvedor\\Desktop\\Dev2B - Exercicios\\ClassesObjetos\\Aula2.csproj": {
               "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\Dev2B - Exercicios\\ClassesObjetos\\Aula2.csproj"

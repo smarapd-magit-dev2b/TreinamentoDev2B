@@ -1,0 +1,9 @@
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Aula6\bin\Debug\netcoreapp3.1\Aula6.deps.json
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Aula6\bin\Debug\netcoreapp3.1\Aula6.dll
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Aula6\bin\Debug\netcoreapp3.1\Aula6.pdb
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Aula6\obj\Debug\netcoreapp3.1\Aula6.csproj.AssemblyReference.cache
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Aula6\obj\Debug\netcoreapp3.1\Aula6.AssemblyInfoInputs.cache
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Aula6\obj\Debug\netcoreapp3.1\Aula6.AssemblyInfo.cs
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Aula6\obj\Debug\netcoreapp3.1\Aula6.csproj.CoreCompileInputs.cache
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Aula6\obj\Debug\netcoreapp3.1\Aula6.dll
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Aula6\obj\Debug\netcoreapp3.1\Aula6.pdb

@@ -20,3 +20,33 @@ C:\Users\desenvolvedor\source\repos\Application\bin\Debug\netcoreapp3.1\Aula1.dl
 C:\Users\desenvolvedor\source\repos\Application\bin\Debug\netcoreapp3.1\Aula2.dll
 C:\Users\desenvolvedor\source\repos\Application\bin\Debug\netcoreapp3.1\Aula1.pdb
 C:\Users\desenvolvedor\source\repos\Application\bin\Debug\netcoreapp3.1\Aula2.pdb
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\obj\Debug\netcoreapp3.1\Application.csproj.AssemblyReference.cache
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfoInputs.cache
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfo.cs
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\obj\Debug\netcoreapp3.1\Application.csproj.CoreCompileInputs.cache
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\obj\Debug\netcoreapp3.1\Application.dll
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\obj\Debug\netcoreapp3.1\Application.pdb
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\bin\Debug\netcoreapp3.1\Aula1.deps.json
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\bin\Debug\netcoreapp3.1\Aula1.runtimeconfig.json
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\bin\Debug\netcoreapp3.1\Aula1.runtimeconfig.dev.json
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\bin\Debug\netcoreapp3.1\Aula1.exe
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\bin\Debug\netcoreapp3.1\Application.exe
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\bin\Debug\netcoreapp3.1\Application.deps.json
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\bin\Debug\netcoreapp3.1\Application.runtimeconfig.json
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\bin\Debug\netcoreapp3.1\Application.runtimeconfig.dev.json
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\bin\Debug\netcoreapp3.1\Application.dll
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\bin\Debug\netcoreapp3.1\Application.pdb
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\bin\Debug\netcoreapp3.1\Aula1.dll
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\bin\Debug\netcoreapp3.1\Aula2.dll
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\bin\Debug\netcoreapp3.1\Aula3.dll
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\bin\Debug\netcoreapp3.1\Aula4.dll
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\bin\Debug\netcoreapp3.1\Aula5.dll
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\bin\Debug\netcoreapp3.1\Aula6.dll
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\bin\Debug\netcoreapp3.1\Aula1.pdb
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\bin\Debug\netcoreapp3.1\Aula3.pdb
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\bin\Debug\netcoreapp3.1\Aula4.pdb
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\bin\Debug\netcoreapp3.1\Aula5.pdb
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\bin\Debug\netcoreapp3.1\Aula6.pdb
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\bin\Debug\netcoreapp3.1\Aula2.pdb
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\obj\Debug\netcoreapp3.1\Application.csproj.CopyComplete
+C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Application\obj\Debug\netcoreapp3.1\Application.genruntimeconfig.cache

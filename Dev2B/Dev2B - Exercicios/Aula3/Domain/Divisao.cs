@@ -6,7 +6,6 @@ namespace Domain
 {
     public class Divisao : Calculadora
     {
-        
 
         public override void Calcular()
         {

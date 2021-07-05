@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -6,8 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Aula1\Aula1.csproj" />
     <ProjectReference Include="..\Aula3\Aula3.csproj" />
-    <ProjectReference Include="..\Aula_1_teste\Aula1.csproj" />
+    <ProjectReference Include="..\Aula4\Aula4.csproj" />
+    <ProjectReference Include="..\Aula5\Aula5.csproj" />
+    <ProjectReference Include="..\Aula6\Aula6.csproj" />
     <ProjectReference Include="..\ClassesObjetos\Aula2.csproj" />
   </ItemGroup>
 

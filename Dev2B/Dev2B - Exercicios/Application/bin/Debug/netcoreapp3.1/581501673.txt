@@ -1,0 +1,2 @@
+Aula6.NegocioException: Exception of type 'Aula6.NegocioException' was thrown.
+   at Lambdas.Lambda.Lambdas() in C:\Users\desenvolvedor\Desktop\Dev2B - Exercicios\Aula6\Lambda.cs:line 509
