@@ -5,7 +5,7 @@ namespace Aula8
     //Princípio da Responsabilidade única (SRP)
     public static class ImprimirStatus
     {
-        public static void Imprimir(Dispositivo dispositivo) =>
-            Console.WriteLine($"O(a) {dispositivo.GetType().Name} está {(dispositivo.Status ? "Ligado" : "Desligado")}(a)");
+        public static void Imprimir(Dispositivo unidade) =>
+            Console.WriteLine($"O(a) {unidade.GetType().Name} está {(unidade.Status ? "Ligado" : "Desligado")}(a)");
     }
 }

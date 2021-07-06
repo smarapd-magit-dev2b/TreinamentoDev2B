@@ -1,6 +1,4 @@
 ﻿namespace Aula8
 {
-    public class Lampada : Dispositivo
-    {
-    }
+    public class Lampada : Dispositivo { }
 }

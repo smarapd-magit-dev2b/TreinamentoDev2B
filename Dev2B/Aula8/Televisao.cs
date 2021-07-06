@@ -1,6 +1,4 @@
 ﻿namespace Aula8
 {
-    public class Televisao : Dispositivo
-    {
-    }
+    public class Televisao : Dispositivo { }
 }
