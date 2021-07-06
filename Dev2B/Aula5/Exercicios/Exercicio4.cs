@@ -39,6 +39,7 @@ namespace Aula5.Exercicios
                             menu1.Add("Adicionar Item");
                             menu1.Add("Listar Vendas");
                             menu1.Add("Excluir Venda");
+                            menu1.Add("Excluir Item da Venda");
 
                             var run1 = true;
                             do
@@ -83,6 +84,19 @@ namespace Aula5.Exercicios
                             Console.Clear();
 
                             Console.Write("\nDigite o ID da Venda a ser excluido seu Item: ");
+                            vendas.Remove
+                            (
+                                vendas
+                                .FirstOrDefault
+                                (
+                                    v => v.Id == int.Parse(Console.ReadLine())
+                                )
+                            );
+                            break;
+                        case 4:
+                            Console.Clear();
+
+                            Console.Write("\nDigite o ID da Venda a ser excluido seu Item: ");
                             var vendaASerExcluidoSeuItem = vendas
                                 .FirstOrDefault
                                 (
@@ -101,6 +115,16 @@ namespace Aula5.Exercicios
                                         i => i.Id == int.Parse(Console.ReadLine())
                                     )
                                 );
+                            break;
+                        case 5:
+                            Console.Clear();
+
+                            Console.Write("\nDigite a Data da Venda a ser pesquisada: ");
+
+                            vendas.FirstOrDefault
+                            (
+                                v => v.DataVenda == DateTime.Parse(Console.ReadLine())
+                            );
                             break;
                         //case 4:
                         //    Console.Clear();
