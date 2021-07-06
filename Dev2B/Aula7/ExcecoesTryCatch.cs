@@ -20,7 +20,7 @@ namespace Aula7
         {
             Base bs = new Base();
 
-            var pessoasComMais90 = bs.PessoaCollection.Where(x => DateTimeHelper.GetIdade(x.DataNascimento) > 90)
+            var pessoasComMais90 = bs.PessoaCollection.Where(x => DateTimeHelper.GetIdade(x.DataNascimento) > 90) // salve vsalve familia
                 .Count();
             if (pessoasComMais90 == 0)
             {
