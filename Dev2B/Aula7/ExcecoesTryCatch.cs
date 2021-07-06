@@ -12,7 +12,7 @@ namespace Aula7
     {
         public void Execute()
         {
-            //Exercicio1();
+            Exercicio1();
             Exercicio2();
         }
 
