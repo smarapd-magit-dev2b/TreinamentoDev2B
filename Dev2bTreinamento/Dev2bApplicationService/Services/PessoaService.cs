@@ -55,6 +55,9 @@ namespace Dev2bAppilcation.Services
                 _pessoaRepository.ObterPessoaPorId(id)
             );
 
+            if (pessoa.Id != id)
+                throw new Exception($"Id da pessoa difere do Id a ser alterado");
+
             PessoaServiceHelper.NomeNaoInformado(pessoa);
 
             PessoaServiceHelper.NomeMaiorQue5Caracteres(pessoa);

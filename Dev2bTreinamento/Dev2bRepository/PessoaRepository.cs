@@ -82,7 +82,7 @@ namespace Dev2bRepository
 
         public PessoaEntity ObterPessoaPorId(int id)
         {
-            var pessoa = pessoas.Where(p => p.Id == id).FirstOrDefault();
+            var pessoa = pessoas.FirstOrDefault(p => p.Id == id);
 
             if (pessoa == null)
                 return null;
@@ -94,8 +94,8 @@ namespace Dev2bRepository
 
         public void AlterarPessoa(int id, PessoaEntity pessoa)
         {
-            var pessoaAntiga = pessoas.Find(p => p.Id == id);
-            pessoaAntiga = pessoa;
+            var indice = pessoas.IndexOf(pessoas.FirstOrDefault(p => p.Id == id));
+            pessoas[indice] = pessoa;
         }
 
         public void DeletarPessoa(int id) => pessoas.Remove(pessoas.FirstOrDefault(c => c.Id == id));
