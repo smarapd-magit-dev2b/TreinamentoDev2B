@@ -6,10 +6,5 @@ namespace Interface.Api
     [Route("[controller]")]
     public class PessoaController : Controller
     {
-
-        public IActionResult Index()
-        {
-            return View();
-        }
     }
 }
