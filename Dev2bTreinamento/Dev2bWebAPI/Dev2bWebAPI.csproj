@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dev2bApplicationService\Dev2bAppilcation.csproj" />
+    <ProjectReference Include="..\Dev2bDomain\Dev2bDomain.csproj" />
+    <ProjectReference Include="..\Dev2bRepository\Dev2bRepositories.csproj" />
+  </ItemGroup>
+
+
+</Project>
