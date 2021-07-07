@@ -16,11 +16,11 @@
             ControleUniversal.Desligar(televisao);
             ImprimirStatus.Imprimir(televisao);
 
-            //var carro = new Carro();
-            //ControleUniversal.Ligar(carro);
-            //ImprimirStatus.Imprimir(carro);
-            //ControleUniversal.Desligar(carro);
-            //ImprimirStatus.Imprimir(carro);
+            var carro = new Carro();
+            ControleUniversal.Ligar(carro);
+            ImprimirStatus.Imprimir(carro);
+            ControleUniversal.Desligar(carro);
+            ImprimirStatus.Imprimir(carro);
         }
     }
 }

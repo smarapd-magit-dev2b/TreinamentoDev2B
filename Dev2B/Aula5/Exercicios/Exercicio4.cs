@@ -1,4 +1,4 @@
-﻿ using Aula5.Classes;
+﻿using Aula5.Classes;
 using Domain.Classes;
 using Domain.Interfaces;
 using System;
@@ -103,7 +103,7 @@ namespace Aula5.Exercicios
                                     v => v.Id == int.Parse(Console.ReadLine())
                                 );
 
-                            Console.Write("\nDigite o ID da Venda a ser excluido seu Item: ");
+                            Console.Write("\nDigite o ID do Item a ser excluido: ");
                             vendaASerExcluidoSeuItem
                                 .Items
                                 .Remove
@@ -121,9 +121,28 @@ namespace Aula5.Exercicios
 
                             Console.Write("\nDigite a Data da Venda a ser pesquisada: ");
 
-                            vendas.FirstOrDefault
+                            WriteTree.Propriedades
                             (
-                                v => v.DataVenda == DateTime.Parse(Console.ReadLine())
+                                vendas.FirstOrDefault
+                                (
+                                    v => v.DataVenda == DateTime.Parse(Console.ReadLine())
+                                )
+                            );
+                            break;
+                        case 6:
+                            Console.Clear();
+
+                            Console.Write("\nDigite a Data do início do Período a ser pesquisada: ");
+                            var inicioPeriodo = DateTime.Parse(Console.ReadLine());
+
+                            Console.Write("\nDigite a Data de fim do Período a ser pesquisada: ");
+
+                            WriteTree.Propriedades
+                            (
+                                vendas.Where
+                                (
+                                    v => v.DataVenda >= inicioPeriodo && v.DataVenda <= DateTime.Parse(Console.ReadLine())
+                                )
                             );
                             break;
                         //case 4:
