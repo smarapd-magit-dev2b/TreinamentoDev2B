@@ -8,10 +8,35 @@ namespace Aula03
     {
         public void Execute()
         {
-            Ex1Abstrata();
-            Ex1Interface();
-            Ex2Abstrata();
-            Ex2Interface();
+            //Ex1Abstrata();
+            //Ex1Interface();
+            //Ex2Abstrata();
+            //Ex2Interface();
+            ExAnimal();
+        }
+
+        static void ExAnimal()
+        {
+            //Animal animal = new Animal();
+            
+            Calculadora calculadora = new Calculadora();
+            Console.WriteLine("Insira o primeiro valor:");
+            int valor1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Insira o segundo valor:");
+            int valor2 = Convert.ToInt32(Console.ReadLine());
+            Classes.ClassesAbstr.Soma soma = new Classes.ClassesAbstr.Soma(valor1, valor2);
+            Classes.ClassesAbstr.Subtracao subtracao = new Classes.ClassesAbstr.Subtracao(valor1, valor2);
+            Classes.ClassesAbstr.Divisao divisao = new Classes.ClassesAbstr.Divisao(valor1, valor2);
+            Classes.ClassesAbstr.Multiplicacao multiplicacao = new Classes.ClassesAbstr.Multiplicacao(valor1, valor2);
+            decimal resultado = calculadora.RealizarCalculo(soma);
+            Console.WriteLine("A soma é: " + resultado);
+            resultado = calculadora.RealizarCalculo(subtracao);
+            Console.WriteLine("A subtracao é: " + resultado);
+            resultado = calculadora.RealizarCalculo(divisao);
+            Console.WriteLine("A divisao é: " + resultado);
+            resultado = calculadora.RealizarCalculo(multiplicacao);
+            Console.WriteLine("A multiplicacao é: " + resultado);
+
         }
 
 

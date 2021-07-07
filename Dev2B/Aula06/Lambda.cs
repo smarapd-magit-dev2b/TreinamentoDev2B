@@ -1,6 +1,7 @@
 ﻿using Aula06.Classes;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 
 namespace Aula06
@@ -145,7 +146,8 @@ namespace Aula06
             {
                 Nome = r.Nome
             }).ToList();
-            var consulta1 = resultadoSelect.Where(pessoa => pessoa.Nome.Contains("a")).ToList();
+            var consulta1 = resultadoSelect.Where(pessoa => String.IsNullOrEmpty(pessoa.Nome)==false && pessoa.Nome.ToUpper().Contains("A")).ToList();
+            //pode usar o normalize para eliminar case sensitive e acento
             foreach (var pessoa in consulta1)
             {
                 Console.WriteLine($"Nome: {pessoa.Nome}");
@@ -155,15 +157,18 @@ namespace Aula06
 
             //• Exiba o Nome, a Idade e a Altura das pessoas que contenha a letra “a” no Logradouro de seu Endereço.
             Console.WriteLine("\nExiba o Nome, a Idade e a Altura das pessoas que contenha a letra “a” no Logradouro de seu Endereço.\n");
-
-            var consulta2 = PessoaCollection.Where(pessoa => pessoa.Endereco.Logradouro.Contains("a")).ToList();
-            foreach (var pessoa in consulta2)
-            {
-                int idade = DateTime.Today.Year - pessoa.DataNascimento.Year;
-                if (DateTime.Today.DayOfYear < pessoa.DataNascimento.DayOfYear)
-                    idade--;
-                Console.WriteLine($"Nome: {pessoa.Nome}  Idade:{idade} Altura:{pessoa.Altura}");
-            }
+           
+            var consulta2 = PessoaCollection
+                                                .Where(x => x.Endereco != null && x.Endereco.Logradouro != null && x.Endereco.Logradouro.ToLower().Contains("a"))
+                                                .Select(x => new
+                                                {
+                                                    x.Nome,
+                                                    Altura = x.Altura.ToString("F2", new CultureInfo("pt-BR")),
+                                                    Idade = new DateTime((DateTime.Now - x.DataNascimento).Ticks).Year
+                                                })
+                                                .ToList();
+            foreach (var item in consulta2)
+                Console.WriteLine(item.Nome + " - " + item.Idade + " - " + item.Altura);
             Console.WriteLine("\n------------------\n");
 
 
@@ -175,6 +180,7 @@ namespace Aula06
                 Console.WriteLine($"Nome: {pessoa.Nome}");
             }
             Console.WriteLine("\n------------------\n");
+
 
             //• Exiba o Nome, Data Nascimento, Peso, Logradouro, Bairro e o Complemento das pessoas que possuem mais de dois filhos
             Console.WriteLine("\nExiba o Nome, Data Nascimento, Peso, Logradouro, Bairro e o Complemento das pessoas que possuem mais de dois filhos\n");
@@ -203,15 +209,25 @@ namespace Aula06
 
             //• Exiba Nome, a Idade e a Altura das pessoas que não possuem filhos.
             Console.WriteLine("\nExiba Nome, a Idade e a Altura das pessoas que não possuem filhos.\n");
-            var consulta5 = PessoaCollection.Where(pessoa => pessoa.Filhos == null || !(pessoa.Filhos.Any())).ToList();
+            var consulta5 = PessoaCollection.Where(pessoa => pessoa.Filhos == null || !(pessoa.Filhos.Any()))
+                                .Select(pessoa =>
+                                {
+                                    var idade = new DateTime((DateTime.Now - pessoa.DataNascimento).Ticks).Year;
+                                    return new
+                                    {
+                                        pessoa.Nome,
+                                        Idade = idade,
+                                        pessoa.Altura
+                                    };
+                                })
+                                .ToList();
             foreach (var pessoa in consulta5)
             {
-                int idade = DateTime.Today.Year - pessoa.DataNascimento.Year;
-                if (DateTime.Today.DayOfYear < pessoa.DataNascimento.DayOfYear)
-                    idade--;
-                Console.WriteLine($"Nome: {pessoa.Nome}  Idade:{idade} Altura:{pessoa.Altura}");
+                
+                Console.WriteLine($"Nome: {pessoa.Nome}  Idade:{pessoa.Idade} Altura:{pessoa.Altura}");
             }
             Console.WriteLine("\n------------------\n");
+
 
             //• Exiba o Nome das pessoas com os seus respectivos filhos(Nome e Data de Nascimento)
             Console.WriteLine("\nExiba o Nome das pessoas com os seus respectivos filhos(Nome e Data de Nascimento)\n");
@@ -325,9 +341,35 @@ namespace Aula06
             Console.WriteLine($"Media das alturas: {media}");
             Console.WriteLine("\n------------------\n");
 
+            //Maiores de 90
+            try
+            {
+                var maior90 = PessoaCollection.Where(x => DateTimeHelper.CalculaAno(x.DataNascimento) > 90).ToList();
 
+                if (maior90.Any())
+                {
+                    Console.WriteLine("Exceção de negócio");
+                    throw new NegocioException("Não existe pessoa maior de 90 anos");
+                }
+                else
+                {                    
+                    EscreverPessoaArquivoHelper.EscreverPessoas(PessoaCollection);
+                    Console.WriteLine("Arquivo gerado");
+                }                   
+
+            }
+            catch (NegocioException ex1)
+            {
+
+                Console.WriteLine("Erro: " + ex1);
+
+            }
+            catch (Exception ex2)
+            {
+                
+                Console.WriteLine("Erro: " + ex2);               
+
+            }
         }
-
-
     }
 }
