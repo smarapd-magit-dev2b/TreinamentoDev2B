@@ -5,10 +5,10 @@ namespace Dev2bServices.Interfaces
 {
     public interface IPessoaService
     {
-        void AdicionarCliente(PessoaEntity cliente);
+        void AdicionarPessoa(PessoaEntity pessoa);
         void AlterarPessoa(int id, PessoaEntity pessoa);
         void DeletarPessoa(int id);
-        PessoaEntity ObterClientePorId(int id);
-        List<PessoaEntity> ObterTodosOsClientes();
+        PessoaEntity ObterPessoaPorId(int id);
+        List<PessoaEntity> ObterTodosAsPessoas();
     }
 }

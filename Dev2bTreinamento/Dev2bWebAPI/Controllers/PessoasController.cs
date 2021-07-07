@@ -18,9 +18,9 @@ namespace Dev2bWebAPI.Controllers
         {
             try
             {
-                var clientes = _pessoaService.ObterTodosOsClientes();
+                var pessoas = _pessoaService.ObterTodosAsPessoas();
 
-                return Ok(clientes);
+                return Ok(pessoas);
             }
             catch (Exception ex)
             {
@@ -34,9 +34,9 @@ namespace Dev2bWebAPI.Controllers
         {
             try
             {
-                var cliente = _pessoaService.ObterClientePorId(id);
+                var pessoa = _pessoaService.ObterPessoaPorId(id);
 
-                return Ok(cliente);
+                return Ok(pessoa);
             }
             catch (Exception ex)
             {
@@ -46,11 +46,11 @@ namespace Dev2bWebAPI.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody] PessoaEntity cliente)
+        public IActionResult Post([FromBody] PessoaEntity pessoa)
         {
             try
             {
-                _pessoaService.AdicionarCliente(cliente);
+                _pessoaService.AdicionarPessoa(pessoa);
 
                 return Ok();
             }

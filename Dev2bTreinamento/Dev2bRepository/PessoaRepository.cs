@@ -72,7 +72,7 @@ namespace Dev2bRepository
             };
         }
 
-        public List<PessoaEntity> ObterTodosOsClientes()
+        public List<PessoaEntity> ObterTodosOsPessoas()
         {
             if (pessoas == null || !pessoas.Any())
                 return null;
@@ -90,7 +90,7 @@ namespace Dev2bRepository
             return pessoa;
         }
 
-        public void AdicionarCliente(PessoaEntity cliente) => pessoas.Add(cliente);
+        public void AdicionarPessoa(PessoaEntity pessoa) => pessoas.Add(pessoa);
 
         public void AlterarPessoa(int id, PessoaEntity pessoa)
         {

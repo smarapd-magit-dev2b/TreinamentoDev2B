@@ -9,33 +9,33 @@ namespace Dev2bAppilcation.Services
 {
     public class PessoaService : IPessoaService
     {
-        private readonly IPessoaRepository _clienteRepository;
+        private readonly IPessoaRepository _pessoaRepository;
 
-        public PessoaService(IPessoaRepository clienteRepository)
+        public PessoaService(IPessoaRepository pessoaRepository)
         {
-            _clienteRepository = clienteRepository;
+            _pessoaRepository = pessoaRepository;
         }
 
-        public List<PessoaEntity> ObterTodosOsClientes()
+        public List<PessoaEntity> ObterTodosAsPessoas()
         {
-            if (_clienteRepository.ObterTodosOsClientes() == null)
+            if (_pessoaRepository.ObterTodosOsPessoas() == null)
                 throw new Exception($"Não há pessoas cadastrados");
 
-            return _clienteRepository.ObterTodosOsClientes();
+            return _pessoaRepository.ObterTodosOsPessoas();
         }
 
-        public PessoaEntity ObterClientePorId(int id)
+        public PessoaEntity ObterPessoaPorId(int id)
         {
-            var pessoa = _clienteRepository.ObterPessoaPorId(id);
+            var pessoa = _pessoaRepository.ObterPessoaPorId(id);
 
             PessoaServiceHelper.NaoExistePessoaComId(id, pessoa);
 
-            return _clienteRepository.ObterPessoaPorId(id);
+            return _pessoaRepository.ObterPessoaPorId(id);
         }
 
-        public void AdicionarCliente(PessoaEntity pessoa)
+        public void AdicionarPessoa(PessoaEntity pessoa)
         {
-            if (_clienteRepository.ObterPessoaPorId(pessoa.Id) != null)
+            if (_pessoaRepository.ObterPessoaPorId(pessoa.Id) != null)
                 throw new Exception($"Já existe uma pessoa com Id {pessoa.Id}");
 
             PessoaServiceHelper.NomeNaoInformado(pessoa);
@@ -45,14 +45,14 @@ namespace Dev2bAppilcation.Services
             PessoaServiceHelper.MaiorDeIdade(pessoa);
 
 
-            _clienteRepository.AdicionarCliente(pessoa);
+            _pessoaRepository.AdicionarPessoa(pessoa);
         }
         public void AlterarPessoa(int id, PessoaEntity pessoa)
         {
             PessoaServiceHelper.NaoExistePessoaComId
             (
                 id,
-                _clienteRepository.ObterPessoaPorId(id)
+                _pessoaRepository.ObterPessoaPorId(id)
             );
 
             PessoaServiceHelper.NomeNaoInformado(pessoa);
@@ -61,19 +61,19 @@ namespace Dev2bAppilcation.Services
 
             PessoaServiceHelper.MaiorDeIdade(pessoa);
 
-            _clienteRepository.AlterarPessoa(id, pessoa);
+            _pessoaRepository.AlterarPessoa(id, pessoa);
         }
 
         public void DeletarPessoa(int id)
         {
-            var pessoa = _clienteRepository.ObterPessoaPorId(id);
+            var pessoa = _pessoaRepository.ObterPessoaPorId(id);
 
             PessoaServiceHelper.NaoExistePessoaComId(id, pessoa);
 
-            if (_clienteRepository.ObterPessoaPorId(id).UsuarioAtivo)
+            if (_pessoaRepository.ObterPessoaPorId(id).UsuarioAtivo)
                 throw new Exception($"Pessoa com Id {id} está ativa e não pode ser deletado");
 
-            _clienteRepository.DeletarPessoa(id);
+            _pessoaRepository.DeletarPessoa(id);
         }
     }
 }

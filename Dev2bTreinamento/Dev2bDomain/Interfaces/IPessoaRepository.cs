@@ -6,10 +6,9 @@ namespace Dev2bDomain.Interfaces
     public interface IPessoaRepository
     {
         PessoaEntity ObterPessoaPorId(int id);
-
-        void AdicionarCliente(PessoaEntity cliente);
+        void AdicionarPessoa(PessoaEntity pessoa);
         void AlterarPessoa(int id, PessoaEntity pessoa);
         void DeletarPessoa(int id);
-        List<PessoaEntity> ObterTodosOsClientes();
+        List<PessoaEntity> ObterTodosOsPessoas();
     }
 }
