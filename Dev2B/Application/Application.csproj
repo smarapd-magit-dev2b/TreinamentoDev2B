@@ -9,6 +9,10 @@
     <ProjectReference Include="..\Aula01\Aula01.csproj" />
     <ProjectReference Include="..\Aula02\Aula02.csproj" />
     <ProjectReference Include="..\Aula03\Aula03.csproj" />
+    <ProjectReference Include="..\Aula04\Aula04.csproj" />
+    <ProjectReference Include="..\Aula05_Lista\Aula05_Lista.csproj" />
+    <ProjectReference Include="..\Aula06\Aula06_Lambdas.csproj" />
+    <ProjectReference Include="..\Aula07_ClassesEstaticas\Aula07_ClassesEstaticas.csproj" />
     <ProjectReference Include="..\Aula1\Aula01.csproj" />
     <ProjectReference Include="..\Aula2\Aula02.csproj" />
   </ItemGroup>

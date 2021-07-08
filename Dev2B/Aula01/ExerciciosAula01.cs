@@ -9,7 +9,7 @@ namespace Aula01
     {
         public void Execute()
         {
-            Exercicio01();
+            //Exercicio01();
             //Exercicio02();
             //Exercicio03();
             //Exercicio04();

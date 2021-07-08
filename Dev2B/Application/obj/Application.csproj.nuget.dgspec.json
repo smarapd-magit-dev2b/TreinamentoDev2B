@@ -37,6 +37,18 @@
               "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula03\\Aula03.csproj": {
                 "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula03\\Aula03.csproj"
               },
+              "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula04\\Aula04.csproj": {
+                "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula04\\Aula04.csproj"
+              },
+              "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula05_Lista\\Aula05_Lista.csproj": {
+                "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula05_Lista\\Aula05_Lista.csproj"
+              },
+              "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula06\\Aula06_Lambdas.csproj": {
+                "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula06\\Aula06_Lambdas.csproj"
+              },
+              "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula07_ClassesEstaticas\\Aula07_ClassesEstaticas.csproj": {
+                "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula07_ClassesEstaticas\\Aula07_ClassesEstaticas.csproj"
+              },
               "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula01.csproj": {
                 "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula01.csproj"
               },
@@ -206,6 +218,226 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula04\\Aula04.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula04\\Aula04.csproj",
+        "projectName": "Aula04",
+        "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula04\\Aula04.csproj",
+        "packagesPath": "C:\\Users\\desenvolvedor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula04\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\desenvolvedor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula05_Lista\\Aula05_Lista.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula05_Lista\\Aula05_Lista.csproj",
+        "projectName": "Aula05_Lista",
+        "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula05_Lista\\Aula05_Lista.csproj",
+        "packagesPath": "C:\\Users\\desenvolvedor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula05_Lista\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\desenvolvedor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula06\\Aula06_Lambdas.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula06\\Aula06_Lambdas.csproj",
+        "projectName": "Aula06_Lambdas",
+        "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula06\\Aula06_Lambdas.csproj",
+        "packagesPath": "C:\\Users\\desenvolvedor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula06\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\desenvolvedor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula07_ClassesEstaticas\\Aula07_ClassesEstaticas.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula07_ClassesEstaticas\\Aula07_ClassesEstaticas.csproj",
+        "projectName": "Aula07_ClassesEstaticas",
+        "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula07_ClassesEstaticas\\Aula07_ClassesEstaticas.csproj",
+        "packagesPath": "C:\\Users\\desenvolvedor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula07_ClassesEstaticas\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\desenvolvedor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula06\\Aula06_Lambdas.csproj": {
+                "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula06\\Aula06_Lambdas.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

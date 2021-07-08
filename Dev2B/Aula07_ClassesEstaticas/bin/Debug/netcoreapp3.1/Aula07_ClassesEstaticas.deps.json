@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Aula07_ClassesEstaticas/1.0.0": {
+        "dependencies": {
+          "Aula06_Lambdas": "1.0.0"
+        },
+        "runtime": {
+          "Aula07_ClassesEstaticas.dll": {}
+        }
+      },
+      "Aula06_Lambdas/1.0.0": {
+        "runtime": {
+          "Aula06_Lambdas.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Aula07_ClassesEstaticas/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aula06_Lambdas/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -176,8 +176,8 @@ namespace Aula02
             Console.WriteLine($"\nCidade: {aluno.Professor.Cidade}/{aluno.Professor.Estado}");
             Console.WriteLine($"\nCNH: {aluno.Professor.CNH}\nData de Admissão: {aluno.Professor.DataAdmissao.ToShortDateString()}");
             Console.WriteLine($"\nResgistro do Professor: {aluno.Professor.RegistroProfessor}\nSalario: R${aluno.Professor.Salario}");
-            Console.WriteLine($"\nDisciplina: {aluno.Professor.Disciplina.GetNome()}\nCurso:{aluno.Professor.Disciplina.GetCurso()}");
-            Console.WriteLine($"\nCID: {aluno.Professor.Disciplina.GetCID()}\nData de Inclusão: {aluno.Professor.Disciplina.GetDate().ToShortDateString()}");
+            Console.WriteLine($"\nDisciplina: {aluno.Professor.Materias.GetNome()}\nCurso:{aluno.Professor.Materias.GetCurso()}");
+            Console.WriteLine($"\nCID: {aluno.Professor.Materias.GetCID()}\nData de Inclusão: {aluno.Professor.Materias.GetDate().ToShortDateString()}");
         }
         private void Exercicio05()
         {

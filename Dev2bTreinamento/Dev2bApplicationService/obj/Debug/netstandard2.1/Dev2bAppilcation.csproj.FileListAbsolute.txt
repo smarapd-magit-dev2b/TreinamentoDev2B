@@ -1,0 +1,24 @@
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bApplicationService\bin\Debug\netstandard2.1\Dev2bAppilcation.deps.json
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bApplicationService\bin\Debug\netstandard2.1\Dev2bAppilcation.dll
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bApplicationService\bin\Debug\netstandard2.1\Dev2bAppilcation.pdb
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bApplicationService\bin\Debug\netstandard2.1\Dev2bDomain.dll
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bApplicationService\bin\Debug\netstandard2.1\Dev2bDomain.pdb
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bApplicationService\obj\Debug\netstandard2.1\Dev2bAppilcation.csproj.AssemblyReference.cache
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bApplicationService\obj\Debug\netstandard2.1\Dev2bAppilcation.AssemblyInfoInputs.cache
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bApplicationService\obj\Debug\netstandard2.1\Dev2bAppilcation.AssemblyInfo.cs
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bApplicationService\obj\Debug\netstandard2.1\Dev2bAppilcation.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bApplicationService\obj\Debug\netstandard2.1\Dev2bAppilcation.csproj.CopyComplete
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bApplicationService\obj\Debug\netstandard2.1\Dev2bAppilcation.dll
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bApplicationService\obj\Debug\netstandard2.1\Dev2bAppilcation.pdb
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bApplicationService\bin\Debug\netstandard2.1\Dev2bAppilcation.deps.json
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bApplicationService\bin\Debug\netstandard2.1\Dev2bAppilcation.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bApplicationService\bin\Debug\netstandard2.1\Dev2bAppilcation.pdb
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bApplicationService\bin\Debug\netstandard2.1\Dev2bDomain.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bApplicationService\bin\Debug\netstandard2.1\Dev2bDomain.pdb
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bApplicationService\obj\Debug\netstandard2.1\Dev2bAppilcation.csproj.AssemblyReference.cache
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bApplicationService\obj\Debug\netstandard2.1\Dev2bAppilcation.AssemblyInfoInputs.cache
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bApplicationService\obj\Debug\netstandard2.1\Dev2bAppilcation.AssemblyInfo.cs
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bApplicationService\obj\Debug\netstandard2.1\Dev2bAppilcation.csproj.CoreCompileInputs.cache
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bApplicationService\obj\Debug\netstandard2.1\Dev2bAppilcation.csproj.CopyComplete
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bApplicationService\obj\Debug\netstandard2.1\Dev2bAppilcation.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bApplicationService\obj\Debug\netstandard2.1\Dev2bAppilcation.pdb

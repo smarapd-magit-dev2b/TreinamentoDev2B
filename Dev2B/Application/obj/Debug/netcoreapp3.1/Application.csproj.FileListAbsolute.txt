@@ -36,3 +36,11 @@ C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\De
 C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula03.pdb
 C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula01.pdb
 C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula02.pdb
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula05_Lista.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula05_Lista.pdb
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula04.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula04.pdb
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula06_Lambdas.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula06_Lambdas.pdb
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula07_ClassesEstaticas.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula07_ClassesEstaticas.pdb

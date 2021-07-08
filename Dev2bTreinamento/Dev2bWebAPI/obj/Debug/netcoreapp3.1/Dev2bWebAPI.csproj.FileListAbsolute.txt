@@ -1,0 +1,54 @@
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bWebAPI\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bWebAPI\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bWebAPI\bin\Debug\netcoreapp3.1\Dev2bWebAPI.exe
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bWebAPI\bin\Debug\netcoreapp3.1\Dev2bWebAPI.deps.json
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bWebAPI\bin\Debug\netcoreapp3.1\Dev2bWebAPI.runtimeconfig.json
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bWebAPI\bin\Debug\netcoreapp3.1\Dev2bWebAPI.runtimeconfig.dev.json
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bWebAPI\bin\Debug\netcoreapp3.1\Dev2bWebAPI.dll
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bWebAPI\bin\Debug\netcoreapp3.1\Dev2bWebAPI.pdb
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bWebAPI\obj\Debug\netcoreapp3.1\Dev2bWebAPI.csproj.AssemblyReference.cache
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bWebAPI\obj\Debug\netcoreapp3.1\Dev2bWebAPI.AssemblyInfoInputs.cache
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bWebAPI\obj\Debug\netcoreapp3.1\Dev2bWebAPI.AssemblyInfo.cs
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bWebAPI\obj\Debug\netcoreapp3.1\Dev2bWebAPI.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bWebAPI\obj\Debug\netcoreapp3.1\Dev2bWebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bWebAPI\obj\Debug\netcoreapp3.1\staticwebassets\Dev2bWebAPI.StaticWebAssets.Manifest.cache
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bWebAPI\obj\Debug\netcoreapp3.1\staticwebassets\Dev2bWebAPI.StaticWebAssets.xml
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bWebAPI\obj\Debug\netcoreapp3.1\scopedcss\bundle\Dev2bWebAPI.styles.css
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bWebAPI\obj\Debug\netcoreapp3.1\Dev2bWebAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bWebAPI\obj\Debug\netcoreapp3.1\Dev2bWebAPI.dll
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bWebAPI\obj\Debug\netcoreapp3.1\Dev2bWebAPI.pdb
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bWebAPI\obj\Debug\netcoreapp3.1\Dev2bWebAPI.genruntimeconfig.cache
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bWebAPI\bin\Debug\netcoreapp3.1\Dev2bAppilcation.dll
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bWebAPI\bin\Debug\netcoreapp3.1\Dev2bDomain.dll
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bWebAPI\bin\Debug\netcoreapp3.1\Dev2bRepositories.dll
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bWebAPI\bin\Debug\netcoreapp3.1\Dev2bAppilcation.pdb
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bWebAPI\bin\Debug\netcoreapp3.1\Dev2bDomain.pdb
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bWebAPI\bin\Debug\netcoreapp3.1\Dev2bRepositories.pdb
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bWebAPI\obj\Debug\netcoreapp3.1\Dev2bWebAPI.csproj.CopyComplete
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bWebAPI\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bWebAPI\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bWebAPI\bin\Debug\netcoreapp3.1\Dev2bWebAPI.exe
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bWebAPI\bin\Debug\netcoreapp3.1\Dev2bWebAPI.deps.json
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bWebAPI\bin\Debug\netcoreapp3.1\Dev2bWebAPI.runtimeconfig.json
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bWebAPI\bin\Debug\netcoreapp3.1\Dev2bWebAPI.runtimeconfig.dev.json
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bWebAPI\bin\Debug\netcoreapp3.1\Dev2bWebAPI.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bWebAPI\bin\Debug\netcoreapp3.1\Dev2bWebAPI.pdb
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bWebAPI\bin\Debug\netcoreapp3.1\Dev2bAppilcation.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bWebAPI\bin\Debug\netcoreapp3.1\Dev2bDomain.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bWebAPI\bin\Debug\netcoreapp3.1\Dev2bRepositories.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bWebAPI\bin\Debug\netcoreapp3.1\Dev2bAppilcation.pdb
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bWebAPI\bin\Debug\netcoreapp3.1\Dev2bDomain.pdb
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bWebAPI\bin\Debug\netcoreapp3.1\Dev2bRepositories.pdb
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bWebAPI\obj\Debug\netcoreapp3.1\Dev2bWebAPI.csproj.AssemblyReference.cache
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bWebAPI\obj\Debug\netcoreapp3.1\Dev2bWebAPI.AssemblyInfoInputs.cache
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bWebAPI\obj\Debug\netcoreapp3.1\Dev2bWebAPI.AssemblyInfo.cs
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bWebAPI\obj\Debug\netcoreapp3.1\Dev2bWebAPI.csproj.CoreCompileInputs.cache
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bWebAPI\obj\Debug\netcoreapp3.1\Dev2bWebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bWebAPI\obj\Debug\netcoreapp3.1\staticwebassets\Dev2bWebAPI.StaticWebAssets.Manifest.cache
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bWebAPI\obj\Debug\netcoreapp3.1\staticwebassets\Dev2bWebAPI.StaticWebAssets.xml
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bWebAPI\obj\Debug\netcoreapp3.1\scopedcss\bundle\Dev2bWebAPI.styles.css
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bWebAPI\obj\Debug\netcoreapp3.1\Dev2bWebAPI.RazorTargetAssemblyInfo.cache
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bWebAPI\obj\Debug\netcoreapp3.1\Dev2bWebAPI.csproj.CopyComplete
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bWebAPI\obj\Debug\netcoreapp3.1\Dev2bWebAPI.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bWebAPI\obj\Debug\netcoreapp3.1\Dev2bWebAPI.pdb
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bWebAPI\obj\Debug\netcoreapp3.1\Dev2bWebAPI.genruntimeconfig.cache

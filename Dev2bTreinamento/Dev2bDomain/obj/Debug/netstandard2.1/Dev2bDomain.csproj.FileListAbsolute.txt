@@ -1,0 +1,18 @@
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bDomain\bin\Debug\netstandard2.1\Dev2bDomain.deps.json
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bDomain\bin\Debug\netstandard2.1\Dev2bDomain.dll
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bDomain\bin\Debug\netstandard2.1\Dev2bDomain.pdb
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bDomain\obj\Debug\netstandard2.1\Dev2bDomain.csproj.AssemblyReference.cache
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bDomain\obj\Debug\netstandard2.1\Dev2bDomain.AssemblyInfoInputs.cache
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bDomain\obj\Debug\netstandard2.1\Dev2bDomain.AssemblyInfo.cs
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bDomain\obj\Debug\netstandard2.1\Dev2bDomain.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bDomain\obj\Debug\netstandard2.1\Dev2bDomain.dll
+C:\Users\Gabriel Domingos\ti\SMARAPD\Dev2bTreinamento\Dev2bDomain\obj\Debug\netstandard2.1\Dev2bDomain.pdb
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bDomain\bin\Debug\netstandard2.1\Dev2bDomain.deps.json
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bDomain\bin\Debug\netstandard2.1\Dev2bDomain.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bDomain\bin\Debug\netstandard2.1\Dev2bDomain.pdb
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bDomain\obj\Debug\netstandard2.1\Dev2bDomain.csproj.AssemblyReference.cache
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bDomain\obj\Debug\netstandard2.1\Dev2bDomain.AssemblyInfoInputs.cache
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bDomain\obj\Debug\netstandard2.1\Dev2bDomain.AssemblyInfo.cs
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bDomain\obj\Debug\netstandard2.1\Dev2bDomain.csproj.CoreCompileInputs.cache
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bDomain\obj\Debug\netstandard2.1\Dev2bDomain.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bTreinamento\Dev2bDomain\obj\Debug\netstandard2.1\Dev2bDomain.pdb

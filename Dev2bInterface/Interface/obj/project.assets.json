@@ -1,0 +1,149 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.dll": {}
+        }
+      },
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
+        }
+      },
+      "Infraestructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infraestructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infraestructure.dll": {}
+        }
+      },
+      "Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Common": "1.0.0",
+          "Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Service.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Common/1.0.0": {
+      "type": "project",
+      "path": "../Common/Common.csproj",
+      "msbuildProject": "../Common/Common.csproj"
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
+    },
+    "Infraestructure/1.0.0": {
+      "type": "project",
+      "path": "../Infraestructure/Infraestructure.csproj",
+      "msbuildProject": "../Infraestructure/Infraestructure.csproj"
+    },
+    "Service/1.0.0": {
+      "type": "project",
+      "path": "../Service/Service.csproj",
+      "msbuildProject": "../Service/Service.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Infraestructure >= 1.0.0",
+      "Service >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\desenvolvedor\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2bInterface\\Interface\\Interface.csproj",
+      "projectName": "Interface",
+      "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2bInterface\\Interface\\Interface.csproj",
+      "packagesPath": "C:\\Users\\desenvolvedor\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2bInterface\\Interface\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\desenvolvedor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2bInterface\\Infraestructure\\Infraestructure.csproj": {
+              "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2bInterface\\Infraestructure\\Infraestructure.csproj"
+            },
+            "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2bInterface\\Service\\Service.csproj": {
+              "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2bInterface\\Service\\Service.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

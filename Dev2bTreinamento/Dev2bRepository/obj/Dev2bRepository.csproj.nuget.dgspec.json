@@ -1,0 +1,64 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Gabriel Domingos\\ti\\SMARAPD\\Dev2bTreinamento\\Dev2bRepository\\Dev2bRepository.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Gabriel Domingos\\ti\\SMARAPD\\Dev2bTreinamento\\Dev2bRepository\\Dev2bRepository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Gabriel Domingos\\ti\\SMARAPD\\Dev2bTreinamento\\Dev2bRepository\\Dev2bRepository.csproj",
+        "projectName": "Dev2bRepository",
+        "projectPath": "C:\\Users\\Gabriel Domingos\\ti\\SMARAPD\\Dev2bTreinamento\\Dev2bRepository\\Dev2bRepository.csproj",
+        "packagesPath": "C:\\Users\\Gabriel Domingos\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gabriel Domingos\\ti\\SMARAPD\\Dev2bTreinamento\\Dev2bRepository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Gabriel Domingos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://tfs.smarapd.com.br/tfs/SMARAPD/_packaging/GGDFeed/nuget/v3/index.json": {},
+          "http://tfs.smarapd.com.br/tfs/SMARAPD/_packaging/SMARAPD-NuGet/nuget/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula04\bin\Debug\netcoreapp3.1\Aula04.deps.json
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula04\bin\Debug\netcoreapp3.1\Aula04.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula04\bin\Debug\netcoreapp3.1\Aula04.pdb
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula04\obj\Debug\netcoreapp3.1\Aula04.csproj.AssemblyReference.cache
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula04\obj\Debug\netcoreapp3.1\Aula04.AssemblyInfoInputs.cache
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula04\obj\Debug\netcoreapp3.1\Aula04.AssemblyInfo.cs
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula04\obj\Debug\netcoreapp3.1\Aula04.csproj.CoreCompileInputs.cache
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula04\obj\Debug\netcoreapp3.1\Aula04.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula04\obj\Debug\netcoreapp3.1\Aula04.pdb

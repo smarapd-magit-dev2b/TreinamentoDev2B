@@ -1,0 +1,12 @@
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula07_ClassesEstaticas\bin\Debug\netcoreapp3.1\Aula07_ClassesEstaticas.deps.json
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula07_ClassesEstaticas\bin\Debug\netcoreapp3.1\Aula07_ClassesEstaticas.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula07_ClassesEstaticas\bin\Debug\netcoreapp3.1\Aula07_ClassesEstaticas.pdb
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula07_ClassesEstaticas\obj\Debug\netcoreapp3.1\Aula07_ClassesEstaticas.AssemblyInfoInputs.cache
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula07_ClassesEstaticas\obj\Debug\netcoreapp3.1\Aula07_ClassesEstaticas.AssemblyInfo.cs
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula07_ClassesEstaticas\obj\Debug\netcoreapp3.1\Aula07_ClassesEstaticas.csproj.CoreCompileInputs.cache
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula07_ClassesEstaticas\obj\Debug\netcoreapp3.1\Aula07_ClassesEstaticas.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula07_ClassesEstaticas\obj\Debug\netcoreapp3.1\Aula07_ClassesEstaticas.pdb
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula07_ClassesEstaticas\obj\Debug\netcoreapp3.1\Aula07_ClassesEstaticas.csproj.AssemblyReference.cache
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula07_ClassesEstaticas\bin\Debug\netcoreapp3.1\Aula06_Lambdas.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula07_ClassesEstaticas\bin\Debug\netcoreapp3.1\Aula06_Lambdas.pdb
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula07_ClassesEstaticas\obj\Debug\netcoreapp3.1\Aula07_ClassesEstaticas.csproj.CopyComplete

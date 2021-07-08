@@ -1,0 +1,137 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Dev2bAppilcation/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Dev2bDomain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Dev2bAppilcation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Dev2bAppilcation.dll": {}
+        }
+      },
+      "Dev2bDomain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Dev2bDomain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Dev2bDomain.dll": {}
+        }
+      },
+      "Dev2bRepositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Dev2bDomain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Dev2bRepositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Dev2bRepositories.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Dev2bAppilcation/1.0.0": {
+      "type": "project",
+      "path": "../Dev2bApplicationService/Dev2bAppilcation.csproj",
+      "msbuildProject": "../Dev2bApplicationService/Dev2bAppilcation.csproj"
+    },
+    "Dev2bDomain/1.0.0": {
+      "type": "project",
+      "path": "../Dev2bDomain/Dev2bDomain.csproj",
+      "msbuildProject": "../Dev2bDomain/Dev2bDomain.csproj"
+    },
+    "Dev2bRepositories/1.0.0": {
+      "type": "project",
+      "path": "../Dev2bRepository/Dev2bRepositories.csproj",
+      "msbuildProject": "../Dev2bRepository/Dev2bRepositories.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Dev2bAppilcation >= 1.0.0",
+      "Dev2bDomain >= 1.0.0",
+      "Dev2bRepositories >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\desenvolvedor\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2bTreinamento\\Dev2bWebAPI\\Dev2bWebAPI.csproj",
+      "projectName": "Dev2bWebAPI",
+      "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2bTreinamento\\Dev2bWebAPI\\Dev2bWebAPI.csproj",
+      "packagesPath": "C:\\Users\\desenvolvedor\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2bTreinamento\\Dev2bWebAPI\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\desenvolvedor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2bTreinamento\\Dev2bApplicationService\\Dev2bAppilcation.csproj": {
+              "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2bTreinamento\\Dev2bApplicationService\\Dev2bAppilcation.csproj"
+            },
+            "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2bTreinamento\\Dev2bDomain\\Dev2bDomain.csproj": {
+              "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2bTreinamento\\Dev2bDomain\\Dev2bDomain.csproj"
+            },
+            "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2bTreinamento\\Dev2bRepository\\Dev2bRepositories.csproj": {
+              "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2bTreinamento\\Dev2bRepository\\Dev2bRepositories.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

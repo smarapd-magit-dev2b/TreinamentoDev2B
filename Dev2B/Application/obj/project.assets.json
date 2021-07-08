@@ -31,6 +31,49 @@
         "runtime": {
           "bin/placeholder/Aula03.dll": {}
         }
+      },
+      "Aula04/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Aula04.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula04.dll": {}
+        }
+      },
+      "Aula05_Lista/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Aula05_Lista.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula05_Lista.dll": {}
+        }
+      },
+      "Aula06_Lambdas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Aula06_Lambdas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula06_Lambdas.dll": {}
+        }
+      },
+      "Aula07_ClassesEstaticas/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Aula06_Lambdas": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Aula07_ClassesEstaticas.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula07_ClassesEstaticas.dll": {}
+        }
       }
     }
   },
@@ -49,13 +92,37 @@
       "type": "project",
       "path": "../Aula03/Aula03.csproj",
       "msbuildProject": "../Aula03/Aula03.csproj"
+    },
+    "Aula04/1.0.0": {
+      "type": "project",
+      "path": "../Aula04/Aula04.csproj",
+      "msbuildProject": "../Aula04/Aula04.csproj"
+    },
+    "Aula05_Lista/1.0.0": {
+      "type": "project",
+      "path": "../Aula05_Lista/Aula05_Lista.csproj",
+      "msbuildProject": "../Aula05_Lista/Aula05_Lista.csproj"
+    },
+    "Aula06_Lambdas/1.0.0": {
+      "type": "project",
+      "path": "../Aula06/Aula06_Lambdas.csproj",
+      "msbuildProject": "../Aula06/Aula06_Lambdas.csproj"
+    },
+    "Aula07_ClassesEstaticas/1.0.0": {
+      "type": "project",
+      "path": "../Aula07_ClassesEstaticas/Aula07_ClassesEstaticas.csproj",
+      "msbuildProject": "../Aula07_ClassesEstaticas/Aula07_ClassesEstaticas.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Aula01 >= 1.0.0",
       "Aula02 >= 1.0.0",
-      "Aula03 >= 1.0.0"
+      "Aula03 >= 1.0.0",
+      "Aula04 >= 1.0.0",
+      "Aula05_Lista >= 1.0.0",
+      "Aula06_Lambdas >= 1.0.0",
+      "Aula07_ClassesEstaticas >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -93,6 +160,18 @@
             },
             "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula03\\Aula03.csproj": {
               "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula03\\Aula03.csproj"
+            },
+            "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula04\\Aula04.csproj": {
+              "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula04\\Aula04.csproj"
+            },
+            "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula05_Lista\\Aula05_Lista.csproj": {
+              "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula05_Lista\\Aula05_Lista.csproj"
+            },
+            "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula06\\Aula06_Lambdas.csproj": {
+              "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula06\\Aula06_Lambdas.csproj"
+            },
+            "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula07_ClassesEstaticas\\Aula07_ClassesEstaticas.csproj": {
+              "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula07_ClassesEstaticas\\Aula07_ClassesEstaticas.csproj"
             },
             "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula01.csproj": {
               "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula01.csproj"

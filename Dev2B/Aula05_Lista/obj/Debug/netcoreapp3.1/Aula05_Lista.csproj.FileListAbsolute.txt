@@ -1,0 +1,9 @@
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula05_Lista\bin\Debug\netcoreapp3.1\Aula05_Lista.deps.json
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula05_Lista\bin\Debug\netcoreapp3.1\Aula05_Lista.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula05_Lista\bin\Debug\netcoreapp3.1\Aula05_Lista.pdb
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula05_Lista\obj\Debug\netcoreapp3.1\Aula05_Lista.csproj.AssemblyReference.cache
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula05_Lista\obj\Debug\netcoreapp3.1\Aula05_Lista.AssemblyInfoInputs.cache
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula05_Lista\obj\Debug\netcoreapp3.1\Aula05_Lista.AssemblyInfo.cs
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula05_Lista\obj\Debug\netcoreapp3.1\Aula05_Lista.csproj.CoreCompileInputs.cache
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula05_Lista\obj\Debug\netcoreapp3.1\Aula05_Lista.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2B\Aula05_Lista\obj\Debug\netcoreapp3.1\Aula05_Lista.pdb

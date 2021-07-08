@@ -10,7 +10,11 @@
         "dependencies": {
           "Aula01": "1.0.0",
           "Aula02": "1.0.0",
-          "Aula03": "1.0.0"
+          "Aula03": "1.0.0",
+          "Aula04": "1.0.0",
+          "Aula05_Lista": "1.0.0",
+          "Aula06_Lambdas": "1.0.0",
+          "Aula07_ClassesEstaticas": "1.0.0"
         },
         "runtime": {
           "Application.dll": {}
@@ -29,6 +33,29 @@
       "Aula03/1.0.0": {
         "runtime": {
           "Aula03.dll": {}
+        }
+      },
+      "Aula04/1.0.0": {
+        "runtime": {
+          "Aula04.dll": {}
+        }
+      },
+      "Aula05_Lista/1.0.0": {
+        "runtime": {
+          "Aula05_Lista.dll": {}
+        }
+      },
+      "Aula06_Lambdas/1.0.0": {
+        "runtime": {
+          "Aula06_Lambdas.dll": {}
+        }
+      },
+      "Aula07_ClassesEstaticas/1.0.0": {
+        "dependencies": {
+          "Aula06_Lambdas": "1.0.0"
+        },
+        "runtime": {
+          "Aula07_ClassesEstaticas.dll": {}
         }
       }
     }
@@ -50,6 +77,26 @@
       "sha512": ""
     },
     "Aula03/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aula04/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aula05_Lista/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aula06_Lambdas/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aula07_ClassesEstaticas/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
