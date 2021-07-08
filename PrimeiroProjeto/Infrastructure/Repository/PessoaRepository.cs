@@ -81,5 +81,12 @@ namespace Infrastructure.Repository
             _pessoas.Add(pessoa);
             return _pessoas.Last().Id;
         }
+
+        public int PutPessoa(int id, Pessoa pessoa)
+        {
+            _pessoas[_pessoas.IndexOf(_pessoas.First(p => p.Id == id))] = pessoa;
+
+            return id;
+        }
     }
 }

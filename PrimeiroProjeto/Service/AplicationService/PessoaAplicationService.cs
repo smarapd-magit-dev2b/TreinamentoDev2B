@@ -59,26 +59,7 @@ namespace Service.AplicationService
 
         public int PostDto(PessoaPostDto pessoaDto)
         {
-            //if (_uow.PessoaRepository.GetPessoaPorId(id) != null)
-            //    throw new NegocioException($"Pessoa com Id {id} Já existe");
-
-            if (DateTimeHelper.Idade(pessoaDto.DataNascimento) < 18)
-                throw new NegocioException("Só é aceito maiores de idade");
-
-            if (string.IsNullOrEmpty(pessoaDto.Nome))
-                throw new NegocioException("O campo Nome deve ser preenchido");
-
-            if (pessoaDto.Nome.Length < 5)
-                throw new NegocioException("O Nome não pode ter menos de 5 letras");
-
-            if (string.IsNullOrEmpty(pessoaDto.SobreNome))
-                throw new NegocioException("O campo Sobrenome deve ser preenchido");
-
-            if (string.IsNullOrEmpty(pessoaDto.DocumentoCpf))
-                throw new NegocioException("O campo Cpf deve ser preenchido");
-
-            if (!CpfHelper.Valido(pessoaDto.DocumentoCpf))
-                throw new NegocioException("Cpf inválido");
+            PessoaDtoValidate(pessoaDto);
 
             return _uow.PessoaRepository.PostPessoa(
                 new Pessoa
@@ -97,7 +78,46 @@ namespace Service.AplicationService
 
         public int PutDto(int id, PessoaPostDto pessoaDto)
         {
-            throw new System.NotImplementedException();
+            if (_uow.PessoaRepository.GetPessoaPorId(id) == null)
+                throw new NegocioException($"Pessoa com Id {id} não existe");
+
+            PessoaDtoValidate(pessoaDto);
+
+            return _uow.PessoaRepository.PutPessoa(
+                id,
+                new Pessoa
+                {
+                    Name = pessoaDto.Nome,
+                    BirthDate = pessoaDto.DataNascimento,
+                    Cpf = pessoaDto.DocumentoCpf,
+                    Height = pessoaDto.Altura,
+                    Id = id,
+                    LastName = pessoaDto.SobreNome,
+                    Race = pessoaDto.Raca,
+                    Status = true,
+                    Weight = pessoaDto.Peso
+                });
+        }
+
+        private void PessoaDtoValidate(PessoaPostDto pessoaDto)
+        {
+            if (DateTimeHelper.Idade(pessoaDto.DataNascimento) < 18)
+                throw new NegocioException("Só é aceito maiores de idade");
+
+            if (string.IsNullOrEmpty(pessoaDto.Nome))
+                throw new NegocioException("O campo Nome deve ser preenchido");
+
+            if (pessoaDto.Nome.Length < 5)
+                throw new NegocioException("O Nome não pode ter menos de 5 letras");
+
+            if (string.IsNullOrEmpty(pessoaDto.SobreNome))
+                throw new NegocioException("O campo Sobrenome deve ser preenchido");
+
+            if (string.IsNullOrEmpty(pessoaDto.DocumentoCpf))
+                throw new NegocioException("O campo Cpf deve ser preenchido");
+
+            if (!CpfHelper.Valido(pessoaDto.DocumentoCpf))
+                throw new NegocioException("Cpf inválido");
         }
     }
 }

@@ -65,12 +65,12 @@ namespace Interface.Api
             }
         }
 
-        [HttpPost("{id:int}")]
+        [HttpPut("{id:int}")]
         public IActionResult Put(int id, [FromBody] PessoaPostDto pessoaDto)
         {
             try
             {
-                return Ok($"Pessoa com o Id {_pessoaAplicationService.PutDto(id, pessoaDto)} adicionada com Sucesso");
+                return Ok($"Pessoa com o Id {_pessoaAplicationService.PutDto(id, pessoaDto)} alterada com Sucesso");
             }
             catch (NegocioException ne)
             {

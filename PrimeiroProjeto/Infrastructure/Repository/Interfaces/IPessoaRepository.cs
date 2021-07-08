@@ -9,5 +9,6 @@ namespace Infrastructure.Repository.Interfaces
 
         List<Pessoa> GetPessoas();
         Pessoa GetPessoaPorId(int id);
+        int PutPessoa(int id, Pessoa pessoa);
     }
 }
