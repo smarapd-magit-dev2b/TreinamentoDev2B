@@ -7,5 +7,7 @@ namespace Service.AplicationService.Interfaces
     {
         List<PessoaGetDto> GetAllDtos();
         PessoaGetDto GetDtoPorId(int id);
+        int PostDto(PessoaPostDto pessoaDto);
+        int PutDto(int id, PessoaPostDto pessoaDto);
     }
 }

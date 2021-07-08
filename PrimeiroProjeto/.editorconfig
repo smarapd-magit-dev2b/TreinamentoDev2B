@@ -14,3 +14,6 @@ dotnet_diagnostic.IDE0058.severity = silent
 
 # IDE0011: Adicionar chaves
 dotnet_diagnostic.IDE0011.severity = silent
+
+# IDE0046: Converter em expressão condicional
+dotnet_diagnostic.IDE0046.severity = silent

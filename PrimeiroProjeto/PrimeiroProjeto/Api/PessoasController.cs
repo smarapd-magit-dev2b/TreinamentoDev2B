@@ -1,4 +1,5 @@
-﻿using Commom.Exceptions;
+﻿using Commom.Dto;
+using Commom.Exceptions;
 using Microsoft.AspNetCore.Mvc;
 using Service.AplicationService.Interfaces;
 using System;
@@ -36,6 +37,40 @@ namespace Interface.Api
             try
             {
                 return Ok(_pessoaAplicationService.GetDtoPorId(id));
+            }
+            catch (NegocioException ne)
+            {
+                return BadRequest(ne.Message);
+            }
+            catch (Exception)
+            {
+                return BadRequest("Erro inesperado");
+            }
+        }
+
+        [HttpPost()]
+        public IActionResult Post([FromBody] PessoaPostDto pessoaDto)
+        {
+            try
+            {
+                return Ok($"Pessoa com o Id {_pessoaAplicationService.PostDto(pessoaDto)} adicionada com Sucesso");
+            }
+            catch (NegocioException ne)
+            {
+                return BadRequest(ne.Message);
+            }
+            catch (Exception)
+            {
+                return BadRequest("Erro inesperado");
+            }
+        }
+
+        [HttpPost("{id:int}")]
+        public IActionResult Put(int id, [FromBody] PessoaPostDto pessoaDto)
+        {
+            try
+            {
+                return Ok($"Pessoa com o Id {_pessoaAplicationService.PutDto(id, pessoaDto)} adicionada com Sucesso");
             }
             catch (NegocioException ne)
             {

@@ -24,7 +24,7 @@ namespace Infrastructure.Repository
                 },
                 new Pessoa
                 {
-                    Id = 10,
+                    Id = 2,
                     Name = "Willian",
                     LastName = "Andrade",
                     Cpf = "009.630.700-53",
@@ -36,7 +36,7 @@ namespace Infrastructure.Repository
                 },
                 new Pessoa
                 {
-                    Id = 4,
+                    Id = 3,
                     Name = "Silas",
                     LastName = "Almeida",
                     Cpf = "164.656.030-20",
@@ -48,7 +48,7 @@ namespace Infrastructure.Repository
                 },
                 new Pessoa
                 {
-                    Id = 77,
+                    Id = 4,
                     Name = "Glenison",
                     LastName = "Honório",
                     Cpf = "916.876.230-58",
@@ -60,7 +60,7 @@ namespace Infrastructure.Repository
                 },
                 new Pessoa
                 {
-                    Id = 90,
+                    Id = 5,
                     Name = "Gabriel",
                     LastName = "Domingos",
                     Cpf = "421.694.740-99",
@@ -75,5 +75,11 @@ namespace Infrastructure.Repository
         public List<Pessoa> GetPessoas() => _pessoas != null && _pessoas.Any() ? _pessoas : null;
 
         public Pessoa GetPessoaPorId(int id) => _pessoas.FirstOrDefault(p => p.Id == id) ?? null;
+
+        public int PostPessoa(Pessoa pessoa)
+        {
+            _pessoas.Add(pessoa);
+            return _pessoas.Last().Id;
+        }
     }
 }
