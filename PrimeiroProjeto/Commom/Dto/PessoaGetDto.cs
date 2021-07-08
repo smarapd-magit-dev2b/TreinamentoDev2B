@@ -2,7 +2,7 @@
 
 namespace Commom.Dto
 {
-    public class PessoaGetAllDto
+    public class PessoaGetDto
     {
         public int Codigo { get; set; }
         public string Nome { get; set; }

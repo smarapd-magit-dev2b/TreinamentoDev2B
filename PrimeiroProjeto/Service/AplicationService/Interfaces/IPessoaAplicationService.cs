@@ -5,6 +5,7 @@ namespace Service.AplicationService.Interfaces
 {
     public interface IPessoaAplicationService
     {
-        List<PessoaGetAllDto> GetAllDtos();
+        List<PessoaGetDto> GetAllDtos();
+        PessoaGetDto GetDtoPorId(int id);
     }
 }

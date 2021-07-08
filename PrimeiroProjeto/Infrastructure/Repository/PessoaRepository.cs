@@ -73,5 +73,7 @@ namespace Infrastructure.Repository
             };
 
         public List<Pessoa> GetPessoas() => _pessoas != null && _pessoas.Any() ? _pessoas : null;
+
+        public Pessoa GetPessoaPorId(int id) => _pessoas.FirstOrDefault(p => p.Id == id) ?? null;
     }
 }

@@ -6,5 +6,6 @@ namespace Infrastructure.Repository.Interfaces
     public interface IPessoaRepository
     {
         List<Pessoa> GetPessoas();
+        Pessoa GetPessoaPorId(int id);
     }
 }

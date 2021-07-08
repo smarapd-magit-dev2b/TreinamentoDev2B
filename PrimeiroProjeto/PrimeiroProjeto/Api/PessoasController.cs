@@ -14,11 +14,28 @@ namespace Interface.Api
         public PessoasController(IPessoaAplicationService pessoaAplicationService) => _pessoaAplicationService = pessoaAplicationService;
 
         [HttpGet]
-        public IActionResult GetAll()
+        public IActionResult Get()
         {
             try
             {
                 return Ok(_pessoaAplicationService.GetAllDtos());
+            }
+            catch (NegocioException ne)
+            {
+                return BadRequest(ne.Message);
+            }
+            catch (Exception)
+            {
+                return BadRequest("Erro inesperado");
+            }
+        }
+
+        [HttpGet("{id:int}")]
+        public IActionResult Get(int id)
+        {
+            try
+            {
+                return Ok(_pessoaAplicationService.GetDtoPorId(id));
             }
             catch (NegocioException ne)
             {
