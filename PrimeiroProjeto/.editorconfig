@@ -5,3 +5,12 @@ dotnet_analyzer_diagnostic.category-Style.severity = suggestion
 
 # IDE0021: Usar o corpo do bloco para construtores
 dotnet_diagnostic.IDE0021.severity = silent
+
+# IDE0022: Usar o corpo do bloco para métodos
+dotnet_diagnostic.IDE0022.severity = silent
+
+# IDE0058: O valor da expressão nunca é usado
+dotnet_diagnostic.IDE0058.severity = silent
+
+# IDE0011: Adicionar chaves
+dotnet_diagnostic.IDE0011.severity = silent

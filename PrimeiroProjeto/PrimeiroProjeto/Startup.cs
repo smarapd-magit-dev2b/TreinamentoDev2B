@@ -1,10 +1,15 @@
+using Infrastructure.Repository;
+using Infrastructure.Repository.Interfaces;
+using Infrastructure.UnitOfWork;
+using Infrastructure.UnitOfWork.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Service.AplicationService;
+using Service.AplicationService.Interfaces;
 
 namespace PrimeiroProjeto
 {
@@ -21,6 +26,10 @@ namespace PrimeiroProjeto
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSingleton<IPessoaAplicationService, PessoaAplicationService>();
+            services.AddSingleton<IPessoaUnitOfWork, PessoaUnitOfWork>();
+            services.AddSingleton<IPessoaRepository, PessoaRepository>();
+
             services.AddSwaggerGen(swagger =>
             {
                 swagger.SwaggerDoc("v1", new OpenApiInfo()

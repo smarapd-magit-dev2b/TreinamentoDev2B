@@ -2,12 +2,13 @@
 using Infrastructure.Repository.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Infrastructure.Repository
 {
     public class PessoaRepository : IPessoaRepository
     {
-        private List<Pessoa> _pessoas = new List<Pessoa>
+        private readonly List<Pessoa> _pessoas = new List<Pessoa>
             {
                 new Pessoa
                 {
@@ -71,9 +72,6 @@ namespace Infrastructure.Repository
                 }
             };
 
-        public List<Pessoa> GetPessoas()
-        {
-            return _pessoas;
-        }
+        public List<Pessoa> GetPessoas() => _pessoas != null && _pessoas.Any() ? _pessoas : null;
     }
 }

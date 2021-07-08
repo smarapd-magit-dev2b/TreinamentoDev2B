@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Commom\Commom.csproj" />
+    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
