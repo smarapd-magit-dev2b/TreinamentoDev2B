@@ -1,75 +1,79 @@
 ﻿using Domain.Entities;
+using Infrastructure.Repository.Interfaces;
 using System;
 using System.Collections.Generic;
 
 namespace Infrastructure.Repository
 {
-    public class PessoaRepository
+    public class PessoaRepository : IPessoaRepository
     {
         private List<Pessoa> _pessoas = new List<Pessoa>
             {
                 new Pessoa
                 {
                     Id = 1,
-                    Nome = "José",
-                    SobreNome = "Silva",
+                    Name = "José",
+                    LastName = "Silva",
                     Cpf = "497.500.270-19",
-                    Altura = 1.9m,
-                    DataNascimento = new DateTime(1993, 12, 9),
-                    Peso = 80.0m,
-                    Raca = "Branca",
-                    UsuarioAtivo = true
+                    Height = 1.9m,
+                    BirthDate = new DateTime(1993, 12, 9),
+                    Weight = 80.0m,
+                    Race = "Branca",
+                    Status = true
                 },
                 new Pessoa
                 {
                     Id = 10,
-                    Nome = "Willian",
-                    SobreNome = "Andrade",
+                    Name = "Willian",
+                    LastName = "Andrade",
                     Cpf = "009.630.700-53",
-                    Altura = 1.7m,
-                    DataNascimento = new DateTime(1950, 10, 4),
-                    Peso = 100.0m,
-                    Raca = "Negro",
-                    UsuarioAtivo = true
+                    Height = 1.7m,
+                    BirthDate = new DateTime(1950, 10, 4),
+                    Weight = 100.0m,
+                    Race = "Negro",
+                    Status = true
                 },
                 new Pessoa
                 {
                     Id = 4,
-                    Nome = "Silas",
-                    SobreNome = "Almeida",
+                    Name = "Silas",
+                    LastName = "Almeida",
                     Cpf = "164.656.030-20",
-                    Altura = 1.78m,
-                    DataNascimento = new DateTime(1968, 2, 2),
-                    Peso = 92.0m,
-                    Raca = "Branca",
-                    UsuarioAtivo = true,
+                    Height = 1.78m,
+                    BirthDate = new DateTime(1968, 2, 2),
+                    Weight = 92.0m,
+                    Race = "Branca",
+                    Status = true,
                 },
                 new Pessoa
                 {
                     Id = 77,
-                    Nome = "Glenison",
-                    SobreNome = "Honório",
+                    Name = "Glenison",
+                    LastName = "Honório",
                     Cpf = "916.876.230-58",
-                    Altura = 1.89m,
-                    DataNascimento = new DateTime(1991, 6, 28),
-                    Peso = 75,
-                    Raca = "Branca",
-                    UsuarioAtivo = false
+                    Height = 1.89m,
+                    BirthDate = new DateTime(1991, 6, 28),
+                    Weight = 75,
+                    Race = "Branca",
+                    Status = false
                 },
                 new Pessoa
                 {
                     Id = 90,
-                    Nome = "Gabriel",
-                    SobreNome = "Domingos",
+                    Name = "Gabriel",
+                    LastName = "Domingos",
                     Cpf = "421.694.740-99",
-                    Altura = 1.89m,
-                    DataNascimento = new DateTime(1991, 6, 28),
-                    Peso = 75,
-                    Raca = "Branca",
-                    UsuarioAtivo = true
+                    Height = 1.89m,
+                    BirthDate = new DateTime(1991, 6, 28),
+                    Weight = 75,
+                    Race = "Branca",
+                    Status = true
                 }
             };
 
-
+        public List<Pessoa> GetPessoas()
+        {
+            return _pessoas;
+        }
     }
 }

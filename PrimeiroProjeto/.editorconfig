@@ -1,0 +1,7 @@
+﻿[*.cs]
+
+# Default severity for analyzer diagnostics with category 'Style'
+dotnet_analyzer_diagnostic.category-Style.severity = suggestion
+
+# IDE0021: Usar o corpo do bloco para construtores
+dotnet_diagnostic.IDE0021.severity = silent

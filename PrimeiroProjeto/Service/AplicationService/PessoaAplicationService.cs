@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Service.AplicationService
+﻿namespace Service.AplicationService
 {
-    class PessoaAplicationService
+    public class PessoaAplicationService
     {
     }
 }
