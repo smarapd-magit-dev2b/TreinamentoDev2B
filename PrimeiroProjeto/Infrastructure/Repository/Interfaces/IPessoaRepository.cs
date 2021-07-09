@@ -11,5 +11,6 @@ namespace Infrastructure.Repository.Interfaces
         Pessoa GetPorId(int id);
         int PutPessoa(int id, Pessoa pessoa);
         int DeletePorId(int id);
+        int PutStatus(int id, bool status);
     }
 }

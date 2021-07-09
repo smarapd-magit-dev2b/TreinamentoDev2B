@@ -33,8 +33,7 @@ namespace Service.AplicationService
 
         public PessoaGetDto GetPorCodigo(int codigo)
         {
-            if (_uow.PessoaRepository.GetPorId(codigo) == null)
-                throw new NegocioException($"Pessoa com Id {codigo} não encontrada");
+            CodigoValidate(codigo);
 
             Pessoa pessoa = _uow.PessoaRepository.GetPorId(codigo);
 
@@ -101,6 +100,16 @@ namespace Service.AplicationService
                 throw new NegocioException("Não é possível deletar usuários ativos");
 
             return _uow.PessoaRepository.DeletePorId(codigo);
+        }
+
+        public int PutUsuario(int codigo, bool usuario)
+        {
+            CodigoValidate(codigo);
+
+            if (usuario == _uow.PessoaRepository.GetPorId(codigo).Status)
+                throw new NegocioException($"Pessoa com Código {codigo} {(usuario ? "já está ativa" : "já está desativada")}");
+
+            return _uow.PessoaRepository.PutStatus(codigo, usuario);
         }
 
         private void PessoaValidate(PessoaPostDto pessoaDto)

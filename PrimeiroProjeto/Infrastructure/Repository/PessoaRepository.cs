@@ -96,5 +96,12 @@ namespace Infrastructure.Repository
 
             return id;
         }
+
+        public int PutStatus(int id, bool status)
+        {
+            _pessoas[_pessoas.IndexOf(_pessoas.First(p => p.Id == id))].Status = status;
+
+            return id;
+        }
     }
 }

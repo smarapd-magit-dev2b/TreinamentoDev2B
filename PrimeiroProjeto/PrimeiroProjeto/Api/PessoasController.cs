@@ -53,7 +53,7 @@ namespace Interface.Api
         {
             try
             {
-                return Ok($"Pessoa com o Id {_pessoaAplicationService.Post(pessoaDto)} adicionada com Sucesso");
+                return Ok($"Pessoa com o Código {_pessoaAplicationService.Post(pessoaDto)} adicionada com Sucesso");
             }
             catch (NegocioException ne)
             {
@@ -70,7 +70,41 @@ namespace Interface.Api
         {
             try
             {
-                return Ok($"Pessoa com o Id {_pessoaAplicationService.Put(codigo, pessoaDto)} alterada com Sucesso");
+                return Ok($"Pessoa com o Código {_pessoaAplicationService.Put(codigo, pessoaDto)} alterada com Sucesso");
+            }
+            catch (NegocioException ne)
+            {
+                return BadRequest(ne.Message);
+            }
+            catch (Exception)
+            {
+                return BadRequest("Erro inesperado");
+            }
+        }
+
+        [HttpPut("{codigo:int}/ativar")]
+        public IActionResult PutAtivar(int codigo)
+        {
+            try
+            {
+                return Ok($"Pessoa com o Código {_pessoaAplicationService.PutUsuario(codigo, true)} foi ativada com Sucesso");
+            }
+            catch (NegocioException ne)
+            {
+                return BadRequest(ne.Message);
+            }
+            catch (Exception)
+            {
+                return BadRequest("Erro inesperado");
+            }
+        }
+
+        [HttpPut("{codigo:int}/desativar")]
+        public IActionResult PutDesativar(int codigo)
+        {
+            try
+            {
+                return Ok($"Pessoa com o Código {_pessoaAplicationService.PutUsuario(codigo, false)} foi desativada com Sucesso");
             }
             catch (NegocioException ne)
             {
@@ -87,7 +121,7 @@ namespace Interface.Api
         {
             try
             {
-                return Ok($"Pessoa com o Id {_pessoaAplicationService.DeletePorCodigo(id)} deletada com Sucesso");
+                return Ok($"Pessoa com o Código {_pessoaAplicationService.DeletePorCodigo(id)} deletada com Sucesso");
             }
             catch (NegocioException ne)
             {
