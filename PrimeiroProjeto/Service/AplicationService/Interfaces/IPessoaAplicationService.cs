@@ -5,9 +5,10 @@ namespace Service.AplicationService.Interfaces
 {
     public interface IPessoaAplicationService
     {
-        List<PessoaGetDto> GetAllDtos();
-        PessoaGetDto GetDtoPorId(int id);
-        int PostDto(PessoaPostDto pessoaDto);
-        int PutDto(int id, PessoaPostDto pessoaDto);
+        List<PessoaGetDto> Get();
+        PessoaGetDto GetPorCodigo(int codigo);
+        int Post(PessoaPostDto pessoaDto);
+        int Put(int codigo, PessoaPostDto pessoaDto);
+        int DeletePorCodigo(int codigo);
     }
 }

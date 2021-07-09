@@ -12,15 +12,10 @@ namespace Service.AplicationService
     public class PessoaAplicationService : IPessoaAplicationService
     {
         private readonly IPessoaUnitOfWork _uow;
-        private int _id;
 
-        public PessoaAplicationService(IPessoaUnitOfWork uow)
-        {
-            _uow = uow;
-            _id = _uow.PessoaRepository.GetPessoas().Count;
-        }
+        public PessoaAplicationService(IPessoaUnitOfWork uow) => _uow = uow;
 
-        public List<PessoaGetDto> GetAllDtos() => _uow.PessoaRepository.GetPessoas() != null
+        public List<PessoaGetDto> Get() => _uow.PessoaRepository.GetPessoas() != null
                 ? _uow.PessoaRepository.GetPessoas()
                 .Select(p => new PessoaGetDto
                 {
@@ -36,12 +31,12 @@ namespace Service.AplicationService
                 }).ToList()
                 : throw new NegocioException("Não há Pessoas cadastradas");
 
-        public PessoaGetDto GetDtoPorId(int id)
+        public PessoaGetDto GetPorCodigo(int codigo)
         {
-            if (_uow.PessoaRepository.GetPessoaPorId(id) == null)
-                throw new NegocioException($"Id {id} não encontrado");
+            if (_uow.PessoaRepository.GetPorId(codigo) == null)
+                throw new NegocioException($"Pessoa com Id {codigo} não encontrada");
 
-            Pessoa pessoa = _uow.PessoaRepository.GetPessoaPorId(id);
+            Pessoa pessoa = _uow.PessoaRepository.GetPorId(codigo);
 
             return new PessoaGetDto()
             {
@@ -57,9 +52,9 @@ namespace Service.AplicationService
             };
         }
 
-        public int PostDto(PessoaPostDto pessoaDto)
+        public int Post(PessoaPostDto pessoaDto)
         {
-            PessoaDtoValidate(pessoaDto);
+            PessoaValidate(pessoaDto);
 
             return _uow.PessoaRepository.PostPessoa(
                 new Pessoa
@@ -68,7 +63,7 @@ namespace Service.AplicationService
                     BirthDate = pessoaDto.DataNascimento,
                     Cpf = pessoaDto.DocumentoCpf,
                     Height = pessoaDto.Altura,
-                    Id = ++_id,
+                    Id = _uow.PessoaRepository.GetPessoas().Max(p => p.Id) + 1,
                     LastName = pessoaDto.SobreNome,
                     Race = pessoaDto.Raca,
                     Status = true,
@@ -76,22 +71,21 @@ namespace Service.AplicationService
                 });
         }
 
-        public int PutDto(int id, PessoaPostDto pessoaDto)
+        public int Put(int codigo, PessoaPostDto pessoaDto)
         {
-            if (_uow.PessoaRepository.GetPessoaPorId(id) == null)
-                throw new NegocioException($"Pessoa com Id {id} não existe");
+            CodigoValidate(codigo);
 
-            PessoaDtoValidate(pessoaDto);
+            PessoaValidate(pessoaDto);
 
             return _uow.PessoaRepository.PutPessoa(
-                id,
+                codigo,
                 new Pessoa
                 {
                     Name = pessoaDto.Nome,
                     BirthDate = pessoaDto.DataNascimento,
                     Cpf = pessoaDto.DocumentoCpf,
                     Height = pessoaDto.Altura,
-                    Id = id,
+                    Id = codigo,
                     LastName = pessoaDto.SobreNome,
                     Race = pessoaDto.Raca,
                     Status = true,
@@ -99,7 +93,17 @@ namespace Service.AplicationService
                 });
         }
 
-        private void PessoaDtoValidate(PessoaPostDto pessoaDto)
+        public int DeletePorCodigo(int codigo)
+        {
+            CodigoValidate(codigo);
+
+            if (_uow.PessoaRepository.GetPorId(codigo).Status)
+                throw new NegocioException("Não é possível deletar usuários ativos");
+
+            return _uow.PessoaRepository.DeletePorId(codigo);
+        }
+
+        private void PessoaValidate(PessoaPostDto pessoaDto)
         {
             if (DateTimeHelper.Idade(pessoaDto.DataNascimento) < 18)
                 throw new NegocioException("Só é aceito maiores de idade");
@@ -118,6 +122,12 @@ namespace Service.AplicationService
 
             if (!CpfHelper.Valido(pessoaDto.DocumentoCpf))
                 throw new NegocioException("Cpf inválido");
+        }
+
+        private void CodigoValidate(int codigo)
+        {
+            if (_uow.PessoaRepository.GetPorId(codigo) == null)
+                throw new NegocioException($"Pessoa com Código {codigo} não existe");
         }
     }
 }

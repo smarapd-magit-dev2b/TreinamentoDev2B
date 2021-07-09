@@ -8,7 +8,8 @@ namespace Infrastructure.Repository.Interfaces
         int PostPessoa(Pessoa pessoa);
 
         List<Pessoa> GetPessoas();
-        Pessoa GetPessoaPorId(int id);
+        Pessoa GetPorId(int id);
         int PutPessoa(int id, Pessoa pessoa);
+        int DeletePorId(int id);
     }
 }

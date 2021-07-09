@@ -19,7 +19,7 @@ namespace Interface.Api
         {
             try
             {
-                return Ok(_pessoaAplicationService.GetAllDtos());
+                return Ok(_pessoaAplicationService.Get());
             }
             catch (NegocioException ne)
             {
@@ -31,12 +31,12 @@ namespace Interface.Api
             }
         }
 
-        [HttpGet("{id:int}")]
-        public IActionResult Get(int id)
+        [HttpGet("{codigo:int}")]
+        public IActionResult Get(int codigo)
         {
             try
             {
-                return Ok(_pessoaAplicationService.GetDtoPorId(id));
+                return Ok(_pessoaAplicationService.GetPorCodigo(codigo));
             }
             catch (NegocioException ne)
             {
@@ -53,7 +53,7 @@ namespace Interface.Api
         {
             try
             {
-                return Ok($"Pessoa com o Id {_pessoaAplicationService.PostDto(pessoaDto)} adicionada com Sucesso");
+                return Ok($"Pessoa com o Id {_pessoaAplicationService.Post(pessoaDto)} adicionada com Sucesso");
             }
             catch (NegocioException ne)
             {
@@ -65,12 +65,29 @@ namespace Interface.Api
             }
         }
 
-        [HttpPut("{id:int}")]
-        public IActionResult Put(int id, [FromBody] PessoaPostDto pessoaDto)
+        [HttpPut("{codigo:int}")]
+        public IActionResult Put(int codigo, [FromBody] PessoaPostDto pessoaDto)
         {
             try
             {
-                return Ok($"Pessoa com o Id {_pessoaAplicationService.PutDto(id, pessoaDto)} alterada com Sucesso");
+                return Ok($"Pessoa com o Id {_pessoaAplicationService.Put(codigo, pessoaDto)} alterada com Sucesso");
+            }
+            catch (NegocioException ne)
+            {
+                return BadRequest(ne.Message);
+            }
+            catch (Exception)
+            {
+                return BadRequest("Erro inesperado");
+            }
+        }
+
+        [HttpDelete("{id:int}")]
+        public IActionResult Delete(int id)
+        {
+            try
+            {
+                return Ok($"Pessoa com o Id {_pessoaAplicationService.DeletePorCodigo(id)} deletada com Sucesso");
             }
             catch (NegocioException ne)
             {

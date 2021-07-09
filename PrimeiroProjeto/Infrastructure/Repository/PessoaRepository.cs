@@ -74,17 +74,25 @@ namespace Infrastructure.Repository
 
         public List<Pessoa> GetPessoas() => _pessoas != null && _pessoas.Any() ? _pessoas : null;
 
-        public Pessoa GetPessoaPorId(int id) => _pessoas.FirstOrDefault(p => p.Id == id) ?? null;
+        public Pessoa GetPorId(int id) => _pessoas.FirstOrDefault(p => p.Id == id) ?? null;
 
         public int PostPessoa(Pessoa pessoa)
         {
             _pessoas.Add(pessoa);
+
             return _pessoas.Last().Id;
         }
 
         public int PutPessoa(int id, Pessoa pessoa)
         {
             _pessoas[_pessoas.IndexOf(_pessoas.First(p => p.Id == id))] = pessoa;
+
+            return id;
+        }
+
+        public int DeletePorId(int id)
+        {
+            _pessoas.RemoveAll(p => p.Id == id);
 
             return id;
         }
