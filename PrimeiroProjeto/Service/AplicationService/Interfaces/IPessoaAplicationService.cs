@@ -9,7 +9,8 @@ namespace Service.AplicationService.Interfaces
         PessoaGetDto GetPorCodigo(int codigo);
         int Post(PessoaPostDto pessoaDto);
         int Put(int codigo, PessoaPostDto pessoaDto);
-        int DeletePorCodigo(int codigo);
-        int PutUsuario(int codigo, bool usuario);
+        int Delete(int codigo);
+        int PutUsuarioAtivo(int codigo, bool usuario);
+        int PutEssencial(int codigo, PessoaPutEssencialDto pessoaDto);
     }
 }

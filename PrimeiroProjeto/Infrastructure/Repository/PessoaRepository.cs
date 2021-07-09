@@ -71,28 +71,32 @@ namespace Infrastructure.Repository
                     Status = true
                 }
             };
-
-        public List<Pessoa> GetPessoas() => _pessoas != null && _pessoas.Any() ? _pessoas : null;
+        #region Get
+        public List<Pessoa> Get() => _pessoas != null && _pessoas.Any() ? _pessoas : null;
 
         public Pessoa GetPorId(int id) => _pessoas.FirstOrDefault(p => p.Id == id) ?? null;
-
-        public int PostPessoa(Pessoa pessoa)
+        #endregion
+        public int Post(Pessoa pessoa)
         {
             _pessoas.Add(pessoa);
 
             return _pessoas.Last().Id;
         }
-
-        public int PutPessoa(int id, Pessoa pessoa)
+        #region Put
+        public int Put(int id, Pessoa pessoa)
         {
             _pessoas[_pessoas.IndexOf(_pessoas.First(p => p.Id == id))] = pessoa;
 
             return id;
         }
 
-        public int DeletePorId(int id)
+        public int PutPessoaEssencial(int id, Pessoa pessoa)
         {
-            _pessoas.RemoveAll(p => p.Id == id);
+            int indice = _pessoas.IndexOf(_pessoas.First(p => p.Id == id));
+
+            _pessoas[indice].Name = pessoa.Name;
+            _pessoas[indice].LastName = pessoa.LastName;
+            _pessoas[indice].Cpf = pessoa.Cpf;
 
             return id;
         }
@@ -100,6 +104,13 @@ namespace Infrastructure.Repository
         public int PutStatus(int id, bool status)
         {
             _pessoas[_pessoas.IndexOf(_pessoas.First(p => p.Id == id))].Status = status;
+
+            return id;
+        }
+        #endregion
+        public int Delete(int id)
+        {
+            _pessoas.RemoveAll(p => p.Id == id);
 
             return id;
         }

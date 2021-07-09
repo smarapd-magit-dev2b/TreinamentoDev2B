@@ -23,7 +23,7 @@ namespace Interface.Api
             }
             catch (NegocioException ne)
             {
-                return BadRequest(ne.Message);
+                return Conflict(ne.Message);
             }
             catch (Exception)
             {
@@ -40,7 +40,7 @@ namespace Interface.Api
             }
             catch (NegocioException ne)
             {
-                return BadRequest(ne.Message);
+                return Conflict(ne.Message);
             }
             catch (Exception)
             {
@@ -57,7 +57,7 @@ namespace Interface.Api
             }
             catch (NegocioException ne)
             {
-                return BadRequest(ne.Message);
+                return Conflict(ne.Message);
             }
             catch (Exception)
             {
@@ -74,7 +74,24 @@ namespace Interface.Api
             }
             catch (NegocioException ne)
             {
-                return BadRequest(ne.Message);
+                return Conflict(ne.Message);
+            }
+            catch (Exception)
+            {
+                return BadRequest("Erro inesperado");
+            }
+        }
+
+        [HttpPut("{codigo:int}/essencial")]
+        public IActionResult PutEssencial(int codigo, [FromBody] PessoaPutEssencialDto pessoaDto)
+        {
+            try
+            {
+                return Ok($"Pessoa com o Código {_pessoaAplicationService.PutEssencial(codigo, pessoaDto)} atualizada com Sucesso");
+            }
+            catch (NegocioException ne)
+            {
+                return Conflict(ne.Message);
             }
             catch (Exception)
             {
@@ -87,11 +104,11 @@ namespace Interface.Api
         {
             try
             {
-                return Ok($"Pessoa com o Código {_pessoaAplicationService.PutUsuario(codigo, true)} foi ativada com Sucesso");
+                return Ok($"Pessoa com o Código {_pessoaAplicationService.PutUsuarioAtivo(codigo, true)} foi ativada com Sucesso");
             }
             catch (NegocioException ne)
             {
-                return BadRequest(ne.Message);
+                return Conflict(ne.Message);
             }
             catch (Exception)
             {
@@ -104,11 +121,11 @@ namespace Interface.Api
         {
             try
             {
-                return Ok($"Pessoa com o Código {_pessoaAplicationService.PutUsuario(codigo, false)} foi desativada com Sucesso");
+                return Ok($"Pessoa com o Código {_pessoaAplicationService.PutUsuarioAtivo(codigo, false)} foi desativada com Sucesso");
             }
             catch (NegocioException ne)
             {
-                return BadRequest(ne.Message);
+                return Conflict(ne.Message);
             }
             catch (Exception)
             {
@@ -121,11 +138,11 @@ namespace Interface.Api
         {
             try
             {
-                return Ok($"Pessoa com o Código {_pessoaAplicationService.DeletePorCodigo(id)} deletada com Sucesso");
+                return Ok($"Pessoa com o Código {_pessoaAplicationService.Delete(id)} deletada com Sucesso");
             }
             catch (NegocioException ne)
             {
-                return BadRequest(ne.Message);
+                return Conflict(ne.Message);
             }
             catch (Exception)
             {

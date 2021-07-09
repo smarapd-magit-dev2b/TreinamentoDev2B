@@ -5,12 +5,13 @@ namespace Infrastructure.Repository.Interfaces
 {
     public interface IPessoaRepository
     {
-        int PostPessoa(Pessoa pessoa);
+        int Post(Pessoa pessoa);
 
-        List<Pessoa> GetPessoas();
+        List<Pessoa> Get();
         Pessoa GetPorId(int id);
-        int PutPessoa(int id, Pessoa pessoa);
-        int DeletePorId(int id);
+        int Put(int id, Pessoa pessoa);
+        int Delete(int id);
         int PutStatus(int id, bool status);
+        int PutPessoaEssencial(int id, Pessoa pessoa);
     }
 }

@@ -14,9 +14,9 @@ namespace Service.AplicationService
         private readonly IPessoaUnitOfWork _uow;
 
         public PessoaAplicationService(IPessoaUnitOfWork uow) => _uow = uow;
-
-        public List<PessoaGetDto> Get() => _uow.PessoaRepository.GetPessoas() != null
-                ? _uow.PessoaRepository.GetPessoas()
+        #region Get
+        public List<PessoaGetDto> Get() => _uow.PessoaRepository.Get() != null
+                ? _uow.PessoaRepository.Get()
                 .Select(p => new PessoaGetDto
                 {
                     Nome = p.Name,
@@ -50,33 +50,33 @@ namespace Service.AplicationService
                 Raca = pessoa.Race
             };
         }
-
+        #endregion
         public int Post(PessoaPostDto pessoaDto)
         {
             PessoaValidate(pessoaDto);
 
-            return _uow.PessoaRepository.PostPessoa(
+            return _uow.PessoaRepository.Post(
                 new Pessoa
                 {
                     Name = pessoaDto.Nome,
                     BirthDate = pessoaDto.DataNascimento,
                     Cpf = pessoaDto.DocumentoCpf,
                     Height = pessoaDto.Altura,
-                    Id = _uow.PessoaRepository.GetPessoas().Max(p => p.Id) + 1,
+                    Id = _uow.PessoaRepository.Get().Max(p => p.Id) + 1,
                     LastName = pessoaDto.SobreNome,
                     Race = pessoaDto.Raca,
                     Status = true,
                     Weight = pessoaDto.Peso
                 });
         }
-
+        #region Put
         public int Put(int codigo, PessoaPostDto pessoaDto)
         {
             CodigoValidate(codigo);
 
             PessoaValidate(pessoaDto);
 
-            return _uow.PessoaRepository.PutPessoa(
+            return _uow.PessoaRepository.Put(
                 codigo,
                 new Pessoa
                 {
@@ -92,17 +92,21 @@ namespace Service.AplicationService
                 });
         }
 
-        public int DeletePorCodigo(int codigo)
+        public int PutEssencial(int codigo, PessoaPutEssencialDto pessoaDto)
         {
             CodigoValidate(codigo);
 
-            if (_uow.PessoaRepository.GetPorId(codigo).Status)
-                throw new NegocioException("Não é possível deletar usuários ativos");
+            PessoaValidateEssencial(pessoaDto);
 
-            return _uow.PessoaRepository.DeletePorId(codigo);
+            return _uow.PessoaRepository.PutPessoaEssencial(codigo, new Pessoa
+            {
+                Name = pessoaDto.Nome,
+                LastName = pessoaDto.SobreNome,
+                Cpf = pessoaDto.DocumentoCpf
+            });
         }
 
-        public int PutUsuario(int codigo, bool usuario)
+        public int PutUsuarioAtivo(int codigo, bool usuario)
         {
             CodigoValidate(codigo);
 
@@ -111,12 +115,19 @@ namespace Service.AplicationService
 
             return _uow.PessoaRepository.PutStatus(codigo, usuario);
         }
-
-        private void PessoaValidate(PessoaPostDto pessoaDto)
+        #endregion
+        public int Delete(int codigo)
         {
-            if (DateTimeHelper.Idade(pessoaDto.DataNascimento) < 18)
-                throw new NegocioException("Só é aceito maiores de idade");
+            CodigoValidate(codigo);
 
+            if (_uow.PessoaRepository.GetPorId(codigo).Status)
+                throw new NegocioException("Não é possível deletar usuários ativos");
+
+            return _uow.PessoaRepository.Delete(codigo);
+        }
+        #region Validate
+        private void PessoaValidateEssencial(PessoaPutEssencialDto pessoaDto)
+        {
             if (string.IsNullOrEmpty(pessoaDto.Nome))
                 throw new NegocioException("O campo Nome deve ser preenchido");
 
@@ -132,11 +143,24 @@ namespace Service.AplicationService
             if (!CpfHelper.Valido(pessoaDto.DocumentoCpf))
                 throw new NegocioException("Cpf inválido");
         }
+        private void PessoaValidate(PessoaPostDto pessoaDto)
+        {
+            PessoaValidateEssencial(new PessoaPutEssencialDto()
+            {
+                Nome = pessoaDto.Nome,
+                SobreNome = pessoaDto.SobreNome,
+                DocumentoCpf = pessoaDto.DocumentoCpf
+            });
+
+            if (DateTimeHelper.Idade(pessoaDto.DataNascimento) < 18)
+                throw new NegocioException("Só é aceito maiores de idade");
+        }
 
         private void CodigoValidate(int codigo)
         {
             if (_uow.PessoaRepository.GetPorId(codigo) == null)
                 throw new NegocioException($"Pessoa com Código {codigo} não existe");
         }
+        #endregion
     }
 }
