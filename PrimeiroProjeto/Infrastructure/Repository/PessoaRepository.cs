@@ -76,12 +76,35 @@ namespace Infrastructure.Repository
 
         public Pessoa GetPorId(int id) => _pessoas.FirstOrDefault(p => p.Id == id) ?? null;
         #endregion
+        #region Post
         public int Post(Pessoa pessoa)
         {
             _pessoas.Add(pessoa);
 
             return _pessoas.Last().Id;
         }
+
+        public int Post(int idPai, int idFilho)
+        {
+            Pessoa pai = _pessoas[_pessoas.IndexOf(_pessoas.First(p => p.Id == idPai))];
+
+            if (pai.Filhos == null)
+                pai.Filhos = new List<Pessoa>();
+
+            pai.Filhos.Add
+            (
+                _pessoas
+                [
+                    _pessoas.IndexOf
+                    (
+                        _pessoas.First(p => p.Id == idFilho)
+                    )
+                ]
+            );
+
+            return idFilho;
+        }
+        #endregion
         #region Put
         public int Put(int id, Pessoa pessoa)
         {

@@ -6,8 +6,10 @@ namespace Service.AplicationService.Interfaces
     public interface IPessoaAplicationService
     {
         List<PessoaGetDto> Get();
-        PessoaGetDto GetPorCodigo(int codigo);
+        PessoaGetDtoPorCodigo GetPorCodigo(int codigo);
         int Post(PessoaPostDto pessoaDto);
+        int Post(int codigo, PessoaPostDto pessoaDto);
+        void Post(int codigo, List<PessoaPostDto> pessoasDto);
         int Put(int codigo, PessoaPostDto pessoaDto);
         int Delete(int codigo);
         int PutUsuarioAtivo(int codigo, bool usuario);

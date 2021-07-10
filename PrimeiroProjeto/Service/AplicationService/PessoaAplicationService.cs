@@ -17,40 +17,31 @@ namespace Service.AplicationService
         #region Get
         public List<PessoaGetDto> Get() => _uow.PessoaRepository.Get() != null
                 ? _uow.PessoaRepository.Get()
-                .Select(p => new PessoaGetDto
-                {
-                    Nome = p.Name,
-                    SobreNome = p.LastName,
-                    Altura = p.Height,
-                    Peso = p.Weight,
-                    DataNascimento = p.BirthDate,
-                    UsuarioAtivo = p.Status,
-                    DocumentoCpf = p.Cpf,
-                    Codigo = p.Id,
-                    Raca = p.Race
-                }).ToList()
+                .Select(p => PessoaHelper.ToPessoaGetDto(p)).ToList()
                 : throw new NegocioException("Não há Pessoas cadastradas");
 
-        public PessoaGetDto GetPorCodigo(int codigo)
+        public PessoaGetDtoPorCodigo GetPorCodigo(int codigo)
         {
             CodigoValidate(codigo);
 
             Pessoa pessoa = _uow.PessoaRepository.GetPorId(codigo);
 
-            return new PessoaGetDto()
+            List<Pessoa> filhos = pessoa.Filhos;
+
+            PessoaGetDtoPorCodigo pessoaDto = PessoaHelper.ToPessoaGetDtoPorCodigo(pessoa);
+
+            if (filhos != null)
             {
-                Nome = pessoa.Name,
-                SobreNome = pessoa.LastName,
-                Altura = pessoa.Height,
-                Peso = pessoa.Weight,
-                DataNascimento = pessoa.BirthDate,
-                UsuarioAtivo = pessoa.Status,
-                DocumentoCpf = pessoa.Cpf,
-                Codigo = pessoa.Id,
-                Raca = pessoa.Race
-            };
+                pessoaDto.Filhos = new List<PessoaGetDto>();
+
+                foreach (Pessoa filho in filhos)
+                    pessoaDto.Filhos.Add(PessoaHelper.ToPessoaGetDto(filho));
+            }
+
+            return pessoaDto;
         }
         #endregion
+        #region Post
         public int Post(PessoaPostDto pessoaDto)
         {
             PessoaValidate(pessoaDto);
@@ -69,6 +60,32 @@ namespace Service.AplicationService
                     Weight = pessoaDto.Peso
                 });
         }
+
+        public int Post(int codigo, PessoaPostDto pessoaDto)
+        {
+            CodigoValidate(codigo);
+
+            int idFilho = Post(pessoaDto);
+
+            return _uow.PessoaRepository.Post(codigo, idFilho);
+        }
+
+        public void Post(int codigo, List<PessoaPostDto> pessoasDto)
+        {
+            CodigoValidate(codigo);
+
+            foreach (PessoaPostDto pessoaDto in pessoasDto)
+                PessoaValidate(pessoaDto);
+
+            List<int> idsFilhos = new List<int>();
+
+            foreach (PessoaPostDto pessoaDto in pessoasDto)
+                idsFilhos.Add(Post(pessoaDto));
+
+            foreach (int idFilho in idsFilhos)
+                _uow.PessoaRepository.Post(codigo, idFilho);
+        }
+        #endregion
         #region Put
         public int Put(int codigo, PessoaPostDto pessoaDto)
         {

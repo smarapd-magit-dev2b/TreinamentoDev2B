@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Domain.Entities
 {
@@ -13,5 +14,6 @@ namespace Domain.Entities
         public string Race { get; set; }
         public bool Status { get; set; }
         public string Cpf { get; set; }
+        public List<Pessoa> Filhos { get; set; }
     }
 }

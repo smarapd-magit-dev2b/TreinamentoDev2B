@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Commom.Dto
 {
-    public class PessoaGetDto
+    public class PessoaGetDtoPorCodigo
     {
         public int Codigo { get; set; }
         public string Nome { get; set; }
@@ -13,6 +14,6 @@ namespace Commom.Dto
         public string Raca { get; set; }
         public bool UsuarioAtivo { get; set; }
         public string DocumentoCpf { get; set; }
-        public int Filhos { get; set; }
+        public List<PessoaGetDto> Filhos { get; set; }
     }
 }
