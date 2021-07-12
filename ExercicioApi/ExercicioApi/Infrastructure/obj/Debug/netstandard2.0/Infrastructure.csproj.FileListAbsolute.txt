@@ -1,0 +1,14 @@
+D:\dev2b\TreinamentoDev2B\ExercicioApi\ExercicioApi\Infrastructure\bin\Debug\netstandard2.0\Infrastructure.deps.json
+D:\dev2b\TreinamentoDev2B\ExercicioApi\ExercicioApi\Infrastructure\bin\Debug\netstandard2.0\Infrastructure.dll
+D:\dev2b\TreinamentoDev2B\ExercicioApi\ExercicioApi\Infrastructure\bin\Debug\netstandard2.0\Infrastructure.pdb
+D:\dev2b\TreinamentoDev2B\ExercicioApi\ExercicioApi\Infrastructure\bin\Debug\netstandard2.0\Common.dll
+D:\dev2b\TreinamentoDev2B\ExercicioApi\ExercicioApi\Infrastructure\bin\Debug\netstandard2.0\Domain.dll
+D:\dev2b\TreinamentoDev2B\ExercicioApi\ExercicioApi\Infrastructure\bin\Debug\netstandard2.0\Common.pdb
+D:\dev2b\TreinamentoDev2B\ExercicioApi\ExercicioApi\Infrastructure\bin\Debug\netstandard2.0\Domain.pdb
+D:\dev2b\TreinamentoDev2B\ExercicioApi\ExercicioApi\Infrastructure\obj\Debug\netstandard2.0\Infrastructure.csprojAssemblyReference.cache
+D:\dev2b\TreinamentoDev2B\ExercicioApi\ExercicioApi\Infrastructure\obj\Debug\netstandard2.0\Infrastructure.AssemblyInfoInputs.cache
+D:\dev2b\TreinamentoDev2B\ExercicioApi\ExercicioApi\Infrastructure\obj\Debug\netstandard2.0\Infrastructure.AssemblyInfo.cs
+D:\dev2b\TreinamentoDev2B\ExercicioApi\ExercicioApi\Infrastructure\obj\Debug\netstandard2.0\Infrastructure.csproj.CoreCompileInputs.cache
+D:\dev2b\TreinamentoDev2B\ExercicioApi\ExercicioApi\Infrastructure\obj\Debug\netstandard2.0\Infrastructure.csproj.CopyComplete
+D:\dev2b\TreinamentoDev2B\ExercicioApi\ExercicioApi\Infrastructure\obj\Debug\netstandard2.0\Infrastructure.dll
+D:\dev2b\TreinamentoDev2B\ExercicioApi\ExercicioApi\Infrastructure\obj\Debug\netstandard2.0\Infrastructure.pdb

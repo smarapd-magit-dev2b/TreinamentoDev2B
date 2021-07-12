@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "khTmGqIv7A1SQG9mPaDz1k9mawno8icRUmPeVwirqRp/opqO2WGvlXXnYG6pc/FtOCDa3QADHOVputlMegxiWw==",
+  "dgSpecHash": "dmtSMLA4sFSais97+4Y2x+WfuB48VwF5TebT5xpmB737DrvYV/hOqZgqC66OYOmDF7IcHQt/m+uVze9GPBHZBQ==",
   "success": true,
-  "projectFilePath": "D:\\dev2B\\TreinamentoDev2B\\Dev2B\\Aula6\\Aula6.csproj",
+  "projectFilePath": "D:\\dev2b\\TreinamentoDev2B\\Dev2B\\Aula6\\Aula6.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yaquissak\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\yaquissak\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

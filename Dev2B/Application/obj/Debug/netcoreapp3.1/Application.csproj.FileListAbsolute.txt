@@ -24,3 +24,5 @@ D:\dev2B\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.
 D:\dev2B\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.dll
 D:\dev2B\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.pdb
 D:\dev2B\TreinamentoDev2B\Dev2B\Application\obj\Debug\netcoreapp3.1\Application.genruntimeconfig.cache
+D:\dev2B\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula7.dll
+D:\dev2B\TreinamentoDev2B\Dev2B\Application\bin\Debug\netcoreapp3.1\Aula7.pdb

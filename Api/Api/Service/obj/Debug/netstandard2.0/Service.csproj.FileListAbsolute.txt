@@ -1,0 +1,16 @@
+D:\dev2b\TreinamentoDev2B\Api\Api\Service\bin\Debug\netstandard2.0\Service.deps.json
+D:\dev2b\TreinamentoDev2B\Api\Api\Service\bin\Debug\netstandard2.0\Service.dll
+D:\dev2b\TreinamentoDev2B\Api\Api\Service\bin\Debug\netstandard2.0\Service.pdb
+D:\dev2b\TreinamentoDev2B\Api\Api\Service\bin\Debug\netstandard2.0\Common.dll
+D:\dev2b\TreinamentoDev2B\Api\Api\Service\bin\Debug\netstandard2.0\Domain.dll
+D:\dev2b\TreinamentoDev2B\Api\Api\Service\bin\Debug\netstandard2.0\Infrastructure.dll
+D:\dev2b\TreinamentoDev2B\Api\Api\Service\bin\Debug\netstandard2.0\Common.pdb
+D:\dev2b\TreinamentoDev2B\Api\Api\Service\bin\Debug\netstandard2.0\Domain.pdb
+D:\dev2b\TreinamentoDev2B\Api\Api\Service\bin\Debug\netstandard2.0\Infrastructure.pdb
+D:\dev2b\TreinamentoDev2B\Api\Api\Service\obj\Debug\netstandard2.0\Service.csprojAssemblyReference.cache
+D:\dev2b\TreinamentoDev2B\Api\Api\Service\obj\Debug\netstandard2.0\Service.AssemblyInfoInputs.cache
+D:\dev2b\TreinamentoDev2B\Api\Api\Service\obj\Debug\netstandard2.0\Service.AssemblyInfo.cs
+D:\dev2b\TreinamentoDev2B\Api\Api\Service\obj\Debug\netstandard2.0\Service.csproj.CoreCompileInputs.cache
+D:\dev2b\TreinamentoDev2B\Api\Api\Service\obj\Debug\netstandard2.0\Service.csproj.CopyComplete
+D:\dev2b\TreinamentoDev2B\Api\Api\Service\obj\Debug\netstandard2.0\Service.dll
+D:\dev2b\TreinamentoDev2B\Api\Api\Service\obj\Debug\netstandard2.0\Service.pdb

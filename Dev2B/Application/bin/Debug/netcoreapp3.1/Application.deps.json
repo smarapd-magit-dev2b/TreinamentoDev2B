@@ -13,7 +13,8 @@
           "Aula3": "1.0.0",
           "Aula4": "1.0.0",
           "Aula5": "1.0.0",
-          "Aula6": "1.0.0"
+          "Aula6": "1.0.0",
+          "Aula7": "1.0.0"
         },
         "runtime": {
           "Application.dll": {}
@@ -47,6 +48,11 @@
       "Aula6/1.0.0": {
         "runtime": {
           "Aula6.dll": {}
+        }
+      },
+      "Aula7/1.0.0": {
+        "runtime": {
+          "Aula7.dll": {}
         }
       }
     }
@@ -83,6 +89,11 @@
       "sha512": ""
     },
     "Aula6/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aula7/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

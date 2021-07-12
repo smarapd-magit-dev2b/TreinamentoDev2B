@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "QFQPbBtap9n4qnj4G0ZJVKSLUcHDoDk2KgaPHA22CKhbZAFBi0eYEMU4Uv8LQ6G5X+kdNFogVvZ3ViRJCtFnxg==",
+  "success": true,
+  "projectFilePath": "D:\\dev2b\\TreinamentoDev2B\\ExercicioApi\\ExercicioApi\\Common\\Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\yaquissak\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\yaquissak\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

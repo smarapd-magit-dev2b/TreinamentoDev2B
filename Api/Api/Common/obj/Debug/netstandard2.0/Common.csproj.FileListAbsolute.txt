@@ -1,0 +1,9 @@
+D:\dev2b\TreinamentoDev2B\Api\Api\Common\bin\Debug\netstandard2.0\Common.deps.json
+D:\dev2b\TreinamentoDev2B\Api\Api\Common\bin\Debug\netstandard2.0\Common.dll
+D:\dev2b\TreinamentoDev2B\Api\Api\Common\bin\Debug\netstandard2.0\Common.pdb
+D:\dev2b\TreinamentoDev2B\Api\Api\Common\obj\Debug\netstandard2.0\Common.AssemblyInfoInputs.cache
+D:\dev2b\TreinamentoDev2B\Api\Api\Common\obj\Debug\netstandard2.0\Common.AssemblyInfo.cs
+D:\dev2b\TreinamentoDev2B\Api\Api\Common\obj\Debug\netstandard2.0\Common.csproj.CoreCompileInputs.cache
+D:\dev2b\TreinamentoDev2B\Api\Api\Common\obj\Debug\netstandard2.0\Common.dll
+D:\dev2b\TreinamentoDev2B\Api\Api\Common\obj\Debug\netstandard2.0\Common.pdb
+D:\dev2b\TreinamentoDev2B\Api\Api\Common\obj\Debug\netstandard2.0\Common.csprojAssemblyReference.cache

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\dev2B\\TreinamentoDev2B\\Dev2B\\Aula3\\Aula3.csproj": {}
+    "D:\\dev2b\\TreinamentoDev2B\\Dev2B\\Aula3\\Aula3.csproj": {}
   },
   "projects": {
-    "D:\\dev2B\\TreinamentoDev2B\\Dev2B\\Aula3\\Aula3.csproj": {
+    "D:\\dev2b\\TreinamentoDev2B\\Dev2B\\Aula3\\Aula3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dev2B\\TreinamentoDev2B\\Dev2B\\Aula3\\Aula3.csproj",
+        "projectUniqueName": "D:\\dev2b\\TreinamentoDev2B\\Dev2B\\Aula3\\Aula3.csproj",
         "projectName": "Aula3",
-        "projectPath": "D:\\dev2B\\TreinamentoDev2B\\Dev2B\\Aula3\\Aula3.csproj",
+        "projectPath": "D:\\dev2b\\TreinamentoDev2B\\Dev2B\\Aula3\\Aula3.csproj",
         "packagesPath": "C:\\Users\\yaquissak\\.nuget\\packages\\",
-        "outputPath": "D:\\dev2B\\TreinamentoDev2B\\Dev2B\\Aula3\\obj\\",
+        "outputPath": "D:\\dev2b\\TreinamentoDev2B\\Dev2B\\Aula3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yaquissak\\AppData\\Roaming\\NuGet\\NuGet.Config",

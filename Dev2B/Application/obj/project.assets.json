@@ -61,6 +61,16 @@
         "runtime": {
           "bin/placeholder/Aula6.dll": {}
         }
+      },
+      "Aula7/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Aula7.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula7.dll": {}
+        }
       }
     }
   },
@@ -94,6 +104,11 @@
       "type": "project",
       "path": "../Aula6/Aula6.csproj",
       "msbuildProject": "../Aula6/Aula6.csproj"
+    },
+    "Aula7/1.0.0": {
+      "type": "project",
+      "path": "../Aula7/Aula7.csproj",
+      "msbuildProject": "../Aula7/Aula7.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -103,7 +118,8 @@
       "Aula3 >= 1.0.0",
       "Aula4 >= 1.0.0",
       "Aula5 >= 1.0.0",
-      "Aula6 >= 1.0.0"
+      "Aula6 >= 1.0.0",
+      "Aula7 >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -112,11 +128,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dev2B\\TreinamentoDev2B\\Dev2B\\Application\\Application.csproj",
+      "projectUniqueName": "D:\\dev2b\\TreinamentoDev2B\\Dev2B\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "D:\\dev2B\\TreinamentoDev2B\\Dev2B\\Application\\Application.csproj",
+      "projectPath": "D:\\dev2b\\TreinamentoDev2B\\Dev2B\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\yaquissak\\.nuget\\packages\\",
-      "outputPath": "D:\\dev2B\\TreinamentoDev2B\\Dev2B\\Application\\obj\\",
+      "outputPath": "D:\\dev2b\\TreinamentoDev2B\\Dev2B\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\yaquissak\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -133,23 +149,26 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\dev2B\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj": {
-              "projectPath": "D:\\dev2B\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj"
+            "D:\\dev2b\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj": {
+              "projectPath": "D:\\dev2b\\TreinamentoDev2B\\Dev2B\\Aula1\\Aula1.csproj"
             },
-            "D:\\dev2B\\TreinamentoDev2B\\Dev2B\\Aula2\\Aula2.csproj": {
-              "projectPath": "D:\\dev2B\\TreinamentoDev2B\\Dev2B\\Aula2\\Aula2.csproj"
+            "D:\\dev2b\\TreinamentoDev2B\\Dev2B\\Aula2\\Aula2.csproj": {
+              "projectPath": "D:\\dev2b\\TreinamentoDev2B\\Dev2B\\Aula2\\Aula2.csproj"
             },
-            "D:\\dev2B\\TreinamentoDev2B\\Dev2B\\Aula3\\Aula3.csproj": {
-              "projectPath": "D:\\dev2B\\TreinamentoDev2B\\Dev2B\\Aula3\\Aula3.csproj"
+            "D:\\dev2b\\TreinamentoDev2B\\Dev2B\\Aula3\\Aula3.csproj": {
+              "projectPath": "D:\\dev2b\\TreinamentoDev2B\\Dev2B\\Aula3\\Aula3.csproj"
             },
-            "D:\\dev2B\\TreinamentoDev2B\\Dev2B\\Aula4\\Aula4.csproj": {
-              "projectPath": "D:\\dev2B\\TreinamentoDev2B\\Dev2B\\Aula4\\Aula4.csproj"
+            "D:\\dev2b\\TreinamentoDev2B\\Dev2B\\Aula4\\Aula4.csproj": {
+              "projectPath": "D:\\dev2b\\TreinamentoDev2B\\Dev2B\\Aula4\\Aula4.csproj"
             },
-            "D:\\dev2B\\TreinamentoDev2B\\Dev2B\\Aula5\\Aula5.csproj": {
-              "projectPath": "D:\\dev2B\\TreinamentoDev2B\\Dev2B\\Aula5\\Aula5.csproj"
+            "D:\\dev2b\\TreinamentoDev2B\\Dev2B\\Aula5\\Aula5.csproj": {
+              "projectPath": "D:\\dev2b\\TreinamentoDev2B\\Dev2B\\Aula5\\Aula5.csproj"
             },
-            "D:\\dev2B\\TreinamentoDev2B\\Dev2B\\Aula6\\Aula6.csproj": {
-              "projectPath": "D:\\dev2B\\TreinamentoDev2B\\Dev2B\\Aula6\\Aula6.csproj"
+            "D:\\dev2b\\TreinamentoDev2B\\Dev2B\\Aula6\\Aula6.csproj": {
+              "projectPath": "D:\\dev2b\\TreinamentoDev2B\\Dev2B\\Aula6\\Aula6.csproj"
+            },
+            "D:\\dev2b\\TreinamentoDev2B\\Dev2B\\Aula7\\Aula7.csproj": {
+              "projectPath": "D:\\dev2b\\TreinamentoDev2B\\Dev2B\\Aula7\\Aula7.csproj"
             }
           }
         }

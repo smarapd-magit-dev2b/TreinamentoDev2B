@@ -1,0 +1,9 @@
+D:\dev2b\TreinamentoDev2B\ExercicioApi\ExercicioApi\Domai\bin\Debug\netstandard2.0\Domain.deps.json
+D:\dev2b\TreinamentoDev2B\ExercicioApi\ExercicioApi\Domai\bin\Debug\netstandard2.0\Domain.dll
+D:\dev2b\TreinamentoDev2B\ExercicioApi\ExercicioApi\Domai\bin\Debug\netstandard2.0\Domain.pdb
+D:\dev2b\TreinamentoDev2B\ExercicioApi\ExercicioApi\Domai\obj\Debug\netstandard2.0\Domain.csprojAssemblyReference.cache
+D:\dev2b\TreinamentoDev2B\ExercicioApi\ExercicioApi\Domai\obj\Debug\netstandard2.0\Domain.AssemblyInfoInputs.cache
+D:\dev2b\TreinamentoDev2B\ExercicioApi\ExercicioApi\Domai\obj\Debug\netstandard2.0\Domain.AssemblyInfo.cs
+D:\dev2b\TreinamentoDev2B\ExercicioApi\ExercicioApi\Domai\obj\Debug\netstandard2.0\Domain.csproj.CoreCompileInputs.cache
+D:\dev2b\TreinamentoDev2B\ExercicioApi\ExercicioApi\Domai\obj\Debug\netstandard2.0\Domain.dll
+D:\dev2b\TreinamentoDev2B\ExercicioApi\ExercicioApi\Domai\obj\Debug\netstandard2.0\Domain.pdb

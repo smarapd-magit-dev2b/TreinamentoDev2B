@@ -1,0 +1,154 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.dll": {}
+        }
+      },
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
+        }
+      },
+      "Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Common": "1.0.0",
+          "Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infrastructure.dll": {}
+        }
+      },
+      "Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Common": "1.0.0",
+          "Domain": "1.0.0",
+          "Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Service.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Common/1.0.0": {
+      "type": "project",
+      "path": "../Common/Common.csproj",
+      "msbuildProject": "../Common/Common.csproj"
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domai/Domain.csproj",
+      "msbuildProject": "../Domai/Domain.csproj"
+    },
+    "Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Infrastructure/Infrastructure.csproj",
+      "msbuildProject": "../Infrastructure/Infrastructure.csproj"
+    },
+    "Service/1.0.0": {
+      "type": "project",
+      "path": "../Service/Service.csproj",
+      "msbuildProject": "../Service/Service.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Common >= 1.0.0",
+      "Domain >= 1.0.0",
+      "Service >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\yaquissak\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\dev2b\\TreinamentoDev2B\\ExercicioApi\\ExercicioApi\\ExercicioApi\\Interface.csproj",
+      "projectName": "Interface",
+      "projectPath": "D:\\dev2b\\TreinamentoDev2B\\ExercicioApi\\ExercicioApi\\ExercicioApi\\Interface.csproj",
+      "packagesPath": "C:\\Users\\yaquissak\\.nuget\\packages\\",
+      "outputPath": "D:\\dev2b\\TreinamentoDev2B\\ExercicioApi\\ExercicioApi\\ExercicioApi\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\yaquissak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://srvv24:9090/nuget": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "D:\\dev2b\\TreinamentoDev2B\\ExercicioApi\\ExercicioApi\\Common\\Common.csproj": {
+              "projectPath": "D:\\dev2b\\TreinamentoDev2B\\ExercicioApi\\ExercicioApi\\Common\\Common.csproj"
+            },
+            "D:\\dev2b\\TreinamentoDev2B\\ExercicioApi\\ExercicioApi\\Domai\\Domain.csproj": {
+              "projectPath": "D:\\dev2b\\TreinamentoDev2B\\ExercicioApi\\ExercicioApi\\Domai\\Domain.csproj"
+            },
+            "D:\\dev2b\\TreinamentoDev2B\\ExercicioApi\\ExercicioApi\\Service\\Service.csproj": {
+              "projectPath": "D:\\dev2b\\TreinamentoDev2B\\ExercicioApi\\ExercicioApi\\Service\\Service.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.408\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
