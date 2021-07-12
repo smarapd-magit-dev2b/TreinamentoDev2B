@@ -1,0 +1,321 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Aula02-API\\Interface.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Aula02-API\\Interface.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Aula02-API\\Interface.csproj",
+        "projectName": "Interface",
+        "projectPath": "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Aula02-API\\Interface.csproj",
+        "packagesPath": "C:\\Users\\desenvolvedor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Aula02-API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\desenvolvedor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Service\\Service.csproj": {
+                "projectPath": "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Service\\Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.1.4, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.1.4, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.1.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Common\\Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Common\\Common.csproj",
+        "projectName": "Common",
+        "projectPath": "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\desenvolvedor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\desenvolvedor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\desenvolvedor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\desenvolvedor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Infrastructure\\Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Infrastructure\\Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\desenvolvedor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\desenvolvedor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Service\\Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Service\\Service.csproj",
+        "projectName": "Service",
+        "projectPath": "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\desenvolvedor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\desenvolvedor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Common\\Common.csproj"
+              },
+              "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Domain\\Domain.csproj"
+              },
+              "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\API\\Aula02-API\\Infrastructure\\Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

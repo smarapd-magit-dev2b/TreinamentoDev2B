@@ -1,0 +1,15 @@
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Common\bin\Debug\net5.0\Common.deps.json
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Common\bin\Debug\net5.0\Common.dll
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Common\bin\Debug\net5.0\ref\Common.dll
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Common\bin\Debug\net5.0\Common.pdb
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Common\obj\Debug\net5.0\Common.csproj.AssemblyReference.cache
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Common\obj\Debug\net5.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Common\obj\Debug\net5.0\Common.AssemblyInfoInputs.cache
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Common\obj\Debug\net5.0\Common.AssemblyInfo.cs
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Common\obj\Debug\net5.0\Common.csproj.CoreCompileInputs.cache
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Common\obj\Debug\net5.0\Common.dll
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Common\obj\Debug\net5.0\ref\Common.dll
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Common\obj\Debug\net5.0\Common.pdb
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Common\bin\Debug\net5.0\Domain.dll
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Common\bin\Debug\net5.0\Domain.pdb
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Common\obj\Debug\net5.0\Common.csproj.CopyComplete

@@ -1,0 +1,15 @@
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\API\Aula01-API\Application\obj\Debug\net5.0\Application.csproj.AssemblyReference.cache
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\API\Aula01-API\Application\obj\Debug\net5.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\API\Aula01-API\Application\obj\Debug\net5.0\Application.AssemblyInfoInputs.cache
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\API\Aula01-API\Application\obj\Debug\net5.0\Application.AssemblyInfo.cs
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\API\Aula01-API\Application\obj\Debug\net5.0\Application.csproj.CoreCompileInputs.cache
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\API\Aula01-API\Application\bin\Debug\net5.0\Application.deps.json
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\API\Aula01-API\Application\bin\Debug\net5.0\Application.dll
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\API\Aula01-API\Application\bin\Debug\net5.0\ref\Application.dll
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\API\Aula01-API\Application\bin\Debug\net5.0\Application.pdb
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\API\Aula01-API\Application\bin\Debug\net5.0\Domain.dll
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\API\Aula01-API\Application\bin\Debug\net5.0\Domain.pdb
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\API\Aula01-API\Application\obj\Debug\net5.0\Application.csproj.CopyComplete
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\API\Aula01-API\Application\obj\Debug\net5.0\Application.dll
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\API\Aula01-API\Application\obj\Debug\net5.0\ref\Application.dll
+C:\Users\desenvolvedor\Desktop\Projetos\TreinamentoDev2B\Dev2B\API\Aula01-API\Application\obj\Debug\net5.0\Application.pdb

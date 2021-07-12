@@ -1,0 +1,15 @@
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Infrastructure\bin\Debug\net5.0\Infrastructure.deps.json
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Infrastructure\bin\Debug\net5.0\Infrastructure.dll
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Infrastructure\bin\Debug\net5.0\ref\Infrastructure.dll
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Infrastructure\bin\Debug\net5.0\Infrastructure.pdb
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Infrastructure\bin\Debug\net5.0\Domain.dll
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Infrastructure\bin\Debug\net5.0\Domain.pdb
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Infrastructure\obj\Debug\net5.0\Infrastructure.csproj.AssemblyReference.cache
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Infrastructure\obj\Debug\net5.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Infrastructure\obj\Debug\net5.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Infrastructure\obj\Debug\net5.0\Infrastructure.AssemblyInfo.cs
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Infrastructure\obj\Debug\net5.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Infrastructure\obj\Debug\net5.0\Infrastructure.csproj.CopyComplete
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Infrastructure\obj\Debug\net5.0\Infrastructure.dll
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Infrastructure\obj\Debug\net5.0\ref\Infrastructure.dll
+C:\Users\desenvolvedor\OneDrive\Área de Trabalho\Projetos\TreinamentoDev2B\Dev2B\API\Aula02-API\Infrastructure\obj\Debug\net5.0\Infrastructure.pdb

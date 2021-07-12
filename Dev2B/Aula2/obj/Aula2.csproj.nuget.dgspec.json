@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\desenvolvedor\\Desktop\\Projetos\\TreinamentoDev2B\\Dev2B\\Aula2\\Aula2.csproj": {}
+    "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\Dev2B\\Aula2\\Aula2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\desenvolvedor\\Desktop\\Projetos\\TreinamentoDev2B\\Dev2B\\Aula2\\Aula2.csproj": {
+    "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\Dev2B\\Aula2\\Aula2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\desenvolvedor\\Desktop\\Projetos\\TreinamentoDev2B\\Dev2B\\Aula2\\Aula2.csproj",
+        "projectUniqueName": "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\Dev2B\\Aula2\\Aula2.csproj",
         "projectName": "Aula2",
-        "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\Projetos\\TreinamentoDev2B\\Dev2B\\Aula2\\Aula2.csproj",
+        "projectPath": "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\Dev2B\\Aula2\\Aula2.csproj",
         "packagesPath": "C:\\Users\\desenvolvedor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\desenvolvedor\\Desktop\\Projetos\\TreinamentoDev2B\\Dev2B\\Aula2\\obj\\",
+        "outputPath": "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\Dev2B\\Aula2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\desenvolvedor\\AppData\\Roaming\\NuGet\\NuGet.Config",

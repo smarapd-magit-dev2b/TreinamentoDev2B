@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\desenvolvedor\\Desktop\\Projetos\\TreinamentoDev2B\\Dev2B\\Aula5\\Aula5.csproj",
+      "projectUniqueName": "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\Dev2B\\Aula5\\Aula5.csproj",
       "projectName": "Aula5",
-      "projectPath": "C:\\Users\\desenvolvedor\\Desktop\\Projetos\\TreinamentoDev2B\\Dev2B\\Aula5\\Aula5.csproj",
+      "projectPath": "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\Dev2B\\Aula5\\Aula5.csproj",
       "packagesPath": "C:\\Users\\desenvolvedor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\desenvolvedor\\Desktop\\Projetos\\TreinamentoDev2B\\Dev2B\\Aula5\\obj\\",
+      "outputPath": "C:\\Users\\desenvolvedor\\OneDrive\\Área de Trabalho\\Projetos\\TreinamentoDev2B\\Dev2B\\Aula5\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\desenvolvedor\\AppData\\Roaming\\NuGet\\NuGet.Config",
