@@ -17,15 +17,16 @@ namespace Interface.Controllers
         {
             PessoaApplicationService = pessoaApplicationService;
         }
-        [HttpGet]
+        [HttpGet("GetAll")]
         public IActionResult GetAll()
         {
             var lista = PessoaApplicationService.GetAll();
 
             return Ok(lista);
         }
+
         [HttpGet("{id:int}")]
-        public IActionResult GetId(int id)
+        public IActionResult GetById(int id)
         {
             try
             {
@@ -47,7 +48,7 @@ namespace Interface.Controllers
         {
             try
             {
-                var id = PessoaApplicationService.AdicionarPessoa(pessoa);
+                var id = PessoaApplicationService.AddPessoa(pessoa);
                 return Ok($"Pessoa adicionada com Id: {id}");
             }
             catch (DomainException de)
@@ -60,12 +61,12 @@ namespace Interface.Controllers
             }
         }
 
-        [HttpPost("{id:int}")]
+        [HttpPost("Filho/{id:int}")]
         public IActionResult PostFilhos(int id, [FromBody] PessoaFilhosPutDto pessoa)
         {
             try
             {
-                PessoaApplicationService.AdicionarFilho(id, pessoa);
+                PessoaApplicationService.AddFilho(id, pessoa);
                 return Ok($"Adicionado filho da Pessoa com Id: {id}");
             }
             catch (DomainException de)
@@ -83,7 +84,7 @@ namespace Interface.Controllers
         {
             try
             {
-                PessoaApplicationService.EditarPessoa(id, pessoa);
+                PessoaApplicationService.EditPessoa(id, pessoa);
                 return Ok($"Pessoa editada com Id: {id}");
             }
             catch (DomainException de)
@@ -101,7 +102,7 @@ namespace Interface.Controllers
         {
             try
             {
-                PessoaApplicationService.DeletarPessoa(id);
+                PessoaApplicationService.DeletePessoa(id);
                 return Ok($"Pessoa removida com Id: {id}");
             }
             catch (DomainException de)
@@ -115,12 +116,12 @@ namespace Interface.Controllers
 
         }
 
-        [HttpPatch("{id:int}")]
-        public IActionResult Patch(int id, [FromBody] PessoaPatchDto pessoa)
+        [HttpPut("EditInfo/{id:int}")]
+        public IActionResult Patch(int id, [FromBody] PessoaEditInfoPutDto pessoa)
         {
             try
             {
-                PessoaApplicationService.AtualizarPessoa(id, pessoa);
+                PessoaApplicationService.EditInfoPessoa(id, pessoa);
                 return Ok($"Pessoa atualizada com Id: {id}");
             }
             catch (DomainException de)
@@ -133,12 +134,12 @@ namespace Interface.Controllers
             }
         }
 
-        [HttpPatch("ActivateUser/{id:int}")]
-        public IActionResult PutUsuarioActivate(int id)
+        [HttpPut("EnableUser/{id:int}")]
+        public IActionResult PutEnableUser(int id)
         {
             try
             {
-                PessoaApplicationService.AtivarUsuario(id);
+                PessoaApplicationService.EnableUser(id);
                 return Ok($"A pessoa com Id: {id} foi ativada.");
             }
             catch (DomainException de)
@@ -151,12 +152,12 @@ namespace Interface.Controllers
             }
         }
 
-        [HttpPatch("DeactivateUser/{id:int}")]
-        public IActionResult PutUsuarioDeactivate(int id)
+        [HttpPut("DisableUser/{id:int}")]
+        public IActionResult PutDisableUser(int id)
         {
             try
             {
-                PessoaApplicationService.DesativarUsuario(id);
+                PessoaApplicationService.DisableUser(id);
                 return Ok($"A pessoa com Id: {id} foi desativada.");
             }
             catch (DomainException de)

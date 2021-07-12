@@ -5,14 +5,15 @@ namespace Infrastructure.Repository.Interfaces
 {
     public interface IPessoaRepository
     {
-        void Adicionar(Pessoa pessoa);
-        void AdicionarFilho(int id, Pessoa filho);
-        void Deletar(Pessoa pessoa);
-        void Editar(int id, Pessoa pessoa);
-        void Atualizar(int id, Pessoa pessoa);
-        void AtivarUsuario(int id);
-        void DesativarUsuario(int id);
-        Pessoa ObterPessoaPorId(int id);
+        void Add(Pessoa pessoa);
+        int GetNextId();
+        void AddFilho(int id, Pessoa filho);
+        void Delete(Pessoa pessoa);
+        void Edit(int id, Pessoa pessoa);
+        void EditInfo(int id, Pessoa pessoa);
+        void EnableUser(int id);
+        void DisableUser(int id);
+        Pessoa GetPessoaById(int id);
         List<Pessoa> GetAll();
     }
 }

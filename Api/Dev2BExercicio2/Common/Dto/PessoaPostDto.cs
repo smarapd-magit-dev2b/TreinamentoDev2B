@@ -12,9 +12,6 @@ namespace Common.Dto
         public decimal Altura { get; set; }
         public decimal Peso { get; set; }
         public string Raca { get; set; }
-        public int Idade { get; set; }
-        public bool UsuarioAtivo { get; set; }
         public string Cpf { get; set; }
-        public List<Pessoa> Filhos { get; set; }
     }
 }

@@ -77,43 +77,47 @@ namespace Infrastructure.Repository
                 }
             };
 
-        public void Adicionar(Pessoa pessoa)
+        public void Add(Pessoa pessoa)
         {
             PessoaCollection.Add(pessoa);
         }
 
-        public void AdicionarFilho(int id, Pessoa filho)
+        public void AddFilho(int id, Pessoa filho)
         {
             var AddFilhos = PessoaCollection.Where(x => x.Id == id).FirstOrDefault();
+            if (AddFilhos.Filhos == null)
+            {
+                AddFilhos.Filhos = new List<Pessoa>();
+            }
             AddFilhos.Filhos.Add(filho);
         }
 
-        public void AtivarUsuario(int id)
+        public void EnableUser(int id)
         {
-            var ativaUsuario = PessoaCollection.Where(x => x.Id == id).FirstOrDefault();
-            ativaUsuario.UsuarioAtivo = true;
+            var enableUser = PessoaCollection.Where(x => x.Id == id).FirstOrDefault();
+            enableUser.UsuarioAtivo = true;
         }
 
-        public void Atualizar(int id, Pessoa pessoa)
+        public void EditInfo(int id, Pessoa pessoa)
         {
-            var pessoaEdit = PessoaCollection.Where(x => x.Id == id).FirstOrDefault();
-            pessoaEdit.Nome = pessoa.Nome;
-            pessoaEdit.SobreNome = pessoa.SobreNome;
-            pessoaEdit.Cpf = pessoa.Cpf;
+            var pessoaEditInfo = PessoaCollection.Where(x => x.Id == id).FirstOrDefault();
+            pessoaEditInfo.Nome = pessoa.Nome;
+            pessoaEditInfo.SobreNome = pessoa.SobreNome;
+            pessoaEditInfo.Cpf = pessoa.Cpf;
         }
 
-        public void Deletar(Pessoa pessoa)
+        public void Delete(Pessoa pessoa)
         {
             PessoaCollection.Remove(pessoa);
         }
 
-        public void DesativarUsuario(int id)
+        public void DisableUser(int id)
         {
-            var desativaUsuario = PessoaCollection.Where(x => x.Id == id).FirstOrDefault();
-            desativaUsuario.UsuarioAtivo = false;
+            var disableUser = PessoaCollection.Where(x => x.Id == id).FirstOrDefault();
+            disableUser.UsuarioAtivo = false;
         }
 
-        public void Editar(int id, Pessoa pessoa)
+        public void Edit(int id, Pessoa pessoa)
         {
             var pessoaEdit = PessoaCollection.Where(x => x.Id == id).FirstOrDefault();
             pessoaEdit.Nome = pessoa.Nome;
@@ -130,10 +134,15 @@ namespace Infrastructure.Repository
             return PessoaCollection;
         }
 
-        public Pessoa ObterPessoaPorId(int id)
+        public int GetNextId()
         {
-            var pessoa = PessoaCollection.Where(x => x.Id == id).FirstOrDefault();
-            return pessoa;
+            return PessoaCollection.Max(p => p.Id) + 1;
+        }
+
+        public Pessoa GetPessoaById(int id)
+        {
+            var pessoaId = PessoaCollection.Where(x => x.Id == id).FirstOrDefault();
+            return pessoaId;
         }
     }
 }

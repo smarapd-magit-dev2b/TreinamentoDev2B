@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Common.Dto
 {
-    public class PessoaPatchDto
+    public class PessoaEditInfoPutDto
     {
         public string Nome { get; set; }
         public string SobreNome { get; set; }

@@ -6,6 +6,7 @@ using Common.Entities;
 using Infrastructure.UnitOfWork.Interfaces;
 using Service.ApplicationService.Interfaces;
 using Common.Helpers;
+using AutoMapper;
 
 namespace Service.ApplicationService
 {
@@ -17,47 +18,42 @@ namespace Service.ApplicationService
             Uow = pessoaUnitOfWork;
         }
 
-        public int AdicionarPessoa(PessoaPostDto dto)
+        public int AddPessoa(PessoaPostDto dto)
         {
-            Pessoa pessoa = new Pessoa()
+            var config = new MapperConfiguration(cfg =>
             {
-                Id = IdHelper.GenerateId(),
-                Nome = dto.Nome,
-                SobreNome = dto.SobreNome,
-                Cpf = dto.Cpf,
-                Altura = dto.Altura,
-                DataNascimento = dto.DataNascimento,
-                Peso = dto.Peso,
-                Raca = dto.Raca,
-                UsuarioAtivo = true,
-            };
+                cfg.CreateMap<PessoaPostDto, Pessoa>().ReverseMap();
+            });
 
-            Validate(pessoa);
+            var mapper = new Mapper(config);
+            var pessoaEntity = mapper.Map<Pessoa>(dto);
+            pessoaEntity.Id = Uow.PessoaRepository.GetNextId();
+            pessoaEntity.UsuarioAtivo = true;
 
-            Uow.PessoaRepository.Adicionar(pessoa);
+            Validate(pessoaEntity);
 
-            return pessoa.Id;
+            Uow.PessoaRepository.Add(pessoaEntity);
+
+            return pessoaEntity.Id;
         }
 
-        public void EditarPessoa(int id, PessoaPutDto putDto)
+        public void EditPessoa(int id, PessoaPutDto putDto)
         {
-            if (Uow.PessoaRepository.ObterPessoaPorId(id) == null)
+            //usar auto mapper
+            if (Uow.PessoaRepository.GetPessoaById(id) == null)
                 throw new DomainException($"Id não encontrado");
 
-            Pessoa pessoa = new Pessoa()
+            var config = new MapperConfiguration(cfg =>
             {
-                Nome = putDto.Nome,
-                SobreNome = putDto.SobreNome,
-                Cpf = putDto.Cpf,
-                Altura = putDto.Altura,
-                DataNascimento = putDto.DataNascimento,
-                Peso = putDto.Peso,
-                Raca = putDto.Raca,
-            };
+                cfg.CreateMap<PessoaPutDto, Pessoa>().ReverseMap();
+            });
 
-            Validate(pessoa);
+            var mapper = new Mapper(config);
+            var pessoaEntity = mapper.Map<Pessoa>(putDto);
 
-            Uow.PessoaRepository.Editar(id, pessoa);
+            Validate(pessoaEntity);
+
+            Uow.PessoaRepository.Edit(id, pessoaEntity);
         }
 
         private void Validate(Pessoa pessoa)
@@ -96,101 +92,92 @@ namespace Service.ApplicationService
             return dto;
         }
 
-        public void DeletarPessoa(int id)
+        public void DeletePessoa(int id)
         {
-            if (Uow.PessoaRepository.ObterPessoaPorId(id) == null)
+            var deletePessoa = Uow.PessoaRepository.GetPessoaById(id);
+            if (deletePessoa == null)
                 throw new DomainException($"Id não encontrado");
-            if (Uow.PessoaRepository.ObterPessoaPorId(id).UsuarioAtivo == true)
+            if (deletePessoa.UsuarioAtivo == true)
                 throw new DomainException($"Não é possível deletar usuário Ativo");
-
-            var deletePessoa = Uow.PessoaRepository.ObterPessoaPorId(id);
-            Uow.PessoaRepository.Deletar(deletePessoa);
+            Uow.PessoaRepository.Delete(deletePessoa);
         }
 
         public PessoaGetAllDto GetPessoaId(int id)
         {
-            var pessoaGetId = Uow.PessoaRepository.ObterPessoaPorId(id);
+            var pessoaGetId = Uow.PessoaRepository.GetPessoaById(id);
             if (pessoaGetId == null)
                 throw new DomainException($"Id não encontrado");
 
-            var dto = new PessoaGetAllDto
+            var config = new MapperConfiguration(cfg =>
             {
-                Id = pessoaGetId.Id,
-                Nome = pessoaGetId.Nome,
-                SobreNome = pessoaGetId.SobreNome,
-                DataNascimento = pessoaGetId.DataNascimento,
-                Altura = pessoaGetId.Altura,
-                Peso = pessoaGetId.Peso,
-                Raca = pessoaGetId.Raca,
-                Idade = DateTimeHelper.GetIdade(pessoaGetId.DataNascimento),
-                UsuarioAtivo = pessoaGetId.UsuarioAtivo,
-                Cpf = pessoaGetId.Cpf,
-                Filhos = pessoaGetId.Filhos
-            };
-            return dto;
+                cfg.CreateMap<PessoaGetAllDto, Pessoa>().ReverseMap();
+            });
+
+            var mapper = new Mapper(config);
+            var pessoaEntity = mapper.Map<PessoaGetAllDto>(pessoaGetId);
+
+            return pessoaEntity;
         }
 
-        public void AtualizarPessoa(int id, PessoaPatchDto patchDto)
+        public void EditInfoPessoa(int id, PessoaEditInfoPutDto putEditInfoDto)
         {
-            if (Uow.PessoaRepository.ObterPessoaPorId(id) == null)
+            if (Uow.PessoaRepository.GetPessoaById(id) == null)
                 throw new DomainException($"Id não encontrado");
 
-            Pessoa pessoa = new Pessoa()
+            var config = new MapperConfiguration(cfg =>
             {
-                Nome = patchDto.Nome,
-                SobreNome = patchDto.SobreNome,
-                Cpf = patchDto.Cpf
-            };
+                cfg.CreateMap<PessoaEditInfoPutDto, Pessoa>().ReverseMap();
+            });
 
-            Validate(pessoa);
+            var mapper = new Mapper(config);
+            var pessoaEntity = mapper.Map<Pessoa>(putEditInfoDto);
 
-            Uow.PessoaRepository.Atualizar(id, pessoa);
+            Validate(pessoaEntity);
+
+            Uow.PessoaRepository.EditInfo(id, pessoaEntity);
         }
 
-        public void AtivarUsuario(int id)
+        public void EnableUser(int id)
         {
-            var pessoa = Uow.PessoaRepository.ObterPessoaPorId(id);
+            var pessoa = Uow.PessoaRepository.GetPessoaById(id);
             if (pessoa == null)
                 throw new DomainException($"Id não encontrado");
             if (pessoa.UsuarioAtivo == true)
                 throw new DomainException($"Usuário já está ativado");
 
-            Uow.PessoaRepository.AtivarUsuario(id);
+            Uow.PessoaRepository.EnableUser(id);
         }
 
-        public void DesativarUsuario(int id)
+        public void DisableUser(int id)
         {
-            var pessoa = Uow.PessoaRepository.ObterPessoaPorId(id);
+            var pessoa = Uow.PessoaRepository.GetPessoaById(id);
             if (pessoa == null)
                 throw new DomainException($"Id não encontrado");
             if (pessoa.UsuarioAtivo == false)
                 throw new DomainException($"Usuário já está desativado");
 
-            Uow.PessoaRepository.DesativarUsuario(id);
+            Uow.PessoaRepository.DisableUser(id);
         }
 
-        public void AdicionarFilho(int id, PessoaFilhosPutDto putFilhoDto)
+        public void AddFilho(int id, PessoaFilhosPutDto putFilhoDto)
         {
-            var p = Uow.PessoaRepository.ObterPessoaPorId(id);
+            var p = Uow.PessoaRepository.GetPessoaById(id);
             if (p == null)
                 throw new DomainException($"Id não encontrado");
 
-            Pessoa pessoa = new Pessoa()
+            var config = new MapperConfiguration(cfg =>
             {
-                Id = IdHelper.GenerateId(),
-                Nome = putFilhoDto.Nome,
-                SobreNome = putFilhoDto.SobreNome,
-                Cpf = putFilhoDto.Cpf,
-                Altura = putFilhoDto.Altura,
-                DataNascimento = putFilhoDto.DataNascimento,
-                Peso = putFilhoDto.Peso,
-                Raca = putFilhoDto.Raca,
-                UsuarioAtivo = true
-            };
+                cfg.CreateMap<PessoaFilhosPutDto, Pessoa>().ReverseMap();
+            });
 
-            Validate(pessoa);
+            var mapper = new Mapper(config);
+            var pessoaEntity = mapper.Map<Pessoa>(putFilhoDto);
+            pessoaEntity.Id = Uow.PessoaRepository.GetNextId();
+            pessoaEntity.UsuarioAtivo = true;
 
-            Uow.PessoaRepository.AdicionarFilho(id, pessoa);
+            Validate(pessoaEntity);
+
+            Uow.PessoaRepository.AddFilho(id, pessoaEntity);
         }
     }
 }
