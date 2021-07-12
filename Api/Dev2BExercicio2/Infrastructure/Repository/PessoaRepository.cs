@@ -84,12 +84,12 @@ namespace Infrastructure.Repository
 
         public void AddFilho(int id, Pessoa filho)
         {
-            var AddFilhos = PessoaCollection.Where(x => x.Id == id).FirstOrDefault();
-            if (AddFilhos.Filhos == null)
+            var idFather = PessoaCollection.Where(x => x.Id == id).FirstOrDefault();
+            if (idFather.Filhos == null)
             {
-                AddFilhos.Filhos = new List<Pessoa>();
+                idFather.Filhos = new List<Pessoa>();
             }
-            AddFilhos.Filhos.Add(filho);
+            idFather.Filhos.Add(filho);
         }
 
         public void EnableUser(int id)

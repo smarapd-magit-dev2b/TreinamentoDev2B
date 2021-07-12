@@ -116,6 +116,8 @@ namespace Service.ApplicationService
             var mapper = new Mapper(config);
             var pessoaEntity = mapper.Map<PessoaGetAllDto>(pessoaGetId);
 
+            pessoaEntity.Idade = DateTimeHelper.GetIdade(pessoaEntity.DataNascimento);
+
             return pessoaEntity;
         }
 
@@ -172,6 +174,7 @@ namespace Service.ApplicationService
 
             var mapper = new Mapper(config);
             var pessoaEntity = mapper.Map<Pessoa>(putFilhoDto);
+
             pessoaEntity.Id = Uow.PessoaRepository.GetNextId();
             pessoaEntity.UsuarioAtivo = true;
 
