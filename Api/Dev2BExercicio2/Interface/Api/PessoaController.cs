@@ -49,7 +49,7 @@ namespace Interface.Controllers
             try
             {
                 var id = PessoaApplicationService.AddPessoa(pessoa);
-                return Ok($"Pessoa adicionada com Id: {id}");
+                return Ok(id);
             }
             catch (DomainException de)
             {
@@ -67,7 +67,7 @@ namespace Interface.Controllers
             try
             {
                 PessoaApplicationService.AddFilho(id, pessoa);
-                return Ok($"Adicionado filho da Pessoa com Id: {id}");
+                return Ok(id);
             }
             catch (DomainException de)
             {
@@ -85,7 +85,7 @@ namespace Interface.Controllers
             try
             {
                 PessoaApplicationService.EditPessoa(id, pessoa);
-                return Ok($"Pessoa editada com Id: {id}");
+                return Ok(id);
             }
             catch (DomainException de)
             {
@@ -103,7 +103,7 @@ namespace Interface.Controllers
             try
             {
                 PessoaApplicationService.DeletePessoa(id);
-                return Ok($"Pessoa removida com Id: {id}");
+                return Ok(id);
             }
             catch (DomainException de)
             {
@@ -122,7 +122,7 @@ namespace Interface.Controllers
             try
             {
                 PessoaApplicationService.EditInfoPessoa(id, pessoa);
-                return Ok($"Pessoa atualizada com Id: {id}");
+                return Ok(id);
             }
             catch (DomainException de)
             {
@@ -140,7 +140,7 @@ namespace Interface.Controllers
             try
             {
                 PessoaApplicationService.EnableUser(id);
-                return Ok($"A pessoa com Id: {id} foi ativada.");
+                return Ok(id);
             }
             catch (DomainException de)
             {
@@ -158,7 +158,7 @@ namespace Interface.Controllers
             try
             {
                 PessoaApplicationService.DisableUser(id);
-                return Ok($"A pessoa com Id: {id} foi desativada.");
+                return Ok(id);
             }
             catch (DomainException de)
             {
