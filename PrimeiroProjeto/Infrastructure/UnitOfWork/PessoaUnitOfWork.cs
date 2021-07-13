@@ -3,10 +3,10 @@ using Infrastructure.UnitOfWork.Interfaces;
 
 namespace Infrastructure.UnitOfWork
 {
-    public class PessoaUnitOfWork : IPessoaUnitOfWork
+    public class PessoaUnitOfWork : IPersonUnitOfWork
     {
-        public IPessoaRepository PessoaRepository { get; }
+        public IPersonRepository PersonRepository { get; }
 
-        public PessoaUnitOfWork(IPessoaRepository pessoaRepository) => PessoaRepository = pessoaRepository;
+        public PessoaUnitOfWork(IPersonRepository pessoaRepository) => PersonRepository = pessoaRepository;
     }
 }

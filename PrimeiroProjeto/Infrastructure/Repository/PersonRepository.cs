@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿using AutoMapper;
+using Domain.Entities;
 using Infrastructure.Repository.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -6,11 +7,16 @@ using System.Linq;
 
 namespace Infrastructure.Repository
 {
-    public class PessoaRepository : IPessoaRepository
+    public class PersonRepository : IPersonRepository
     {
-        private readonly List<Pessoa> _pessoas = new List<Pessoa>
+        private static readonly MapperConfiguration config = new MapperConfiguration(cfg =>
+        {
+            cfg.CreateMap<Person, Person>().ReverseMap();
+        });
+        private readonly IMapper mapper = new Mapper(config);
+        private readonly List<Person> _people = new List<Person>
             {
-                new Pessoa
+                new Person
                 {
                     Id = 1,
                     Name = "José",
@@ -22,7 +28,7 @@ namespace Infrastructure.Repository
                     Race = "Branca",
                     Status = true
                 },
-                new Pessoa
+                new Person
                 {
                     Id = 2,
                     Name = "Willian",
@@ -34,7 +40,7 @@ namespace Infrastructure.Repository
                     Race = "Negro",
                     Status = true
                 },
-                new Pessoa
+                new Person
                 {
                     Id = 3,
                     Name = "Silas",
@@ -46,7 +52,7 @@ namespace Infrastructure.Repository
                     Race = "Branca",
                     Status = true,
                 },
-                new Pessoa
+                new Person
                 {
                     Id = 4,
                     Name = "Glenison",
@@ -58,7 +64,7 @@ namespace Infrastructure.Repository
                     Race = "Branca",
                     Status = false
                 },
-                new Pessoa
+                new Person
                 {
                     Id = 5,
                     Name = "Gabriel",
@@ -71,71 +77,69 @@ namespace Infrastructure.Repository
                     Status = true
                 }
             };
+
         #region Get
-        public List<Pessoa> Get() => _pessoas != null && _pessoas.Any() ? _pessoas : null;
+        public List<Person> Get() => _people != null && _people.Any() ? _people : null;
 
-        public Pessoa GetPorId(int id) => _pessoas.FirstOrDefault(p => p.Id == id) ?? null;
+        public Person GetById(int id) => _people.FirstOrDefault(p => p.Id == id);
+
+        public int GetNextId() => _people.Max(p => p.Id) + 1;
         #endregion
+
         #region Post
-        public int Post(Pessoa pessoa)
+        public void Post(Person person) => _people.Add(person);
+
+        public void Post(List<Person> people)
         {
-            _pessoas.Add(pessoa);
-
-            return _pessoas.Last().Id;
-        }
-
-        public int Post(int idPai, int idFilho)
-        {
-            Pessoa pai = _pessoas[_pessoas.IndexOf(_pessoas.First(p => p.Id == idPai))];
-
-            if (pai.Filhos == null)
-                pai.Filhos = new List<Pessoa>();
-
-            pai.Filhos.Add
-            (
-                _pessoas
-                [
-                    _pessoas.IndexOf
-                    (
-                        _pessoas.First(p => p.Id == idFilho)
-                    )
-                ]
-            );
-
-            return idFilho;
+            _people.AddRange(people);
         }
         #endregion
+
         #region Put
-        public int Put(int id, Pessoa pessoa)
+        public void Put(Person person)
         {
-            _pessoas[_pessoas.IndexOf(_pessoas.First(p => p.Id == id))] = pessoa;
+            Person oldPerson = _people.First(p => p.Id == person.Id);
 
-            return id;
-        }
-
-        public int PutPessoaEssencial(int id, Pessoa pessoa)
-        {
-            int indice = _pessoas.IndexOf(_pessoas.First(p => p.Id == id));
-
-            _pessoas[indice].Name = pessoa.Name;
-            _pessoas[indice].LastName = pessoa.LastName;
-            _pessoas[indice].Cpf = pessoa.Cpf;
-
-            return id;
-        }
-
-        public int PutStatus(int id, bool status)
-        {
-            _pessoas[_pessoas.IndexOf(_pessoas.First(p => p.Id == id))].Status = status;
-
-            return id;
+            oldPerson = mapper.Map<Person>(person);
         }
         #endregion
-        public int Delete(int id)
-        {
-            _pessoas.RemoveAll(p => p.Id == id);
 
-            return id;
+        #region Patch
+        public void PatchEssential(Person person)
+        {
+            Person oldPerson = _people.First(p => p.Id == person.Id);
+
+            oldPerson.Name = person.Name;
+            oldPerson.LastName = person.LastName;
+            oldPerson.Cpf = person.Cpf;
         }
+
+        public void PatchStatus(int id) => _people.First(p => p.Id == id).Status = !_people.First(p => p.Id == id).Status;
+
+        public void Patch(int idDad, int idSan)
+        {
+            Person dad = _people.First(p => p.Id == idDad);
+
+            if (dad.Sons == null)
+                dad.Sons = new List<Person>();
+
+            dad.Sons.Add(_people.First(p => p.Id == idSan));
+        }
+
+        public void Patch(int idDad, List<int> idSons)
+        {
+            Person dad = _people.First(p => p.Id == idDad);
+
+            if (dad.Sons == null)
+                dad.Sons = new List<Person>();
+
+            dad.Sons.AddRange(from int id in idSons
+                              select _people.First(p => p.Id == id));
+        }
+        #endregion
+
+        #region Delete
+        public void Delete(int id) => _people.RemoveAll(p => p.Id == id);
+        #endregion
     }
 }

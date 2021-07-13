@@ -5,11 +5,11 @@ namespace Commom.Helpers
 {
     public static class CpfHelper
     {
-        public static bool Valido(string documentoCpf)
+        public static bool Valido(string documentCpf)
         {
             List<int> cpf = new List<int>();
 
-            foreach (char caractere in documentoCpf)
+            foreach (char caractere in documentCpf)
             {
                 try
                 { cpf.Add(int.Parse(caractere.ToString())); }

@@ -2,8 +2,8 @@
 
 namespace Infrastructure.UnitOfWork.Interfaces
 {
-    public interface IPessoaUnitOfWork
+    public interface IPersonUnitOfWork
     {
-        public IPessoaRepository PessoaRepository { get; }
+        public IPersonRepository PersonRepository { get; }
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Domain.Entities
 {
-    public class Pessoa
+    public class Person
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -14,6 +14,6 @@ namespace Domain.Entities
         public string Race { get; set; }
         public bool Status { get; set; }
         public string Cpf { get; set; }
-        public List<Pessoa> Filhos { get; set; }
+        public List<Person> Sons { get; set; }
     }
 }

@@ -26,9 +26,9 @@ namespace PrimeiroProjeto
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddSingleton<IPessoaAplicationService, PessoaAplicationService>();
-            services.AddSingleton<IPessoaUnitOfWork, PessoaUnitOfWork>();
-            services.AddSingleton<IPessoaRepository, PessoaRepository>();
+            services.AddSingleton<IPersonAplicationService, PersonAplicationService>();
+            services.AddSingleton<IPersonUnitOfWork, PessoaUnitOfWork>();
+            services.AddSingleton<IPersonRepository, PersonRepository>();
 
             services.AddSwaggerGen(swagger =>
             {
