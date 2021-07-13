@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "0dhj/w/2ZHNj8VUQuTSiQm8kLmQLlZJhw+5VSyshkv9pDyKk7GDUd3nDpjZfouN46wqsg9OOPcqIs2fge4B2lw==",
+  "dgSpecHash": "hH717u+X6IAjU4DIQ8oNtNL0eDHDPn8XVVcShA3ixd7jsiTfpdZVkI46VBRetAuxTZXqDJU8f2F3C+qT9jNYPA==",
   "success": true,
   "projectFilePath": "C:\\Users\\desenvolvedor\\Desktop\\SMARAPD\\TreinamentoDev2B\\Dev2bInterface\\Interface\\Interface.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\desenvolvedor\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\desenvolvedor\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\desenvolvedor\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

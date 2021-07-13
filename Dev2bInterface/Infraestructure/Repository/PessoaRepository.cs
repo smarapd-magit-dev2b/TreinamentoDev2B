@@ -2,13 +2,13 @@
 using Infrastructure.Repository.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 
 namespace Infrastructure.Repository
 {
     public class PessoaRepository : IPessoaRepository
     {
-        private List<Pessoa> Pessoa = new List<Pessoa>
+        private List<Pessoa> PessoaCollection = new List<Pessoa>
             {
                 new Pessoa
                 {
@@ -20,7 +20,8 @@ namespace Infrastructure.Repository
                     DataNascimento = new DateTime(1993, 12, 9),
                     Peso = 80.0m,
                     Raca = "Branca",
-                    UsuarioAtivo = true
+                    UsuarioAtivo = true,
+                    Filhos = new List<Pessoa>()
                 },
                 new Pessoa
                 {
@@ -32,7 +33,8 @@ namespace Infrastructure.Repository
                     DataNascimento = new DateTime(1950, 10, 4),
                     Peso = 100.0m,
                     Raca = "Negro",
-                    UsuarioAtivo = true
+                    UsuarioAtivo = true,
+                    Filhos = new List<Pessoa>()
                 },
                 new Pessoa
                 {
@@ -45,6 +47,7 @@ namespace Infrastructure.Repository
                     Peso = 92.0m,
                     Raca = "Branca",
                     UsuarioAtivo = true,
+                    Filhos = new List<Pessoa>()
                 },
                 new Pessoa
                 {
@@ -57,6 +60,7 @@ namespace Infrastructure.Repository
                     Peso = 75,
                     Raca = "Branca",
                     UsuarioAtivo = false,
+                    Filhos = new List<Pessoa>()
                 },
                 new Pessoa
                 {
@@ -69,17 +73,70 @@ namespace Infrastructure.Repository
                     Peso = 75,
                     Raca = "Branca",
                     UsuarioAtivo = true,
+                    Filhos = new List<Pessoa>()
                 }
-            };
+        };
 
         public void Adicionar(Pessoa pessoa)
         {
-            Pessoa.Add(pessoa);
+            PessoaCollection.Add(pessoa);
         }
 
-        public List<Pessoa> GetAll()
+        public void AdicionarFilhos(int id, Pessoa pessoa)
         {
-            return Pessoa;
+            var idpai = PessoaCollection.Where(x => x.Id == id).FirstOrDefault();
+            idpai.Filhos.Add(pessoa);
+
+        }
+
+        public void Deletar(Pessoa pessoa)
+        {
+            PessoaCollection.Remove(pessoa);
+        }
+
+        public void Editar(int id, Pessoa pessoa)
+        {
+            var editarpessoa = PessoaCollection.Where(x => x.Id == id).FirstOrDefault();
+
+            editarpessoa.Nome = pessoa.Nome;
+            editarpessoa.SobreNome = pessoa.SobreNome;
+            editarpessoa.DataNascimento = pessoa.DataNascimento;
+            editarpessoa.Altura = pessoa.Altura;
+            editarpessoa.Cpf = pessoa.Cpf;
+            editarpessoa.Peso = pessoa.Peso;
+            editarpessoa.Raca = pessoa.Raca;
+        }
+
+        public void EditarPutBasic(int id, Pessoa pessoa)
+        {
+            var editardados = PessoaCollection.Where(x => x.Id == id).FirstOrDefault();
+
+            editardados.Nome = pessoa.Nome;
+            editardados.SobreNome = pessoa.SobreNome;
+            editardados.Cpf = pessoa.Cpf;
+        }
+
+        public List<Pessoa> Listar()
+        {
+            return PessoaCollection;
+        }
+
+        public List<Pessoa> ListarPessoaPorID()
+        {
+            return PessoaCollection;
+        }
+
+        public Pessoa ObterPessoaPorID(int id)
+        {
+            var pessoa = PessoaCollection.Where(x => x.Id == id).FirstOrDefault();
+
+            return pessoa;
+        }
+
+        public void UsuarioStatusRepository(int id)
+        {
+            var status = PessoaCollection.Where(x => x.Id == id).FirstOrDefault();
+            status.UsuarioAtivo = !status.UsuarioAtivo;
         }
     }
 }

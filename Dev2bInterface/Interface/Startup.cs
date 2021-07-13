@@ -1,20 +1,13 @@
 using Infrastructure.Repository;
 using Infrastructure.Repository.Interfaces;
 using Infrastructure.UnitOfWork;
-using Infrastructure.UnitOfWork.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Service.ApplicationService;
-using Service.ApplicationService.Interface;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Service.ApplicationService.Interfaces;
 
 namespace Interface
 {
@@ -30,11 +23,14 @@ namespace Interface
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
             services.AddSingleton<IPessoaApplicationService, PessoaApplicationService>();
             services.AddSingleton<IPessoaUnitOfWork, PessoaUnitOfWork>();
             services.AddSingleton<IPessoaRepository, PessoaRepository>();
+            services.AddControllers();
+
+            // Register the Swagger generator, defining 1 or more Swagger documents
         }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -44,12 +40,13 @@ namespace Interface
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseHttpsRedirection();
+
             app.UseRouting();
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
-            {
+            app.UseEndpoints(endpoints => {
                 endpoints.MapControllers();
             });
         }

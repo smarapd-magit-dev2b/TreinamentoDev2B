@@ -1,0 +1,16 @@
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bInterface\Service\bin\Debug\netcoreapp3.1\Service.deps.json
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bInterface\Service\bin\Debug\netcoreapp3.1\Service.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bInterface\Service\bin\Debug\netcoreapp3.1\Service.pdb
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bInterface\Service\bin\Debug\netcoreapp3.1\Common.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bInterface\Service\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bInterface\Service\bin\Debug\netcoreapp3.1\Infraestructure.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bInterface\Service\bin\Debug\netcoreapp3.1\Common.pdb
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bInterface\Service\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bInterface\Service\bin\Debug\netcoreapp3.1\Infraestructure.pdb
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bInterface\Service\obj\Debug\netcoreapp3.1\Service.csproj.AssemblyReference.cache
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bInterface\Service\obj\Debug\netcoreapp3.1\Service.AssemblyInfoInputs.cache
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bInterface\Service\obj\Debug\netcoreapp3.1\Service.AssemblyInfo.cs
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bInterface\Service\obj\Debug\netcoreapp3.1\Service.csproj.CoreCompileInputs.cache
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bInterface\Service\obj\Debug\netcoreapp3.1\Service.csproj.CopyComplete
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bInterface\Service\obj\Debug\netcoreapp3.1\Service.dll
+C:\Users\desenvolvedor\Desktop\SMARAPD\TreinamentoDev2B\Dev2bInterface\Service\obj\Debug\netcoreapp3.1\Service.pdb

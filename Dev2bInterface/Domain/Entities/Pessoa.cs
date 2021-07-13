@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Domain.Entities
 {
+    //Classe entidade pessoa.
     public class Pessoa
     {
         public int Id { get; set; }
@@ -13,6 +15,8 @@ namespace Domain.Entities
         public string Raca { get; set; }
         public bool UsuarioAtivo { get; set; }
         public string Cpf { get; set; }
+        public List<Pessoa> Filhos { get; set; }
 
     }
 }
+
