@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using Domain.Entities;
+﻿using Domain.Entities;
 using Infrastructure.Repository.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -9,11 +8,6 @@ namespace Infrastructure.Repository
 {
     public class PersonRepository : IPersonRepository
     {
-        private static readonly MapperConfiguration config = new MapperConfiguration(cfg =>
-        {
-            cfg.CreateMap<Person, Person>().ReverseMap();
-        });
-        private readonly IMapper mapper = new Mapper(config);
         private readonly List<Person> _people = new List<Person>
             {
                 new Person
@@ -79,9 +73,9 @@ namespace Infrastructure.Repository
             };
 
         #region Get
-        public List<Person> Get() => _people != null && _people.Any() ? _people : null;
+        public List<Person> Get() => _people;
 
-        public Person GetById(int id) => _people.FirstOrDefault(p => p.Id == id);
+        public Person Get(int id) => _people.FirstOrDefault(p => p.Id == id);
 
         public int GetNextId() => _people.Max(p => p.Id) + 1;
         #endregion
@@ -100,7 +94,9 @@ namespace Infrastructure.Repository
         {
             Person oldPerson = _people.First(p => p.Id == person.Id);
 
-            oldPerson = mapper.Map<Person>(person);
+            int index = _people.IndexOf(oldPerson);
+
+            _people[index] = person;
         }
         #endregion
 
@@ -114,7 +110,14 @@ namespace Infrastructure.Repository
             oldPerson.Cpf = person.Cpf;
         }
 
-        public void PatchStatus(int id) => _people.First(p => p.Id == id).Status = !_people.First(p => p.Id == id).Status;
+        public void PatchStatus(int id)
+        {
+            Person person = _people.First(p => p.Id == id);
+
+            bool oldStatus = person.Status;
+
+            person.Status = !oldStatus;
+        }
 
         public void Patch(int idDad, int idSan)
         {
@@ -133,8 +136,10 @@ namespace Infrastructure.Repository
             if (dad.Sons == null)
                 dad.Sons = new List<Person>();
 
-            dad.Sons.AddRange(from int id in idSons
-                              select _people.First(p => p.Id == id));
+            List<Person> sons = (from int id in idSons
+                                 select _people.First(p => p.Id == id)).ToList();
+
+            dad.Sons.AddRange(sons);
         }
         #endregion
 

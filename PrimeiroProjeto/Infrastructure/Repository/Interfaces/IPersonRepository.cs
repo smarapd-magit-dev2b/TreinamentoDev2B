@@ -6,7 +6,7 @@ namespace Infrastructure.Repository.Interfaces
     public interface IPersonRepository
     {
         List<Person> Get();
-        Person GetById(int id);
+        Person Get(int id);
         int GetNextId();
         void Post(Person person);
         void Post(List<Person> people);

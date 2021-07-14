@@ -163,7 +163,7 @@ namespace Interface.Api
             {
                 id = _personAplicationService.PatchStatus(id, true);
 
-                return Ok();
+                return Ok(id);
             }
             catch (DomainException ne)
             {
@@ -182,7 +182,7 @@ namespace Interface.Api
             {
                 id = _personAplicationService.PatchStatus(id, false);
 
-                return Ok();
+                return Ok(id);
             }
             catch (DomainException ne)
             {
