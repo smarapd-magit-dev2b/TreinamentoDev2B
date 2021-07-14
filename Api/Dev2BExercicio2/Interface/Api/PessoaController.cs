@@ -66,8 +66,8 @@ namespace Interface.Controllers
         {
             try
             {
-                PessoaApplicationService.AddFilho(id, pessoa);
-                return Ok(id);
+                var idFilho = PessoaApplicationService.AddFilho(id, pessoa);
+                return Ok(idFilho);
             }
             catch (DomainException de)
             {

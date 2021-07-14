@@ -136,7 +136,7 @@ namespace Infrastructure.Repository
 
         public int GetNextId()
         {
-            return PessoaCollection.Max(p => p.Id) + 1;
+            return PessoaCollection.Union(PessoaCollection.Where(pessoa => pessoa.Filhos != null).SelectMany(p => p.Filhos)).Max(x => x.Id) + 1;
         }
 
         public Pessoa GetPessoaById(int id)

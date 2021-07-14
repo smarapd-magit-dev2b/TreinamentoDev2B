@@ -161,7 +161,7 @@ namespace Service.ApplicationService
             Uow.PessoaRepository.DisableUser(id);
         }
 
-        public void AddFilho(int id, PessoaFilhosPutDto putFilhoDto)
+        public int AddFilho(int id, PessoaFilhosPutDto putFilhoDto)
         {
             var p = Uow.PessoaRepository.GetPessoaById(id);
             if (p == null)
@@ -181,6 +181,8 @@ namespace Service.ApplicationService
             Validate(pessoaEntity);
 
             Uow.PessoaRepository.AddFilho(id, pessoaEntity);
+
+            return pessoaEntity.Id;
         }
     }
 }

@@ -6,7 +6,7 @@ namespace Service.ApplicationService.Interfaces
     public interface IPessoaApplicationService
     {
         int AddPessoa(PessoaPostDto dto);
-        void AddFilho(int id, PessoaFilhosPutDto putFilhoDto);
+        int AddFilho(int id, PessoaFilhosPutDto putFilhoDto);
         void DeletePessoa(int id);
         void EditPessoa(int id, PessoaPutDto putDto);
         void EditInfoPessoa(int id, PessoaEditInfoPutDto patchDto);
