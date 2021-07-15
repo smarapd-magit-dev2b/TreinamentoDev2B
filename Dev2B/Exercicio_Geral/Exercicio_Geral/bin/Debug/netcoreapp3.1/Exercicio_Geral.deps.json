@@ -1,0 +1,91 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Exercicio_Geral/1.0.0": {
+        "dependencies": {
+          "Aula_1": "1.0.0",
+          "Aula_2": "1.0.0",
+          "Aula_3": "1.0.0",
+          "Aula_4": "1.0.0",
+          "Aula_5": "1.0.0",
+          "Aula_6": "1.0.0"
+        },
+        "runtime": {
+          "Exercicio_Geral.dll": {}
+        }
+      },
+      "Aula_1/1.0.0": {
+        "runtime": {
+          "Aula_1.dll": {}
+        }
+      },
+      "Aula_2/1.0.0": {
+        "runtime": {
+          "Aula_2.dll": {}
+        }
+      },
+      "Aula_3/1.0.0": {
+        "runtime": {
+          "Aula_3.dll": {}
+        }
+      },
+      "Aula_4/1.0.0": {
+        "runtime": {
+          "Aula_4.dll": {}
+        }
+      },
+      "Aula_5/1.0.0": {
+        "runtime": {
+          "Aula_5.dll": {}
+        }
+      },
+      "Aula_6/1.0.0": {
+        "runtime": {
+          "Aula_6.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Exercicio_Geral/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aula_1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aula_2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aula_3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aula_4/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aula_5/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aula_6/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Aula_1\Aula_1.csproj" />
+    <ProjectReference Include="..\Aula_2\Aula_2.csproj" />
+    <ProjectReference Include="..\Aula_3\Aula_3.csproj" />
+    <ProjectReference Include="..\Aula_4\Aula_4.csproj" />
+    <ProjectReference Include="..\Aula_5\Aula_5.csproj" />
+    <ProjectReference Include="..\Aula_6\Aula_6.csproj" />
+    <ProjectReference Include="..\Aula_7\Aula_7.csproj" />
+    <ProjectReference Include="..\Aula_8\Aula_8.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,223 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Aula_1/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Aula_1.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula_1.dll": {}
+        }
+      },
+      "Aula_2/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Aula_2.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula_2.dll": {}
+        }
+      },
+      "Aula_3/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Aula_3.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula_3.dll": {}
+        }
+      },
+      "Aula_4/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Aula_4.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula_4.dll": {}
+        }
+      },
+      "Aula_5/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Aula_5.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula_5.dll": {}
+        }
+      },
+      "Aula_6/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Aula_6.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula_6.dll": {}
+        }
+      },
+      "Aula_7/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Aula_7.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula_7.dll": {}
+        }
+      },
+      "Aula_8/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Aula_8.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aula_8.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Aula_1/1.0.0": {
+      "type": "project",
+      "path": "../Aula_1/Aula_1.csproj",
+      "msbuildProject": "../Aula_1/Aula_1.csproj"
+    },
+    "Aula_2/1.0.0": {
+      "type": "project",
+      "path": "../Aula_2/Aula_2.csproj",
+      "msbuildProject": "../Aula_2/Aula_2.csproj"
+    },
+    "Aula_3/1.0.0": {
+      "type": "project",
+      "path": "../Aula_3/Aula_3.csproj",
+      "msbuildProject": "../Aula_3/Aula_3.csproj"
+    },
+    "Aula_4/1.0.0": {
+      "type": "project",
+      "path": "../Aula_4/Aula_4.csproj",
+      "msbuildProject": "../Aula_4/Aula_4.csproj"
+    },
+    "Aula_5/1.0.0": {
+      "type": "project",
+      "path": "../Aula_5/Aula_5.csproj",
+      "msbuildProject": "../Aula_5/Aula_5.csproj"
+    },
+    "Aula_6/1.0.0": {
+      "type": "project",
+      "path": "../Aula_6/Aula_6.csproj",
+      "msbuildProject": "../Aula_6/Aula_6.csproj"
+    },
+    "Aula_7/1.0.0": {
+      "type": "project",
+      "path": "../Aula_7/Aula_7.csproj",
+      "msbuildProject": "../Aula_7/Aula_7.csproj"
+    },
+    "Aula_8/1.0.0": {
+      "type": "project",
+      "path": "../Aula_8/Aula_8.csproj",
+      "msbuildProject": "../Aula_8/Aula_8.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Aula_1 >= 1.0.0",
+      "Aula_2 >= 1.0.0",
+      "Aula_3 >= 1.0.0",
+      "Aula_4 >= 1.0.0",
+      "Aula_5 >= 1.0.0",
+      "Aula_6 >= 1.0.0",
+      "Aula_7 >= 1.0.0",
+      "Aula_8 >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\AWMMANHA\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\AWMMANHA\\Documents\\Exercicios\\Exercicio Geral\\Exercicio_Geral\\Exercicio_Geral\\Exercicio_Geral.csproj",
+      "projectName": "Exercicio_Geral",
+      "projectPath": "C:\\Users\\AWMMANHA\\Documents\\Exercicios\\Exercicio Geral\\Exercicio_Geral\\Exercicio_Geral\\Exercicio_Geral.csproj",
+      "packagesPath": "C:\\Users\\AWMMANHA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\AWMMANHA\\Documents\\Exercicios\\Exercicio Geral\\Exercicio_Geral\\Exercicio_Geral\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\AWMMANHA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "C:\\Users\\AWMMANHA\\Documents\\Exercicios\\Exercicio Geral\\Exercicio_Geral\\Aula_1\\Aula_1.csproj": {
+              "projectPath": "C:\\Users\\AWMMANHA\\Documents\\Exercicios\\Exercicio Geral\\Exercicio_Geral\\Aula_1\\Aula_1.csproj"
+            },
+            "C:\\Users\\AWMMANHA\\Documents\\Exercicios\\Exercicio Geral\\Exercicio_Geral\\Aula_2\\Aula_2.csproj": {
+              "projectPath": "C:\\Users\\AWMMANHA\\Documents\\Exercicios\\Exercicio Geral\\Exercicio_Geral\\Aula_2\\Aula_2.csproj"
+            },
+            "C:\\Users\\AWMMANHA\\Documents\\Exercicios\\Exercicio Geral\\Exercicio_Geral\\Aula_3\\Aula_3.csproj": {
+              "projectPath": "C:\\Users\\AWMMANHA\\Documents\\Exercicios\\Exercicio Geral\\Exercicio_Geral\\Aula_3\\Aula_3.csproj"
+            },
+            "C:\\Users\\AWMMANHA\\Documents\\Exercicios\\Exercicio Geral\\Exercicio_Geral\\Aula_4\\Aula_4.csproj": {
+              "projectPath": "C:\\Users\\AWMMANHA\\Documents\\Exercicios\\Exercicio Geral\\Exercicio_Geral\\Aula_4\\Aula_4.csproj"
+            },
+            "C:\\Users\\AWMMANHA\\Documents\\Exercicios\\Exercicio Geral\\Exercicio_Geral\\Aula_5\\Aula_5.csproj": {
+              "projectPath": "C:\\Users\\AWMMANHA\\Documents\\Exercicios\\Exercicio Geral\\Exercicio_Geral\\Aula_5\\Aula_5.csproj"
+            },
+            "C:\\Users\\AWMMANHA\\Documents\\Exercicios\\Exercicio Geral\\Exercicio_Geral\\Aula_6\\Aula_6.csproj": {
+              "projectPath": "C:\\Users\\AWMMANHA\\Documents\\Exercicios\\Exercicio Geral\\Exercicio_Geral\\Aula_6\\Aula_6.csproj"
+            },
+            "C:\\Users\\AWMMANHA\\Documents\\Exercicios\\Exercicio Geral\\Exercicio_Geral\\Aula_7\\Aula_7.csproj": {
+              "projectPath": "C:\\Users\\AWMMANHA\\Documents\\Exercicios\\Exercicio Geral\\Exercicio_Geral\\Aula_7\\Aula_7.csproj"
+            },
+            "C:\\Users\\AWMMANHA\\Documents\\Exercicios\\Exercicio Geral\\Exercicio_Geral\\Aula_8\\Aula_8.csproj": {
+              "projectPath": "C:\\Users\\AWMMANHA\\Documents\\Exercicios\\Exercicio Geral\\Exercicio_Geral\\Aula_8\\Aula_8.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
