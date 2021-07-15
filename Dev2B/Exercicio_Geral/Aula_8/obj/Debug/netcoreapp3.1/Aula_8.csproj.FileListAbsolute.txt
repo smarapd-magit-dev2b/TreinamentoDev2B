@@ -1,0 +1,9 @@
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio Geral\Exercicio_Geral\Aula_8\bin\Debug\netcoreapp3.1\Aula_8.deps.json
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio Geral\Exercicio_Geral\Aula_8\bin\Debug\netcoreapp3.1\Aula_8.dll
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio Geral\Exercicio_Geral\Aula_8\bin\Debug\netcoreapp3.1\Aula_8.pdb
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio Geral\Exercicio_Geral\Aula_8\obj\Debug\netcoreapp3.1\Aula_8.csproj.AssemblyReference.cache
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio Geral\Exercicio_Geral\Aula_8\obj\Debug\netcoreapp3.1\Aula_8.AssemblyInfoInputs.cache
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio Geral\Exercicio_Geral\Aula_8\obj\Debug\netcoreapp3.1\Aula_8.AssemblyInfo.cs
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio Geral\Exercicio_Geral\Aula_8\obj\Debug\netcoreapp3.1\Aula_8.csproj.CoreCompileInputs.cache
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio Geral\Exercicio_Geral\Aula_8\obj\Debug\netcoreapp3.1\Aula_8.dll
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio Geral\Exercicio_Geral\Aula_8\obj\Debug\netcoreapp3.1\Aula_8.pdb

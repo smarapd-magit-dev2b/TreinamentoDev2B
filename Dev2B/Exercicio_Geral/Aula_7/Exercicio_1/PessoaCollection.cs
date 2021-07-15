@@ -11,12 +11,12 @@ namespace Aula_7.Exercicio_1
         {
             Base bse = new Base();
 
-            File.WriteAllText("C:/Users/AWMMANHA/Documents/Exercicios/Exercicio feitos/Parte 7/Aula_7/Aula_7/Lista.txt", null);
+            File.WriteAllText("C:/Users/AWMMANHA/Documents/Exercicios/Exercicio para envio/Aula 7/Exercicio 1", null);
 
             foreach (var pessoa in bse.PessoaCollection)
             {
 
-                File.AppendAllText("C:/Users/AWMMANHA/Documents/Exercicios/Exercicio feitos/Parte 7/Aula_7/Aula_7/Lista.txt", pessoa.ToString());
+                File.AppendAllText("C:/Users/AWMMANHA/Documents/Exercicios/Exercicio para envio/Aula 7/Exercicio 1", pessoa.ToString());
 
             }
 

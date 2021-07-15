@@ -24,3 +24,7 @@ C:\Users\AWMMANHA\Documents\Exercicios\Exercicio Geral\Exercicio_Geral\Exercicio
 C:\Users\AWMMANHA\Documents\Exercicios\Exercicio Geral\Exercicio_Geral\Exercicio_Geral\bin\Debug\netcoreapp3.1\Aula_4.pdb
 C:\Users\AWMMANHA\Documents\Exercicios\Exercicio Geral\Exercicio_Geral\Exercicio_Geral\bin\Debug\netcoreapp3.1\Aula_5.pdb
 C:\Users\AWMMANHA\Documents\Exercicios\Exercicio Geral\Exercicio_Geral\Exercicio_Geral\bin\Debug\netcoreapp3.1\Aula_6.pdb
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio Geral\Exercicio_Geral\Exercicio_Geral\bin\Debug\netcoreapp3.1\Aula_7.dll
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio Geral\Exercicio_Geral\Exercicio_Geral\bin\Debug\netcoreapp3.1\Aula_8.dll
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio Geral\Exercicio_Geral\Exercicio_Geral\bin\Debug\netcoreapp3.1\Aula_7.pdb
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio Geral\Exercicio_Geral\Exercicio_Geral\bin\Debug\netcoreapp3.1\Aula_8.pdb

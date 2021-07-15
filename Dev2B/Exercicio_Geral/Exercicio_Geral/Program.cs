@@ -79,8 +79,8 @@ namespace Exercicio_Geral
 
             ////Aula7
 
-            //Exercicios aula_7Ex1 = new Exercicios();
-            //aula_7Ex1.Main();
+            Exercicios aula_7Ex1 = new Exercicios();
+            aula_7Ex1.Executar_Aula7();
 
             //Aula8------------------------------
 

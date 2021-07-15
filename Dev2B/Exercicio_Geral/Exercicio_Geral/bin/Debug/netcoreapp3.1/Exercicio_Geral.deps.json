@@ -13,7 +13,9 @@
           "Aula_3": "1.0.0",
           "Aula_4": "1.0.0",
           "Aula_5": "1.0.0",
-          "Aula_6": "1.0.0"
+          "Aula_6": "1.0.0",
+          "Aula_7": "1.0.0",
+          "Aula_8": "1.0.0"
         },
         "runtime": {
           "Exercicio_Geral.dll": {}
@@ -47,6 +49,16 @@
       "Aula_6/1.0.0": {
         "runtime": {
           "Aula_6.dll": {}
+        }
+      },
+      "Aula_7/1.0.0": {
+        "runtime": {
+          "Aula_7.dll": {}
+        }
+      },
+      "Aula_8/1.0.0": {
+        "runtime": {
+          "Aula_8.dll": {}
         }
       }
     }
@@ -83,6 +95,16 @@
       "sha512": ""
     },
     "Aula_6/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aula_7/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aula_8/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

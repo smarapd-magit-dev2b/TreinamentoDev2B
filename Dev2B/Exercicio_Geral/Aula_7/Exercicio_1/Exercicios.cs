@@ -7,14 +7,13 @@ namespace Aula_7.Exercicio_1
 {
     public class Exercicios
     {
-        
 
         private static object bse;
 
         public static bool Message { get; private set; }
         public static List<Pessoa> PessoaCollection { get; private set; }
 
-        static void Main(string[] args)
+        public void Executar_Aula7()
         {
             Base resultado = new Base();
 
@@ -40,7 +39,11 @@ namespace Aula_7.Exercicio_1
 
             }
 
+
         }
+
+        
+
 
      
     }
