@@ -1,0 +1,16 @@
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio feitos\Exercicio API\Ex_1\Service\obj\Debug\netcoreapp3.1\Service.csproj.AssemblyReference.cache
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio feitos\Exercicio API\Ex_1\Service\obj\Debug\netcoreapp3.1\Service.AssemblyInfoInputs.cache
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio feitos\Exercicio API\Ex_1\Service\obj\Debug\netcoreapp3.1\Service.AssemblyInfo.cs
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio feitos\Exercicio API\Ex_1\Service\obj\Debug\netcoreapp3.1\Service.csproj.CoreCompileInputs.cache
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio feitos\Exercicio API\Ex_1\Service\bin\Debug\netcoreapp3.1\Service.deps.json
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio feitos\Exercicio API\Ex_1\Service\bin\Debug\netcoreapp3.1\Service.dll
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio feitos\Exercicio API\Ex_1\Service\bin\Debug\netcoreapp3.1\Service.pdb
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio feitos\Exercicio API\Ex_1\Service\bin\Debug\netcoreapp3.1\Common.dll
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio feitos\Exercicio API\Ex_1\Service\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio feitos\Exercicio API\Ex_1\Service\bin\Debug\netcoreapp3.1\Infrastructure.dll
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio feitos\Exercicio API\Ex_1\Service\bin\Debug\netcoreapp3.1\Common.pdb
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio feitos\Exercicio API\Ex_1\Service\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio feitos\Exercicio API\Ex_1\Service\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio feitos\Exercicio API\Ex_1\Service\obj\Debug\netcoreapp3.1\Service.csproj.CopyComplete
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio feitos\Exercicio API\Ex_1\Service\obj\Debug\netcoreapp3.1\Service.dll
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio feitos\Exercicio API\Ex_1\Service\obj\Debug\netcoreapp3.1\Service.pdb

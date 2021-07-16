@@ -1,0 +1,9 @@
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio feitos\Exercicio API\Ex_1\Common\bin\Debug\netcoreapp3.1\Common.deps.json
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio feitos\Exercicio API\Ex_1\Common\bin\Debug\netcoreapp3.1\Common.dll
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio feitos\Exercicio API\Ex_1\Common\bin\Debug\netcoreapp3.1\Common.pdb
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio feitos\Exercicio API\Ex_1\Common\obj\Debug\netcoreapp3.1\Common.csproj.AssemblyReference.cache
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio feitos\Exercicio API\Ex_1\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfoInputs.cache
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio feitos\Exercicio API\Ex_1\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfo.cs
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio feitos\Exercicio API\Ex_1\Common\obj\Debug\netcoreapp3.1\Common.csproj.CoreCompileInputs.cache
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio feitos\Exercicio API\Ex_1\Common\obj\Debug\netcoreapp3.1\Common.dll
+C:\Users\AWMMANHA\Documents\Exercicios\Exercicio feitos\Exercicio API\Ex_1\Common\obj\Debug\netcoreapp3.1\Common.pdb
