@@ -164,7 +164,7 @@ CREATE TABLE categoria(
 
    INSERT
      INTO pedidoItem (qtade, preco, total, idProdutos, idPedidos)
-   VALUES (1, 10, 10, 6, 6)
+   VALUES (1, 10, 10, 1, 1)
 
    INSERT
      INTO pedidoItem (qtade, preco, total, idProdutos, idPedidos)
