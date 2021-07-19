@@ -151,11 +151,11 @@ namespace Aula3
 
             Console.Clear();
 
-            Console.WriteLine("\nInformacoes Avião");
+            Console.WriteLine("\nInformações Avião");
             aviao.EscreverInformacoes();
-            Console.WriteLine("\nInformacoes Carro");
+            Console.WriteLine("\nInformações Carro");
             carro.EscreverInformacoes();
-            Console.WriteLine("\nInformacoes Moto");
+            Console.WriteLine("\nInformações Moto");
             moto.EscreverInformacoes();
 
             Console.ReadLine();

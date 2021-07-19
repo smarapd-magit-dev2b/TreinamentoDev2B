@@ -245,8 +245,8 @@ namespace Aula6
 
             //Exiba todas as pessoas que contenha a letra “a” no nome.
             var exercicio1 = PessoaCollection.Where(x => String.IsNullOrEmpty(x.Nome) == false &&
-            x.Nome.ToUpper().Contains("a")).ToList();
-            Console.WriteLine($"\nExercicio 1");
+            x.Nome.ToUpper().Contains("A")).ToList();
+            Console.WriteLine($"Exercicio 1");
             foreach (var item in exercicio1)
             {
                 Console.WriteLine($"\nId: {item.Id}");
@@ -257,7 +257,7 @@ namespace Aula6
             Console.WriteLine($"\nExercicio 2");
             //Exiba o Nome, a Idade e a Altura das pessoas que contenha a letra “a” no Logradouro de seu Endereço.
             var exercicio2 = PessoaCollection.Where(x => x.Endereco != null && x.Endereco.Logradouro != null &&
-            x.Endereco.Logradouro.Contains("a"))
+            x.Endereco.Logradouro.ToLower().Contains("a"))
                 .Select(x => new
                 {
                     Nome = x.Nome,
@@ -277,9 +277,7 @@ namespace Aula6
             //Exiba o Nome de todas as pessoas que possuem filhos
             var exercicio3 = PessoaCollection.Where(x => x.Filhos != null && x.Filhos.Any()).ToList();
             foreach (var item in exercicio3)
-            {
                 Console.WriteLine($"Nome: {item.Nome}");
-            }
 
             Console.WriteLine("-------------------------------");
             Console.WriteLine($"\nExercicio 4");
@@ -288,18 +286,15 @@ namespace Aula6
             var exercicio4 = PessoaCollection.Where(x => x.Filhos != null && x.Filhos.Count > 2).ToList();
             foreach (var item in exercicio4)
             {
-                Console.WriteLine($"\nNome: {item.Nome}");
-                Console.WriteLine($"Data de Nascimento: {item.DataNascimento.ToString("dd/MM/yyyy")}");
-                Console.WriteLine($"Peso: {item.Peso} kg");
-                Console.WriteLine($"Logradouro: {item.Endereco?.Logradouro}");
-                Console.WriteLine($"Bairro: {item.Endereco?.Bairro}");
-                Console.WriteLine($"Complemento: {item.Endereco?.Complemento}");
+                Console.WriteLine($"\nNome: {item.Nome}. \nData de Nascimento: {item.DataNascimento.ToString("dd/MM/yyyy")}. " +
+                    $"\nPeso: {item.Peso} kg. \nLogradouro: {item.Endereco?.Logradouro}. \nBairro: {item.Endereco?.Bairro}." +
+                    $"\nComplemento: {item.Endereco?.Complemento}.");
             }
 
             Console.WriteLine("-------------------------------");
             Console.WriteLine($"\nExercicio 5");
             //Exiba Nome, a Idade e a Altura das pessoas que não possuem filhos
-            var exercicio5 = PessoaCollection.Where(x => x.Filhos == null).ToList();
+            var exercicio5 = PessoaCollection.Where(x => x.Filhos == null || !(x.Filhos.Any())).ToList();
             foreach (var item in exercicio5)
             {
                 Console.WriteLine($"Nome: {item.Nome}");
@@ -322,7 +317,7 @@ namespace Aula6
                 }).ToList();
             foreach (var item in exercicio6)
             {
-                Console.WriteLine($"\nNome: {item.Nome}");
+                Console.WriteLine($"\nNome do pai: {item.Nome}");
                 foreach (var itemF in item.Filhos)
                 {
                     Console.WriteLine($"Filho: {itemF.NomeFilhos}");
@@ -332,8 +327,8 @@ namespace Aula6
             Console.WriteLine("-------------------------------");
             Console.WriteLine($"\nExercicio 7");
             //Quantidade de Pessoas que possuam Filhos maiores de 25 anos
-            var exercicio7 = PessoaCollection.Count(x => x.Filhos != null && x.Filhos
-            .Where(f => DateTime.Now.Year - f.DataNascimento.Year > 25).Any());
+            var exercicio7 = PessoaCollection.Count(x => x.Filhos != null && 
+            x.Filhos.Any(y => new DateTime((DateTime.Now - y.DataNascimento).Ticks).Year > 25));
 
             Console.WriteLine($"Quantidade de pessoas: " + exercicio7);
 
@@ -431,7 +426,8 @@ namespace Aula6
             Console.WriteLine("-------------------------------");
             Console.WriteLine($"\nExercicio 14");
             //Média de altura, incluindo filhos
-            var exercicio14 = PessoaCollection.Union(PessoaCollection.Where(x => x.Filhos != null).SelectMany(x => x.Filhos)).Average(x => x.Altura);
+            var exercicio14 = PessoaCollection.Union(PessoaCollection.Where(x => x.Filhos != null)
+                .SelectMany(x => x.Filhos)).Average(x => x.Altura);
             Console.WriteLine($"Média de alturas: {exercicio14}m");
 
         }

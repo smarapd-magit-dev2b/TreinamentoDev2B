@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Aula1
 {
@@ -21,7 +19,6 @@ namespace Aula1
         }
         private void Ex1()
 		{
-
 			decimal media;
 
 			Console.WriteLine("Digite a média:");
@@ -54,10 +51,8 @@ namespace Aula1
 
 		private void Ex2()
 		{
-
 			int num;
-			int numeromaior = 0;
-			int numeromenor = 0;
+			int numeromaior = 0, numeromenor = 0;
 
 			Console.WriteLine("Digite 10 números: ");
 			for (int i = 1; i <= 10; i++)
@@ -65,13 +60,9 @@ namespace Aula1
 				Console.WriteLine("Inserir o número " + i);
 				num = Convert.ToInt32(Console.ReadLine());
 				if (num > numeromaior)
-				{
 					numeromaior = num;
-				}
 				else
-				{
 					numeromenor = num;
-				}
 			}
 			Console.WriteLine("O maior número é: " + numeromaior);
 			Console.WriteLine("O menor número é: " + numeromenor);
@@ -81,7 +72,6 @@ namespace Aula1
 
 		private void Ex3()
 		{
-
 			Console.WriteLine("Informe o primeiro valor: ");
 			int v1 = int.Parse(Console.ReadLine());
 
@@ -89,13 +79,10 @@ namespace Aula1
 			int v2 = int.Parse(Console.ReadLine());
 
 			if (v1 % v2 == 0)
-			{
-				Console.Write("Os números são multiplos");
-			}
+				Console.Write("\nOs números são multiplos");
 			else
-			{
 				Console.WriteLine("\nOs números não são multiplos");
-			}
+
 			Console.ReadLine();
 		}
 
@@ -219,8 +206,8 @@ namespace Aula1
 
 		private void Ex10()
 		{
-			int idade50 = 0, pesoinferior40 = 0, idade1020 = 0;
-			decimal media_altura = 0m, porcentagemPessoas = 0m;
+			int idade50 = 0, pesoInferior40 = 0, idade1020 = 0;
+			decimal mediaAltura = 0m, porcentagemPessoas = 0m;
 
 			for (int i = 1; i <= 5; i++)
 			{
@@ -238,18 +225,18 @@ namespace Aula1
 				else if (idade >= 10 && idade <= 20)
 				{
 					idade1020++;
-					media_altura += altura;
-					media_altura = (media_altura / idade1020);
+					mediaAltura += altura;
+					mediaAltura = (mediaAltura / idade1020);
 				}
 
 				if (peso < 40)
 				{
-					pesoinferior40++;
+					pesoInferior40++;
 				}
-				porcentagemPessoas = (100 * pesoinferior40 / 5);
+				porcentagemPessoas = (100 * pesoInferior40 / 5);
 			}
 			Console.WriteLine("Idade Superior a 50: " + idade50);
-			Console.WriteLine("Media das alturas: " + media_altura);
+			Console.WriteLine("Media das alturas: " + mediaAltura);
 			Console.WriteLine("Porcentagem peso: " + porcentagemPessoas + " %");
 
 			Console.ReadLine();
@@ -258,19 +245,18 @@ namespace Aula1
 		private void Desafio1()
         {
 			int numeros;
-			int maior = 0;
-			int menor = 0;
-			string operacao;
+			int maior = 0, menor = 0, soma = 0;
 			bool condicao = true;
 
 			while (condicao)
 			{
 				Console.WriteLine("Digite um número: ");
 				numeros = int.Parse(Console.ReadLine());
-
-				menor = numeros;
+				
 				if (numeros > 0)
 				{
+					menor = maior;
+					soma += numeros;
 					if (numeros > maior)
 						maior = numeros;
 
@@ -289,7 +275,7 @@ namespace Aula1
 			}
 			Console.WriteLine("O maior número é: " + maior);
 			Console.WriteLine("O menor número é: " + menor);
-			Console.WriteLine("A soma é: ");
+			Console.WriteLine("A soma é: " + soma);
 
 			Console.ReadLine();
 		}

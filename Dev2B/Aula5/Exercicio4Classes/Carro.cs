@@ -26,8 +26,8 @@ namespace Aula5.Exercicio4Classes
 
         public override string ToString()
         {
-            return $"\nID: {Id}. \nMarca: {Marca}. \nCor: {Cor}. \nAno de Fabricação R$: {AnoFabricacao}." +
-                $" \nPreço: {Preco}. \nQuantidade de portas: {QuantidadePortas}. \nKilometragem: {Kilometragem}.";
+            return $"\nID: {Id}. \nMarca: {Marca}. \nCor: {Cor}. \nAno de Fabricação: {AnoFabricacao}." +
+                $" \nPreço: R${Preco}. \nQuantidade de portas: {QuantidadePortas}. \nKilometragem: {Kilometragem} km.";
         }
     }
 }

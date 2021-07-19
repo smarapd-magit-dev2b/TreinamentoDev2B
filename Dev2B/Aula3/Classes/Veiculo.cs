@@ -23,9 +23,9 @@ namespace Aula3.Classes
 
         public void EscreverInformacoes()
         {
-            Console.WriteLine(VelocidadeMaxima);
-            Console.WriteLine(TipoCombustivel);
-            Console.WriteLine(Marca);
+            Console.WriteLine($"Velocidade máxima: {VelocidadeMaxima} km/h");
+            Console.WriteLine($"Tipo de combustível: {TipoCombustivel}");
+            Console.WriteLine($"Marca: {Marca}");
         }
     }
 }

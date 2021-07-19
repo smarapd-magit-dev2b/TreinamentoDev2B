@@ -117,10 +117,10 @@ namespace Aula2
             Console.WriteLine("Data de Nascimento: " + aluno.DataNascimento.ToShortDateString());
             Console.WriteLine("Endereço: " + aluno.Endereco);
             Console.WriteLine("Telefone: " + aluno.Telefone);
-            Console.WriteLine("Email" + aluno.Email);
+            Console.WriteLine("Email: " + aluno.Email);
             Console.WriteLine("Nacionalidade: " + aluno.Nacionalidade);
             Console.WriteLine("Cidade: " + aluno.Cidade);
-            Console.WriteLine("Estado:" + aluno.Estado);
+            Console.WriteLine("Estado: " + aluno.Estado);
             Console.WriteLine("Data da matrícula: " + aluno.DataMatricula.ToShortDateString());
             Console.WriteLine("Registro do Aluno (RA): " + aluno.RA);
 
@@ -129,10 +129,10 @@ namespace Aula2
             Console.WriteLine("Data de Nascimento: " + aluno.Professor.DataNascimento.ToShortDateString());
             Console.WriteLine("Endereço: " + aluno.Professor.Endereco);
             Console.WriteLine("Telefone: " + aluno.Professor.Telefone);
-            Console.WriteLine("Email" + aluno.Professor.Email);
+            Console.WriteLine("Email: " + aluno.Professor.Email);
             Console.WriteLine("Nacionalidade: " + aluno.Professor.Nacionalidade);
             Console.WriteLine("Cidade: " + aluno.Professor.Cidade);
-            Console.WriteLine("Estado:" + aluno.Professor.Estado);
+            Console.WriteLine("Estado: " + aluno.Professor.Estado);
             Console.WriteLine("Data de admissão: " + aluno.Professor.DataAdmissao.ToShortDateString());
             Console.WriteLine("Registro do Professor: " + aluno.Professor.RegistroProfessor);
             Console.WriteLine("Salário R$: " + aluno.Professor.Salario);

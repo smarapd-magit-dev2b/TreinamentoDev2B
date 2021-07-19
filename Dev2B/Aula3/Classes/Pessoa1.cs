@@ -19,9 +19,9 @@ namespace Aula3.Classes
         }
         public void EscreverInformacoes()
         {
-            Console.WriteLine(Nome);
-            Console.WriteLine(Endereco);
-            Console.WriteLine(Telefone);
+            Console.WriteLine($"Nome: {Nome}");
+            Console.WriteLine($"Endereço: {Endereco}");
+            Console.WriteLine($"Telefone: {Telefone}");
         }
     }
 }

@@ -14,8 +14,8 @@ namespace Aula3.Classes
 
         public override void ImpreExtrato()
         {
-            Console.WriteLine(MovimentacoesDepositos);
-            Console.WriteLine(MovimentacoesSaques);
+            Console.WriteLine($"Movimentações de depósito: {MovimentacoesDepositos}");
+            Console.WriteLine($"Movimentações de saque: {MovimentacoesSaques}");
         }
 
         public override string Depositar()

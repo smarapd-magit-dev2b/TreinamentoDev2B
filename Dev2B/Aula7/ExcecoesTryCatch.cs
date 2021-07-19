@@ -20,7 +20,7 @@ namespace Aula7
         {
             Base bs = new Base();
 
-            var pessoasComMais90 = bs.PessoaCollection.Where(x => DateTimeHelper.GetIdade(x.DataNascimento) > 90) // salve vsalve familia
+            var pessoasComMais90 = bs.PessoaCollection.Where(x => DateTimeHelper.GetIdade(x.DataNascimento) > 90)
                 .Count();
             if (pessoasComMais90 == 0)
             {
@@ -43,9 +43,6 @@ namespace Aula7
             }
             finally
             {
-                //var listapessoasComMais90 = bs.PessoaCollection.Where(x => DateTimeHelper
-                //.GetIdade(x.DataNascimento) > 90).ToList();
-                //ColecaoPessoasHelper.GetArquivos<Pessoa>(listapessoasComMais90);
                 ColecaoPessoasHelper.GetArquivos<Pessoa>(bs.PessoaCollection);
             }
             Console.ReadKey();
