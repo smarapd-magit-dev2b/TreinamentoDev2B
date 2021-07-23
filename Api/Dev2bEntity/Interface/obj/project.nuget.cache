@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nzN4tv2xT347MKPjzE7A3G0cvaQmW7cx1CoORzXlkhjFLFpJ/VbgxhapfJMUUhUX0mvjy9huUiZnHfwHmSKkFw==",
+  "dgSpecHash": "SdKTiGtBZx4iyg0Zqod7yswiTXD7DPaGovPQS0XvyTqOqWGy2NazV3FjQESJa/Usbw7mQDDjIpcMp4ryNds7QQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\FACCARDOSO\\Documents\\Dev2bEntity\\Interface\\Interface.csproj",
+  "projectFilePath": "C:\\Users\\FACCARDOSO\\Documents\\TreinamentoDev2B\\Api\\Dev2bEntity\\Interface\\Interface.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\FACCARDOSO\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\FACCARDOSO\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

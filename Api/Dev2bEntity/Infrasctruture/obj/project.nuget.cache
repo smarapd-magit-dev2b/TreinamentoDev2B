@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qwTD93sPY1L0IEYVCWAC7gg0ddkQ+UJx+Lc/KqPFkTDQLdroTLtz7eVbXejOL5ODmF+7CheKLQaWzCR9nkUgMg==",
+  "dgSpecHash": "nddxpvO1KKsm85mwu8/hzxXJMDRwdqOThmsMnqngfhVicWGr+VsSvTVim4ErRvv9lHP1HDdBnM6xjVeFadXc1A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\FACCARDOSO\\Documents\\Dev2bEntity\\Infrasctruture\\Infrasctruture.csproj",
+  "projectFilePath": "C:\\Users\\FACCARDOSO\\Documents\\TreinamentoDev2B\\Api\\Dev2bEntity\\Infrasctruture\\Infrasctruture.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\FACCARDOSO\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\FACCARDOSO\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6Gh+x2fpIWkff9ViOl5yf2H2yb9GtyS2BOPDFuTJf9hZh5BHcIKgwDnw6IJl9OwrX3PBoiBqwTUuHrS/F/xzVw==",
+  "dgSpecHash": "PcWoPR1ubXGPQ/2Rfg9k0G9pA0PnCmgo8U8XgnfT6qoYYMWkvy/TilXe6uzrO1kMZkr/3BmqfwDzFosvdIolsQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\FACCARDOSO\\Documents\\Dev2bEntity\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\FACCARDOSO\\Documents\\TreinamentoDev2B\\Api\\Dev2bEntity\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

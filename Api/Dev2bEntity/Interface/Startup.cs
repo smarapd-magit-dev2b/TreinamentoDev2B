@@ -40,6 +40,7 @@ namespace Interface
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, Dev2bEntityDbContext dev2BDbContext)
         {
+            //dev2BDbContext.Database.EnsureDeleted();
             dev2BDbContext.Database.Migrate();
 
             if (env.IsDevelopment())

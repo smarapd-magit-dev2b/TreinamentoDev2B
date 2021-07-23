@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7i/FDZdmD0fk9be8cSofl9GyVFKYdlgka2nbk7MIZGi8FTC+PS7Vy+tWL+YM42G9yKTqcL0GeHbs4qMwVBl8uA==",
+  "dgSpecHash": "a5mBqiRuWyCBAQCAI/5gjm2m1LVaOC5UhRYEw0Duh8tr4NO70G663soy22JkwT9GjBKbQ3toq/eeLMHES6egaw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\FACCARDOSO\\Documents\\Dev2bEntity\\Service\\Service.csproj",
+  "projectFilePath": "C:\\Users\\FACCARDOSO\\Documents\\TreinamentoDev2B\\Api\\Dev2bEntity\\Service\\Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\FACCARDOSO\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\FACCARDOSO\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

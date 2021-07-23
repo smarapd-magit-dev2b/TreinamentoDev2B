@@ -26,7 +26,7 @@ namespace Infrasctruture.Model.Maps
             builder.Property(x => x.DataInclusao)
                 .HasColumnName("dataInclusao")
                 .HasColumnType("DATETIME")
-                .IsRequired();
+                .HasDefaultValueSql("GETDATE()");
 
             builder.Property(x => x.Descricao)
                 .HasColumnName("descricao")
