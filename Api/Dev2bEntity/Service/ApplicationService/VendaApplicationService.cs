@@ -22,12 +22,24 @@ namespace Service.ApplicationService
 
         public IEnumerable<VendaGetAllDto> GetAll()
         {
-            throw new NotImplementedException();
-        }
+            var vendasAll = Uow.VendaRepository.GetAll();
 
-        public VendaGetAllDto GetById(int id)
-        {
-            throw new NotImplementedException();
+            var dto = vendasAll.Select(x => new VendaGetAllDto
+            {
+                Id = x.Id,
+                Nome = x.Cliente.Nome,
+                Cpf = x.Cliente.Cpf,
+                DataVenda = x.Data,
+                ValorTotal = x.ListItensVenda.Sum(y => y.ValorTotal),
+                Produtos = x.ListItensVenda.Select(y => new ProdutoVendaGetDto{
+                    Id = y.Produto.Id,
+                    Descricao = y.Produto.Descricao,
+                    Preco = y.Produto.Preco,
+                    Quantidade = x.ListItensVenda.Select(y => y.Quantidade).FirstOrDefault()
+                }).ToList()
+            });
+
+            return dto;
         }
 
         public int Post(VendaPostDto vendaDto)
@@ -36,7 +48,7 @@ namespace Service.ApplicationService
             {
                 IdCliente = vendaDto.IdCliente,
                 Data = vendaDto.Data,
-                ItensVenda = new List<ItensVenda>()
+                ListItensVenda = new List<ItensVenda>()
             };
 
             var products = Uow.ProdutoRepository.GetAll();
@@ -53,7 +65,9 @@ namespace Service.ApplicationService
                 productFinded.Quantidade -= item.Quantidade;
                 Uow.ProdutoRepository.Put(productFinded);
 
-                venda.ItensVenda.Add(new ItensVenda()
+
+
+                venda.ListItensVenda.Add(new ItensVenda()
                 {
                     IdVenda = venda.Id,
                     IdProduto = productFinded.Id,
@@ -61,13 +75,6 @@ namespace Service.ApplicationService
                     ValorTotal = item.Quantidade * productFinded.Preco
                 });
             }
-            //var vendaCheck = venda.ItensVenda.Select(x => x.IdProduto).FirstOrDefault();
-
-            //var productsExists = products.Any(x => x.Id == vendaCheck);
-            //if (!productsExists)
-            //    throw new DomainException($"Produto não existe");
-
-            //item.Quantidade = venda.ItensVenda.Select(x => x.Quantidade).FirstOrDefault();
             Uow.VendaRepository.Post(venda);
             Uow.Commit();
 

@@ -13,7 +13,6 @@ namespace Service.DependencyInjection
             ConfigureBindingsClienteRepository.RegisterBindings(services, configuration);
             ConfigureBindingsProdutoRepository.RegisterBindings(services, configuration);
             ConfigureBindingsVendaRepository.RegisterBindings(services, configuration);
-            ConfigureBindingsItensVendaRepository.RegisterBindings(services, configuration);
             ConfigureBindingsClienteApplicationService.RegisterBindings(services, configuration);
             ConfigureBindingsProdutoApplicationService.RegisterBindings(services, configuration);
             ConfigureBindingsVendaApplicationService.RegisterBindings(services, configuration);

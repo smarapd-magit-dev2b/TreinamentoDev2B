@@ -10,6 +10,6 @@ namespace Domain.Entities
         public int IdCliente { get; set; }
         public DateTime Data { get; set; }
         public Cliente Cliente { get; set; }
-        public ICollection<ItensVenda> ItensVenda { get; set; }
+        public ICollection<ItensVenda> ListItensVenda { get; set; }
     }
 }

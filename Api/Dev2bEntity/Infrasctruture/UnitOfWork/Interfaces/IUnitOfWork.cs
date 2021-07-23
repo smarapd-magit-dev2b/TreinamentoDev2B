@@ -10,7 +10,6 @@ namespace Infrasctruture.UnitOfWork.Interfaces
         IClienteRepository ClienteRepository { get; }
         IProdutoRepository ProdutoRepository { get; }
         IVendaRepository VendaRepository { get; }
-        IItensVendaRepository ItensVendaRepository { get; }
         void Commit();
     }
 }

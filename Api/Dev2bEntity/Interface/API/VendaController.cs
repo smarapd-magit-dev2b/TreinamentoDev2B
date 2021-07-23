@@ -21,6 +21,20 @@ namespace Interface.API
             VendaApplicationService = vendaApplicationService;
         }
 
+        [HttpGet]
+        public IActionResult GetAll()
+        {
+            try
+            {
+                var sales = VendaApplicationService.GetAll();
+                return Ok(sales);
+            }
+            catch (DomainException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
         [HttpPost]
         public IActionResult Post([FromBody] VendaPostDto venda)
         {

@@ -8,7 +8,6 @@ namespace Service.ApplicationService.Interfaces
     public interface IVendaApplicationService
     {
         IEnumerable<VendaGetAllDto> GetAll();
-        VendaGetAllDto GetById(int id);
         int Post(VendaPostDto venda);
     }
 }

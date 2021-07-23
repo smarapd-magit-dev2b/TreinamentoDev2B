@@ -28,9 +28,10 @@ namespace Infrasctruture.Model.Maps
             builder.Property(x => x.Data)
                 .HasColumnName("dataVenda")
                 .HasColumnType("DATETIME")
+                .HasDefaultValueSql("GETDATE()")
                 .IsRequired();
 
-            builder.HasMany(x => x.ItensVenda)
+            builder.HasMany(x => x.ListItensVenda)
                 .WithOne(x => x.Venda);
         }
     }

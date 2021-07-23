@@ -26,7 +26,7 @@ namespace Infrasctruture.Model.Maps
                 .IsRequired();
 
             builder.HasOne(x => x.Venda)
-                .WithMany(x => x.ItensVenda)
+                .WithMany(x => x.ListItensVenda)
                 .HasForeignKey(x => x.IdVenda);
 
             builder.HasOne(x => x.Produto)

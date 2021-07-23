@@ -13,15 +13,13 @@ namespace Infrasctruture.UnitOfWork
         public IClienteRepository ClienteRepository { get; }
         public IProdutoRepository ProdutoRepository { get; }
         public IVendaRepository VendaRepository { get; }
-        public IItensVendaRepository ItensVendaRepository { get; }
 
-        public UnitOfWork(Dev2bEntityDbContext dev2BEntityDbContext, IClienteRepository clienteRepository, IProdutoRepository produtoRepository, IVendaRepository vendaRepository, IItensVendaRepository itensVendaRepository)
+        public UnitOfWork(Dev2bEntityDbContext dev2BEntityDbContext, IClienteRepository clienteRepository, IProdutoRepository produtoRepository, IVendaRepository vendaRepository)
         {
             _dev2BEntityDbContext = dev2BEntityDbContext;
             ClienteRepository = clienteRepository;
             ProdutoRepository = produtoRepository;
             VendaRepository = vendaRepository;
-            ItensVendaRepository = itensVendaRepository;
         }
         public void Commit()
         {

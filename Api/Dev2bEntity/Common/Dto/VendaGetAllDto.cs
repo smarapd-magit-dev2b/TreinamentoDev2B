@@ -11,5 +11,6 @@ namespace Common.Dto
         public string Cpf { get; set; }
         public DateTime DataVenda { get; set; }
         public decimal ValorTotal { get; set; }
+        public ICollection<ProdutoVendaGetDto> Produtos { get; set; }
     }
 }

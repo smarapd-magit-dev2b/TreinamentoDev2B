@@ -4,14 +4,16 @@ using Infrasctruture.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Infrasctruture.Migrations
 {
     [DbContext(typeof(Dev2bEntityDbContext))]
-    partial class Dev2bEntityDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210723203318_GetDateDefaultDataTabelaVenda")]
+    partial class GetDateDefaultDataTabelaVenda
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

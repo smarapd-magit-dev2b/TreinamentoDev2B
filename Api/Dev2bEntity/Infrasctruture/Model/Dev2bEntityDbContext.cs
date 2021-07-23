@@ -9,7 +9,6 @@ namespace Infrasctruture.Model
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Venda> Vendas { get; set; }
         public DbSet<Produto> Produtos { get; set; }
-        public DbSet<ItensVenda> ItensVenda { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

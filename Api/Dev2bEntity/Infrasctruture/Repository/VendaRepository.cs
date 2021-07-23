@@ -19,7 +19,14 @@ namespace Infrasctruture.Repository.Interfaces
 
         public IEnumerable<Venda> GetAll()
         {
-            return _dev2BEntityDbContext.Vendas.AsNoTracking().ToList();
+            var vendas = _dev2BEntityDbContext.Vendas.AsNoTracking()
+                .Include(x => x.ListItensVenda)
+                .Include(x => x.Cliente)
+                .Include(x => x.ListItensVenda)
+                .ThenInclude(x => x.Produto)
+                .ToList();
+
+            return vendas;
         }
 
         public Venda GetById(int id)
