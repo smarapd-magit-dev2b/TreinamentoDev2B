@@ -15,6 +15,8 @@ namespace Common.Entities
         public string Raca { get; set; }
         public bool UsuarioAtivo { get; set; }
         public string Cpf { get; set; }
+        public int? idPai { get; set; }
         public List<Pessoa> Filhos { get; set; }
+        public virtual Pessoa Pai { get; set; }
     }
 }

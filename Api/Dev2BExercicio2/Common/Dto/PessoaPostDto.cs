@@ -13,5 +13,6 @@ namespace Common.Dto
         public decimal Peso { get; set; }
         public string Raca { get; set; }
         public string Cpf { get; set; }
+        public int? idPai { get; set; }
     }
 }

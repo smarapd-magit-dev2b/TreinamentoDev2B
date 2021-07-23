@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FACCARDOSO\\Documents\\Dev2BExercicio1\\Common\\Common.csproj": {}
+    "C:\\Users\\FACCARDOSO\\Documents\\TreinamentoDev2B\\Api\\Dev2BExercicio1\\Common\\Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FACCARDOSO\\Documents\\Dev2BExercicio1\\Common\\Common.csproj": {
+    "C:\\Users\\FACCARDOSO\\Documents\\TreinamentoDev2B\\Api\\Dev2BExercicio1\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FACCARDOSO\\Documents\\Dev2BExercicio1\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Users\\FACCARDOSO\\Documents\\TreinamentoDev2B\\Api\\Dev2BExercicio1\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\FACCARDOSO\\Documents\\Dev2BExercicio1\\Common\\Common.csproj",
+        "projectPath": "C:\\Users\\FACCARDOSO\\Documents\\TreinamentoDev2B\\Api\\Dev2BExercicio1\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\FACCARDOSO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FACCARDOSO\\Documents\\Dev2BExercicio1\\Common\\obj\\",
+        "outputPath": "C:\\Users\\FACCARDOSO\\Documents\\TreinamentoDev2B\\Api\\Dev2BExercicio1\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

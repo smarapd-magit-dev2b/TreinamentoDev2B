@@ -4,6 +4,7 @@ using Infrastructure.UnitOfWork;
 using Infrastructure.UnitOfWork.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -25,10 +26,13 @@ namespace Interface
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<IPessoaApplicationService, PessoaApplicationService>();
-            services.AddSingleton<IPessoaUnitOfWork, PessoaUnitOfWork>();
-            services.AddSingleton<IPessoaRepository, PessoaRepository>();
+            services.AddScoped<IPessoaApplicationService, PessoaApplicationService>();
+            services.AddScoped<IPessoaUnitOfWork, PessoaUnitOfWork>();
+            services.AddScoped<IPessoaRepository, PessoaRepository>();
             services.AddControllers();
+
+            services.AddDbContext<Context>(options =>
+               options.UseSqlServer(Configuration.GetConnectionString("Dev2bConnection")));
 
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(swagger =>

@@ -7,12 +7,11 @@ namespace Infrastructure.Repository.Interfaces
     {
         void Add(Pessoa pessoa);
         int GetNextId();
-        void AddFilho(int id, Pessoa filho);
         void Delete(Pessoa pessoa);
-        void Edit(int id, Pessoa pessoa);
-        void EditInfo(int id, Pessoa pessoa);
-        void EnableUser(int id);
-        void DisableUser(int id);
+        void Edit(Pessoa pessoa);
+        void EditInfo(Pessoa pessoa);
+        void EnableUser(Pessoa pessoa);
+        void DisableUser(Pessoa pessoa);
         Pessoa GetPessoaById(int id);
         List<Pessoa> GetAll();
     }
