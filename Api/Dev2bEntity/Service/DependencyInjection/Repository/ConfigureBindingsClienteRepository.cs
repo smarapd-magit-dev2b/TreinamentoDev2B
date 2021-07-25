@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Infrasctruture.Repository;
+﻿using Infrasctruture.Repository;
 using Infrasctruture.Repository.Interfaces;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

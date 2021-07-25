@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using AutoMapper;
 using Common.Dto;
 using Common.Exceptions;
 using Domain.Entities;

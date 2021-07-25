@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Infrasctruture.Model;
+﻿using Infrasctruture.Model;
 using Infrasctruture.Repository.Interfaces;
 using Infrasctruture.UnitOfWork.Interfaces;
 

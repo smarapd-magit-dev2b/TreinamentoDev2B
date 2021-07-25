@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Infrasctruture.Repository.Interfaces;
+﻿using Infrasctruture.Repository.Interfaces;
 
 namespace Infrasctruture.UnitOfWork.Interfaces
 {

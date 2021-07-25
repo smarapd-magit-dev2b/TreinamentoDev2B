@@ -1,5 +1,5 @@
-﻿using Infrasctruture.UnitOfWork.Interfaces;
-using Infrasctruture.UnitOfWork;
+﻿using Infrasctruture.UnitOfWork;
+using Infrasctruture.UnitOfWork.Interfaces;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
