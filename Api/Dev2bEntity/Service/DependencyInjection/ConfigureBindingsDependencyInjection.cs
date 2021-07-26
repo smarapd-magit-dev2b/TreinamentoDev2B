@@ -10,12 +10,8 @@ namespace Service.DependencyInjection
     {
         public static void RegisterBindings(IServiceCollection services, IConfiguration configuration)
         {
-            ConfigureBindingsClienteRepository.RegisterBindings(services, configuration);
-            ConfigureBindingsProdutoRepository.RegisterBindings(services, configuration);
-            ConfigureBindingsVendaRepository.RegisterBindings(services, configuration);
-            ConfigureBindingsClienteApplicationService.RegisterBindings(services, configuration);
-            ConfigureBindingsProdutoApplicationService.RegisterBindings(services, configuration);
-            ConfigureBindingsVendaApplicationService.RegisterBindings(services, configuration);
+            ConfigureBindingsApplicationService.RegisterBindings(services, configuration);
+            ConfigureBindingsRepository.RegisterBindings(services, configuration);
             ConfigureBindingsUnitOfWork.RegisterBindings(services, configuration);
             ConfigureBindingsDatabaseContext.RegisterBindings(services, configuration);
         }

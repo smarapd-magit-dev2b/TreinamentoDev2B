@@ -10,9 +10,9 @@ namespace Service.ApplicationService
 {
     public class VendaApplicationService : IVendaApplicationService
     {
-        private readonly IUnitOfWork Uow;
+        private readonly IVendaUnitOfWork Uow;
 
-        public VendaApplicationService(IUnitOfWork vendaUnitOfWork)
+        public VendaApplicationService(IVendaUnitOfWork vendaUnitOfWork)
         {
             Uow = vendaUnitOfWork;
         }

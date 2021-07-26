@@ -43,5 +43,10 @@
 
             return cpf.EndsWith(digito);
         }
+
+        public static string FormatCpf(string cpf)
+        {
+            return cpf.Replace(".", "").Replace("-", "");
+        }
     }
 }

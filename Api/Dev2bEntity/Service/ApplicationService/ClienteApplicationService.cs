@@ -12,27 +12,27 @@ namespace Service.ApplicationService
 {
     public class ClienteApplicationService : IClienteApplicationService
     {
-        private readonly IUnitOfWork Uow;
+        private readonly IClienteUnitOfWork ClienteUow;
 
-        public ClienteApplicationService(IUnitOfWork clienteUnitOfWork)
+        public ClienteApplicationService(IClienteUnitOfWork clienteUnitOfWork)
         {
-            Uow = clienteUnitOfWork;
+            ClienteUow = clienteUnitOfWork;
         }
 
         public void Delete(int id)
         {
-            var deleteClient = Uow.ClienteRepository.GetById(id);
+            var deleteClient = ClienteUow.ClienteRepository.GetById(id);
             if (deleteClient == null)
                 throw new DomainException("Id não encontrado");
 
-            Uow.ClienteRepository.Delete(deleteClient);
+            ClienteUow.ClienteRepository.Delete(deleteClient);
 
-            Uow.Commit();
+            ClienteUow.Commit();
         }
 
         public IEnumerable<ClienteGetAllDto> GetAll()
         {
-            var dto = Uow.ClienteRepository.GetAll().Select(c => new ClienteGetAllDto
+            var dto = ClienteUow.ClienteRepository.GetAll().Select(c => new ClienteGetAllDto
             {
                 Id = c.Id,
                 Nome = c.Nome,
@@ -48,7 +48,7 @@ namespace Service.ApplicationService
 
         public ClienteGetAllDto GetById(int id)
         {
-            var clienteGetById = Uow.ClienteRepository.GetById(id);
+            var clienteGetById = ClienteUow.ClienteRepository.GetById(id);
             if (clienteGetById == null)
                 throw new DomainException("Id não encontrado");
 
@@ -75,14 +75,9 @@ namespace Service.ApplicationService
 
             Validate(clienteEntity);
 
-            var clients = Uow.ClienteRepository.GetAll();
-            var clientRepeat = clients.Any(x => x.Nome == clienteEntity.Nome || x.Cpf == clienteEntity.Cpf);
-            if (clientRepeat)
-                throw new DomainException($"Não é possível cadastrar Nome ou Cpf repetido");
+            ClienteUow.ClienteRepository.Post(clienteEntity);
 
-            Uow.ClienteRepository.Post(clienteEntity);
-
-            Uow.Commit();
+            ClienteUow.Commit();
 
             return clienteEntity.Id;
         }
@@ -95,11 +90,16 @@ namespace Service.ApplicationService
                 throw new DomainException($"O campo Nome deve ter no mínimo 5 letras");
             if (CpfHelper.IsCpf(clienteEntity.Cpf) == false)
                 throw new DomainException($"Cpf inválido");
+            var clients = ClienteUow.ClienteRepository.GetAll();
+            var clientRepeat = clients.Any(x => (x.Nome.ToLower() == clienteEntity.Nome.ToLower() || 
+                CpfHelper.FormatCpf(x.Cpf) == CpfHelper.FormatCpf(clienteEntity.Cpf)) && x.Id != clienteEntity.Id);
+            if (clientRepeat)
+                throw new DomainException($"Não é possível cadastrar Nome ou Cpf repetido");
         }
 
         public void Put(int id, ClientePutDto clientePutDto)
         {
-            var clienteById = Uow.ClienteRepository.GetById(id);
+            var clienteById = ClienteUow.ClienteRepository.GetById(id);
             if (clienteById == null)
                 throw new DomainException($"Id não encontrado");
 
@@ -115,9 +115,9 @@ namespace Service.ApplicationService
 
             Validate(clienteEntity);
 
-            Uow.ClienteRepository.Put(clienteEntity);
+            ClienteUow.ClienteRepository.Put(clienteEntity);
 
-            Uow.Commit();
+            ClienteUow.Commit();
         }
     }
 }

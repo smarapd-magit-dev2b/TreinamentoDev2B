@@ -2,7 +2,7 @@
 
 namespace Infrasctruture.UnitOfWork.Interfaces
 {
-    public interface IUnitOfWork
+    public interface IVendaUnitOfWork
     {
         IClienteRepository ClienteRepository { get; }
         IProdutoRepository ProdutoRepository { get; }

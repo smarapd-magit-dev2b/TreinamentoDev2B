@@ -11,27 +11,27 @@ namespace Service.ApplicationService
 {
     public class ProdutoApplicationService : IProdutoApplicationService
     {
-        private readonly IUnitOfWork Uow;
+        private readonly IProdutoUnitOfWork ProdutoUow;
 
-        public ProdutoApplicationService(IUnitOfWork produtoUnitOfWork)
+        public ProdutoApplicationService(IProdutoUnitOfWork produtoUnitOfWork)
         {
-            Uow = produtoUnitOfWork;
+            ProdutoUow = produtoUnitOfWork;
         }
 
         public void Delete(int id)
         {
-            var deleteProduct = Uow.ProdutoRepository.GetById(id);
+            var deleteProduct = ProdutoUow.ProdutoRepository.GetById(id);
             if (deleteProduct == null)
                 throw new DomainException("Id não encontrado");
 
-            Uow.ProdutoRepository.Delete(deleteProduct);
+            ProdutoUow.ProdutoRepository.Delete(deleteProduct);
 
-            Uow.Commit();
+            ProdutoUow.Commit();
         }
 
         public IEnumerable<ProdutoGetAllDto> GetAll()
         {
-            var dto = Uow.ProdutoRepository.GetAll().Select(p => new ProdutoGetAllDto { 
+            var dto = ProdutoUow.ProdutoRepository.GetAll().Select(p => new ProdutoGetAllDto { 
                 Id = p.Id,
                 DataInclusao = p.DataInclusao,
                 Descricao = p.Descricao,
@@ -44,7 +44,7 @@ namespace Service.ApplicationService
 
         public ProdutoGetAllDto GetById(int id)
         {
-            var productById = Uow.ProdutoRepository.GetById(id);
+            var productById = ProdutoUow.ProdutoRepository.GetById(id);
             if (productById == null)
                 throw new DomainException("Id não encontrado");
 
@@ -72,21 +72,22 @@ namespace Service.ApplicationService
             if (productEntity.Preco < 0)
                 throw new DomainException("Não é permitido preço com valor negativo");
 
-            var products = Uow.ProdutoRepository.GetAll();
-            var descriptionRepeat = products.Any(x => x.Descricao == productEntity.Descricao);
+            var products = ProdutoUow.ProdutoRepository.GetAll();
+            var descriptionRepeat = products.Any(x => (x.Descricao == productEntity.Descricao) &&
+                x.Id != productEntity.Id);
             if (descriptionRepeat)
                 throw new DomainException($"Não é possível cadastrar Produto repetido");
 
-            Uow.ProdutoRepository.Post(productEntity);
+            ProdutoUow.ProdutoRepository.Post(productEntity);
 
-            Uow.Commit();
+            ProdutoUow.Commit();
 
             return productEntity.Id;
         }
 
         public void Put(int id, ProdutoPutDto produtoPutDto)
         {
-            var productById = Uow.ProdutoRepository.GetById(id);
+            var productById = ProdutoUow.ProdutoRepository.GetById(id);
             if(productById == null)
                 throw new DomainException($"Id não encontrado");
 
@@ -103,9 +104,9 @@ namespace Service.ApplicationService
             if (productEntity.Preco < 0)
                 throw new DomainException("Não é permitido preço com valor negativo");
 
-            Uow.ProdutoRepository.Put(productEntity);
+            ProdutoUow.ProdutoRepository.Put(productEntity);
 
-            Uow.Commit();
+            ProdutoUow.Commit();
         }
     }
 }

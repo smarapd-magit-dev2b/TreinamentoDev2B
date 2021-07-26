@@ -9,7 +9,9 @@ namespace Service.DependencyInjection.Unitofwork
     {
         public static void RegisterBindings(IServiceCollection services, IConfiguration configuration)
         {
-            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IClienteUnitOfWork, ClienteUnitOfWork>();
+            services.AddScoped<IProdutoUnitOfWork, ProdutoUnitOfWork>();
+            services.AddScoped<IVendaUnitOfWork, VendaUnitOfWork>();
         }
     }
 }
