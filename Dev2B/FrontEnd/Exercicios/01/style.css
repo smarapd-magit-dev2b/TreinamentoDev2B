@@ -1,0 +1,48 @@
+h1 {
+  font-weight: normal;
+}
+
+strong {
+  margin-left: 12px;
+}
+
+form {
+  margin-top: 8px;
+}
+
+label {
+  font-weight: bold;
+}
+
+div strong,
+nav strong {
+  margin-left: 0px;
+}
+
+nav.nav,
+.form-group {
+  padding-top: 5px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  margin-bottom: 0;
+}
+
+nav.nav,
+.form-group:nth-child(odd) {
+  background-color: whitesmoke;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  border-radius: 1px;
+}
+
+.btn-warning {
+  color: white;
+}
+
+.form-check-label {
+  font-weight: normal;
+}
+
+.card{
+  margin-left: 12px;
+}
