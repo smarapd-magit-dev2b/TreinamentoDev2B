@@ -75,3 +75,16 @@ console.log(inverso(true))
 console.log(inverso('6'))
 console.log(inverso(-200))
 console.log(inverso('programação'))
+
+console.log('\nExercício 6')
+
+var estaEntre = (numero, minimo, maximo, inclusivo = false) => {
+  if (inclusivo && numero >= minimo && numero <= maximo) return true
+  if (numero > minimo && numero < maximo) return true
+  return false
+}
+
+console.log(estaEntre(51, 50, 100))
+console.log(estaEntre(16, 100, 160))
+console.log(estaEntre(3, 3, 150))
+console.log(estaEntre(3, 3, 150, true))
