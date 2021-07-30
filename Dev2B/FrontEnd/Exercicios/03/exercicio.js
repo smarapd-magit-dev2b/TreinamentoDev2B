@@ -45,3 +45,19 @@ var nomeDoMes = (mes) => {
 
 console.log(nomeDoMes(2))
 console.log(nomeDoMes(4))
+
+console.log('\nExercício 4 como no exemplo')
+
+var maiorOuIgual = (num1, num2) => num1 >= num2 && num1 === num2
+
+console.log(maiorOuIgual(8, 8))
+console.log(maiorOuIgual(8, '8'))
+console.log(maiorOuIgual(5, 1))
+
+console.log('\nExercício 4 como no enunciado')
+
+var maiorOuIgual = (num1, num2) => num1 >= num2 && typeof num1 == typeof num2
+
+console.log(maiorOuIgual(8, 8))
+console.log(maiorOuIgual(8, '8'))
+console.log(maiorOuIgual(5, 1))
