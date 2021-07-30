@@ -88,3 +88,15 @@ console.log(estaEntre(51, 50, 100))
 console.log(estaEntre(16, 100, 160))
 console.log(estaEntre(3, 3, 150))
 console.log(estaEntre(3, 3, 150, true))
+
+console.log('\nExercício 7')
+
+var multiplicar = (num1, num2) => {
+  let ehPositivo = num1 >= 0 && num2 >= 0
+  let ehInteiro = Number.isInteger(num1) && Number.isInteger(num2)
+
+  if (ehPositivo && ehInteiro) return Math.imul(num1, num2)
+}
+
+console.log(multiplicar(5, 5))
+console.log(multiplicar(0, 7))
