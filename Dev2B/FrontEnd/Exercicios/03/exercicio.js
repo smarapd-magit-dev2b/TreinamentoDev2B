@@ -61,3 +61,17 @@ var maiorOuIgual = (num1, num2) => num1 >= num2 && typeof num1 == typeof num2
 console.log(maiorOuIgual(8, 8))
 console.log(maiorOuIgual(8, '8'))
 console.log(maiorOuIgual(5, 1))
+
+console.log('\nExercício 5')
+
+var inverso = (parametro) => {
+  if (typeof parametro == 'boolean') return !parametro
+  else if (typeof parametro == 'number') return (parametro *= -1)
+  else
+    return `booleano ou numérico esperamos, mas o parâmetro é do tipo ${typeof parametro}`
+}
+
+console.log(inverso(true))
+console.log(inverso('6'))
+console.log(inverso(-200))
+console.log(inverso('programação'))
