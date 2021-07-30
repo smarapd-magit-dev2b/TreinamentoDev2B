@@ -121,3 +121,17 @@ var repetir = (elemento, quantidade) => {
 }
 
 console.log(repetir('MuitoLoko', 9))
+
+console.log('\nExercício 9')
+
+var simboloMais = (quantidade) => '+'.repeat(quantidade)
+
+console.log(simboloMais(2))
+console.log(simboloMais(4))
+
+console.log('\nExercício 9 muito louco')
+
+var simboloMais = (quantidade) => new Array(quantidade + 1).join('+')
+
+console.log(simboloMais(2))
+console.log(simboloMais(4))
