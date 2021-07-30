@@ -100,3 +100,24 @@ var multiplicar = (num1, num2) => {
 
 console.log(multiplicar(5, 5))
 console.log(multiplicar(0, 7))
+
+console.log('\nExercício 8')
+
+var repetir = (elemento, quantidade) => {
+  let array = []
+  for (let i = 0; i < quantidade; i++) array.push(elemento)
+  return array
+}
+
+console.log(repetir('código', 2))
+console.log(repetir(7, 2))
+
+console.log('\nExercício 8 muito louco')
+
+var repetir = (elemento, quantidade) => {
+  let array = new Array(quantidade + 1).join(`${elemento};`).split(';')
+  array.pop()
+  return array
+}
+
+console.log(repetir('MuitoLoko', 9))
