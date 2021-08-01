@@ -159,7 +159,7 @@ removerPropriedade = (objeto = {}, propriedade) => {
     return `${objeto} é inválido`;
   } else if (typeof propriedade != 'string') {
     return `${propriedade} é inválido`;
-}
+  }
 };
 
 console.log(removerPropriedade({ a: 1, b: 2 }, 'a'));
@@ -272,7 +272,7 @@ funcaoDaSorte = (numero) => {
     return numero == numeroSorteado
       ? `Parabéns! O número sorteado foi o ${numero}`
       : `Que pena! O número sorteado foi o ${numeroSorteado}`;
-}
+  }
   return `${numero} é um número inválido`;
 };
 
@@ -344,8 +344,26 @@ segundoMaior = (array = [0]) => {
 console.log(segundoMaior([12, 16, 1, 5]));
 console.log(segundoMaior([8, 4, 5, 6]));
 
+console.log('\nExercício 29');
 
-var simboloMais = (quantidade) => new Array(quantidade + 1).join('+')
+receberMelhorEstudante = (estudantes = { '': [] }) => {
+  const arrayEstudantes = Object.entries(estudantes);
+  const arrayMedias = [];
+  arrayEstudantes.forEach((estudante) => {
+    arrayMedias.push(
+      estudante[1].reduce((total, nota) => total + nota) / estudante[1].length
+    );
+  });
+  let maiorMedia = Math.max(...arrayMedias);
+  const objeto = {};
+  objeto[arrayEstudantes[arrayMedias.indexOf(maiorMedia)][0]] = maiorMedia;
+  return objeto;
+};
 
-console.log(simboloMais(2))
-console.log(simboloMais(4))
+console.log(
+  receberMelhorEstudante({
+    Joao: [8, 7.6, 8.9, 6],
+    Mariana: [9, 6.6, 7.9, 8],
+    Carla: [7, 7, 8, 9],
+  })
+);
