@@ -333,6 +333,17 @@ filtrarPorQuantidadeDeDigitos = (array = [0], quantidade) =>
 console.log(filtrarPorQuantidadeDeDigitos([38, 2, 365, 10, 125, 11], 2));
 console.log(filtrarPorQuantidadeDeDigitos([5, 9, 1, 125, 11], 1));
 
+console.log('\nExercício 28');
+
+segundoMaior = (array = [0]) => {
+  let indice = array.indexOf(Math.max(...array));
+  array.splice(indice, 1);
+  return Math.max(...array);
+};
+
+console.log(segundoMaior([12, 16, 1, 5]));
+console.log(segundoMaior([8, 4, 5, 6]));
+
 
 var simboloMais = (quantidade) => new Array(quantidade + 1).join('+')
 
