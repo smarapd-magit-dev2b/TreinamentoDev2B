@@ -280,16 +280,13 @@ console.log(funcaoDaSorte(10));
 console.log(funcaoDaSorte(5));
 console.log(funcaoDaSorte(5));
 
-console.log('\nExercício 8')
+console.log('\nExercício 22');
 
-var repetir = (elemento, quantidade) => {
-  let array = []
-  for (let i = 0; i < quantidade; i++) array.push(elemento)
-  return array
-}
+contarPalavras = (frase = '') => frase.trim().split(' ').length;
 
-console.log(repetir('código', 2))
-console.log(repetir(7, 2))
+console.log(contarPalavras('Sou uma frase'));
+console.log(contarPalavras('Me divirto aprendendo a programar'));
+
 
 console.log('\nExercício 8 muito louco')
 
