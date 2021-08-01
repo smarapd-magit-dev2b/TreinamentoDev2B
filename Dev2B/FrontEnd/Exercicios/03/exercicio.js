@@ -263,10 +263,22 @@ menorNumero = (array = []) => Math.min(...array);
 
 console.log(menorNumero([10, 5, 35, 65]));
 console.log(menorNumero([5, -15, 50, 3]));
-}
 
-console.log(multiplicar(5, 5))
-console.log(multiplicar(0, 7))
+console.log('\nExercício 21');
+
+funcaoDaSorte = (numero) => {
+  if (numero > 1 && numero <= 10) {
+    let numeroSorteado = Math.floor(Math.random() * (11 - 1)) + 1;
+    return numero == numeroSorteado
+      ? `Parabéns! O número sorteado foi o ${numero}`
+      : `Que pena! O número sorteado foi o ${numeroSorteado}`;
+}
+  return `${numero} é um número inválido`;
+};
+
+console.log(funcaoDaSorte(10));
+console.log(funcaoDaSorte(5));
+console.log(funcaoDaSorte(5));
 
 console.log('\nExercício 8')
 
