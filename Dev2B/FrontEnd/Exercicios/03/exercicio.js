@@ -287,14 +287,14 @@ contarPalavras = (frase = '') => frase.trim().split(' ').length;
 console.log(contarPalavras('Sou uma frase'));
 console.log(contarPalavras('Me divirto aprendendo a programar'));
 
+console.log('\nExercício 23');
 
-console.log('\nExercício 8 muito louco')
+contarCaractere = (caractere, frase = '') =>
+  frase.match(new RegExp(`${caractere}`, 'g')).length;
 
-var repetir = (elemento, quantidade) => {
-  let array = new Array(quantidade + 1).join(`${elemento};`).split(';')
-  array.pop()
-  return array
-}
+console.log(contarCaractere('r', 'A sorte favorece os audazes'));
+console.log(contarCaractere('c', 'Conhece-te a ti mesmo'));
+
 
 console.log(repetir('MuitoLoko', 9))
 
