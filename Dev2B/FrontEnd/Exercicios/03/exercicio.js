@@ -249,14 +249,13 @@ calcularMedia = (array = []) =>
 console.log(calcularMedia([0, 10]));
 console.log(calcularMedia([1, 2, 3, 4, 5]));
 
-}
+console.log('\nExercício 19');
 
-console.log(estaEntre(51, 50, 100))
-console.log(estaEntre(16, 100, 160))
-console.log(estaEntre(3, 3, 150))
-console.log(estaEntre(3, 3, 150, true))
+areaDoTriangulo = (base, altura) => ((base * altura) / 2).toFixed(2);
 
-console.log('\nExercício 7')
+console.log(areaDoTriangulo(10, 15));
+console.log(areaDoTriangulo(7, 9));
+console.log(areaDoTriangulo(9.25, 13.1));
 
 var multiplicar = (num1, num2) => {
   let ehPositivo = num1 >= 0 && num2 >= 0
