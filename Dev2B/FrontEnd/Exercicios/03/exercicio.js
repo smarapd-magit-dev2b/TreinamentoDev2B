@@ -170,7 +170,12 @@ console.log(
   )
 );
 
-console.log('\nExercício 6')
+console.log('\nExercício 12');
+
+filtrarNumeros = (array = []) => array.filter((e) => typeof e == 'number');
+
+console.log(filtrarNumeros(['Javascript', 1, '3', 'Web', 20]));
+console.log(filtrarNumeros(['a', 'c']));
 
 var estaEntre = (numero, minimo, maximo, inclusivo = false) => {
   if (inclusivo && numero >= minimo && numero <= maximo) return true
