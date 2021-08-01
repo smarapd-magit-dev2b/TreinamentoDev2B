@@ -194,6 +194,20 @@ console.log(
     preco: 12000,
   })
 );
+
+console.log('\nExercício 14');
+
+receberSomenteOsParesDeIndicesPares = (array = []) => {
+  const novoArray = [];
+  array.forEach((elemento, indice) => {
+    if (indice % 2 == 0) novoArray.push(elemento);
+  });
+  return novoArray.filter((e) => e % 2 == 0);
+};
+
+console.log(receberSomenteOsParesDeIndicesPares([1, 2, 3, 4]));
+console.log(receberSomenteOsParesDeIndicesPares([10, 70, 22, 43]));
+
 }
 
 console.log(estaEntre(51, 50, 100))
