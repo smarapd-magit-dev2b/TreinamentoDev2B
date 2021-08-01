@@ -136,6 +136,16 @@ simboloMais = (quantidade) => new Array(quantidade + 1).join('+');
 console.log(simboloMais(2));
 console.log(simboloMais(4));
 
+console.log('\nExercício 10');
+
+receberPrimeiroEUltimoElemento = (array = []) =>
+  typeof array == 'object'
+    ? [array[0], array[array.length - 1]]
+    : `${array} não é um valor válido`;
+
+console.log(receberPrimeiroEUltimoElemento([7, 14, 'olá']));
+console.log(receberPrimeiroEUltimoElemento([-100, 'aplicativo', 16]));
+
 }
 
 console.log(inverso(true))
