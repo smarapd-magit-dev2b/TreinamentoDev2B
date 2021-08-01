@@ -305,8 +305,13 @@ console.log(
 );
 console.log(buscarPalavrasSemelhantes('python', ['javascript', 'java', 'c++']));
 
+console.log('\nExercício 25');
 
-console.log('\nExercício 9')
+removerVogais = (palavra = '') => palavra.replace(/[aeiou]/gi, '');
+
+console.log(removerVogais('Cod3r'));
+console.log(removerVogais('Fundamentos'));
+
 
 var simboloMais = (quantidade) => '+'.repeat(quantidade)
 
