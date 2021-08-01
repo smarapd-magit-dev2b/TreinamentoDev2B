@@ -312,8 +312,19 @@ removerVogais = (palavra = '') => palavra.replace(/[aeiou]/gi, '');
 console.log(removerVogais('Cod3r'));
 console.log(removerVogais('Fundamentos'));
 
+console.log('\nExercício 26');
 
-var simboloMais = (quantidade) => '+'.repeat(quantidade)
+inverter = (objeto = {}) => {
+  const array = Object.entries(objeto);
+  console.log(array);
+  array.forEach((valor) => valor.reverse());
+  console.log(array);
+  return Object.fromEntries(array);
+};
+
+// As chaves de um objeto não podem ser nada além de strings
+console.log(inverter({ a: 1, b: 2, c: 3 }));
+
 
 console.log(simboloMais(2))
 console.log(simboloMais(4))
