@@ -146,12 +146,29 @@ receberPrimeiroEUltimoElemento = (array = []) =>
 console.log(receberPrimeiroEUltimoElemento([7, 14, 'olá']));
 console.log(receberPrimeiroEUltimoElemento([-100, 'aplicativo', 16]));
 
-}
+console.log('\nExercício 11');
 
-console.log(inverso(true))
-console.log(inverso('6'))
-console.log(inverso(-200))
-console.log(inverso('programação'))
+removerPropriedade = (objeto = {}, propriedade) => {
+  if (typeof objeto == 'object' && typeof propriedade == 'string') {
+    novoObjeto = Object.assign({}, objeto);
+    delete novoObjeto[propriedade];
+    return novoObjeto;
+  } else if (typeof objeto != 'object' && typeof propriedade != 'string') {
+    return `${objeto} e ${propriedade} são inválidos`;
+  } else if (typeof objeto != 'object') {
+    return `${objeto} é inválido`;
+  } else if (typeof propriedade != 'string') {
+    return `${propriedade} é inválido`;
+}
+};
+
+console.log(removerPropriedade({ a: 1, b: 2 }, 'a'));
+console.log(
+  removerPropriedade(
+    { id: 20, nome: 'caneta', descricao: 'Não preenchido' },
+    'descricao'
+  )
+);
 
 console.log('\nExercício 6')
 
