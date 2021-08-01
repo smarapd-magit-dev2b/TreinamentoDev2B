@@ -257,11 +257,12 @@ console.log(areaDoTriangulo(10, 15));
 console.log(areaDoTriangulo(7, 9));
 console.log(areaDoTriangulo(9.25, 13.1));
 
-var multiplicar = (num1, num2) => {
-  let ehPositivo = num1 >= 0 && num2 >= 0
-  let ehInteiro = Number.isInteger(num1) && Number.isInteger(num2)
+console.log('\nExercício 20');
 
-  if (ehPositivo && ehInteiro) return Math.imul(num1, num2)
+menorNumero = (array = []) => Math.min(...array);
+
+console.log(menorNumero([10, 5, 35, 65]));
+console.log(menorNumero([5, -15, 50, 3]));
 }
 
 console.log(multiplicar(5, 5))
