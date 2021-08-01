@@ -216,6 +216,13 @@ checarAnoBissexto = (ano) =>
 console.log(checarAnoBissexto(2020));
 console.log(checarAnoBissexto(2100));
 
+console.log('\nExercício 16');
+
+somarNumeros = (array = []) => array.reduce((total, valor) => total + valor);
+
+console.log(somarNumeros([10, 10, 10]));
+console.log(somarNumeros([15, 15, 15, 15]));
+
 }
 
 console.log(estaEntre(51, 50, 100))
