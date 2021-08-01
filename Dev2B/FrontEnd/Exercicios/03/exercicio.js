@@ -208,6 +208,14 @@ receberSomenteOsParesDeIndicesPares = (array = []) => {
 console.log(receberSomenteOsParesDeIndicesPares([1, 2, 3, 4]));
 console.log(receberSomenteOsParesDeIndicesPares([10, 70, 22, 43]));
 
+console.log('\nExercício 15');
+
+checarAnoBissexto = (ano) =>
+  ano % 4 == 0 && (ano % 100 != 0 || ano % 400 == 0) ? true : false;
+
+console.log(checarAnoBissexto(2020));
+console.log(checarAnoBissexto(2100));
+
 }
 
 console.log(estaEntre(51, 50, 100))
