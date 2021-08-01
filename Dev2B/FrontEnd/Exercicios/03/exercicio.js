@@ -325,11 +325,14 @@ inverter = (objeto = {}) => {
 // As chaves de um objeto não podem ser nada além de strings
 console.log(inverter({ a: 1, b: 2, c: 3 }));
 
+console.log('\nExercício 27');
 
-console.log(simboloMais(2))
-console.log(simboloMais(4))
+filtrarPorQuantidadeDeDigitos = (array = [0], quantidade) =>
+  array.filter((v) => v.toString().length <= quantidade);
 
-console.log('\nExercício 9 muito louco')
+console.log(filtrarPorQuantidadeDeDigitos([38, 2, 365, 10, 125, 11], 2));
+console.log(filtrarPorQuantidadeDeDigitos([5, 9, 1, 125, 11], 1));
+
 
 var simboloMais = (quantidade) => new Array(quantidade + 1).join('+')
 
