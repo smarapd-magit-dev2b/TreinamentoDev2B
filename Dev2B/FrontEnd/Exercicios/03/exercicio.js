@@ -177,10 +177,23 @@ filtrarNumeros = (array = []) => array.filter((e) => typeof e == 'number');
 console.log(filtrarNumeros(['Javascript', 1, '3', 'Web', 20]));
 console.log(filtrarNumeros(['a', 'c']));
 
-var estaEntre = (numero, minimo, maximo, inclusivo = false) => {
-  if (inclusivo && numero >= minimo && numero <= maximo) return true
-  if (numero > minimo && numero < maximo) return true
-  return false
+console.log('\nExercício 13');
+
+objetoParaArray = (objeto = {}) => Object.entries(objeto);
+
+console.log(
+  objetoParaArray({
+    nome: 'Maria',
+    profissao: 'Desenvolvedora de software',
+  })
+);
+
+console.log(
+  objetoParaArray({
+    codigo: 11111,
+    preco: 12000,
+  })
+);
 }
 
 console.log(estaEntre(51, 50, 100))
