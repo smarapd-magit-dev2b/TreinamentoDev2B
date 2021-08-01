@@ -295,8 +295,16 @@ contarCaractere = (caractere, frase = '') =>
 console.log(contarCaractere('r', 'A sorte favorece os audazes'));
 console.log(contarCaractere('c', 'Conhece-te a ti mesmo'));
 
+console.log('\nExercício 24');
 
-console.log(repetir('MuitoLoko', 9))
+buscarPalavrasSemelhantes = (palavra, array = ['']) =>
+  array.filter((v) => v.includes(palavra));
+
+console.log(
+  buscarPalavrasSemelhantes('pro', ['programação', 'mobile', 'profissional'])
+);
+console.log(buscarPalavrasSemelhantes('python', ['javascript', 'java', 'c++']));
+
 
 console.log('\nExercício 9')
 
