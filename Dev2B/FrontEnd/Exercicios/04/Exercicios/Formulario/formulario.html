@@ -5,7 +5,6 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css" />
-  <!-- <script type="text/javascript" src="formulario.js"></script> -->
   <title>Formulário</title>
 </head>
 
@@ -65,66 +64,4 @@
 </html>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
   crossorigin="anonymous"></script>
-<script>
-  $('.formulario').on("submit", 'form[name="cadastro"]', function (evento) {
-    event.preventDefault()
-
-    let nome = $('input[name="nome"]').val()
-    let especialidade = $('input[name="especialidade"]:checked').val()
-    let linguagem = $('select[name="linguagem"]').val()
-
-    $('#lista').append(`<tr>
-                          <td>${nome}</td>
-                          <td>${especialidade}</td>
-                          <td>${linguagem}</td>
-                          <td class="acoes">
-                            <button>Editar</button>
-                            <button>Deletar</button>
-                          </td>
-                        </tr>`)
-  })
-
-  $('.formulario').on("submit", 'form[name="atualizacao"]', function (evento) {
-    event.preventDefault()
-
-    let nome = $('input[name="nome"]').val()
-    let especialidade = $('input[name="especialidade"]:checked').val()
-    let linguagem = $('select[name="linguagem"]').val()
-
-    console.log(nome)
-
-    let linha = $('tr#atualizando').children('[class!=acoes]')
-
-    console.log(linha)
-
-    linha.eq(0).text(nome)
-    linha.eq(1).text(especialidade)
-    linha.eq(2).text(linguagem)
-
-    $('tr.atualizando').removeClass()
-    $('form[name="atualizacao"]').removeAttr('name').attr('name', 'cadastro')
-
-  });
-
-  $('#lista').on("click", "button", function (evento) {
-    event.preventDefault()
-    let botao = $(event.target)
-
-    if (botao.text() == 'Deletar')
-      botao.parent().parent().remove()
-    else if (botao.text() == 'Editar') {
-      botao.parent().parent().prop('id', 'atualizando')
-      let tds = botao.parent().parent().children('[class!=acoes]')
-
-      let nome = tds.eq(0).text()
-      let especialidade = tds.eq(1).text()
-      let linguagem = tds.eq(2).text()
-
-      $('input[name="nome"]').val(nome)
-      $(`input[name="especialidade"][value="${especialidade}"]`).prop('checked', true)
-      $('select[name="linguagem"]').val(linguagem)
-
-      $('form[name="cadastro"]').removeAttr('name').attr('name', 'atualizacao')
-    }
-  });
-</script>
+<script type="text/javascript" src="formulario.js"></script>
