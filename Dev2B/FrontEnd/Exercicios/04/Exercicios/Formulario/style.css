@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    background-color: #0D262D;
+    color: #fff;
+    height: 100%;
+    align-items: center;
+}
+
+.formulario {
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.5);
+}
+
+label {
+    font-size: xx-large;
+}
+
+#nome {
+    margin-left: 10px;
+    width: 500px;
+    height: 50px;
+    font-size: 180%;
+}
+
+#linguagem {
+    margin-left: 10px;
+    width: 430px;
+    height: 50px;
+    font-size: 180%;
+}
+
+form {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.itemFormulario {
+    margin: 20px 0px;
+}
+
+#confirmar {
+    width: 100%;
+    height: 50px;
+    font-size: x-large;
+    color: yellow;
+    background-color: rgba(68, 1, 131, 0.5);
+    border: none;
+    cursor: pointer;
+}
+
+#confirmar:hover {
+    background-color: rgba(68, 1, 131, 0.7);
+}
+
+#confirmar:active {
+    background-color: rgba(68, 1, 131, 0.9);
+}
+
+.resultado {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 80%;
+}
+
+td {
+    border: 1px solid black;
+    background-color: rgba(68, 1, 131, 0.8);
+    color: yellow;
+}
+
+#lista {
+    border-collapse: separate;
+    border-spacing: 0px 0px;
+}
+
+.header {
+    text-align: center;
+}
+
+.acoes {
+    text-align: center;
+}

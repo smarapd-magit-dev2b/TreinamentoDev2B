@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" />
+  <!-- <script type="text/javascript" src="formulario.js"></script> -->
+  <title>Formulário</title>
+</head>
+
+<body>
+  <div class="formulario">
+    <form action="" method="get" name="cadastro">
+      <div class="itemFormulario">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+      </div>
+
+      <div class="itemFormulario">
+        <label style="margin-right: 90px;">Especialidade:</label>
+        <input type="radio" id="front" name="especialidade" value="Frontend" checked>
+        <label style="margin-right: 30px;" for="front">Frontend</label>
+        <input type="radio" id="back" name="especialidade" value="Backend">
+        <label for="front">Backend</label>
+      </div>
+
+      <div class="itemFormulario">
+        <label for="linguagem">Linguagem:</label>
+        <select id="linguagem" name="linguagem">
+          <option value="Javascript">Javascript</option>
+          <option value="DotnetCore">DotnetCore</option>
+          <option value="Java">Java</option>
+          <option value="Elixir">Elixir</option>
+          <option value="Go">Go</option>
+        </select>
+      </div>
+
+      <div class="itemFormulario">
+        <input type="submit" value="Confirmar" id="confirmar">
+      </div>
+    </form>
+  </div>
+  <div class="resultado">
+    <table id="lista">
+      <tr>
+        <td class="header">Nome</td>
+        <td class="header">Especialidade</td>
+        <td class="header">Linguagem</td>
+        <td class="header">Ações</td>
+      </tr>
+      <tr>
+        <td>Maurício</td>
+        <td>Frontend</td>
+        <td>Javascript</td>
+        <td class="acoes">
+          <button>Editar</button>
+          <button>Deletar</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+<script>
+  $('.formulario').on("submit", 'form[name="cadastro"]', function (evento) {
+    event.preventDefault()
+
+    let nome = $('input[name="nome"]').val()
+    let especialidade = $('input[name="especialidade"]:checked').val()
+    let linguagem = $('select[name="linguagem"]').val()
+
+    $('#lista').append(`<tr>
+                          <td>${nome}</td>
+                          <td>${especialidade}</td>
+                          <td>${linguagem}</td>
+                          <td class="acoes">
+                            <button>Editar</button>
+                            <button>Deletar</button>
+                          </td>
+                        </tr>`)
+  })
+
+  $('.formulario').on("submit", 'form[name="atualizacao"]', function (evento) {
+    event.preventDefault()
+
+    let nome = $('input[name="nome"]').val()
+    let especialidade = $('input[name="especialidade"]:checked').val()
+    let linguagem = $('select[name="linguagem"]').val()
+
+    console.log(nome)
+
+    let linha = $('tr#atualizando').children('[class!=acoes]')
+
+    console.log(linha)
+
+    linha.eq(0).text(nome)
+    linha.eq(1).text(especialidade)
+    linha.eq(2).text(linguagem)
+
+    $('tr.atualizando').removeClass()
+    $('form[name="atualizacao"]').removeAttr('name').attr('name', 'cadastro')
+
+  });
+
+  $('#lista').on("click", "button", function (evento) {
+    event.preventDefault()
+    let botao = $(event.target)
+
+    if (botao.text() == 'Deletar')
+      botao.parent().parent().remove()
+    else if (botao.text() == 'Editar') {
+      botao.parent().parent().prop('id', 'atualizando')
+      let tds = botao.parent().parent().children('[class!=acoes]')
+
+      let nome = tds.eq(0).text()
+      let especialidade = tds.eq(1).text()
+      let linguagem = tds.eq(2).text()
+
+      $('input[name="nome"]').val(nome)
+      $(`input[name="especialidade"][value="${especialidade}"]`).prop('checked', true)
+      $('select[name="linguagem"]').val(linguagem)
+
+      $('form[name="cadastro"]').removeAttr('name').attr('name', 'atualizacao')
+    }
+  });
+</script>
