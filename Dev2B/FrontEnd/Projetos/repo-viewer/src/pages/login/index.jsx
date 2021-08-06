@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import { deck } from '../../services/services';
 import Alert from '../../components/alert/Alert';
+import Main from '../../components/main/Main';
 
 export default function Login() {
   const [name, setName] = useState();
@@ -37,7 +38,7 @@ export default function Login() {
   const setValues = (value, state) => state(value.target.value);
 
   return (
-    <main>
+    <Main>
       <Alert />
       <Form>
         <Form.Group className='mb-3' controlId='formBasicEmail'>
@@ -61,7 +62,7 @@ export default function Login() {
           Submit
         </Button>
       </Form>
-    </main>
+    </Main>
   );
 }
 
