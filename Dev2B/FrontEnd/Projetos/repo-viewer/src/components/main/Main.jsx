@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import PropTypes from 'prop-types';
+
 export default function Main({ children }) {
   return (
     <Container>
@@ -7,3 +9,5 @@ export default function Main({ children }) {
     </Container>
   );
 }
+
+Main.propTypes = { children: PropTypes.element.isRequired };
