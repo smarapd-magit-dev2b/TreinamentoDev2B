@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Commom\Commom.csproj" />
     <ProjectReference Include="..\Service\Service.csproj" />
   </ItemGroup>
 
