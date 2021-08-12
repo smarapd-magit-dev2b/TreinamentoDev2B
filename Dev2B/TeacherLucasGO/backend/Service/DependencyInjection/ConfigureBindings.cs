@@ -7,7 +7,7 @@ namespace Service.DependencyInjection
     {
         public static void RegisterBindings(IServiceCollection services, IConfiguration configuration)
         {
-
+            ConfigureBindingsAplicationService.RegisterBindings(services, configuration);
         }
     }
 }
