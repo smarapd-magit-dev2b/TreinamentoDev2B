@@ -1,0 +1,16 @@
+{
+  "students": [
+    {"id": 1, "name": "Abner Manha", "note1": 8, "note2": 9},
+    {"id": 2, "name": "Amanda Jaria", "note1": 8, "note2": 10},
+    {"id": 3, "name": "Bruno Camargo", "note1": 10, "note2": 6},
+    {"id": 4, "name": "Danilo Jordão", "note1": 10, "note2": 9},
+    {"id": 5, "name": "Filipe Aruan", "note1": 9, "note2": 9},
+    {"id": 6, "name": "Gabriel Teles", "note1": 9, "note2": 7},
+    {"id": 7, "name": "Jardel Sousa", "note1": 8, "note2": 8},
+    {"id": 8, "name": "Lucas Capalbo", "note1": 7, "note2": 8},
+    {"id": 9, "name": "Lucas Guimarães", "note1": 9, "note2": 10},
+    {"id": 10, "name": "Otávio Oliveira", "note1": 10, "note2": 9},
+    {"id": 11, "name": "Yuri Quissak", "note1": 5, "note2": 5},
+    {"id": 12, "name": "Yuri Sanches", "note1": 7, "note2": 9}
+  ]
+}
