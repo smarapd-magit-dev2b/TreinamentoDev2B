@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface", "Interface\Interface.csproj", "{036CCB40-BA2F-4CD7-A63E-FF0C7B8CB5FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interface", "Interface\Interface.csproj", "{036CCB40-BA2F-4CD7-A63E-FF0C7B8CB5FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{32C18EF9-4CC2-4A68-B28B-5D557D9D3CD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commom", "Commom\Commom.csproj", "{44C10B2D-50C2-4840-A2F5-9AB243CBD916}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{036CCB40-BA2F-4CD7-A63E-FF0C7B8CB5FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{036CCB40-BA2F-4CD7-A63E-FF0C7B8CB5FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{036CCB40-BA2F-4CD7-A63E-FF0C7B8CB5FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32C18EF9-4CC2-4A68-B28B-5D557D9D3CD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32C18EF9-4CC2-4A68-B28B-5D557D9D3CD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32C18EF9-4CC2-4A68-B28B-5D557D9D3CD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32C18EF9-4CC2-4A68-B28B-5D557D9D3CD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44C10B2D-50C2-4840-A2F5-9AB243CBD916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44C10B2D-50C2-4840-A2F5-9AB243CBD916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44C10B2D-50C2-4840-A2F5-9AB243CBD916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44C10B2D-50C2-4840-A2F5-9AB243CBD916}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
