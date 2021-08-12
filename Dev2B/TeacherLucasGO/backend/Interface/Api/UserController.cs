@@ -1,6 +1,7 @@
 ﻿using Commom.Dto.User;
 using Microsoft.AspNetCore.Mvc;
 using Service.AplicationService.Interfaces;
+using Swashbuckle.AspNetCore.Annotations;
 using System.Collections.Generic;
 
 namespace Interface.Api
@@ -14,6 +15,7 @@ namespace Interface.Api
         public UserController(IUserAplicationService userAplicationService) => _userAplicationService = userAplicationService;
 
         [HttpGet]
+        [SwaggerResponse(200, "Users returned successfully")]
         public IActionResult GetAll()
         {
             IEnumerable<UserDtoGet> users = _userAplicationService.GetAll();
