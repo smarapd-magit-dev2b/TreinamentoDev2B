@@ -1,8 +1,9 @@
 ﻿using Commom.Dto.User;
+using Commom.Exceptions.User;
 using Microsoft.AspNetCore.Mvc;
 using Service.AplicationService.Interfaces;
 using Swashbuckle.AspNetCore.Annotations;
-using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Interface.Api
 {
@@ -14,12 +15,26 @@ namespace Interface.Api
 
         public UserController(IUserAplicationService userAplicationService) => _userAplicationService = userAplicationService;
 
-        [HttpGet]
-        [SwaggerResponse(200, "Users returned successfully")]
-        public IActionResult GetAll()
+        [HttpPost]
+        [SwaggerResponse(200, "Authorized User", typeof(bool))]
+        [SwaggerResponse(401, "Unauthorized User", typeof(string))]
+        [SwaggerResponse(403, "Unauthorized User", typeof(string))]
+        public async Task<IActionResult> Post([FromBody] UserPostDto dto)
         {
-            IEnumerable<UserDtoGet> users = _userAplicationService.GetAll();
-            return Ok(users);
+            try
+            {
+                bool exist = await _userAplicationService.Post(dto);
+
+                return Ok(exist);
+            }
+            catch (UserUnauthorizedException uu)
+            {
+                return Unauthorized(uu.Message);
+            }
+            catch (UserForbiddenException uf)
+            {
+                return Forbid(uf.Message);
+            }
         }
     }
 }

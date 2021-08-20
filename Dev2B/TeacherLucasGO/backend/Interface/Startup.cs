@@ -20,20 +20,17 @@ namespace Interface
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            _ = services.AddControllers();
 
             ConfigureBindings.RegisterBindings(services, Configuration);
 
             // Register the Swagger generator, defining 1 or more Swagger documents
-            services.AddSwaggerGen(c =>
+            _ = services.AddSwaggerGen(c => c.SwaggerDoc("v1", new OpenApiInfo
             {
-                c.SwaggerDoc("v1", new OpenApiInfo
-                {
-                    Version = "v1",
-                    Title = "Teacher Lucas GO",
-                    Description = "Projeto de Conclusão de Conteúdo Dev2B"
-                });
-            });
+                Version = "v1",
+                Title = "Teacher Lucas GO",
+                Description = "Projeto de Conclusão de Conteúdo Dev2B"
+            }));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,28 +38,25 @@ namespace Interface
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                _ = app.UseDeveloperExceptionPage();
             }
 
             // Enable middleware to serve generated Swagger as a JSON endpoint.
-            app.UseSwagger();
+            _ = app.UseSwagger();
 
             // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
             // specifying the Swagger JSON endpoint.
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Teacher Lucas GO");
-                c.RoutePrefix = string.Empty;
-            });
+            _ = app.UseSwaggerUI(c =>
+              {
+                  c.SwaggerEndpoint("/swagger/v1/swagger.json", "Teacher Lucas GO");
+                  c.RoutePrefix = string.Empty;
+              });
 
-            app.UseRouting();
+            _ = app.UseRouting();
 
-            app.UseAuthorization();
+            _ = app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+            _ = app.UseEndpoints(endpoints => _ = endpoints.MapControllers());
         }
     }
 }

@@ -9,10 +9,12 @@ namespace Service.DependencyInjection
     {
         public static void RegisterBindings(IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<TeacherLucasGODbContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+            _ = services.AddDbContext<TeacherLucasGODbContext>(options =>
+                  options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
             ConfigureBindingsAplicationService.RegisterBindings(services);
+            ConfigureBindingsUnitOfWork.RegisterBindings(services);
+            ConfigureBindingsRepository.RegisterBindings(services);
         }
     }
 }

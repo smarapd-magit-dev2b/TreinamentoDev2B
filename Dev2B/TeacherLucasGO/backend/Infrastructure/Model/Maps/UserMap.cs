@@ -8,34 +8,34 @@ namespace Infrastructure.Model.Maps
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
-            builder.ToTable("user");
+            _ = builder.ToTable("usuario");
 
-            builder.HasKey(user => user.Id);
+            _ = builder.HasKey(user => user.Id);
 
-            builder.Property(user => user.Id)
-                   .HasColumnName("id")
-                   .HasColumnType("INT");
+            _ = builder.Property(user => user.Id)
+                       .HasColumnName("idUsuario")
+                       .HasColumnType("INT");
 
-            builder.Property(user => user.UserName)
-                   .HasColumnName("userName")
-                   .HasColumnType("VARCHAR")
-                   .HasMaxLength(100)
-                   .IsRequired();
+            _ = builder.Property(user => user.Username)
+                       .HasColumnName("userName")
+                       .HasColumnType("VARCHAR")
+                       .HasMaxLength(100)
+                       .IsRequired();
 
-            builder.Property(user => user.Senha)
-                   .HasColumnName("senha")
-                   .HasColumnType("VARCHAR")
-                   .HasMaxLength(75)
-                   .IsRequired();
+            _ = builder.Property(user => user.Password)
+                       .HasColumnName("senha")
+                       .HasColumnType("VARCHAR")
+                       .HasMaxLength(75)
+                       .IsRequired();
 
-            builder.Property(user => user.NomeDeUsuario)
-                   .HasColumnName("nome_do_usuario")
-                   .HasColumnType("VARCHAR")
-                   .HasMaxLength(100)
-                   .IsRequired();
+            _ = builder.Property(user => user.Name)
+                       .HasColumnName("nomeDoUsuario")
+                       .HasColumnType("VARCHAR")
+                       .HasMaxLength(100)
+                       .IsRequired();
 
-            builder.HasIndex(user => user.UserName)
-                   .IsUnique();
+            _ = builder.HasIndex(user => user.Username)
+                       .IsUnique();
         }
     }
 }

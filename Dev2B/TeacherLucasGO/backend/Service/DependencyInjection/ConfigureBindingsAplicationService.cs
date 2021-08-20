@@ -8,7 +8,9 @@ namespace Service.DependencyInjection
     {
         public static void RegisterBindings(IServiceCollection services)
         {
-            services.AddScoped<IUserAplicationService, UserAplicationService>();
+            _ = services.AddScoped<IUserAplicationService, UserAplicationService>();
+            _ = services.AddScoped<ITeacherAplicationService, TeacherAplicationService>();
+
         }
     }
 }

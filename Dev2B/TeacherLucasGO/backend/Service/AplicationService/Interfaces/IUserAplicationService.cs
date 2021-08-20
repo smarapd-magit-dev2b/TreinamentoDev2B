@@ -1,10 +1,10 @@
 ﻿using Commom.Dto.User;
-using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Service.AplicationService.Interfaces
 {
     public interface IUserAplicationService
     {
-        IEnumerable<UserDtoGet> GetAll();
+        Task<bool> Post(UserPostDto dto);
     }
 }
