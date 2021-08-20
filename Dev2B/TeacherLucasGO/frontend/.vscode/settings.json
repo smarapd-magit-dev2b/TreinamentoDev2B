@@ -1,0 +1,11 @@
+{
+  // Spell
+  "cSpell.words": [
+    "webfonts"
+  ],
+
+  // Javascript
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
